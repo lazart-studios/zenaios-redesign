@@ -12,7 +12,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "The Platform",
   description:
-    "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, six languages, live in real institutions.",
+    "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, five languages, live in real institutions.",
   path: "/platform",
 });
 

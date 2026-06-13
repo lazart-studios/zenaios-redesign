@@ -71,7 +71,7 @@ export const modules: ModuleItem[] = [
       "Book and manage appointments online",
       "Secure access to results and records",
       "AI symptom monitoring and personalised guidance",
-      "Conversational support across six languages",
+      "Conversational support across five languages",
     ],
     roadmap: ["Care-plan reminders", "Home-monitoring & wearable integrations"],
   },

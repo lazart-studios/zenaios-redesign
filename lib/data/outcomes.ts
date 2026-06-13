@@ -17,7 +17,7 @@ export const platformFacts: Stat[] = [
   { value: 17, label: "AI modules", sub: "Across three domains" },
   { value: 3, label: "Product domains", sub: "Medical · Admin · AI infra" },
   { value: 2, label: "Live deployments", sub: "Hospital + city hall" },
-  { value: 6, label: "Languages", sub: "RO · EN · HU · DE · FR · ID" },
+  { value: 5, label: "Languages", sub: "EN · RO · HU · DE · FR" },
 ];
 
 /**
@@ -57,7 +57,7 @@ export const outcomeProjections: Stat[] = [
 export const proofBadges = [
   "SJUO Oradea",
   "Oradea City Hall",
-  "6 languages",
+  "5 languages",
   "Sovereign offline RAG",
   "ICD-10 · DRG · FOCG",
   "Azure Speech voice",

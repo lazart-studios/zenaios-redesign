@@ -42,7 +42,7 @@ export function ZenAChat({ className }: { className?: string }) {
             ZenA
             <Sparkles className="size-3 text-sky" />
           </p>
-          <p className="text-[10px] text-faint">Assistant · 6 languages · voice</p>
+          <p className="text-[10px] text-faint">Assistant · 5 languages · voice</p>
         </div>
         <span className="ml-auto flex items-center gap-1 text-[10px] text-success">
           <span className="size-1.5 rounded-full bg-success" />

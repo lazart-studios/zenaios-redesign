@@ -15,7 +15,7 @@ export function ThreeDomains() {
               Not three modules. <span className="text-gradient">Seventeen.</span>
             </>
           }
-          description="ZenAiOS is an operating system, not a chatbot — organised into three domains that interoperate, share one assistant, and speak six languages."
+          description="ZenAiOS is an operating system, not a chatbot — organised into three domains that interoperate, share one assistant, and speak five languages."
         />
       </Reveal>
 

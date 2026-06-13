@@ -28,7 +28,7 @@ const principles = [
   {
     icon: Languages,
     title: "Multilingual & accessible",
-    body: "Six languages and an assistant that meets patients and staff where they are — care shouldn't depend on jargon.",
+    body: "Five languages and an assistant that meets patients and staff where they are — care shouldn't depend on jargon.",
   },
   {
     icon: Building2,
