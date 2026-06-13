@@ -1,0 +1,139 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight, PlayCircle } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { SwirlMotif } from "@/components/brand/SwirlMotif";
+import { BrowserFrame } from "@/components/visuals/BrowserFrame";
+import { DashboardMock } from "@/components/visuals/DashboardMock";
+import { ZenAChat } from "@/components/visuals/ZenAChat";
+import { siteConfig } from "@/lib/data/site";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const titleLines = ["The AI operating system", "for modern hospitals."];
+
+export function Hero() {
+  const reduce = useReducedMotion();
+
+  return (
+    <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+      <SwirlMotif className="absolute -right-40 -top-24 size-[640px] opacity-30 md:opacity-40" />
+
+      <div className="container-z grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+        {/* Copy */}
+        <div className="relative z-10 max-w-xl">
+          <motion.span
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: EASE }}
+            className="inline-flex items-center gap-2 rounded-full border border-hairline bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-muted"
+          >
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
+              <span className="relative inline-flex size-2 rounded-full bg-success" />
+            </span>
+            Live in real hospitals & city institutions
+          </motion.span>
+
+          <h1 className="mt-6 text-balance text-[2.6rem] font-bold leading-[1.03] sm:text-5xl md:text-[3.75rem]">
+            {titleLines.map((line, i) => (
+              <span key={i} className="block overflow-hidden">
+                <motion.span
+                  className="block"
+                  initial={reduce ? { opacity: 0 } : { y: "110%" }}
+                  animate={reduce ? { opacity: 1 } : { y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.15 + i * 0.12, ease: EASE }}
+                >
+                  {i === 1 ? (
+                    <span className="text-gradient">{line}</span>
+                  ) : (
+                    line
+                  )}
+                </motion.span>
+              </span>
+            ))}
+          </h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45, ease: EASE }}
+            className="mt-6 max-w-lg text-balance text-lg leading-relaxed text-muted"
+          >
+            17 AI modules across <b className="text-ink">clinical care</b>,{" "}
+            <b className="text-ink">hospital management</b> and{" "}
+            <b className="text-ink">public health</b> — already live at a county
+            emergency hospital and a city hall.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6, ease: EASE }}
+            className="mt-8 flex flex-wrap items-center gap-3"
+          >
+            <Button href="/demo" size="lg" withArrow>
+              Request a demo
+            </Button>
+            <Button href={siteConfig.demoUrl} variant="secondary" size="lg">
+              <PlayCircle className="size-4.5" />
+              Explore the platform
+            </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.85 }}
+            className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-faint"
+          >
+            <span className="uppercase tracking-[0.14em]">Deployed at</span>
+            <span className="text-muted">SJU Oradea</span>
+            <span className="size-1 rounded-full bg-faint" />
+            <span className="text-muted">Primăria Oradea</span>
+          </motion.div>
+        </div>
+
+        {/* Visual */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3, ease: EASE }}
+          className="relative z-10"
+        >
+          <motion.div
+            animate={reduce ? undefined : { y: [0, -12, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            className="relative"
+          >
+            <BrowserFrame className="glow-zen">
+              <DashboardMock />
+            </BrowserFrame>
+
+            {/* Floating ZenA chat */}
+            <motion.div
+              animate={reduce ? undefined : { y: [0, 14, 0] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute -bottom-10 -left-6 hidden w-[260px] sm:block lg:-left-14"
+            >
+              <ZenAChat />
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* scroll cue */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="pointer-events-none mt-16 flex justify-center"
+      >
+        <span className="text-[11px] uppercase tracking-[0.2em] text-faint">
+          Scroll to explore
+        </span>
+      </motion.div>
+    </section>
+  );
+}

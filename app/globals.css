@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   ZenAiOS — Design tokens
+   Brand colours are LOCKED (extracted from the logo SVG): never recolour.
+   Zen Blue #0076FD · Sky #71BEFF · Deep Navy #031044.
+   The marketing site is navy-dominant (enterprise health software, not clinic).
+   ========================================================================== */
+@theme {
+  /* Brand — locked */
+  --color-zen: #0076fd;
+  --color-zen-600: #0061d6;
+  --color-sky: #71beff;
+  --color-navy: #031044;
+
+  /* Dark surfaces (derived, on-brand) */
+  --color-abyss: #02081c;
+  --color-surface: #06164a;
+  --color-card: #0a1c55;
+  --color-card-2: #0c2266;
+
+  /* Text */
+  --color-ink: #eaf2ff;
+  --color-muted: #9db4d9;
+  --color-faint: #6b82ac;
+
+  /* Hairlines & status */
+  --color-hairline: rgba(113, 190, 255, 0.18);
+  --color-hairline-strong: rgba(113, 190, 255, 0.32);
+  --color-success: #33d6a6;
+  --color-warning: #ffb547;
+  --color-violet: #a78bfa;
+
+  /* Type */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Radii */
+  --radius-card: 14px;
+  --radius-lg: 20px;
+
+  /* Motion */
+  --animate-marquee: marquee 42s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-spin-slow: spinSlow 26s linear infinite;
+  --animate-spin-rev: spinRev 34s linear infinite;
+  --animate-pulse-glow: pulseGlow 3.6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2.6s linear infinite;
+  --animate-grid: gridDrift 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes spinSlow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinRev {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes gridDrift {
+  to {
+    background-position: 0 60px;
+  }
+}
+
+/* ============================================================================
+   Base
+   ========================================================================== */
+@layer base {
+  * {
+    border-color: var(--color-hairline);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: auto; /* Lenis owns smooth scroll */
+  }
+
+  body {
+    background-color: var(--color-abyss);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background: rgba(0, 118, 253, 0.35);
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.022em;
+    line-height: 1.04;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sky);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Respect reduced-motion: kill decorative loops & long transitions */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================================
+   Utilities
+   ========================================================================== */
+@layer utilities {
+  /* Brand gradient text (logo gradient: Zen Blue → Sky) */
+  .text-gradient {
+    background: linear-gradient(100deg, #ffffff 0%, var(--color-sky) 55%, var(--color-zen) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-blue {
+    background: linear-gradient(100deg, var(--color-sky) 0%, var(--color-zen) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Glass card surface */
+  .glass {
+    background: linear-gradient(
+      180deg,
+      rgba(12, 34, 102, 0.55) 0%,
+      rgba(6, 22, 74, 0.55) 100%
+    );
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-hairline);
+  }
+
+  /* Soft brand glow */
+  .glow-zen {
+    box-shadow: 0 0 0 1px var(--color-hairline),
+      0 24px 60px -28px rgba(0, 118, 253, 0.65);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 30px 80px -40px rgba(2, 8, 28, 0.9),
+      0 8px 24px -16px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Dotted/line grid background motif */
+  .bg-grid {
+    background-image: linear-gradient(var(--color-hairline) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-hairline) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .bg-dots {
+    background-image: radial-gradient(var(--color-hairline) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  /* Shimmer for skeleton/loading accents */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(113, 190, 255, 0.18) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+  }
+
+  /* Edge-fade mask for marquees */
+  .mask-x {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .container-z {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-z {
+      padding-inline: 2rem;
+    }
+  }
+}
