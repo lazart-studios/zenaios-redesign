@@ -1,37 +1,33 @@
 import type { TeamMember } from "./types";
 
 /**
- * Real founding team (from the live site).
- * LinkedIn links point to a name search until exact profile URLs are supplied
- * — keeps every link working (no dead links) per the brief.
+ * Real founding team — headshots and LinkedIn profiles are taken from the live
+ * site (www.zenaios.com). Photos are stored locally in /public/team.
  */
-function li(name: string) {
-  return `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(
-    name + " ZenAiOS"
-  )}`;
-}
-
 export const team: TeamMember[] = [
   {
     name: "George Haber",
     role: "Chief Executive Officer",
     initials: "GH",
+    photo: "/team/george-haber.png",
     bio: "Sets the vision and takes ZenAiOS to institutions, partners and investors.",
-    linkedin: li("George Haber"),
+    linkedin: "https://www.linkedin.com/in/georgehaber/",
   },
   {
     name: "Vlad Iliescu",
     role: "Chief Technology Officer",
     initials: "VI",
+    photo: "/team/vlad-iliescu.webp",
     bio: "Leads the platform and the in-house AI infrastructure — from sovereign RAG to the 17 modules.",
-    linkedin: li("Vlad Iliescu"),
+    linkedin: "https://www.linkedin.com/in/vladiliescu/",
   },
   {
     name: "Horea Timiș",
     role: "Chief Medical Officer",
     initials: "HT",
+    photo: "/team/horea-timis.webp",
     bio: "Keeps every module grounded in real clinical practice and standards of care.",
-    linkedin: li("Horea Timiș"),
+    linkedin: "https://www.linkedin.com/in/timis-horea-146372bb/",
   },
 ];
 

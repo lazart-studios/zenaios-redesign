@@ -64,6 +64,8 @@ export interface TeamMember {
   name: string;
   role: string;
   initials: string;
+  /** Local headshot in /public/team — fetched from the live site. */
+  photo: string;
   bio: string;
   linkedin: string;
 }

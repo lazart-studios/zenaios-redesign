@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Linkedin, Quote } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -19,16 +20,30 @@ export function Team() {
         />
       </Reveal>
 
-      <div className="mt-12 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-        {/* Team grid */}
-        <Stagger className="grid gap-5 sm:grid-cols-3">
-          {team.map((m) => (
-            <StaggerItem key={m.name}>
-              <div className="group flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
-                <span className="grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-zen/25 to-sky/10 text-lg font-bold text-sky ring-1 ring-zen/30 transition-transform duration-300 group-hover:scale-105">
-                  {m.initials}
-                </span>
-                <h3 className="mt-4 text-base font-bold text-ink">{m.name}</h3>
+      {/* Team grid — full width, 3 wide on desktop with large portrait cards */}
+      <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {team.map((m) => (
+          <StaggerItem key={m.name}>
+            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card/40 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70 hover:shadow-soft">
+              {/* Photo */}
+              <div className="relative aspect-[4/5] overflow-hidden bg-surface">
+                <Image
+                  src={m.photo}
+                  alt={`${m.name} — ${m.role}`}
+                  fill
+                  sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+                {/* Bottom fade so the name plate reads cleanly */}
+                <div
+                  className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-card/95 via-card/30 to-transparent"
+                  aria-hidden
+                />
+              </div>
+
+              {/* Body */}
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="text-lg font-bold text-ink">{m.name}</h3>
                 <p className="text-xs font-medium uppercase tracking-wider text-sky">
                   {m.role}
                 </p>
@@ -39,39 +54,39 @@ export function Team() {
                   href={m.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-sky"
+                  className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-sky"
                 >
                   <Linkedin className="size-3.5" />
                   LinkedIn
                 </a>
               </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
+            </div>
+          </StaggerItem>
+        ))}
+      </Stagger>
 
-        {/* Vision quote */}
-        <Reveal direction="left" delay={0.1}>
-          <figure className="relative rounded-3xl border border-hairline bg-gradient-to-br from-card/70 to-card/20 p-7 md:p-9">
-            <Quote
-              className="size-9 text-zen/40"
-              aria-hidden
-              fill="currentColor"
-            />
-            <blockquote className="mt-4 text-balance text-lg font-medium leading-relaxed text-ink md:text-xl">
-              {visionQuote.text}
-            </blockquote>
-            <figcaption className="mt-5 flex items-center gap-3">
-              <span className="h-px w-8 bg-gradient-to-r from-sky to-transparent" />
-              <span>
-                <span className="block text-sm font-semibold text-ink">
-                  {visionQuote.attribution}
-                </span>
-                <span className="block text-xs text-faint">{visionQuote.role}</span>
+      {/* Vision quote — full-width banner below the team */}
+      <Reveal delay={0.05}>
+        <figure className="relative mt-8 overflow-hidden rounded-3xl border border-hairline bg-gradient-to-br from-card/70 to-card/20 p-8 md:p-12">
+          <Quote
+            className="size-10 text-zen/40"
+            aria-hidden
+            fill="currentColor"
+          />
+          <blockquote className="mt-5 max-w-4xl text-balance text-xl font-medium leading-relaxed text-ink md:text-2xl">
+            {visionQuote.text}
+          </blockquote>
+          <figcaption className="mt-6 flex items-center gap-3">
+            <span className="h-px w-8 bg-gradient-to-r from-sky to-transparent" />
+            <span>
+              <span className="block text-sm font-semibold text-ink">
+                {visionQuote.attribution}
               </span>
-            </figcaption>
-          </figure>
-        </Reveal>
-      </div>
+              <span className="block text-xs text-faint">{visionQuote.role}</span>
+            </span>
+          </figcaption>
+        </figure>
+      </Reveal>
     </Section>
   );
 }
