@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/motion/Reveal";
 import { SwirlMotif } from "@/components/brand/SwirlMotif";
 import { cn } from "@/lib/utils";

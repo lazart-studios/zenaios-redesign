@@ -1,20 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/Logo";
 import { Button } from "@/components/ui/Button";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { primaryNav, siteConfig } from "@/lib/data/site";
-import { categories } from "@/lib/data/categories";
+import { buildCategories } from "@/lib/data/categories";
 import { countByCategory, moduleCount } from "@/lib/data/modules";
 import { cn } from "@/lib/utils";
 
 export function Nav() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
@@ -54,7 +55,7 @@ export function Nav() {
         {/* Logo */}
         <Link
           href="/"
-          aria-label="ZenAiOS home"
+          aria-label={t("homeAria")}
           className="relative z-10 transition-opacity hover:opacity-80"
         >
           <Logo variant="light" className="h-7 w-auto md:h-8" />
@@ -77,7 +78,7 @@ export function Nav() {
               )}
               aria-expanded={megaOpen}
             >
-              Platform
+              {t("platform")}
               <ChevronDown
                 className={cn(
                   "size-3.5 transition-transform duration-300",
@@ -117,7 +118,7 @@ export function Nav() {
                     active ? "text-ink" : "text-muted hover:text-ink"
                   )}
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               );
             })}
@@ -131,19 +132,19 @@ export function Nav() {
             rel="noopener noreferrer"
             className="hidden items-center gap-1 text-sm font-medium text-muted transition-colors hover:text-sky xl:inline-flex"
           >
-            Live platform
+            {t("livePlatform")}
             <ArrowUpRight className="size-3.5" />
           </a>
           <LanguageSwitcher className="hidden sm:block" />
           <Button href="/demo" size="sm" className="hidden sm:inline-flex">
-            Request a demo
+            {t("requestDemo")}
           </Button>
 
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen((v) => !v)}
             className="inline-flex size-10 items-center justify-center rounded-lg border border-hairline text-ink lg:hidden"
-            aria-label="Toggle menu"
+            aria-label={t("toggleMenu")}
             aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -160,13 +161,15 @@ export function Nav() {
 }
 
 function MegaMenu() {
+  const t = useTranslations("nav");
+  const categories = buildCategories(useTranslations("categories"));
   return (
     <div className="glass-strong overflow-hidden rounded-2xl shadow-soft">
       <div className="grid grid-cols-5">
         {/* By domain */}
         <div className="col-span-3 p-3">
           <p className="px-3 pb-2 pt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-faint">
-            By domain
+            {t("byDomain")}
           </p>
           <div className="space-y-1">
             {categories.map((cat) => {
@@ -191,11 +194,11 @@ function MegaMenu() {
                     <span className="flex items-center gap-2 text-sm font-semibold text-ink">
                       {cat.name}
                       <span className="text-xs font-normal text-faint">
-                        {countByCategory(cat.slug)} modules
+                        {t("modulesCount", { count: countByCategory(cat.slug) })}
                       </span>
                     </span>
                     <span className="mt-0.5 block text-xs leading-relaxed text-muted">
-                      {cat.description.split(" — ")[0]}.
+                      {cat.tagline}
                     </span>
                   </span>
                 </Link>
@@ -207,32 +210,30 @@ function MegaMenu() {
         {/* Explore + featured */}
         <div className="col-span-2 border-l border-hairline bg-white/[0.02] p-3">
           <p className="px-3 pb-2 pt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-faint">
-            Explore
+            {t("explore")}
           </p>
           <Link
             href="/platform"
             className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-white/[0.04] hover:text-ink"
           >
-            Platform overview
+            {t("platformOverview")}
           </Link>
           <Link
             href="/deployments"
             className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-white/[0.04] hover:text-ink"
           >
-            Live deployments
+            {t("liveDeployments")}
           </Link>
 
           <Link
             href="/platform"
             className="glow-zen mt-3 block rounded-xl bg-gradient-to-br from-zen/15 to-transparent p-4 ring-1 ring-hairline transition-transform hover:-translate-y-0.5"
           >
-            <StatusBadge status="active" label="Live now" />
+            <StatusBadge status="active" label={t("liveNow")} />
             <p className="mt-3 text-sm font-semibold text-ink">
-              {moduleCount} modules. 3 domains. 2 live deployments.
+              {t("megaTagline", { count: moduleCount })}
             </p>
-            <p className="mt-1 text-xs text-muted">
-              See how the operating system fits together →
-            </p>
+            <p className="mt-1 text-xs text-muted">{t("megaCta")}</p>
           </Link>
         </div>
       </div>
@@ -241,6 +242,8 @@ function MegaMenu() {
 }
 
 function MobileMenu({ pathname }: { pathname: string }) {
+  const t = useTranslations("nav");
+  const categories = buildCategories(useTranslations("categories"));
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -251,7 +254,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
     >
       <div className="container-z flex flex-col gap-1 py-6">
         <p className="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-faint">
-          Platform
+          {t("platform")}
         </p>
         {categories.map((cat) => (
           <Link
@@ -261,7 +264,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
           >
             {cat.name}
             <span className="text-xs text-faint">
-              {countByCategory(cat.slug)} modules
+              {t("modulesCount", { count: countByCategory(cat.slug) })}
             </span>
           </Link>
         ))}
@@ -269,7 +272,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
           href="/platform"
           className="rounded-lg px-3 py-3 text-base text-muted"
         >
-          Platform overview
+          {t("platformOverview")}
         </Link>
 
         <div className="my-3 h-px bg-hairline" />
@@ -285,7 +288,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
                 pathname.startsWith(link.href) ? "text-ink" : "text-muted"
               )}
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
         <a
@@ -294,12 +297,12 @@ function MobileMenu({ pathname }: { pathname: string }) {
           rel="noopener noreferrer"
           className="flex items-center gap-1 rounded-lg px-3 py-3 text-base text-muted"
         >
-          Live platform <ArrowUpRight className="size-4" />
+          {t("livePlatform")} <ArrowUpRight className="size-4" />
         </a>
 
         <div className="mt-4 flex items-center gap-3 px-3">
           <Button href="/demo" className="flex-1">
-            Request a demo
+            {t("requestDemo")}
           </Button>
           <LanguageSwitcher />
         </div>

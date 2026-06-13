@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";

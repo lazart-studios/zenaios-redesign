@@ -1,51 +1,67 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/motion/Reveal";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/lib/data/site";
-import { pageMeta } from "@/lib/seo";
+import { metaFromCatalog } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata = pageMeta({
-  title: "Contact",
-  description:
-    "Get in touch with the ZenAiOS team in Oradea, România — by phone, email or the form. We reply within one business day.",
-  path: "/contact",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return metaFromCatalog({ locale: locale as Locale, page: "contact", path: "/contact" });
+}
 
-const details = [
-  {
-    icon: Phone,
-    label: "Phone",
-    value: siteConfig.contact.phone,
-    href: siteConfig.contact.phoneHref,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: siteConfig.contact.email,
-    href: `mailto:${siteConfig.contact.email}`,
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: siteConfig.contact.location,
-    href: "https://www.openstreetmap.org/search?query=Oradea",
-  },
-];
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
 
-export default function ContactPage() {
+  const t = await getTranslations("contactPage");
+  const common = await getTranslations("common");
+
+  const details: { icon: LucideIcon; label: string; value: string; href: string }[] = [
+    {
+      icon: Phone,
+      label: t("phone"),
+      value: siteConfig.contact.phone,
+      href: siteConfig.contact.phoneHref,
+    },
+    {
+      icon: Mail,
+      label: t("email"),
+      value: siteConfig.contact.email,
+      href: `mailto:${siteConfig.contact.email}`,
+    },
+    {
+      icon: MapPin,
+      label: t("location"),
+      value: siteConfig.contact.location,
+      href: "https://www.openstreetmap.org/search?query=Oradea",
+    },
+  ];
+
   return (
     <>
       <PageHeader
-        eyebrow="Contact"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+        eyebrow={t("eyebrow")}
+        crumbs={[{ label: common("home"), href: "/" }, { label: t("eyebrow") }]}
         title={
           <>
-            Let&apos;s <span className="text-gradient">talk.</span>
+            {t("titleLead")} <span className="text-gradient">{t("titleAccent")}</span>
           </>
         }
-        description="Questions about the platform, a deployment, or a partnership? Reach us directly — or send a message and we'll get back to you."
+        description={t("description")}
       />
 
       <Section className="!pt-4">

@@ -1,22 +1,28 @@
 import Image from "next/image";
 import { Linkedin, Quote } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
-import { team, visionQuote } from "@/lib/data/team";
+import { buildTeam, buildVision } from "@/lib/data/team";
 
 export function Team() {
+  const t = useTranslations("team");
+  const data = useTranslations("teamData");
+  const team = buildTeam(data);
+  const visionQuote = buildVision(data);
   return (
     <Section id="team">
       <Reveal>
         <SectionHeading
-          eyebrow="The people behind it"
+          eyebrow={t("eyebrow")}
           title={
             <>
-              A real team, <span className="text-gradient">building in the open</span>
+              {t("titleLead")}{" "}
+              <span className="text-gradient">{t("titleAccent")}</span>
             </>
           }
-          description="Clinical, technical and commercial leadership — the same founders who designed the platform are the ones deploying it."
+          description={t("description")}
         />
       </Reveal>
 

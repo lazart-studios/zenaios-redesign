@@ -1,20 +1,25 @@
 import { Info } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Counter } from "@/components/motion/Counter";
-import { platformFacts, outcomeProjections } from "@/lib/data/outcomes";
+import { buildPlatformFacts, buildOutcomeProjections } from "@/lib/data/outcomes";
 
 export function Outcomes() {
+  const t = useTranslations("outcomes");
+  const data = useTranslations("outcomesData");
+  const platformFacts = buildPlatformFacts(data);
+  const outcomeProjections = buildOutcomeProjections(data);
   return (
     <Section id="outcomes">
       <div className="rounded-3xl border border-hairline bg-card/40 p-6 md:p-12">
         <Reveal>
           <SectionHeading
             align="center"
-            eyebrow="Credibility over big numbers"
-            title="The numbers that are actually true"
-            description="We lead with what is verifiable. Efficiency figures are shown as honest projections — never unsourced claims."
+            eyebrow={t("eyebrow")}
+            title={t("title")}
+            description={t("description")}
             className="mx-auto"
           />
         </Reveal>
@@ -62,8 +67,7 @@ export function Outcomes() {
         <Reveal>
           <p className="mt-10 flex items-center justify-center gap-2 text-center text-xs text-faint">
             <Info className="size-3.5" />
-            Projections are illustrative targets, pending published pilot results —
-            not measured outcomes.
+            {t("footnote")}
           </p>
         </Reveal>
       </div>

@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, ArrowUpRight, Check, MapPin, Sparkles } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -15,24 +17,26 @@ import { RagSovereign } from "@/components/visuals/RagSovereign";
 import { DecisionSupport } from "@/components/visuals/DecisionSupport";
 import { TriageBoard } from "@/components/visuals/TriageBoard";
 import { ZenAChat } from "@/components/visuals/ZenAChat";
-import { modules, getModule, modulesByCategory } from "@/lib/data/modules";
-import { getCategory } from "@/lib/data/categories";
-import { getDeployment } from "@/lib/data/deployments";
-import { pageMeta } from "@/lib/seo";
+import { moduleSkeletons, buildModule, buildModulesByCategory } from "@/lib/data/modules";
+import { buildCategory } from "@/lib/data/categories";
+import { buildDeployment } from "@/lib/data/deployments";
+import { buildMeta } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return modules.map((m) => ({ slug: m.slug }));
+  return moduleSkeletons.map((m) => ({ slug: m.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const m = getModule(slug);
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const m = buildModule(await getTranslations({ locale, namespace: "modules.items" }), slug);
   if (!m) return {};
-  return pageMeta({
+  return buildMeta({
+    locale: locale as Locale,
     title: m.name,
     description: m.summary,
     path: `/modules/${m.slug}`,
@@ -73,15 +77,23 @@ function ModuleVisual({ slug }: { slug: string }) {
 export default async function ModulePage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const m = getModule(slug);
+  const { locale, slug } = await params;
+  setRequestLocale(locale as Locale);
+
+  const tModules = await getTranslations("modules.items");
+  const m = buildModule(tModules, slug);
   if (!m) notFound();
 
-  const cat = getCategory(m.category);
-  const deployment = m.deployment ? getDeployment(m.deployment) : undefined;
-  const related = modulesByCategory(m.category)
+  const t = await getTranslations("modulePage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const cat = buildCategory(await getTranslations("categories"), m.category);
+  const deployment = m.deployment
+    ? buildDeployment(await getTranslations("deploymentsData"), m.deployment)
+    : undefined;
+  const related = buildModulesByCategory(tModules, m.category)
     .filter((x) => x.slug !== m.slug)
     .slice(0, 3);
   const Icon = m.icon;
@@ -92,8 +104,8 @@ export default async function ModulePage({
       <PageHeader
         eyebrow={cat?.label}
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Platform", href: "/platform" },
+          { label: common("home"), href: "/" },
+          { label: nav("platform"), href: "/platform" },
           { label: cat?.name ?? "", href: `/platform/${m.category}` },
           { label: m.short },
         ]}
@@ -115,7 +127,7 @@ export default async function ModulePage({
       <Section className="!pb-0">
         <Reveal>
           <div className="max-w-3xl">
-            <Eyebrow>The problem it solves</Eyebrow>
+            <Eyebrow>{t("problemEyebrow")}</Eyebrow>
             <p className="mt-5 text-balance text-xl leading-relaxed text-ink/90 md:text-2xl">
               {m.problem}
             </p>
@@ -133,7 +145,7 @@ export default async function ModulePage({
           }
         >
           <Reveal direction={visual ? "right" : "up"}>
-            <Eyebrow>How it works</Eyebrow>
+            <Eyebrow>{t("howEyebrow")}</Eyebrow>
             <ul className="mt-6 space-y-4">
               {m.how.map((h) => (
                 <li key={h} className="flex items-start gap-3 text-ink/90">
@@ -159,11 +171,9 @@ export default async function ModulePage({
         <Reveal>
           <div className="flex items-center gap-2">
             <Sparkles className="size-4 text-violet" />
-            <Eyebrow>On the roadmap</Eyebrow>
+            <Eyebrow>{t("roadmapEyebrow")}</Eyebrow>
           </div>
-          <p className="mt-4 max-w-xl text-muted">
-            Where this module is heading next — clearly forward-looking, not yet shipped.
-          </p>
+          <p className="mt-4 max-w-xl text-muted">{t("roadmapIntro")}</p>
         </Reveal>
         <Stagger className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {m.roadmap.map((r, i) => (
@@ -191,7 +201,7 @@ export default async function ModulePage({
               <div className="relative">
                 <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-success">
                   <span className="size-1.5 rounded-full bg-success" />
-                  Live deployment
+                  {t("liveDeployment")}
                 </span>
                 <h3 className="mt-2 text-xl font-bold text-ink">{deployment.name}</h3>
                 <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-muted">
@@ -199,7 +209,7 @@ export default async function ModulePage({
                 </p>
               </div>
               <span className="relative inline-flex items-center gap-1.5 text-sm font-medium text-sky">
-                See the deployment
+                {t("seeDeployment")}
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
@@ -212,12 +222,14 @@ export default async function ModulePage({
         <Section className="!pt-0">
           <Reveal>
             <div className="flex items-baseline justify-between border-b border-hairline pb-4">
-              <h2 className="text-xl font-bold text-ink">More in {cat?.name}</h2>
+              <h2 className="text-xl font-bold text-ink">
+                {t("moreIn", { category: cat?.name ?? "" })}
+              </h2>
               <Link
                 href={`/platform/${m.category}`}
                 className="group inline-flex items-center gap-1.5 text-sm font-medium text-sky"
               >
-                View all
+                {t("viewAll")}
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
             </div>

@@ -1,27 +1,25 @@
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 export type ModuleStatus = "active" | "module" | "dev";
 
 const config: Record<
   ModuleStatus,
-  { label: string; dot: string; text: string; ring: string; bg: string }
+  { dot: string; text: string; ring: string; bg: string }
 > = {
   active: {
-    label: "Active",
     dot: "bg-success",
     text: "text-success",
     ring: "ring-success/30",
     bg: "bg-success/10",
   },
   module: {
-    label: "Module",
     dot: "bg-sky",
     text: "text-sky",
     ring: "ring-sky/25",
     bg: "bg-sky/10",
   },
   dev: {
-    label: "Dev",
     dot: "bg-warning",
     text: "text-warning",
     ring: "ring-warning/30",
@@ -38,6 +36,7 @@ export function StatusBadge({
   label?: string;
   className?: string;
 }) {
+  const t = useTranslations("status");
   const c = config[status];
   const isLive = status === "active";
   return (
@@ -61,7 +60,7 @@ export function StatusBadge({
         )}
         <span className={cn("relative inline-flex size-1.5 rounded-full", c.dot)} />
       </span>
-      {label ?? c.label}
+      {label ?? t(status)}
     </span>
   );
 }

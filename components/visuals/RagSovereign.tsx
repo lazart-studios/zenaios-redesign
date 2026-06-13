@@ -2,10 +2,17 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { CloudOff, FileStack, Cpu, ShieldCheck } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 export function RagSovereign({ className }: { className?: string }) {
   const reduce = useReducedMotion();
+  const t = useTranslations("visuals.rag");
+  const stats: [string, string][] = [
+    ["100%", t("statOffline")],
+    ["0", t("statDataLeaves")],
+    ["6+", t("statModels")],
+  ];
   return (
     <div className={cn("glass rounded-2xl p-5 shadow-soft", className)}>
       <div className="flex items-center justify-between">
@@ -14,37 +21,33 @@ export function RagSovereign({ className }: { className?: string }) {
             <ShieldCheck className="size-4" />
           </span>
           <div>
-            <p className="text-sm font-semibold text-ink">ZEN_RAG</p>
-            <p className="text-[10px] text-faint">On-premise · data-sovereign</p>
+            <p className="text-sm font-semibold text-ink">{t("title")}</p>
+            <p className="text-[10px] text-faint">{t("subtitle")}</p>
           </div>
         </div>
         <span className="inline-flex items-center gap-1 rounded-full bg-violet/10 px-2 py-1 text-[10px] font-medium text-violet ring-1 ring-violet/25">
           <CloudOff className="size-3" />
-          No cloud
+          {t("noCloud")}
         </span>
       </div>
 
       {/* On-prem boundary */}
       <div className="relative mt-4 rounded-xl border border-dashed border-violet/30 bg-violet/[0.04] p-4">
         <span className="absolute -top-2 left-4 bg-card px-2 text-[9px] font-medium uppercase tracking-wider text-violet">
-          On-premise
+          {t("onPremise")}
         </span>
 
         <div className="flex items-center justify-between gap-2">
-          <Node icon={FileStack} label="Documents" sub="medical · legal" />
+          <Node icon={FileStack} label={t("nodeDocuments")} sub={t("nodeDocumentsSub")} />
           <Flow reduce={!!reduce} />
-          <Node icon={Cpu} label="Local LLM" sub="llama.cpp + FAISS" accent />
+          <Node icon={Cpu} label={t("nodeLlm")} sub="llama.cpp + FAISS" accent />
           <Flow reduce={!!reduce} delay={0.4} />
-          <Node icon={ShieldCheck} label="Answer" sub="cited · private" />
+          <Node icon={ShieldCheck} label={t("nodeAnswer")} sub={t("nodeAnswerSub")} />
         </div>
       </div>
 
       <div className="mt-3 grid grid-cols-3 gap-2 text-center">
-        {[
-          ["100%", "offline"],
-          ["0", "data leaves"],
-          ["6+", "models"],
-        ].map(([v, l]) => (
+        {stats.map(([v, l]) => (
           <div
             key={l}
             className="rounded-lg border border-hairline bg-white/[0.02] py-2"

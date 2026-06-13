@@ -23,9 +23,6 @@ export const siteConfig = {
   shortName: "ZenAiOS",
   domain: "zenaios.com",
   url: resolveSiteUrl(),
-  description:
-    "The AI operating system for modern hospitals — 17 AI modules across clinical care, hospital management and public health, already live in real institutions.",
-  tagline: "The AI operating system for modern hospitals.",
   platformUrl: "https://platform.zenaios.com",
   demoUrl: "https://demo.zenaios.com",
   contact: {
@@ -36,50 +33,53 @@ export const siteConfig = {
   },
 } as const;
 
-export const locales = [
-  { code: "en", label: "English", short: "EN", flag: "🇬🇧" },
-  { code: "ro", label: "Română", short: "RO", flag: "🇷🇴" },
-] as const;
+/**
+ * Navigation skeletons. Labels are resolved at render time from the message
+ * catalog: primary items via `nav.*`, footer columns via `footer.columns.*` and
+ * footer links via `footer.links.*`.
+ */
+export type PrimaryNavItem = { key: string; href: string };
 
-export const defaultLocale = "en";
-
-export type NavLink = { label: string; href: string; external?: boolean };
-
-/** Primary navigation. "Platform" opens the mega-menu (handled in Nav). */
-export const primaryNav: NavLink[] = [
-  { label: "Platform", href: "/platform" },
-  { label: "Deployments", href: "/deployments" },
-  { label: "About", href: "/about" },
-  { label: "Resources", href: "/resources" },
+/** Primary navigation. "platform" opens the mega-menu (handled in Nav). */
+export const primaryNav: PrimaryNavItem[] = [
+  { key: "platform", href: "/platform" },
+  { key: "deployments", href: "/deployments" },
+  { key: "about", href: "/about" },
+  { key: "resources", href: "/resources" },
 ];
 
+export type FooterColumn = {
+  titleKey: string;
+  links: { key: string; href: string; external?: boolean }[];
+};
+
 /** Footer columns — every link resolves to a real route. */
-export const footerNav: { title: string; links: NavLink[] }[] = [
+export const footerNav: FooterColumn[] = [
   {
-    title: "Platform",
+    titleKey: "platform",
     links: [
-      { label: "Overview", href: "/platform" },
-      { label: "Medical", href: "/platform/medical" },
-      { label: "Administrative", href: "/platform/administrative" },
-      { label: "AI Infrastructure", href: "/platform/ai-infrastructure" },
+      { key: "overview", href: "/platform" },
+      { key: "medical", href: "/platform/medical" },
+      { key: "administrative", href: "/platform/administrative" },
+      { key: "aiInfrastructure", href: "/platform/ai-infrastructure" },
     ],
   },
   {
-    title: "Company",
+    titleKey: "company",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Deployments", href: "/deployments" },
-      { label: "Resources", href: "/resources" },
-      { label: "Contact", href: "/contact" },
+      { key: "about", href: "/about" },
+      { key: "deployments", href: "/deployments" },
+      { key: "resources", href: "/resources" },
+      { key: "contact", href: "/contact" },
     ],
   },
   {
-    title: "Get started",
+    titleKey: "getStarted",
     links: [
-      { label: "Request a demo", href: "/demo" },
-      { label: "Live platform", href: "https://demo.zenaios.com", external: true },
-      { label: "Privacy Policy", href: "/legal/privacy" },
-      { label: "Terms", href: "/legal/terms" },
+      { key: "requestDemo", href: "/demo" },
+      { key: "livePlatform", href: siteConfig.demoUrl, external: true },
+      { key: "privacy", href: "/legal/privacy" },
+      { key: "terms", href: "/legal/terms" },
     ],
   },
 ];

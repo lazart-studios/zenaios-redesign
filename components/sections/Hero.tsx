@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { PlayCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { SwirlMotif } from "@/components/brand/SwirlMotif";
 import { BrowserFrame } from "@/components/visuals/BrowserFrame";
@@ -11,10 +12,10 @@ import { siteConfig } from "@/lib/data/site";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-const titleLines = ["The AI operating system", "for modern hospitals."];
-
 export function Hero() {
+  const t = useTranslations("hero");
   const reduce = useReducedMotion();
+  const titleLines = [t("titleLine1"), t("titleLine2")];
 
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
@@ -33,7 +34,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-success" />
             </span>
-            Live in real hospitals & city institutions
+            {t("badge")}
           </motion.span>
 
           <h1 className="mt-6 text-balance text-[2.6rem] font-bold leading-[1.03] sm:text-5xl md:text-[3.75rem]">
@@ -61,10 +62,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.45, ease: EASE }}
             className="mt-6 max-w-lg text-balance text-lg leading-relaxed text-muted"
           >
-            17 AI modules across <b className="text-ink">clinical care</b>,{" "}
-            <b className="text-ink">hospital management</b> and{" "}
-            <b className="text-ink">public health</b> — already live at a county
-            emergency hospital and a city hall.
+            {t.rich("description", {
+              b: (chunks) => <b className="text-ink">{chunks}</b>,
+            })}
           </motion.p>
 
           <motion.div
@@ -74,11 +74,11 @@ export function Hero() {
             className="mt-8 flex flex-wrap items-center gap-3"
           >
             <Button href="/demo" size="lg" withArrow>
-              Request a demo
+              {t("ctaPrimary")}
             </Button>
             <Button href={siteConfig.demoUrl} variant="secondary" size="lg">
               <PlayCircle className="size-4.5" />
-              Explore the platform
+              {t("ctaSecondary")}
             </Button>
           </motion.div>
 
@@ -88,7 +88,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.85 }}
             className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-faint"
           >
-            <span className="uppercase tracking-[0.14em]">Deployed at</span>
+            <span className="uppercase tracking-[0.14em]">{t("deployedAt")}</span>
             <span className="text-muted">SJU Oradea</span>
             <span className="size-1 rounded-full bg-faint" />
             <span className="text-muted">Primăria Oradea</span>
@@ -131,7 +131,7 @@ export function Hero() {
         className="pointer-events-none mt-16 flex justify-center"
       >
         <span className="text-[11px] uppercase tracking-[0.2em] text-faint">
-          Scroll to explore
+          {t("scrollCue")}
         </span>
       </motion.div>
     </section>

@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "titleDefault": "ZenAiOS — Sistemul de operare AI pentru spitalele moderne.",
+    "titleTemplate": "%s · ZenAiOS",
+    "description": "Sistemul de operare AI pentru spitalele moderne — 17 module AI pentru îngrijirea clinică, managementul spitalicesc și sănătatea publică, deja live în instituții reale.",
+    "platform": {
+      "title": "Platforma",
+      "description": "17 module AI în trei domenii interoperabile — medical, administrativ și infrastructură AI. Un singur asistent, cinci limbi, live în instituții reale."
+    },
+    "about": {
+      "title": "Despre",
+      "description": "ZenAiOS este construit de o echipă clinică, tehnică și comercială din Oradea, România — un sistem de operare AI fundamentat pe practica spitalicească reală și pe suveranitatea datelor."
+    },
+    "deployments": {
+      "title": "Implementări",
+      "description": "ZenAiOS este live pe teren — un spital județean de urgență (SJUO Oradea) și o primărie (Primăria Oradea). Instituții reale, fluxuri de lucru reale."
+    },
+    "demo": {
+      "title": "Solicită o demonstrație",
+      "description": "Rezervă o prezentare ghidată a ZenAiOS — epicriza AI, triajul, tablourile de bord executive și RAG-ul suveran — adaptate instituției tale."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Intră în legătură cu echipa ZenAiOS din Oradea, România — telefonic, prin email sau prin formular. Răspundem într-o zi lucrătoare."
+    },
+    "resources": {
+      "title": "Resurse",
+      "description": "Studii de caz, documentație, CME clinic și presă despre ZenAiOS — sistemul de operare AI pentru spitalele moderne."
+    },
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "description": "Cum gestionează ZenAiOS datele cu caracter personal pe acest site și în întreaga platformă, inclusiv abordarea noastră privind suveranitatea datelor."
+    },
+    "terms": {
+      "title": "Termeni de utilizare",
+      "description": "Termenii care reglementează utilizarea site-ului ZenAiOS și a informațiilor prezentate pe acesta."
+    }
+  },
+  "nav": {
+    "homeAria": "Pagina principală ZenAiOS",
+    "platform": "Platformă",
+    "deployments": "Implementări",
+    "about": "Despre",
+    "resources": "Resurse",
+    "livePlatform": "Platformă live",
+    "requestDemo": "Solicită o demonstrație",
+    "toggleMenu": "Comută meniul",
+    "byDomain": "După domeniu",
+    "explore": "Explorează",
+    "platformOverview": "Prezentare generală a platformei",
+    "liveDeployments": "Implementări live",
+    "modulesCount": "{count} module",
+    "liveNow": "Live acum",
+    "megaTagline": "{count} module. 3 domenii. 2 implementări live.",
+    "megaCta": "Vezi cum se îmbină sistemul de operare →"
+  },
+  "footer": {
+    "tagline": "Sistemul de operare AI pentru spitalele moderne. 17 module AI pentru îngrijirea clinică, managementul spitalicesc și sănătatea publică — live în instituții reale.",
+    "columns": {
+      "platform": "Platformă",
+      "company": "Companie",
+      "getStarted": "Începe"
+    },
+    "links": {
+      "overview": "Prezentare generală",
+      "medical": "Medical",
+      "administrative": "Administrativ",
+      "aiInfrastructure": "Infrastructură AI",
+      "about": "Despre",
+      "deployments": "Implementări",
+      "resources": "Resurse",
+      "contact": "Contact",
+      "requestDemo": "Solicită o demonstrație",
+      "livePlatform": "Platformă live",
+      "privacy": "Politica de confidențialitate",
+      "terms": "Termeni"
+    },
+    "rights": "© {year} ZenAiOS. Toate drepturile rezervate.",
+    "builtFor": "Construit pentru încredere de nivel clinic · WCAG 2.1 AA · {location}"
+  },
+  "common": {
+    "details": "Detalii",
+    "viewAll": "Vezi toate",
+    "seeModules": "Vezi modulele",
+    "builtOnPlatform": "Construit pe platformă",
+    "modules": "module",
+    "moreCount": "+{count} în plus",
+    "moduleCount": "{count, plural, one {# modul} few {# module} other {# de module}}",
+    "liveDeploymentCount": "{count, plural, one {# implementare live} few {# implementări live} other {# de implementări live}}",
+    "home": "Acasă"
+  },
+  "status": {
+    "active": "Activ",
+    "module": "Modul",
+    "dev": "Dev"
+  },
+  "languageSwitcher": {
+    "label": "Limbă"
+  },
+  "hero": {
+    "badge": "Live în spitale și instituții publice reale",
+    "titleLine1": "Sistemul de operare AI",
+    "titleLine2": "pentru spitalele moderne.",
+    "description": "17 module AI pentru <b>îngrijirea clinică</b>, <b>managementul spitalicesc</b> și <b>sănătatea publică</b> — deja live într-un spital județean de urgență și o primărie.",
+    "ctaPrimary": "Solicită o demonstrație",
+    "ctaSecondary": "Explorează platforma",
+    "deployedAt": "Implementat la",
+    "scrollCue": "Derulează pentru a explora"
+  },
+  "proof": {
+    "heading": "Implementări reale, standarde reale — fără logo-uri de fațadă"
+  },
+  "threeDomains": {
+    "eyebrow": "O platformă, trei domenii",
+    "titleLead": "Nu trei module.",
+    "titleAccent": "Șaptesprezece.",
+    "description": "ZenAiOS este un sistem de operare, nu un chatbot — organizat în trei domenii care interoperează, partajează un singur asistent și vorbesc cinci limbi."
+  },
+  "audiences": {
+    "eyebrow": "Un site, trei cumpărători",
+    "titleLead": "Găsește-ți",
+    "titleAccent": "„pentru mine”",
+    "titleTrail": "drumul",
+    "description": "Aceeași platformă, prezentată pentru persoana care citește. Conducerea, clinicienii și investitorii primesc fiecare o cale directă către ceea ce contează pentru ei.",
+    "items": [
+      {
+        "role": "Conducerea spitalului",
+        "tag": "CMO · CIO · cumpărător economic",
+        "needs": "ROI, interoperabilitate (CNAS/DSP), suveranitatea datelor, un istoric real.",
+        "show": ["Hospital Manager", "Implementare SJUO", "RAG suveran"],
+        "links": ["Hospital Manager", "Implementări"]
+      },
+      {
+        "role": "Clinicieni",
+        "tag": "Medici · asistenți · rezidenți",
+        "needs": "Mai puțină birocrație, epicriză AI precisă, suport decizional fără fricțiuni, CME.",
+        "show": ["Medic & Asistență", "Triaj & Laborator", "CME acreditat"],
+        "links": ["Modul Medic", "CME / QUIZ"]
+      },
+      {
+        "role": "Investitori",
+        "tag": "& evaluatori de fonduri UE",
+        "needs": "Tracțiune, o echipă credibilă, amploare, avantaj tehnologic și o viziune clară.",
+        "show": ["2 implementări live", "17 module", "Infrastructură AI proprie"],
+        "links": ["Platforma", "Echipă & viziune"]
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "Implementare emblematică",
+    "description": "Un sistem spitalicesc integrat complet, funcțional într-un spital județean de urgență — cea mai puternică dovadă că ZenAiOS funcționează la scară reală.",
+    "link": "Citește despre implementări",
+    "statProduction": "în producție",
+    "statCoding": "codificare integrată"
+  },
+  "capabilities": {
+    "eyebrow": "Ce face de fapt",
+    "titleLead": "Capabilități care câștigă",
+    "titleAccent": "încrederea clinică",
+    "description": "Patru dintre lucrurile pe care ZenAiOS le face în fiecare zi — suport decizional, triaj, predicție și AI suveran.",
+    "features": {
+      "doctor": {
+        "eyebrow": "Modul Medic",
+        "title": "Suport decizional care rămâne în fluxul de lucru",
+        "description": "Sugestiile de diagnostic diferențial și de tratament, sensibile la context, apar acolo unde se desfășoară munca — și generează automat epicriza și documentele, astfel încât medicii termină mai repede și ajung acasă la timp.",
+        "bullets": [
+          "Sugestii de diagnostic diferențial și tratament",
+          "Epicriză și note clinice automate",
+          "Bazat pe dovezi, conectat la ghiduri"
+        ],
+        "link": "Explorează modulul Medic"
+      },
+      "triage": {
+        "eyebrow": "Triaj de urgență",
+        "title": "Prioritizat după gravitatea reală, nu după ordinea sosirii",
+        "description": "Protocolul Manchester combinat cu AI clasifică fiecare pacient în cinci niveluri, menține coada ordonată după gravitate și alertează medicul curant în momentul în care sosește un caz de nivel 1.",
+        "bullets": [
+          "Manchester + AI, 5 niveluri de gravitate",
+          "Prioritizare automată a cozii",
+          "Alerte instant pentru medic la cazurile grave"
+        ],
+        "link": "Explorează triajul"
+      },
+      "management": {
+        "eyebrow": "Management",
+        "title": "Tablouri de bord care prezic, nu doar raportează",
+        "description": "Tablourile de bord executive transformă datele operaționale live în prognoze — aglomerări, deficite de personal, blocaje — cu interoperabilitate CNAS/DSP și un avatar AI pentru decizii în timp real, pe desktop și mobil.",
+        "bullets": [
+          "Analiză predictivă AI",
+          "Interoperabilitate CNAS / DSP",
+          "Tablou de bord Desktop + Manager Mobile"
+        ],
+        "link": "Explorează Hospital Manager"
+      },
+      "infrastructure": {
+        "eyebrow": "Infrastructură AI",
+        "title": "AI suveran — datele tale nu părăsesc niciodată clădirea",
+        "description": "ZEN_RAG rulează un sistem de retrieval-augmented 100% offline, local, pe llama.cpp + FAISS. Fără cloud, fără scurgeri de date — fundamentul fiecărei discuții despre suveranitatea datelor și GDPR.",
+        "bullets": [
+          "RAG 100% offline, on-premise",
+          "llama.cpp + FAISS, 6+ modele",
+          "Optimizat pentru corpusuri medicale și legislative"
+        ],
+        "link": "Vezi infrastructura AI"
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Credibilitate, nu cifre mari",
+    "title": "Cifrele care sunt cu adevărat reale",
+    "description": "Pornim de la ceea ce este verificabil. Cifrele de eficiență sunt prezentate ca proiecții oneste — niciodată afirmații nefondate.",
+    "footnote": "Proiecțiile sunt ținte ilustrative, în așteptarea rezultatelor publicate ale pilotului — nu rezultate măsurate."
+  },
+  "team": {
+    "eyebrow": "Oamenii din spate",
+    "titleLead": "O echipă reală,",
+    "titleAccent": "care construiește în mod transparent",
+    "description": "Conducere clinică, tehnică și comercială — aceiași fondatori care au proiectat platforma sunt cei care o implementează."
+  },
+  "cta": {
+    "default": {
+      "eyebrow": "Gata când ești tu",
+      "title": "Vezi ZenAiOS funcționând într-un spital real",
+      "description": "Rezervă o prezentare ghidată a platformei — de la epicriza AI la tablourile de bord executive — și vezi cum s-ar potrivi instituției tale."
+    },
+    "about": {
+      "eyebrow": "Lucrează cu noi",
+      "title": "Construim viitorul AI-ului spitalicesc",
+      "description": "Fie că ești o instituție, un clinician sau un investitor — ne-ar plăcea să-ți arătăm ce poate face ZenAiOS."
+    },
+    "deployments": {
+      "eyebrow": "Instituția ta urmează?",
+      "title": "Hai să vorbim despre implementarea ta",
+      "description": "Spune-ne despre spitalul sau instituția ta și vom adapta ZenAiOS la fluxurile tale de lucru."
+    },
+    "requestDemo": "Solicită o demonstrație",
+    "openLive": "Deschide platforma live",
+    "callUs": "Sau sună-ne direct — {phone}"
+  },
+  "form": {
+    "fullName": "Nume complet",
+    "fullNamePlaceholder": "Ion Popescu",
+    "workEmail": "Email de serviciu",
+    "workEmailPlaceholder": "ion@spital.ro",
+    "organization": "Organizație",
+    "organizationPlaceholder": "Spital Județean de Urgență",
+    "roleLabel": "Ești un…",
+    "messageDemo": "Ce ai vrea să vezi?",
+    "messageContact": "Cum te putem ajuta?",
+    "messagePlaceholderDemo": "Suntem un spital cu 400 de paturi interesat de modulele de epicriză AI și triaj…",
+    "messagePlaceholderContact": "Spune-ne câteva cuvinte despre ce cauți…",
+    "disclaimer": "Formular demonstrativ — trimiterile nu sunt stocate sau expediate.",
+    "submitDemo": "Solicită demonstrația",
+    "submitContact": "Trimite mesajul",
+    "sending": "Se trimite…",
+    "successTitle": "Mulțumim — aproape gata",
+    "successBody": "Acesta este un formular demonstrativ, așa că nu a fost trimis nimic. Pe site-ul live, acesta ar ajunge la echipa ZenAiOS și ți-am răspunde într-o zi lucrătoare.",
+    "sendAnother": "Trimite altul",
+    "roles": [
+      "Conducerea spitalului (CMO / CIO / CEO)",
+      "Clinician (medic / asistent / rezident)",
+      "Instituție publică",
+      "Investitor / evaluator de fonduri UE",
+      "Partener / integrator",
+      "Altul"
+    ],
+    "errors": {
+      "name": "Te rugăm să introduci numele tău.",
+      "email": "Introdu un email de serviciu valid.",
+      "org": "Spune-ne unde lucrezi.",
+      "message": "O propoziție sau două ne ajută să ne pregătim."
+    }
+  },
+  "notFound": {
+    "title": "Această pagină și-a luat liber",
+    "description": "Pagina pe care o cauți nu există sau a fost mutată. Hai să te readucem la ceva util.",
+    "backHome": "Înapoi acasă",
+    "explore": "Explorează platforma",
+    "contact": "Sau contactează-ne dacă ceva nu funcționează"
+  },
+  "platformPage": {
+    "eyebrow": "Platforma",
+    "titleLead": "Un singur sistem de operare.",
+    "titleAccent": "{count} module AI.",
+    "description": "ZenAiOS nu este un singur instrument atașat unui spital — este un sistem de operare stratificat. Trei domenii, un asistent comun, toate vorbind aceleași date.",
+    "statModules": "module AI",
+    "statDomains": "Domenii",
+    "statDeployments": "Implementări live",
+    "domainsEyebrow": "Trei domenii",
+    "domainsTitle": "Alege stratul în care trăiești",
+    "domainsDescription": "Fiecare domeniu este un produs coerent în sine — și partajează un singur model de date, un singur asistent și un singur limbaj de design.",
+    "catalogueEyebrow": "Fiecare modul",
+    "catalogueTitle": "Catalogul complet",
+    "catalogueDescription": "De la recepție până în sala de consiliu — explorează fiecare modul în detaliu.",
+    "modulesLabel": "{count} module"
+  },
+  "categoryPage": {
+    "moduleCountTitle": "{count, plural, one {# modul} few {# module} other {# de module}}",
+    "liveCount": "{count, plural, one {# implementare live} few {# implementări live} other {# de implementări live}}",
+    "allDomains": "Toate domeniile",
+    "highlights": {
+      "medical": [
+        "Întregul parcurs clinic — recepție, triaj, diagnostic, îngrijire, laborator, management & CME",
+        "Epicriză AI cu codificare ICD-10 & DRG",
+        "Live într-un spital județean de urgență (SJUO)"
+      ],
+      "administrative": [
+        "Servicii civice și procese de back-office",
+        "RAG peste documente juridice, de conformitate & contabile",
+        "Live la Primăria Oradea"
+      ],
+      "ai-infrastructure": [
+        "RAG 100% offline, on-premise (llama.cpp + FAISS)",
+        "Comparare & benchmarking multi-model",
+        "Fundamentul suveran din spatele fiecărui alt modul"
+      ]
+    }
+  },
+  "modulePage": {
+    "problemEyebrow": "Problema pe care o rezolvă",
+    "howEyebrow": "Cum funcționează",
+    "roadmapEyebrow": "Pe foaia de parcurs",
+    "roadmapIntro": "Încotro se îndreaptă acest modul în continuare — clar orientat spre viitor, încă nelansat.",
+    "liveDeployment": "Implementare live",
+    "seeDeployment": "Vezi implementarea",
+    "moreIn": "Mai multe în {category}",
+    "viewAll": "Vezi toate"
+  },
+  "aboutPage": {
+    "eyebrow": "Despre ZenAiOS",
+    "titleLead": "Facem ca sistemul de sănătate",
+    "titleAccent": "să funcționeze.",
+    "description": "Spitalele sunt printre cele mai complexe organizații de pe Pământ. Construim sistemul de operare AI care le unifică sistemele fragmentate într-unul singur — de la recepție până în sala de consiliu.",
+    "missionEyebrow": "De ce existăm",
+    "missionTitle": "O singură platformă în loc de douăzeci de instrumente deconectate",
+    "missionP1": "Clinicienii pierd ore în fiecare zi cu documentația și cu sisteme care nu comunică între ele. Conducerea nu poate vedea ce se întâmplă în timp real. Pacienții se chinuie să găsească serviciul potrivit.",
+    "missionP2": "ZenAiOS înlocuiește această fragmentare cu un sistem de operare unic, nativ AI: 17 module pentru îngrijirea clinică, managementul spitalicesc și administrația publică, partajând un singur model de date și un singur asistent.",
+    "missionP3": "Este deja live — într-un spital județean de urgență și la o primărie — și construit de oameni care îl implementează ei înșiși.",
+    "principlesEyebrow": "În ce credem",
+    "principlesTitle": "Patru principii la care nu facem compromisuri",
+    "principles": [
+      {
+        "title": "Fundamentat clinic",
+        "body": "Fiecare modul este conturat împreună cu un Chief Medical Officer și testat în raport cu fluxuri de lucru clinice reale — nu construit în vid."
+      },
+      {
+        "title": "Suveran prin concepție",
+        "body": "Datele sensibile pot rămâne on-premise. RAG-ul nostru offline înseamnă că spitalele păstrează controlul asupra propriilor informații."
+      },
+      {
+        "title": "Multilingv & accesibil",
+        "body": "Cinci limbi și un asistent care întâmpină pacienții și personalul acolo unde se află — îngrijirea nu ar trebui să depindă de jargon."
+      },
+      {
+        "title": "Dovedit pe teren",
+        "body": "Live într-un spital județean de urgență și o primărie. Preferăm să arătăm implementări reale decât să promitem cifre mari."
+      }
+    ]
+  },
+  "deploymentsPage": {
+    "eyebrow": "Pe teren",
+    "titleLead": "Live, nu",
+    "titleAccent": "într-o prezentare.",
+    "description": "Cel mai puternic lucru pe care îl putem arăta nu este o cifră — este software care rulează în instituții reale, folosit de personal real, în fiecare zi.",
+    "exploreModule": "Explorează modulul {module}",
+    "noteEyebrow": "O notă despre dovezi",
+    "noteBody": "Pornim de la implementări, nu de la statistici de impact. Cifrele de eficiență din alte locuri de pe acest site sunt etichetate clar ca proiecții — ceea ce vezi aici este pur și simplu ceea ce rulează astăzi."
+  },
+  "demoPage": {
+    "eyebrow": "Solicită o demonstrație",
+    "titleLead": "Vezi-l funcționând într-un",
+    "titleAccent": "spital real",
+    "description": "Spune-ne câteva cuvinte despre instituția ta și vom organiza o prezentare axată pe ceea ce contează pentru tine.",
+    "expectTitle": "La ce să te aștepți",
+    "expect": [
+      "O prezentare ghidată de 30 de minute, adaptată rolului tău",
+      "Epicriza AI, triajul și tablourile de bord executive, live",
+      "Cum păstrează RAG-ul suveran offline datele tale on-premise",
+      "Un răspuns direct despre ce se potrivește instituției tale — și ce încă nu"
+    ],
+    "replyNote": "De obicei răspundem într-o <b>zi lucrătoare</b>.",
+    "sovereignNote": "Nicio dată nu părăsește clădirea într-o implementare self-hosted.",
+    "lookAroundTitle": "Preferi să arunci o privire mai întâi?",
+    "lookAroundBody": "Platforma live este deschisă pentru explorare.",
+    "open": "Deschide {url}"
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "titleLead": "Hai să",
+    "titleAccent": "vorbim.",
+    "description": "Întrebări despre platformă, o implementare sau un parteneriat? Contactează-ne direct — sau trimite un mesaj și revenim noi.",
+    "phone": "Telefon",
+    "email": "Email",
+    "location": "Locație"
+  },
+  "resourcesPage": {
+    "eyebrow": "Resurse",
+    "titleLead": "Află mai mult,",
+    "titleAccent": "în profunzime.",
+    "description": "Pregătim studii de caz, documentație și presă. Iată ce urmează — și ce este deja live astăzi.",
+    "openModule": "Deschide modulul",
+    "lookingFor": "Cauți ceva anume?",
+    "getInTouch": "Ia legătura",
+    "pointYou": "și te îndrumăm către el.",
+    "statusInPrep": "În pregătire",
+    "statusLive": "Modul live",
+    "items": [
+      {
+        "title": "Studii de caz",
+        "body": "Analize aprofundate ale implementărilor SJUO Oradea și de la primărie — ce a fost implementat și ce s-a schimbat."
+      },
+      {
+        "title": "Documentație",
+        "body": "Documentație tehnică și clinică pentru platformă, module și stiva RAG suverană."
+      },
+      {
+        "title": "Clinic & CME",
+        "body": "Educație medicală continuă acreditată și cazuri clinice adaptive prin modulul QUIZ."
+      },
+      {
+        "title": "Presă & actualizări",
+        "body": "Anunțuri, repere și acoperire media pe măsură ce ZenAiOS se extinde către noi instituții."
+      }
+    ]
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Ultima actualizare {date}",
+    "lastUpdatedDate": "13 iunie 2026",
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "intro": "Această Politică de confidențialitate explică modul în care {name} („noi”, „nouă”) gestionează datele cu caracter personal în legătură cu acest site ({domain}) și platforma noastră. Avem sediul în {location} și ne angajăm să prelucrăm datele cu caracter personal în conformitate cu Regulamentul general al UE privind protecția datelor (GDPR).",
+      "h1": "1. Datele pe care le colectăm pe acest site",
+      "p1a": "Acest site de marketing este intenționat minimalist. Formularele de demonstrație și de contact sunt prezentate ca o demonstrație și nu transmit sau stochează trimiterile. Dacă și când aceste formulare vor fi conectate la un backend, vom colecta doar informațiile pe care alegi să le furnizezi — de obicei numele, emailul de serviciu, organizația și mesajul tău — pentru a răspunde solicitării tale.",
+      "p1b": "Putem colecta informații tehnice limitate și agregate (cum ar fi analize de bază) pentru a înțelege cum este utilizat site-ul. Nu vindem date cu caracter personal.",
+      "h2": "2. Datele din cadrul platformei",
+      "p2a": "Platforma ZenAiOS prelucrează date în numele instituțiilor care o implementează (de exemplu spitale și autorități publice), care acționează ca operatori de date. În aceste contexte, {name} acționează ca persoană împuternicită de operator, în baza unui acord scris.",
+      "p2b": "<strong>Suveranitatea datelor.</strong> Infrastructura noastră este concepută astfel încât datele clinice și administrative sensibile să poată rămâne on-premise. AI-ul nostru de tip retrieval-augmented (ZEN_RAG) poate rula 100% offline, ceea ce înseamnă că datele reglementate nu trebuie să părăsească mediul propriu al instituției.",
+      "h3": "3. Temeiuri juridice",
+      "p3": "Acolo unde prelucrăm date cu caracter personal, ne bazăm pe unul sau mai multe dintre următoarele temeiuri juridice: consimțământul tău, executarea unui contract, respectarea unei obligații legale sau interesele noastre legitime în operarea și îmbunătățirea serviciilor noastre.",
+      "h4": "4. Păstrarea datelor",
+      "p4": "Păstrăm datele cu caracter personal doar atât timp cât este necesar pentru scopurile descrise aici sau conform cerințelor legii. Datele din solicitări sunt păstrate atât timp cât este necesar pentru a gestiona cererea ta și o perioadă rezonabilă ulterior.",
+      "h5": "5. Drepturile tale",
+      "p5": "Sub rezerva legislației aplicabile, ai dreptul:",
+      "rights": [
+        "de a accesa datele cu caracter personal pe care le deținem despre tine;",
+        "de a solicita corectarea sau ștergerea datelor tale;",
+        "de a te opune sau de a restricționa anumite prelucrări;",
+        "de a solicita portabilitatea datelor pe care ni le-ai furnizat;",
+        "de a depune o plângere la autoritatea ta pentru protecția datelor."
+      ],
+      "h6": "6. Contact",
+      "p6": "Pentru orice întrebare privind confidențialitatea sau pentru a-ți exercita drepturile, contactează-ne la <email></email> sau telefonic la <phone></phone>.",
+      "h7": "7. Modificări",
+      "p7": "Putem actualiza această politică din când în când. Data „ultimei actualizări” de mai sus reflectă cea mai recentă revizuire."
+    },
+    "terms": {
+      "title": "Termeni de utilizare",
+      "intro": "Acești Termeni de utilizare reglementează accesul tău la și utilizarea site-ului {name} de la {domain} („Site-ul”). Prin utilizarea Site-ului, ești de acord cu acești termeni.",
+      "h1": "1. Site-ul are caracter informativ",
+      "p1": "Acest Site prezintă informații despre platforma {name} și modulele sale. Conținutul este furnizat doar cu titlu de informare generală și nu constituie consultanță medicală, juridică sau profesională. Machetele și ilustrațiile de produs prezentate aici sunt reprezentative pentru capabilitățile platformei.",
+      "h2": "2. Formulare demonstrative",
+      "p2": "Formularele de demonstrație și de contact de pe acest Site sunt demonstrații. Cu excepția cazului în care se specifică altfel în mod explicit, trimiterile nu sunt transmise, stocate sau procesate. Pentru a ne contacta în mod sigur, folosește emailul sau numărul de telefon de pe <contact>pagina noastră de contact</contact>.",
+      "h3": "3. Proiecții și cifre",
+      "p3": "Orice cifre de eficiență sau de rezultat afișate pe acest Site sunt etichetate clar ca proiecții sau ținte ilustrative. Acestea nu sunt garanții și nu trebuie considerate rezultate măsurate. Faptele verificabile despre platformă (cum ar fi numărul de module și de implementări live) sunt prezentate ca atare.",
+      "h4": "4. Proprietate intelectuală",
+      "p4": "Numele, logo-ul, brandul, textul, grafica și software-ul {name} prezentate pe acest Site sunt deținute de noi sau de licențiatorii noștri și sunt protejate de legile aplicabile privind proprietatea intelectuală. Nu le poți copia, reproduce sau distribui fără permisiunea noastră scrisă prealabilă.",
+      "h5": "5. Linkuri către terți",
+      "p5": "Site-ul poate trimite către site-uri sau servicii ale terților (de exemplu, mediul platformei live). Nu suntem responsabili pentru conținutul sau practicile acestor terți.",
+      "h6": "6. Declinarea responsabilității & răspundere",
+      "p6": "Site-ul este furnizat „ca atare”, fără garanții de niciun fel, în măsura maximă permisă de lege. Nu suntem răspunzători pentru nicio pierdere rezultată din utilizarea Site-ului sau din încrederea acordată acestuia.",
+      "h7": "7. Legea aplicabilă",
+      "p7": "Acești termeni sunt guvernați de legile României, fără a ține seama de principiile privind conflictul de legi. Orice litigii vor fi supuse instanțelor competente din România.",
+      "h8": "8. Contact",
+      "p8": "Întrebări despre acești termeni? Contactează-ne la <email></email>."
+    }
+  },
+  "visuals": {
+    "dashboard": {
+      "title": "Hospital Manager",
+      "subtitle": "Prezentare generală executivă",
+      "aiPredictive": "Predictiv AI",
+      "kpiOccupancy": "Grad de ocupare paturi",
+      "kpiAdmissions": "Internări astăzi",
+      "kpiWait": "Așteptare medie",
+      "minSuffix": " min",
+      "admissions14": "Internări · 14 zile",
+      "forecast": "prognoză",
+      "capacity": "Capacitate",
+      "inUse": "în uz",
+      "deptLoad": "Încărcare secții",
+      "deptEmergency": "Urgențe",
+      "deptCardiology": "Cardiologie",
+      "deptRadiology": "Radiologie",
+      "alert": "Urgențe aproape de capacitate — aglomerare prognozată în <b>~2h</b>. Sugerăm +2 angajați."
+    },
+    "triage": {
+      "title": "Triaj de urgență",
+      "subtitle": "Manchester + AI · sortat automat",
+      "levels": {
+        "1": "Imediat",
+        "2": "Foarte urgent",
+        "3": "Urgent",
+        "4": "Standard",
+        "5": "Neurgent"
+      },
+      "queue": [
+        "Durere toracică, dispnee",
+        "Traumatism cranian",
+        "Durere abdominală",
+        "Entorsă de gleznă"
+      ],
+      "alert": "Nivelul 1 semnalat medicului curant"
+    },
+    "epicrisis": {
+      "title": "Epicriză — ciornă",
+      "subtitle": "Pacient #2241 · generată automat",
+      "linked": "FOCG asociat",
+      "ready": "Gata pentru revizuirea clinicianului · 8s"
+    },
+    "decision": {
+      "title": "Suport decizional",
+      "subtitle": "Durere toracică · 58M · sensibil la context",
+      "differential": "Diagnostic diferențial",
+      "dx": [
+        "Sindrom coronarian acut",
+        "Pericardită",
+        "Embolie pulmonară"
+      ],
+      "evidence": "Bazat pe dovezi · conectat la ghiduri"
+    },
+    "rag": {
+      "title": "ZEN_RAG",
+      "subtitle": "On-premise · date suverane",
+      "noCloud": "Fără cloud",
+      "onPremise": "On-premise",
+      "nodeDocuments": "Documente",
+      "nodeDocumentsSub": "medical · juridic",
+      "nodeLlm": "LLM local",
+      "nodeAnswer": "Răspuns",
+      "nodeAnswerSub": "citat · privat",
+      "statOffline": "offline",
+      "statDataLeaves": "scurgeri de date",
+      "statModels": "modele"
+    }
+  },
+  "categories": {
+    "medical": {
+      "name": "Medical",
+      "label": "Categoria A — Medical",
+      "tagline": "Vârful de lance.",
+      "description": "Soluții clinice, module spitalicești și educație medicală — inima ofertei, grupate de-a lungul fluxului clinic real, de la recepție până în sala de consiliu."
+    },
+    "administrative": {
+      "name": "Administrativ",
+      "label": "Categoria B — Administrativ",
+      "tagline": "Civic & back-office.",
+      "description": "Management civic, procese administrative și conformitate bazată pe RAG — deja live într-o instituție publică."
+    },
+    "ai-infrastructure": {
+      "name": "Infrastructură AI",
+      "label": "Categoria C — General",
+      "tagline": "Stratul suveran.",
+      "description": "Instrumente AI, modele locale și infrastructură RAG — fundamentul tehnic capabil să ruleze offline pe care este construită întreaga platformă."
+    }
+  },
+  "deploymentsData": {
+    "sjuo-oradea": {
+      "institution": "SJUO · Spitalul Județean de Urgență Bihor",
+      "kind": "Spital",
+      "summary": "Implementarea emblematică: un sistem spitalicesc integrat complet, funcțional într-un spital județean de urgență.",
+      "live": [
+        "FOCG electronic cu codificare ICD-10 & DRG",
+        "Epicriză asistată de AI",
+        "Management în timp real al paturilor și secțiilor",
+        "Asistentul ZenA cu suport vocal"
+      ]
+    },
+    "oradea-city-hall": {
+      "institution": "Primăria Oradea",
+      "kind": "Instituție publică",
+      "summary": "O implementare civică ce dovedește că ZenAiOS depășește spitalul, ajungând în administrația publică.",
+      "live": [
+        "Rapoarte și servicii online generate de AI",
+        "Hartă interactivă a cartierelor",
+        "Asistentul civic ZenA",
+        "Acces multilingv pentru cetățeni"
+      ]
+    }
+  },
+  "teamData": {
+    "george": {
+      "role": "Chief Executive Officer",
+      "bio": "Stabilește viziunea și duce ZenAiOS către instituții, parteneri și investitori."
+    },
+    "vlad": {
+      "role": "Chief Technology Officer",
+      "bio": "Conduce platforma și infrastructura AI proprie — de la RAG-ul suveran până la cele 17 module."
+    },
+    "horea": {
+      "role": "Chief Medical Officer",
+      "bio": "Menține fiecare modul ancorat în practica clinică reală și în standardele de îngrijire."
+    },
+    "vision": {
+      "text": "Sistemul de sănătate este complex. Treaba noastră este să-l facem să funcționeze — un singur sistem de operare AI, de la recepție până în sala de consiliu.",
+      "role": "CEO, ZenAiOS"
+    }
+  },
+  "outcomesData": {
+    "facts": {
+      "modules": { "label": "module AI", "sub": "În trei domenii" },
+      "domains": { "label": "Domenii de produs", "sub": "Medical · Admin · Infra AI" },
+      "deployments": { "label": "Implementări live", "sub": "Spital + primărie" },
+      "languages": { "label": "Limbi", "sub": "EN · RO · HU · DE · FR" }
+    },
+    "projections": {
+      "admin": { "label": "Mai puțin timp pe sarcini administrative", "sub": "Proiecție" },
+      "errors": { "label": "Mai puține erori de diagnostic", "sub": "Proiecție" },
+      "cost": { "label": "Cost mai mic per vizită", "sub": "Proiecție" },
+      "rag": { "label": "RAG capabil offline", "sub": "Datele rămân on-premise" }
+    },
+    "badges": [
+      "SJUO Oradea",
+      "Primăria Oradea",
+      "5 limbi",
+      "RAG suveran offline",
+      "ICD-10 · DRG · FOCG",
+      "Voce Azure Speech"
+    ]
+  },
+  "modules": {
+    "items": {
+      "zenaios-hospital": {
+        "name": "ZenAiOS Hospital — SJUO",
+        "short": "Hospital OS",
+        "summary": "Management spitalicesc integrat, implementat la Spitalul Județean de Urgență Oradea — paturi, FOCG cu codificare ICD-10 & DRG, epicriză AI și asistentul ZenA într-un singur sistem.",
+        "problem": "Datele spitalicești se află în sisteme deconectate, așa că clinicienii reintroduc informații, iar conducerea nu are niciodată o imagine în timp real. ZenAiOS Hospital unifică dosarul clinic, codificarea și operațiunile pe o singură platformă nativă AI.",
+        "how": [
+          "FOCG electronic (foaie de observație) cu codificare ICD-10 & DRG",
+          "Epicriză și documente de externare asistate de AI",
+          "Management în timp real al paturilor și secțiilor",
+          "Asistentul ZenA integrat pentru personal, cu suport vocal"
+        ],
+        "roadmap": [
+          "Acoperire extinsă a secțiilor",
+          "Automatizare mai profundă a raportării CNAS / DSP",
+          "Documentație clinică multilingvă extinsă"
+        ]
+      },
+      "patient": {
+        "name": "Modul Pacient",
+        "short": "Pacient",
+        "summary": "Programări online, acces la rezultate, comunicare AI, monitorizarea simptomelor și îndrumare personalizată pentru pacienți.",
+        "problem": "Pacienții se chinuie să ajungă la serviciul potrivit și să înțeleagă următorul pas. Modulul Pacient le oferă o poartă de acces ghidată și multilingvă către îngrijire.",
+        "how": [
+          "Programează și gestionează programări online",
+          "Acces securizat la rezultate și dosare",
+          "Monitorizare AI a simptomelor și îndrumare personalizată",
+          "Suport conversațional în cinci limbi"
+        ],
+        "roadmap": ["Memento-uri pentru planul de îngrijire", "Monitorizare la domiciliu & integrări cu dispozitive purtabile"]
+      },
+      "doctor": {
+        "name": "Modul Medic",
+        "short": "Medic",
+        "summary": "Suport decizional AI pentru diagnostic și tratament, epicriză automată și generare de documente, plus optimizarea fluxului de lucru pentru medici.",
+        "problem": "Medicii pierd ore cu documentația și cu schimbarea de context. Modulul Medic aduce suportul decizional și notele generate automat în fluxul clinic, nu pe deasupra lui.",
+        "how": [
+          "Sugestii de diagnostic diferențial și tratament, sensibile la context",
+          "Generare automată a epicrizei și a documentelor clinice",
+          "Îndrumare bazată pe dovezi la punctul de îngrijire",
+          "Optimizarea fluxului de lucru pe parcursul turei"
+        ],
+        "roadmap": ["Pachete de ghiduri specifice specialității", "Scriere înapoi mai profundă în EHR"]
+      },
+      "nursing": {
+        "name": "Modul Asistență medicală",
+        "short": "Asistență",
+        "summary": "Administrarea tratamentului, monitorizarea semnelor vitale, liste de verificare procedurale și comunicarea echipei de îngrijire pentru personalul de asistență.",
+        "problem": "Furnizarea îngrijirii depinde de coordonare precisă și la timp. Modulul Asistență medicală menține administrarea, semnele vitale și listele de verificare într-un singur loc, iar întreaga echipă de îngrijire sincronizată.",
+        "how": [
+          "Urmărirea administrării tratamentului",
+          "Monitorizarea semnelor vitale și a tendințelor",
+          "Liste de verificare procedurale",
+          "Comunicarea echipei de îngrijire"
+        ],
+        "roadmap": ["Rezumate ale predării turei", "Ingestia datelor de la dispozitive"]
+      },
+      "emergency-triage": {
+        "name": "Triaj de urgență",
+        "short": "Triaj",
+        "summary": "Protocolul Manchester combinat cu AI pentru a clasifica pacienții în cinci niveluri de gravitate, a prioritiza automat coada și a alerta medicii.",
+        "problem": "Într-un departament de urgență aglomerat, prioritizarea trebuie să fie rapidă și justificabilă. Triajul combină standardul Manchester cu AI pentru a menține coada ordonată după gravitatea reală.",
+        "how": [
+          "Clasificare Manchester + AI în 5 niveluri de gravitate",
+          "Prioritizarea automată a cozii",
+          "Alerte pentru medic la cazurile grave"
+        ],
+        "roadmap": ["Re-triaj bazat pe semnele vitale", "Direcționare conștientă de capacitate"]
+      },
+      "laboratory": {
+        "name": "Modul Laborator",
+        "short": "Laborator",
+        "summary": "Recoltare, procesare și interpretare AI cu evidențierea valorilor patologice și integrare automată în FOCG.",
+        "problem": "Rezultatele de laborator trebuie să ajungă la dosarul potrivit, semnalate și în context. Modulul Laborator conectează automat banca de lucru la foaia de observație.",
+        "how": [
+          "Flux de lucru pentru recoltare și procesare",
+          "Interpretare AI cu evidențierea valorilor patologice",
+          "Integrare automată în FOCG"
+        ],
+        "roadmap": ["Integrări cu analizoarele", "Personalizarea intervalelor de referință"]
+      },
+      "labiq": {
+        "name": "LabIQ",
+        "short": "LabIQ",
+        "summary": "Analiză AI a buletinelor de laborator din încărcări PDF sau imagine, cu explicații în limbaj simplu și îndrumare pentru pașii următori.",
+        "problem": "Un buletin de laborator este greu de citit pentru majoritatea oamenilor. LabIQ transformă un PDF sau o fotografie încărcată într-o explicație în limbaj simplu și pași următori clari.",
+        "how": [
+          "Încarcă un buletin de laborator în format PDF sau imagine",
+          "Extragere și analiză AI a valorilor",
+          "Explicație în limbaj simplu și îndrumare pentru pașii următori"
+        ],
+        "roadmap": ["Urmărirea tendințelor între buletine", "Linkuri de partajare cu clinicianul"]
+      },
+      "hospital-manager": {
+        "name": "Hospital Manager",
+        "short": "Manager",
+        "summary": "Tablouri de bord executive, analiză predictivă AI, interoperabilitate CNAS / DSP și un avatar AI pentru decizii în timp real.",
+        "problem": "Deciziile de management sunt la fel de bune ca datele din spatele lor. Hospital Manager transformă datele operaționale live în prognoze și răspunsuri pe baza cărora conducerea poate acționa.",
+        "how": [
+          "Tablouri de bord executive pentru întregul spital",
+          "Analiză predictivă AI pentru cerere și personal",
+          "Interoperabilitate CNAS / DSP",
+          "Avatar AI pentru suport decizional în timp real"
+        ],
+        "roadmap": ["Planificare de scenarii", "Raportare comparativă (benchmark)"]
+      },
+      "manager-mobile": {
+        "name": "Tablou de bord Manager Mobile",
+        "short": "Mobil",
+        "summary": "Supraveghere mobilă a secțiilor, personalului, alertelor și finanțelor, cu un asistent AI de management în buzunar.",
+        "problem": "Conducerea este rareori la birou. Tabloul de bord Manager Mobile pune imaginea operațională și un asistent AI pe telefon, conceput mobile-first.",
+        "how": [
+          "Secții, personal și finanțe dintr-o privire",
+          "Alerte push pentru ceea ce necesită atenție",
+          "Asistent AI de management pe mobil"
+        ],
+        "roadmap": ["Capturi offline", "Aprobări din mers"]
+      },
+      "risk-assessment": {
+        "name": "Evaluarea riscului",
+        "short": "Risc",
+        "summary": "Un spațiu de lucru AI pentru risc, cu benzi de probabilitate, intervale de timp și un nivel general de risc.",
+        "problem": "Riscul este o țintă în mișcare. Acest spațiu de lucru face explicite probabilitatea, momentul și nivelul general, astfel încât deciziile clinice să fie fundamentate și verificabile.",
+        "how": [
+          "Benzi de probabilitate per factor de risc",
+          "Estimări ale intervalelor de timp",
+          "Un nivel de risc general și explicabil"
+        ],
+        "roadmap": ["Comparații între cohorte", "Justificări conectate la ghiduri"]
+      },
+      "data-collection": {
+        "name": "Colectarea datelor spitalicești",
+        "short": "Date",
+        "summary": "Internări, date master, hărți de paturi, asigurări, farmacie și raportare într-un singur spațiu de lucru structurat.",
+        "problem": "Datele structurate și curate sunt fundamentul pe care rulează totul. Acest modul le captează o singură dată, la sursă, și le menține consecvente în întreg spitalul.",
+        "how": [
+          "Internări și date master",
+          "Hărți de paturi și capacitate",
+          "Asigurări, farmacie și raportare"
+        ],
+        "roadmap": ["Șabloane de raportare configurabile", "Verificări ale calității datelor"]
+      },
+      "quiz": {
+        "name": "Modul QUIZ",
+        "short": "CME",
+        "summary": "CME acreditat pentru medici și rezidenți: cazuri clinice adaptive generate de AI, evaluarea competențelor și ore CME certificate.",
+        "problem": "Educația continuă concurează cu timpul clinic. Modulul QUIZ face CME-ul adaptiv și bazat pe cazuri, astfel încât învățarea să se potrivească programelor reale și să conteze.",
+        "how": [
+          "Cazuri clinice adaptive generate de AI",
+          "Evaluarea competențelor",
+          "Ore CME acreditate"
+        ],
+        "roadmap": ["Trasee pe specialități", "Clasamente de echipă"]
+      },
+      "analytics": {
+        "name": "Tablou de bord Analytics",
+        "short": "Analytics",
+        "summary": "Un tablou de bord de sine stătător pentru sistemul de analiză al widgetului de chat, alimentat de telemetrie live.",
+        "problem": "Dacă asistentul este poarta de acces, analizele sale sunt planul de etaj. Acest tablou de bord face telemetria conversațiilor lizibilă și utilă în acțiune.",
+        "how": [
+          "Telemetrie live de la widgetul de chat",
+          "Metrici de utilizare, subiecte și rezolvare",
+          "Tablou de bord de sine stătător, încorporabil"
+        ],
+        "roadmap": ["Funneluri personalizate", "Alertare la anomalii"]
+      },
+      "citizen": {
+        "name": "Modul Cetățean — Primăria Oradea",
+        "short": "Cetățean",
+        "summary": "Rapoarte generate de AI, servicii online, o hartă interactivă a cartierelor și asistentul civic ZenA — live la Primăria Oradea.",
+        "problem": "Cetățenii au nevoie de o cale unică și clară de a ajunge la serviciile publice. Modulul Cetățean este poarta de acces civică — servicii, hărți și un asistent multilingv într-un singur loc.",
+        "how": [
+          "Rapoarte și cereri generate de AI",
+          "Servicii municipale online",
+          "Hartă interactivă a cartierelor",
+          "Asistentul civic ZenA"
+        ],
+        "roadmap": ["Mai multe categorii de servicii", "Direcționare între departamente"]
+      },
+      "administrative-module": {
+        "name": "Modul Administrativ",
+        "short": "Admin",
+        "summary": "RAG pentru procese neclinice: conformitate juridică, contabilitate CNAS, gestionarea medicației și inventar spitalicesc AI.",
+        "problem": "Procesele de back-office sunt încărcate de documente și reglementări. Modulul Administrativ aplică AI de tip retrieval-augmented la conformitate, contabilitate și inventar.",
+        "how": [
+          "RAG peste documente juridice și de conformitate",
+          "Suport pentru contabilitatea CNAS",
+          "Gestionarea medicației",
+          "Inventar spitalicesc AI"
+        ],
+        "roadmap": ["Fluxuri de achiziții", "Piste de audit"]
+      },
+      "zen-rag": {
+        "name": "ZEN_RAG / Git_RAG_Zena",
+        "short": "ZEN_RAG",
+        "summary": "Un RAG local, 100% offline, pentru documente medicale și legislative — fără cloud, construit pe llama.cpp + FAISS. Coloana vertebrală a fiecărei discuții despre suveranitatea datelor.",
+        "problem": "Datele clinice și juridice nu pot părăsi întotdeauna clădirea. ZEN_RAG rulează în întregime on-premise, astfel încât documentele sensibile rămân suverane, fiind totodată căutabile prin AI.",
+        "how": [
+          "Generare augmentată prin recuperare (retrieval-augmented), locală și 100% offline",
+          "Fără dependență de cloud — rulează on-premise",
+          "Construit pe llama.cpp + FAISS",
+          "Optimizat pentru corpusuri medicale și legislative"
+        ],
+        "roadmap": ["Suport mai larg pentru modele", "Instrumente de implementare on-prem consolidate"]
+      },
+      "llm-compare": {
+        "name": "Zen_LLM_Compare",
+        "short": "LLM Compare",
+        "summary": "Un comparator alăturat pentru 6+ LLM-uri locale și cloud — același prompt, răspunsuri paralele și un benchmark de latență.",
+        "problem": "Alegerea modelului potrivit este o decizie de inginerie, nu o presupunere. LLM Compare rulează un singur prompt pe mai multe modele simultan și măsoară compromisurile.",
+        "how": [
+          "Același prompt trimis către 6+ modele în paralel",
+          "Comparație alăturată a răspunsurilor",
+          "Benchmarking de latență"
+        ],
+        "roadmap": ["Scorare a calității", "Estimări de cost per sarcină"]
+      }
+    }
+  }
+}

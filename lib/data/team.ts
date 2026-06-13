@@ -1,40 +1,49 @@
-import type { TeamMember } from "./types";
+import type { TeamMember, TeamSkeleton, Translator } from "./types";
 
 /**
  * Real founding team — headshots and LinkedIn profiles are taken from the live
- * site (www.zenaios.com). Photos are stored locally in /public/team.
+ * site (www.zenaios.com). Photos are stored locally in /public/team. Names are
+ * proper nouns and stay fixed; role + bio live under `teamData.*` in the catalog.
  */
-export const team: TeamMember[] = [
+export const teamSkeletons: TeamSkeleton[] = [
   {
+    key: "george",
     name: "George Haber",
-    role: "Chief Executive Officer",
     initials: "GH",
     photo: "/team/george-haber.png",
-    bio: "Sets the vision and takes ZenAiOS to institutions, partners and investors.",
     linkedin: "https://www.linkedin.com/in/georgehaber/",
   },
   {
+    key: "vlad",
     name: "Vlad Iliescu",
-    role: "Chief Technology Officer",
     initials: "VI",
     photo: "/team/vlad-iliescu.webp",
-    bio: "Leads the platform and the in-house AI infrastructure — from sovereign RAG to the 17 modules.",
     linkedin: "https://www.linkedin.com/in/vladiliescu/",
   },
   {
+    key: "horea",
     name: "Horea Timiș",
-    role: "Chief Medical Officer",
     initials: "HT",
     photo: "/team/horea-timis.webp",
-    bio: "Keeps every module grounded in real clinical practice and standards of care.",
     linkedin: "https://www.linkedin.com/in/timis-horea-146372bb/",
   },
 ];
 
-// NOTE FOR CLIENT: the vision line below is placeholder copy to be confirmed /
-// replaced with the CEO's own words before launch.
-export const visionQuote = {
-  text: "Healthcare is complex. Our job is to make it run — one AI operating system, from the front desk to the boardroom.",
-  attribution: "George Haber",
-  role: "CEO, ZenAiOS",
-};
+/** `t` must be scoped to the `teamData` namespace. */
+export function buildTeam(t: Translator): TeamMember[] {
+  return teamSkeletons.map((m) => ({
+    ...m,
+    role: t(`${m.key}.role`),
+    bio: t(`${m.key}.bio`),
+  }));
+}
+
+// NOTE FOR CLIENT: the vision line is placeholder copy to be confirmed /
+// replaced with the CEO's own words before launch. Attribution is a proper noun.
+export function buildVision(t: Translator) {
+  return {
+    text: t("vision.text"),
+    attribution: "George Haber",
+    role: t("vision.role"),
+  };
+}

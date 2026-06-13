@@ -1,14 +1,16 @@
-import Link from "next/link";
 import { ArrowRight, Check, MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Reveal } from "@/components/motion/Reveal";
 import { EpicrisisDoc } from "@/components/visuals/EpicrisisDoc";
-import { getDeployment } from "@/lib/data/deployments";
+import { buildDeployment } from "@/lib/data/deployments";
 
 export function Flagship() {
-  const d = getDeployment("sjuo-oradea");
+  const t = useTranslations("flagship");
+  const d = buildDeployment(useTranslations("deploymentsData"), "sjuo-oradea");
   if (!d) return null;
 
   return (
@@ -19,7 +21,7 @@ export function Flagship() {
         <div className="relative grid items-center gap-10 lg:grid-cols-2">
           {/* Copy */}
           <Reveal>
-            <Eyebrow>Flagship deployment</Eyebrow>
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
             <div className="mt-4 flex items-center gap-3">
               <StatusBadge status="active" />
               <span className="inline-flex items-center gap-1 text-xs text-faint">
@@ -29,10 +31,7 @@ export function Flagship() {
             <h2 className="mt-3 text-balance text-2xl font-bold sm:text-3xl">
               {d.name}
             </h2>
-            <p className="mt-3 max-w-md text-muted">
-              A full integrated hospital system running in a county emergency
-              hospital — the strongest proof that ZenAiOS works at real scale.
-            </p>
+            <p className="mt-3 max-w-md text-muted">{t("description")}</p>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {d.live.map((item) => (
@@ -49,7 +48,7 @@ export function Flagship() {
               href={`/deployments`}
               className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky"
             >
-              Read the deployments
+              {t("link")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Reveal>
@@ -61,11 +60,11 @@ export function Flagship() {
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-hairline bg-white/[0.02] p-4">
                   <p className="text-2xl font-bold text-ink">v2.4</p>
-                  <p className="text-xs text-faint">in production</p>
+                  <p className="text-xs text-faint">{t("statProduction")}</p>
                 </div>
                 <div className="rounded-xl border border-hairline bg-white/[0.02] p-4">
                   <p className="text-2xl font-bold text-ink">ICD-10 · DRG</p>
-                  <p className="text-xs text-faint">coding built in</p>
+                  <p className="text-xs text-faint">{t("statCoding")}</p>
                 </div>
               </div>
             </div>

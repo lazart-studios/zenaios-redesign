@@ -2,25 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { Siren } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
-const levels: Record<number, { label: string; color: string }> = {
-  1: { label: "Immediate", color: "bg-red-500" },
-  2: { label: "Very urgent", color: "bg-orange-500" },
-  3: { label: "Urgent", color: "bg-warning" },
-  4: { label: "Standard", color: "bg-success" },
-  5: { label: "Non-urgent", color: "bg-sky" },
+const levelColors: Record<number, string> = {
+  1: "bg-red-500",
+  2: "bg-orange-500",
+  3: "bg-warning",
+  4: "bg-success",
+  5: "bg-sky",
 };
 
-const queue = [
-  { id: "Bed 04", c: "Chest pain, SOB", lvl: 1 },
-  { id: "Bed 11", c: "Head injury", lvl: 2 },
-  { id: "Bed 07", c: "Abdominal pain", lvl: 3 },
-  { id: "Bed 02", c: "Sprained ankle", lvl: 4 },
-];
+// Bed ids stay literal (mockup); the complaints come from the catalog `queue` array.
+const queueBeds = ["Bed 04", "Bed 11", "Bed 07", "Bed 02"];
+const queueLevels = [1, 2, 3, 4];
 
 export function TriageBoard({ className }: { className?: string }) {
   const reduce = useReducedMotion();
+  const t = useTranslations("visuals.triage");
+  const complaints = t.raw("queue") as string[];
   return (
     <div className={cn("glass rounded-2xl p-5 shadow-soft", className)}>
       <div className="flex items-center justify-between border-b border-hairline pb-3">
@@ -29,18 +29,18 @@ export function TriageBoard({ className }: { className?: string }) {
             <Siren className="size-4" />
           </span>
           <div>
-            <p className="text-sm font-semibold text-ink">Emergency triage</p>
-            <p className="text-[10px] text-faint">Manchester + AI · auto-sorted</p>
+            <p className="text-sm font-semibold text-ink">{t("title")}</p>
+            <p className="text-[10px] text-faint">{t("subtitle")}</p>
           </div>
         </div>
       </div>
 
       <div className="mt-3 space-y-2">
-        {queue.map((p, i) => {
-          const l = levels[p.lvl];
+        {queueBeds.map((bed, i) => {
+          const lvl = queueLevels[i];
           return (
             <motion.div
-              key={p.id}
+              key={bed}
               initial={reduce ? { opacity: 1 } : { opacity: 0, x: -16 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-10%" }}
@@ -50,16 +50,16 @@ export function TriageBoard({ className }: { className?: string }) {
               <span
                 className={cn(
                   "grid size-6 shrink-0 place-items-center rounded-md text-[11px] font-bold text-white",
-                  l.color
+                  levelColors[lvl]
                 )}
               >
-                {p.lvl}
+                {lvl}
               </span>
               <div className="min-w-0 flex-1">
-                <p className="text-[12px] font-medium text-ink">{p.id}</p>
-                <p className="truncate text-[10px] text-faint">{p.c}</p>
+                <p className="text-[12px] font-medium text-ink">{bed}</p>
+                <p className="truncate text-[10px] text-faint">{complaints[i]}</p>
               </div>
-              <span className="text-[10px] text-muted">{l.label}</span>
+              <span className="text-[10px] text-muted">{t(`levels.${lvl}`)}</span>
             </motion.div>
           );
         })}
@@ -67,7 +67,7 @@ export function TriageBoard({ className }: { className?: string }) {
 
       <div className="mt-3 flex items-center gap-2 rounded-lg bg-red-500/[0.08] px-3 py-2 text-[11px] text-ink/90 ring-1 ring-red-500/20">
         <span className="size-1.5 animate-pulse rounded-full bg-red-500" />
-        Level 1 alerted to attending physician
+        {t("alert")}
       </div>
     </div>
   );

@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "titleDefault": "ZenAiOS — The AI operating system for modern hospitals.",
+    "titleTemplate": "%s · ZenAiOS",
+    "description": "The AI operating system for modern hospitals — 17 AI modules across clinical care, hospital management and public health, already live in real institutions.",
+    "platform": {
+      "title": "The Platform",
+      "description": "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, five languages, live in real institutions."
+    },
+    "about": {
+      "title": "About",
+      "description": "ZenAiOS is built by a clinical, technical and commercial team in Oradea, România — an AI operating system grounded in real hospital practice and data sovereignty."
+    },
+    "deployments": {
+      "title": "Deployments",
+      "description": "ZenAiOS is live in the field — a county emergency hospital (SJUO Oradea) and a city hall (Primăria Oradea). Real institutions, real workflows."
+    },
+    "demo": {
+      "title": "Request a demo",
+      "description": "Book a guided walkthrough of ZenAiOS — the AI epicrisis, triage, executive dashboards and sovereign RAG — mapped to your institution."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with the ZenAiOS team in Oradea, România — by phone, email or the form. We reply within one business day."
+    },
+    "resources": {
+      "title": "Resources",
+      "description": "Case studies, documentation, clinical CME and press about ZenAiOS — the AI operating system for modern hospitals."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How ZenAiOS handles personal data on this website and across the platform, including our data-sovereignty approach."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "description": "The terms governing your use of the ZenAiOS website and the information presented on it."
+    }
+  },
+  "nav": {
+    "homeAria": "ZenAiOS home",
+    "platform": "Platform",
+    "deployments": "Deployments",
+    "about": "About",
+    "resources": "Resources",
+    "livePlatform": "Live platform",
+    "requestDemo": "Request a demo",
+    "toggleMenu": "Toggle menu",
+    "byDomain": "By domain",
+    "explore": "Explore",
+    "platformOverview": "Platform overview",
+    "liveDeployments": "Live deployments",
+    "modulesCount": "{count} modules",
+    "liveNow": "Live now",
+    "megaTagline": "{count} modules. 3 domains. 2 live deployments.",
+    "megaCta": "See how the operating system fits together →"
+  },
+  "footer": {
+    "tagline": "The AI operating system for modern hospitals. 17 AI modules across clinical care, hospital management and public health — live in real institutions.",
+    "columns": {
+      "platform": "Platform",
+      "company": "Company",
+      "getStarted": "Get started"
+    },
+    "links": {
+      "overview": "Overview",
+      "medical": "Medical",
+      "administrative": "Administrative",
+      "aiInfrastructure": "AI Infrastructure",
+      "about": "About",
+      "deployments": "Deployments",
+      "resources": "Resources",
+      "contact": "Contact",
+      "requestDemo": "Request a demo",
+      "livePlatform": "Live platform",
+      "privacy": "Privacy Policy",
+      "terms": "Terms"
+    },
+    "rights": "© {year} ZenAiOS. All rights reserved.",
+    "builtFor": "Built for clinical-grade trust · WCAG 2.1 AA · {location}"
+  },
+  "common": {
+    "details": "Details",
+    "viewAll": "View all",
+    "seeModules": "See modules",
+    "builtOnPlatform": "Built on the platform",
+    "modules": "modules",
+    "moreCount": "+{count} more",
+    "moduleCount": "{count, plural, one {# module} other {# modules}}",
+    "liveDeploymentCount": "{count, plural, one {# live deployment} other {# live deployments}}",
+    "home": "Home"
+  },
+  "status": {
+    "active": "Active",
+    "module": "Module",
+    "dev": "Dev"
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  },
+  "hero": {
+    "badge": "Live in real hospitals & city institutions",
+    "titleLine1": "The AI operating system",
+    "titleLine2": "for modern hospitals.",
+    "description": "17 AI modules across <b>clinical care</b>, <b>hospital management</b> and <b>public health</b> — already live at a county emergency hospital and a city hall.",
+    "ctaPrimary": "Request a demo",
+    "ctaSecondary": "Explore the platform",
+    "deployedAt": "Deployed at",
+    "scrollCue": "Scroll to explore"
+  },
+  "proof": {
+    "heading": "Real deployments, real standards — no placeholder logos"
+  },
+  "threeDomains": {
+    "eyebrow": "One platform, three domains",
+    "titleLead": "Not three modules.",
+    "titleAccent": "Seventeen.",
+    "description": "ZenAiOS is an operating system, not a chatbot — organised into three domains that interoperate, share one assistant, and speak five languages."
+  },
+  "audiences": {
+    "eyebrow": "One site, three buyers",
+    "titleLead": "Find your",
+    "titleAccent": "“for me”",
+    "titleTrail": "path",
+    "description": "The same platform, framed for the person reading. Management, clinicians and investors each get a direct route to what matters to them.",
+    "items": [
+      {
+        "role": "Hospital leadership",
+        "tag": "CMO · CIO · economic buyer",
+        "needs": "ROI, interoperability (CNAS/DSP), data sovereignty, a real track record.",
+        "show": ["Hospital Manager", "SJUO deployment", "Sovereign RAG"],
+        "links": ["Hospital Manager", "Deployments"]
+      },
+      {
+        "role": "Clinicians",
+        "tag": "Doctors · nurses · residents",
+        "needs": "Less admin, accurate AI epicrisis, decision support that adds no friction, CME.",
+        "show": ["Doctor & Nursing", "Triage & Lab", "Accredited CME"],
+        "links": ["Doctor module", "CME / QUIZ"]
+      },
+      {
+        "role": "Investors",
+        "tag": "& EU-funding evaluators",
+        "needs": "Traction, a credible team, breadth, technical moat and a clear vision.",
+        "show": ["2 live deployments", "17 modules", "In-house AI infra"],
+        "links": ["The platform", "Team & vision"]
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "Flagship deployment",
+    "description": "A full integrated hospital system running in a county emergency hospital — the strongest proof that ZenAiOS works at real scale.",
+    "link": "Read the deployments",
+    "statProduction": "in production",
+    "statCoding": "coding built in"
+  },
+  "capabilities": {
+    "eyebrow": "What it actually does",
+    "titleLead": "Capabilities that earn",
+    "titleAccent": "clinical trust",
+    "description": "Four of the things ZenAiOS does every day — decision support, triage, prediction and sovereign AI.",
+    "features": {
+      "doctor": {
+        "eyebrow": "Doctor module",
+        "title": "Decision support that stays in the flow",
+        "description": "Context-aware differential and treatment suggestions surface where the work happens — and auto-generate the epicrisis and documents, so doctors finish faster and get home on time.",
+        "bullets": [
+          "Differential & treatment suggestions",
+          "Automatic epicrisis & clinical notes",
+          "Evidence-aware, linked to guidelines"
+        ],
+        "link": "Explore the Doctor module"
+      },
+      "triage": {
+        "eyebrow": "Emergency triage",
+        "title": "Prioritised by real severity, not arrival order",
+        "description": "The Manchester protocol paired with AI classifies every patient into five levels, keeps the queue ordered by acuity, and alerts the attending physician the moment a level-1 case arrives.",
+        "bullets": [
+          "Manchester + AI, 5 severity levels",
+          "Automatic queue prioritisation",
+          "Instant doctor alerts for high acuity"
+        ],
+        "link": "Explore triage"
+      },
+      "management": {
+        "eyebrow": "Management",
+        "title": "Dashboards that predict, not just report",
+        "description": "Executive dashboards turn live operational data into forecasts — surges, staffing gaps, bottlenecks — with CNAS/DSP interoperability and an AI avatar for real-time decisions, on desktop and mobile.",
+        "bullets": [
+          "AI predictive analytics",
+          "CNAS / DSP interoperability",
+          "Desktop + Manager Mobile dashboard"
+        ],
+        "link": "Explore Hospital Manager"
+      },
+      "infrastructure": {
+        "eyebrow": "AI infrastructure",
+        "title": "Sovereign AI — your data never leaves the building",
+        "description": "ZEN_RAG runs a 100% offline, local retrieval-augmented system on llama.cpp + FAISS. No cloud, no data egress — the foundation of every data-sovereignty and GDPR conversation.",
+        "bullets": [
+          "100% offline, on-premise RAG",
+          "llama.cpp + FAISS, 6+ models",
+          "Tuned for medical & legislative corpora"
+        ],
+        "link": "See the AI infrastructure"
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Credibility over big numbers",
+    "title": "The numbers that are actually true",
+    "description": "We lead with what is verifiable. Efficiency figures are shown as honest projections — never unsourced claims.",
+    "footnote": "Projections are illustrative targets, pending published pilot results — not measured outcomes."
+  },
+  "team": {
+    "eyebrow": "The people behind it",
+    "titleLead": "A real team,",
+    "titleAccent": "building in the open",
+    "description": "Clinical, technical and commercial leadership — the same founders who designed the platform are the ones deploying it."
+  },
+  "cta": {
+    "default": {
+      "eyebrow": "Ready when you are",
+      "title": "See ZenAiOS running in a real hospital",
+      "description": "Book a guided walkthrough of the platform — from the AI epicrisis to the executive dashboards — and see how it would fit your institution."
+    },
+    "about": {
+      "eyebrow": "Work with us",
+      "title": "Building the future of hospital AI",
+      "description": "Whether you're an institution, a clinician or an investor — we'd love to show you what ZenAiOS can do."
+    },
+    "deployments": {
+      "eyebrow": "Your institution next?",
+      "title": "Let's talk about your deployment",
+      "description": "Tell us about your hospital or institution and we'll map ZenAiOS to your workflows."
+    },
+    "requestDemo": "Request a demo",
+    "openLive": "Open live platform",
+    "callUs": "Or call us directly — {phone}"
+  },
+  "form": {
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Jane Doe",
+    "workEmail": "Work email",
+    "workEmailPlaceholder": "jane@hospital.ro",
+    "organization": "Organization",
+    "organizationPlaceholder": "County Emergency Hospital",
+    "roleLabel": "You are a…",
+    "messageDemo": "What would you like to see?",
+    "messageContact": "How can we help?",
+    "messagePlaceholderDemo": "We're a 400-bed hospital interested in the AI epicrisis and triage modules…",
+    "messagePlaceholderContact": "Tell us a bit about what you're looking for…",
+    "disclaimer": "Demo form — submissions aren't stored or sent.",
+    "submitDemo": "Request demo",
+    "submitContact": "Send message",
+    "sending": "Sending…",
+    "successTitle": "Thank you — almost there",
+    "successBody": "This is a demo form, so nothing was sent. On the live site this would reach the ZenAiOS team and we'd reply within one business day.",
+    "sendAnother": "Send another",
+    "roles": [
+      "Hospital leadership (CMO / CIO / CEO)",
+      "Clinician (doctor / nurse / resident)",
+      "Public institution",
+      "Investor / EU-funding evaluator",
+      "Partner / integrator",
+      "Other"
+    ],
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Enter a valid work email.",
+      "org": "Tell us where you work.",
+      "message": "A sentence or two helps us prepare."
+    }
+  },
+  "notFound": {
+    "title": "This page took the day off",
+    "description": "The page you're looking for doesn't exist or has moved. Let's get you back to something useful.",
+    "backHome": "Back home",
+    "explore": "Explore the platform",
+    "contact": "Or contact us if something's broken"
+  },
+  "platformPage": {
+    "eyebrow": "The platform",
+    "titleLead": "One operating system.",
+    "titleAccent": "{count} AI modules.",
+    "description": "ZenAiOS isn't a single tool bolted onto a hospital — it's a layered operating system. Three domains, one shared assistant, all speaking the same data.",
+    "statModules": "AI modules",
+    "statDomains": "Domains",
+    "statDeployments": "Live deployments",
+    "domainsEyebrow": "Three domains",
+    "domainsTitle": "Pick the layer you live in",
+    "domainsDescription": "Each domain is a coherent product in its own right — and they share one data model, one assistant and one design language.",
+    "catalogueEyebrow": "Every module",
+    "catalogueTitle": "The full catalogue",
+    "catalogueDescription": "From the front desk to the boardroom — explore each module in detail.",
+    "modulesLabel": "{count} modules"
+  },
+  "categoryPage": {
+    "moduleCountTitle": "{count, plural, one {# module} other {# modules}}",
+    "liveCount": "{count, plural, one {# live deployment} other {# live deployments}}",
+    "allDomains": "All domains",
+    "highlights": {
+      "medical": [
+        "The full clinical journey — front desk, triage, diagnosis, care, lab, management & CME",
+        "AI epicrisis with ICD-10 & DRG coding",
+        "Live in a county emergency hospital (SJUO)"
+      ],
+      "administrative": [
+        "Civic services and back-office processes",
+        "RAG over legal, compliance & accounting documents",
+        "Live at Oradea City Hall"
+      ],
+      "ai-infrastructure": [
+        "100% offline, on-premise RAG (llama.cpp + FAISS)",
+        "Multi-model comparison & benchmarking",
+        "The sovereign foundation under every other module"
+      ]
+    }
+  },
+  "modulePage": {
+    "problemEyebrow": "The problem it solves",
+    "howEyebrow": "How it works",
+    "roadmapEyebrow": "On the roadmap",
+    "roadmapIntro": "Where this module is heading next — clearly forward-looking, not yet shipped.",
+    "liveDeployment": "Live deployment",
+    "seeDeployment": "See the deployment",
+    "moreIn": "More in {category}",
+    "viewAll": "View all"
+  },
+  "aboutPage": {
+    "eyebrow": "About ZenAiOS",
+    "titleLead": "Making healthcare",
+    "titleAccent": "run.",
+    "description": "Hospitals are some of the most complex organisations on earth. We're building the AI operating system that ties their fragmented systems into one — from the front desk to the boardroom.",
+    "missionEyebrow": "Why we exist",
+    "missionTitle": "One platform instead of twenty disconnected tools",
+    "missionP1": "Clinicians lose hours every day to documentation and to systems that don't talk to each other. Management can't see what's happening in real time. Patients struggle to find the right service.",
+    "missionP2": "ZenAiOS replaces that fragmentation with a single, AI-native operating system: 17 modules across clinical care, hospital management and public administration, sharing one data model and one assistant.",
+    "missionP3": "It's already live — in a county emergency hospital and at a city hall — and built by people who deploy it themselves.",
+    "principlesEyebrow": "What we believe",
+    "principlesTitle": "Four principles we don't compromise on",
+    "principles": [
+      {
+        "title": "Clinically grounded",
+        "body": "Every module is shaped with a Chief Medical Officer and tested against real clinical workflows — not built in a vacuum."
+      },
+      {
+        "title": "Sovereign by design",
+        "body": "Sensitive data can stay on-premise. Our offline RAG means hospitals keep control of their own information."
+      },
+      {
+        "title": "Multilingual & accessible",
+        "body": "Five languages and an assistant that meets patients and staff where they are — care shouldn't depend on jargon."
+      },
+      {
+        "title": "Proven in the field",
+        "body": "Live in a county emergency hospital and a city hall. We'd rather show real deployments than promise big numbers."
+      }
+    ]
+  },
+  "deploymentsPage": {
+    "eyebrow": "In the field",
+    "titleLead": "Live, not",
+    "titleAccent": "in a slide deck.",
+    "description": "The strongest thing we can show isn't a number — it's software running in real institutions, used by real staff, every day.",
+    "exploreModule": "Explore the {module} module",
+    "noteEyebrow": "A note on proof",
+    "noteBody": "We lead with deployments rather than headline statistics. Efficiency figures elsewhere on this site are clearly labelled as projections — what you see here is simply what's running today."
+  },
+  "demoPage": {
+    "eyebrow": "Request a demo",
+    "titleLead": "See it running in a",
+    "titleAccent": "real hospital",
+    "description": "Tell us a little about your institution and we'll set up a walkthrough focused on what matters to you.",
+    "expectTitle": "What to expect",
+    "expect": [
+      "A 30-minute guided walkthrough, tailored to your role",
+      "The AI epicrisis, triage and executive dashboards, live",
+      "How sovereign offline RAG keeps your data on-premise",
+      "A straight answer on what fits your institution — and what doesn't yet"
+    ],
+    "replyNote": "We typically reply within <b>one business day</b>.",
+    "sovereignNote": "No data leaves the building in a self-hosted deployment.",
+    "lookAroundTitle": "Prefer to look around first?",
+    "lookAroundBody": "The live platform is open to explore.",
+    "open": "Open {url}"
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "titleLead": "Let's",
+    "titleAccent": "talk.",
+    "description": "Questions about the platform, a deployment, or a partnership? Reach us directly — or send a message and we'll get back to you.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location"
+  },
+  "resourcesPage": {
+    "eyebrow": "Resources",
+    "titleLead": "Learn more,",
+    "titleAccent": "in depth.",
+    "description": "We're building out case studies, documentation and press. Here's what's coming — and what's already live today.",
+    "openModule": "Open module",
+    "lookingFor": "Looking for something specific?",
+    "getInTouch": "Get in touch",
+    "pointYou": "and we'll point you to it.",
+    "statusInPrep": "In preparation",
+    "statusLive": "Live module",
+    "items": [
+      {
+        "title": "Case studies",
+        "body": "Deep dives into the SJUO Oradea and city-hall deployments — what was rolled out, and what changed."
+      },
+      {
+        "title": "Documentation",
+        "body": "Technical and clinical documentation for the platform, modules and the sovereign RAG stack."
+      },
+      {
+        "title": "Clinical & CME",
+        "body": "Accredited continuing education and adaptive clinical cases via the QUIZ module."
+      },
+      {
+        "title": "Press & updates",
+        "body": "Announcements, milestones and coverage as ZenAiOS expands to new institutions."
+      }
+    ]
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Last updated {date}",
+    "lastUpdatedDate": "13 June 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This Privacy Policy explains how {name} (“we”, “us”) handles personal data in connection with this website ({domain}) and our platform. We are based in {location} and are committed to processing personal data in line with the EU General Data Protection Regulation (GDPR).",
+      "h1": "1. Data we collect on this website",
+      "p1a": "This marketing website is intentionally minimal. The demo and contact forms are presented as a demonstration and do not transmit or store submissions. If and when these forms are connected to a backend, we will collect only the information you choose to provide — typically your name, work email, organisation and message — in order to respond to your enquiry.",
+      "p1b": "We may collect limited, aggregated technical information (such as basic analytics) to understand how the site is used. We do not sell personal data.",
+      "h2": "2. Data within the platform",
+      "p2a": "The ZenAiOS platform processes data on behalf of the institutions that deploy it (for example hospitals and public authorities), who act as data controllers. In those settings, {name} acts as a data processor under a written agreement.",
+      "p2b": "<strong>Data sovereignty.</strong> Our infrastructure is designed so that sensitive clinical and administrative data can remain on-premise. Our retrieval-augmented AI (ZEN_RAG) can run 100% offline, meaning regulated data need not leave the institution's own environment.",
+      "h3": "3. Legal bases",
+      "p3": "Where we process personal data, we rely on one or more of the following legal bases: your consent, the performance of a contract, compliance with a legal obligation, or our legitimate interests in operating and improving our services.",
+      "h4": "4. Retention",
+      "p4": "We retain personal data only for as long as necessary for the purposes described here or as required by law. Enquiry data is kept for as long as needed to handle your request and a reasonable period thereafter.",
+      "h5": "5. Your rights",
+      "p5": "Subject to applicable law, you have the right to:",
+      "rights": [
+        "access the personal data we hold about you;",
+        "request correction or deletion of your data;",
+        "object to or restrict certain processing;",
+        "request portability of data you provided to us;",
+        "lodge a complaint with your data protection authority."
+      ],
+      "h6": "6. Contact",
+      "p6": "For any privacy question or to exercise your rights, contact us at <email></email> or by phone at <phone></phone>.",
+      "h7": "7. Changes",
+      "p7": "We may update this policy from time to time. The “last updated” date above reflects the latest revision."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "These Terms of Use govern your access to and use of the {name} website at {domain} (the “Site”). By using the Site, you agree to these terms.",
+      "h1": "1. The Site is informational",
+      "p1": "This Site presents information about the {name} platform and its modules. Content is provided for general information only and does not constitute medical, legal or professional advice. Product mock-ups and illustrations shown here are representative of the platform's capabilities.",
+      "h2": "2. Demonstration forms",
+      "p2": "The demo and contact forms on this Site are demonstrations. Unless explicitly stated otherwise, submissions are not transmitted, stored or acted upon. To contact us reliably, use the email or phone number on our <contact>contact page</contact>.",
+      "h3": "3. Projections and figures",
+      "p3": "Any efficiency or outcome figures shown on this Site are clearly labelled as projections or illustrative targets. They are not guarantees and should not be relied upon as measured results. Verifiable facts about the platform (such as the number of modules and live deployments) are presented as such.",
+      "h4": "4. Intellectual property",
+      "p4": "The {name} name, logo, brand, text, graphics and software shown on this Site are owned by us or our licensors and are protected by applicable intellectual-property laws. You may not copy, reproduce or distribute them without our prior written permission.",
+      "h5": "5. Third-party links",
+      "p5": "The Site may link to third-party websites or services (for example the live platform environment). We are not responsible for the content or practices of those third parties.",
+      "h6": "6. Disclaimer & liability",
+      "p6": "The Site is provided “as is” without warranties of any kind, to the fullest extent permitted by law. We are not liable for any loss arising from your use of, or reliance on, the Site.",
+      "h7": "7. Governing law",
+      "p7": "These terms are governed by the laws of România, without regard to conflict-of-laws principles. Any disputes will be subject to the competent courts of România.",
+      "h8": "8. Contact",
+      "p8": "Questions about these terms? Contact us at <email></email>."
+    }
+  },
+  "visuals": {
+    "dashboard": {
+      "title": "Hospital Manager",
+      "subtitle": "Executive overview",
+      "aiPredictive": "AI predictive",
+      "kpiOccupancy": "Bed occupancy",
+      "kpiAdmissions": "Admissions today",
+      "kpiWait": "Avg. wait",
+      "minSuffix": " min",
+      "admissions14": "Admissions · 14 days",
+      "forecast": "forecast",
+      "capacity": "Capacity",
+      "inUse": "in use",
+      "deptLoad": "Department load",
+      "deptEmergency": "Emergency",
+      "deptCardiology": "Cardiology",
+      "deptRadiology": "Radiology",
+      "alert": "Emergency nearing capacity — predicted surge in <b>~2h</b>. Suggest +2 staff."
+    },
+    "triage": {
+      "title": "Emergency triage",
+      "subtitle": "Manchester + AI · auto-sorted",
+      "levels": {
+        "1": "Immediate",
+        "2": "Very urgent",
+        "3": "Urgent",
+        "4": "Standard",
+        "5": "Non-urgent"
+      },
+      "queue": [
+        "Chest pain, SOB",
+        "Head injury",
+        "Abdominal pain",
+        "Sprained ankle"
+      ],
+      "alert": "Level 1 alerted to attending physician"
+    },
+    "epicrisis": {
+      "title": "Epicrisis — draft",
+      "subtitle": "Patient #2241 · auto-generated",
+      "linked": "FOCG linked",
+      "ready": "Ready for clinician review · 8s"
+    },
+    "decision": {
+      "title": "Decision support",
+      "subtitle": "Chest pain · 58M · context-aware",
+      "differential": "Differential",
+      "dx": [
+        "Acute coronary syndrome",
+        "Pericarditis",
+        "Pulmonary embolism"
+      ],
+      "evidence": "Evidence-aware · linked to guidelines"
+    },
+    "rag": {
+      "title": "ZEN_RAG",
+      "subtitle": "On-premise · data-sovereign",
+      "noCloud": "No cloud",
+      "onPremise": "On-premise",
+      "nodeDocuments": "Documents",
+      "nodeDocumentsSub": "medical · legal",
+      "nodeLlm": "Local LLM",
+      "nodeAnswer": "Answer",
+      "nodeAnswerSub": "cited · private",
+      "statOffline": "offline",
+      "statDataLeaves": "data leaves",
+      "statModels": "models"
+    }
+  },
+  "categories": {
+    "medical": {
+      "name": "Medical",
+      "label": "Category A — Medical",
+      "tagline": "The flagship.",
+      "description": "Clinical solutions, hospital modules and medical education — the heart of the offering, grouped along the real clinical workflow from front desk to boardroom."
+    },
+    "administrative": {
+      "name": "Administrative",
+      "label": "Category B — Administrative",
+      "tagline": "Civic & back-office.",
+      "description": "Civic management, administrative processes and RAG-based compliance — already live in a public institution."
+    },
+    "ai-infrastructure": {
+      "name": "AI Infrastructure",
+      "label": "Category C — General",
+      "tagline": "The sovereign layer.",
+      "description": "AI tooling, local models and RAG infrastructure — the offline-capable technical foundation the whole platform is built on."
+    }
+  },
+  "deploymentsData": {
+    "sjuo-oradea": {
+      "institution": "SJUO · Bihor County Emergency Hospital",
+      "kind": "Hospital",
+      "summary": "The flagship deployment: a full integrated hospital system running in a county emergency hospital.",
+      "live": [
+        "Electronic FOCG with ICD-10 & DRG coding",
+        "AI-assisted epicrisis",
+        "Real-time bed & department management",
+        "ZenA assistant with voice support"
+      ]
+    },
+    "oradea-city-hall": {
+      "institution": "Oradea City Hall",
+      "kind": "Public institution",
+      "summary": "A civic deployment proving ZenAiOS reaches beyond the hospital into public administration.",
+      "live": [
+        "AI-generated reports & online services",
+        "Interactive neighbourhood map",
+        "ZenA civic assistant",
+        "Multilingual citizen access"
+      ]
+    }
+  },
+  "teamData": {
+    "george": {
+      "role": "Chief Executive Officer",
+      "bio": "Sets the vision and takes ZenAiOS to institutions, partners and investors."
+    },
+    "vlad": {
+      "role": "Chief Technology Officer",
+      "bio": "Leads the platform and the in-house AI infrastructure — from sovereign RAG to the 17 modules."
+    },
+    "horea": {
+      "role": "Chief Medical Officer",
+      "bio": "Keeps every module grounded in real clinical practice and standards of care."
+    },
+    "vision": {
+      "text": "Healthcare is complex. Our job is to make it run — one AI operating system, from the front desk to the boardroom.",
+      "role": "CEO, ZenAiOS"
+    }
+  },
+  "outcomesData": {
+    "facts": {
+      "modules": { "label": "AI modules", "sub": "Across three domains" },
+      "domains": { "label": "Product domains", "sub": "Medical · Admin · AI infra" },
+      "deployments": { "label": "Live deployments", "sub": "Hospital + city hall" },
+      "languages": { "label": "Languages", "sub": "EN · RO · HU · DE · FR" }
+    },
+    "projections": {
+      "admin": { "label": "Less time on admin tasks", "sub": "Projection" },
+      "errors": { "label": "Fewer diagnostic errors", "sub": "Projection" },
+      "cost": { "label": "Lower cost per visit", "sub": "Projection" },
+      "rag": { "label": "Offline-capable RAG", "sub": "Data stays on-premise" }
+    },
+    "badges": [
+      "SJUO Oradea",
+      "Oradea City Hall",
+      "5 languages",
+      "Sovereign offline RAG",
+      "ICD-10 · DRG · FOCG",
+      "Azure Speech voice"
+    ]
+  },
+  "modules": {
+    "items": {
+      "zenaios-hospital": {
+        "name": "ZenAiOS Hospital — SJUO",
+        "short": "Hospital OS",
+        "summary": "Integrated hospital management deployed at Spitalul Județean de Urgență Oradea — beds, FOCG with ICD-10 & DRG coding, AI epicrisis and the ZenA assistant in one system.",
+        "problem": "Hospital data lives in disconnected systems, so clinicians re-key information and management never has a live picture. ZenAiOS Hospital unifies the clinical record, coding and operations on one AI-native platform.",
+        "how": [
+          "Electronic FOCG (observation chart) with ICD-10 & DRG coding",
+          "AI-assisted epicrisis and discharge documents",
+          "Real-time bed and department management",
+          "ZenA assistant embedded for staff, with voice support"
+        ],
+        "roadmap": [
+          "Wider department coverage",
+          "Deeper CNAS / DSP reporting automation",
+          "Expanded multilingual clinical documentation"
+        ]
+      },
+      "patient": {
+        "name": "Patient Module",
+        "short": "Patient",
+        "summary": "Online appointments, result access, AI communication, symptom monitoring and personalised guidance for patients.",
+        "problem": "Patients struggle to reach the right service and to understand their next step. The Patient Module gives them a guided, multilingual front door to care.",
+        "how": [
+          "Book and manage appointments online",
+          "Secure access to results and records",
+          "AI symptom monitoring and personalised guidance",
+          "Conversational support across five languages"
+        ],
+        "roadmap": ["Care-plan reminders", "Home-monitoring & wearable integrations"]
+      },
+      "doctor": {
+        "name": "Doctor Module",
+        "short": "Doctor",
+        "summary": "AI decision support for diagnosis and treatment, automatic epicrisis and document generation, and workflow optimisation for physicians.",
+        "problem": "Doctors lose hours to documentation and context-switching. The Doctor Module brings decision support and auto-generated notes into the clinical flow, not on top of it.",
+        "how": [
+          "Context-aware differential and treatment suggestions",
+          "Automatic epicrisis & clinical document generation",
+          "Evidence-aware guidance at the point of care",
+          "Workflow optimisation across the shift"
+        ],
+        "roadmap": ["Specialty-specific guideline packs", "Deeper EHR write-back"]
+      },
+      "nursing": {
+        "name": "Nursing Module",
+        "short": "Nursing",
+        "summary": "Treatment administration, vital-sign monitoring, procedural checklists and care-team communication for nursing staff.",
+        "problem": "Care delivery depends on accurate, timely coordination. The Nursing Module keeps administration, vitals and checklists in one place and the whole care team in sync.",
+        "how": [
+          "Treatment administration tracking",
+          "Vital-sign monitoring and trends",
+          "Procedural checklists",
+          "Care-team communication"
+        ],
+        "roadmap": ["Shift handover summaries", "Device-data ingestion"]
+      },
+      "emergency-triage": {
+        "name": "Emergency Triage",
+        "short": "Triage",
+        "summary": "Manchester protocol combined with AI to classify patients into five severity levels, auto-prioritise the queue and alert doctors.",
+        "problem": "In a busy emergency department, prioritisation has to be fast and defensible. Triage pairs the Manchester standard with AI to keep the queue ordered by real severity.",
+        "how": [
+          "Manchester + AI classification into 5 severity levels",
+          "Automatic prioritisation of the queue",
+          "Doctor alerts for high-acuity cases"
+        ],
+        "roadmap": ["Vitals-driven re-triage", "Capacity-aware routing"]
+      },
+      "laboratory": {
+        "name": "Laboratory Module",
+        "short": "Lab",
+        "summary": "Sampling, processing and AI interpretation with pathological-value highlighting and automatic FOCG integration.",
+        "problem": "Lab results need to reach the right chart, flagged and in context. The Laboratory Module connects the bench to the observation chart automatically.",
+        "how": [
+          "Sampling and processing workflow",
+          "AI interpretation with pathological-value highlighting",
+          "Automatic FOCG integration"
+        ],
+        "roadmap": ["Analyzer integrations", "Reference-range personalisation"]
+      },
+      "labiq": {
+        "name": "LabIQ",
+        "short": "LabIQ",
+        "summary": "AI analysis of lab reports from PDF or image uploads, with plain-language explanations and follow-up guidance.",
+        "problem": "A lab report is hard to read for most people. LabIQ turns an uploaded PDF or photo into a plain-language explanation and clear next steps.",
+        "how": [
+          "Upload a lab report as PDF or image",
+          "AI extraction and analysis of values",
+          "Plain-language explanation and follow-up guidance"
+        ],
+        "roadmap": ["Trend tracking across reports", "Clinician share links"]
+      },
+      "hospital-manager": {
+        "name": "Hospital Manager",
+        "short": "Manager",
+        "summary": "Executive dashboards, AI predictive analytics, CNAS / DSP interoperability and an AI avatar for real-time decisions.",
+        "problem": "Management decisions are only as good as the data behind them. Hospital Manager turns live operational data into forecasts and answers leadership can act on.",
+        "how": [
+          "Executive dashboards across the hospital",
+          "AI predictive analytics for demand and staffing",
+          "CNAS / DSP interoperability",
+          "AI avatar for real-time decision support"
+        ],
+        "roadmap": ["Scenario planning", "Benchmark reporting"]
+      },
+      "manager-mobile": {
+        "name": "Manager Mobile Dashboard",
+        "short": "Mobile",
+        "summary": "Mobile oversight of departments, staffing, alerts and finance, with a manager AI assistant in your pocket.",
+        "problem": "Leadership is rarely at a desk. The Manager Mobile Dashboard puts the operational picture and an AI assistant on the phone, designed mobile-first.",
+        "how": [
+          "Departments, staffing and finance at a glance",
+          "Push alerts for what needs attention",
+          "Manager AI assistant on mobile"
+        ],
+        "roadmap": ["Offline snapshots", "Approvals on the go"]
+      },
+      "risk-assessment": {
+        "name": "Risk Assessment",
+        "short": "Risk",
+        "summary": "An AI risk workspace with probability bands, time windows and an overall risk tier.",
+        "problem": "Risk is a moving target. This workspace makes probability, timing and overall tier explicit, so clinical decisions are grounded and reviewable.",
+        "how": [
+          "Probability bands per risk factor",
+          "Time-window estimates",
+          "An overall, explainable risk tier"
+        ],
+        "roadmap": ["Cohort comparisons", "Guideline-linked rationales"]
+      },
+      "data-collection": {
+        "name": "Hospital Data Collection",
+        "short": "Data",
+        "summary": "Admissions, master data, bed maps, insurance, pharmacy and reporting in one structured workspace.",
+        "problem": "Clean structured data is the foundation everything else runs on. This module captures it once, at the source, and keeps it consistent across the hospital.",
+        "how": [
+          "Admissions and master data",
+          "Bed maps and capacity",
+          "Insurance, pharmacy and reporting"
+        ],
+        "roadmap": ["Configurable reporting templates", "Data-quality checks"]
+      },
+      "quiz": {
+        "name": "QUIZ Module",
+        "short": "CME",
+        "summary": "Accredited CME for doctors and residents: AI-generated adaptive clinical cases, competency evaluation and certified CME hours.",
+        "problem": "Continuing education competes with clinical time. The QUIZ Module makes CME adaptive and case-based, so learning fits real schedules and counts.",
+        "how": [
+          "AI-generated adaptive clinical cases",
+          "Competency evaluation",
+          "Accredited CME hours"
+        ],
+        "roadmap": ["Specialty tracks", "Team leaderboards"]
+      },
+      "analytics": {
+        "name": "Analytics Dashboard",
+        "short": "Analytics",
+        "summary": "A standalone dashboard for the chat-widget analytics system, powered by live telemetry.",
+        "problem": "If the assistant is the front door, its analytics are the floor plan. This dashboard makes conversation telemetry legible and actionable.",
+        "how": [
+          "Live telemetry from the chat widget",
+          "Usage, topics and resolution metrics",
+          "Standalone, embeddable dashboard"
+        ],
+        "roadmap": ["Custom funnels", "Alerting on anomalies"]
+      },
+      "citizen": {
+        "name": "Citizen Module — Oradea City Hall",
+        "short": "Citizen",
+        "summary": "AI-generated reports, online services, an interactive neighbourhood map and the ZenA civic assistant — live at Oradea City Hall.",
+        "problem": "Citizens need a single, clear way to reach public services. The Citizen Module is the civic front door — services, maps and a multilingual assistant in one place.",
+        "how": [
+          "AI-generated reports and requests",
+          "Online municipal services",
+          "Interactive neighbourhood map",
+          "ZenA civic assistant"
+        ],
+        "roadmap": ["More service categories", "Cross-department routing"]
+      },
+      "administrative-module": {
+        "name": "Administrative Module",
+        "short": "Admin",
+        "summary": "RAG for non-clinical processes: legal compliance, CNAS accounting, medication management and AI hospital inventory.",
+        "problem": "Back-office processes are document-heavy and rule-bound. The Administrative Module applies retrieval-augmented AI to compliance, accounting and inventory.",
+        "how": [
+          "RAG over legal & compliance documents",
+          "CNAS accounting support",
+          "Medication management",
+          "AI hospital inventory"
+        ],
+        "roadmap": ["Procurement workflows", "Audit trails"]
+      },
+      "zen-rag": {
+        "name": "ZEN_RAG / Git_RAG_Zena",
+        "short": "ZEN_RAG",
+        "summary": "A 100% offline, local RAG for medical and legislative documents — no cloud, built on llama.cpp + FAISS. The backbone of every data-sovereignty conversation.",
+        "problem": "Clinical and legal data can't always leave the building. ZEN_RAG runs entirely on-premise, so sensitive documents stay sovereign while still being searchable by AI.",
+        "how": [
+          "100% offline, local retrieval-augmented generation",
+          "No cloud dependency — runs on-premise",
+          "Built on llama.cpp + FAISS",
+          "Tuned for medical & legislative corpora"
+        ],
+        "roadmap": ["Broader model support", "Hardened on-prem deployment tooling"]
+      },
+      "llm-compare": {
+        "name": "Zen_LLM_Compare",
+        "short": "LLM Compare",
+        "summary": "A side-by-side comparator for 6+ local and cloud LLMs — same prompt, parallel responses and a latency benchmark.",
+        "problem": "Choosing the right model is an engineering decision, not a guess. LLM Compare runs one prompt across many models at once and measures the trade-offs.",
+        "how": [
+          "Same prompt sent to 6+ models in parallel",
+          "Side-by-side response comparison",
+          "Latency benchmarking"
+        ],
+        "roadmap": ["Quality scoring", "Cost-per-task estimates"]
+      }
+    }
+  }
+}

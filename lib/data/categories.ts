@@ -1,39 +1,38 @@
 import { HeartPulse, Landmark, Cpu } from "lucide-react";
-import type { Category } from "./types";
+import type { Category, CategorySkeleton, Translator } from "./types";
 
-export const categories: Category[] = [
-  {
-    slug: "medical",
-    name: "Medical",
-    label: "Category A — Medical",
-    tagline: "The flagship.",
-    description:
-      "Clinical solutions, hospital modules and medical education — the heart of the offering, grouped along the real clinical workflow from front desk to boardroom.",
-    accent: "zen",
-    icon: HeartPulse,
-  },
-  {
-    slug: "administrative",
-    name: "Administrative",
-    label: "Category B — Administrative",
-    tagline: "Civic & back-office.",
-    description:
-      "Civic management, administrative processes and RAG-based compliance — already live in a public institution.",
-    accent: "zen",
-    icon: Landmark,
-  },
-  {
-    slug: "ai-infrastructure",
-    name: "AI Infrastructure",
-    label: "Category C — General",
-    tagline: "The sovereign layer.",
-    description:
-      "AI tooling, local models and RAG infrastructure — the offline-capable technical foundation the whole platform is built on.",
-    accent: "violet",
-    icon: Cpu,
-  },
+/** Locale-invariant category facts. Copy lives in `categories.*` in the catalog. */
+export const categorySkeletons: CategorySkeleton[] = [
+  { slug: "medical", accent: "zen", icon: HeartPulse },
+  { slug: "administrative", accent: "zen", icon: Landmark },
+  { slug: "ai-infrastructure", accent: "violet", icon: Cpu },
 ];
 
-export function getCategory(slug: string) {
-  return categories.find((c) => c.slug === slug);
+export const categorySlugs = categorySkeletons.map((c) => c.slug);
+
+export function getCategorySkeleton(slug: string) {
+  return categorySkeletons.find((c) => c.slug === slug);
+}
+
+/** `t` must be scoped to the `categories` namespace. */
+export function buildCategories(t: Translator): Category[] {
+  return categorySkeletons.map((c) => ({
+    ...c,
+    name: t(`${c.slug}.name`),
+    label: t(`${c.slug}.label`),
+    tagline: t(`${c.slug}.tagline`),
+    description: t(`${c.slug}.description`),
+  }));
+}
+
+export function buildCategory(t: Translator, slug: string): Category | undefined {
+  const c = getCategorySkeleton(slug);
+  if (!c) return undefined;
+  return {
+    ...c,
+    name: t(`${c.slug}.name`),
+    label: t(`${c.slug}.label`),
+    tagline: t(`${c.slug}.tagline`),
+    description: t(`${c.slug}.description`),
+  };
 }

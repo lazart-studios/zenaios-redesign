@@ -1,63 +1,53 @@
-import Link from "next/link";
 import { Building2, Stethoscope, TrendingUp, ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
-const audiences = [
-  {
-    icon: Building2,
-    role: "Hospital leadership",
-    tag: "CMO · CIO · economic buyer",
-    needs: "ROI, interoperability (CNAS/DSP), data sovereignty, a real track record.",
-    show: ["Hospital Manager", "SJUO deployment", "Sovereign RAG"],
-    links: [
-      { label: "Hospital Manager", href: "/modules/hospital-manager" },
-      { label: "Deployments", href: "/deployments" },
-    ],
-  },
-  {
-    icon: Stethoscope,
-    role: "Clinicians",
-    tag: "Doctors · nurses · residents",
-    needs: "Less admin, accurate AI epicrisis, decision support that adds no friction, CME.",
-    show: ["Doctor & Nursing", "Triage & Lab", "Accredited CME"],
-    links: [
-      { label: "Doctor module", href: "/modules/doctor" },
-      { label: "CME / QUIZ", href: "/modules/quiz" },
-    ],
-  },
-  {
-    icon: TrendingUp,
-    role: "Investors",
-    tag: "& EU-funding evaluators",
-    needs: "Traction, a credible team, breadth, technical moat and a clear vision.",
-    show: ["2 live deployments", "17 modules", "In-house AI infra"],
-    links: [
-      { label: "The platform", href: "/platform" },
-      { label: "Team & vision", href: "/about" },
-    ],
-  },
+/**
+ * Locale-invariant per-audience facts (icon + link targets). Text — role, tag,
+ * needs, chips and link labels — comes from `audiences.items` in the catalog,
+ * matched by index.
+ */
+const audienceSkeletons = [
+  { icon: Building2, hrefs: ["/modules/hospital-manager", "/deployments"] },
+  { icon: Stethoscope, hrefs: ["/modules/doctor", "/modules/quiz"] },
+  { icon: TrendingUp, hrefs: ["/platform", "/about"] },
 ];
 
+type AudienceItem = {
+  role: string;
+  tag: string;
+  needs: string;
+  show: string[];
+  links: string[];
+};
+
 export function Audiences() {
+  const t = useTranslations("audiences");
+  const items = t.raw("items") as AudienceItem[];
+
   return (
     <Section id="audiences">
       <Reveal>
         <SectionHeading
-          eyebrow="One site, three buyers"
+          eyebrow={t("eyebrow")}
           title={
             <>
-              Find your <span className="text-gradient">“for me”</span> path
+              {t("titleLead")}{" "}
+              <span className="text-gradient">{t("titleAccent")}</span>{" "}
+              {t("titleTrail")}
             </>
           }
-          description="The same platform, framed for the person reading. Management, clinicians and investors each get a direct route to what matters to them."
+          description={t("description")}
         />
       </Reveal>
 
       <Stagger className="mt-12 grid gap-5 md:grid-cols-3">
-        {audiences.map((a) => {
-          const Icon = a.icon;
+        {items.map((a, i) => {
+          const skeleton = audienceSkeletons[i];
+          const Icon = skeleton.icon;
           return (
             <StaggerItem key={a.role}>
               <div className="group relative flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
@@ -82,13 +72,13 @@ export function Audiences() {
                 </div>
 
                 <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1.5 pt-6">
-                  {a.links.map((l) => (
+                  {a.links.map((label, j) => (
                     <Link
-                      key={l.href}
-                      href={l.href}
+                      key={skeleton.hrefs[j]}
+                      href={skeleton.hrefs[j]}
                       className="group/link inline-flex items-center gap-1 text-sm font-medium text-sky"
                     >
-                      {l.label}
+                      {label}
                       <ArrowRight className="size-3.5 transition-transform group-hover/link:translate-x-0.5" />
                     </Link>
                   ))}

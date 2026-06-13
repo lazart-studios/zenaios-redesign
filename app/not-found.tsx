@@ -1,40 +1,39 @@
 import Link from "next/link";
-import { ArrowLeft, Home } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-import { SwirlMotif } from "@/components/brand/SwirlMotif";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import "./globals.css";
 
+/**
+ * Global 404 — rendered for paths that don't resolve to a locale segment, so it
+ * lives outside the `[locale]` layout and must bring its own <html>/<body>.
+ * English-only by design (the locale is unknown here).
+ */
 export default function NotFound() {
   return (
-    <section className="relative flex min-h-[80vh] items-center overflow-hidden">
-      <SwirlMotif className="pointer-events-none absolute -right-32 top-1/4 size-[520px] opacity-25" />
-      <div className="container-z relative flex flex-col items-center text-center">
-        <p className="text-gradient text-[7rem] font-bold leading-none md:text-[10rem]">
-          404
-        </p>
-        <h1 className="mt-2 text-2xl font-bold text-ink sm:text-3xl">
-          This page took the day off
-        </h1>
-        <p className="mt-3 max-w-md text-muted">
-          The page you&apos;re looking for doesn&apos;t exist or has moved. Let&apos;s
-          get you back to something useful.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Button href="/" size="lg">
-            <Home className="size-4" />
-            Back home
-          </Button>
-          <Button href="/platform" variant="secondary" size="lg" withArrow>
-            Explore the platform
-          </Button>
-        </div>
-        <Link
-          href="/contact"
-          className="group mt-8 inline-flex items-center gap-1.5 text-sm text-faint transition-colors hover:text-sky"
-        >
-          <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-1" />
-          Or contact us if something&apos;s broken
-        </Link>
-      </div>
-    </section>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-dvh bg-abyss antialiased">
+        <main className="relative grid min-h-dvh place-items-center px-6 text-center">
+          <div className="mx-auto max-w-md">
+            <p className="text-gradient text-[6rem] font-bold leading-none">404</p>
+            <h1 className="mt-2 text-2xl font-semibold text-ink">
+              This page took the day off
+            </h1>
+            <p className="mt-3 text-muted">
+              The page you&apos;re looking for doesn&apos;t exist or has moved.
+            </p>
+            <Link
+              href="/"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-abyss transition hover:bg-white/90"
+            >
+              Back home
+            </Link>
+          </div>
+        </main>
+      </body>
+    </html>
   );
 }

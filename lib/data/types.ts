@@ -14,58 +14,89 @@ export type WorkflowStage =
   | "education"
   | "infrastructure";
 
-export interface ModuleItem {
+export type Accent = "zen" | "sky" | "success" | "violet" | "warning";
+
+/**
+ * Minimal translator shape shared by `useTranslations` (sync, server & client)
+ * and the resolved value of `getTranslations` (async). Builders accept this so
+ * the same data factories work in every rendering context.
+ */
+export interface Translator {
+  (key: string, values?: Record<string, string | number | Date>): string;
+  raw: (key: string) => unknown;
+}
+
+// ── Modules ─────────────────────────────────────────────────────────────
+/** Locale-invariant module facts (icons, slugs, versions, accents). */
+export interface ModuleSkeleton {
   slug: string;
-  name: string;
-  /** Short label for compact cards / chips. */
-  short: string;
   category: CategorySlug;
   status: ModuleStatus;
   version: string;
   stage: WorkflowStage;
   icon: LucideIcon;
   /** Subtle per-module accent — used sparingly, marketing stays core blue. */
-  accent: "zen" | "sky" | "success" | "violet" | "warning";
-  /** "What it does" — close to the brief. */
-  summary: string;
-  /** "What problem it solves". */
-  problem: string;
-  /** "How it works" bullets. */
-  how: string[];
-  /** Forward-looking roadmap items. */
-  roadmap: string[];
+  accent: Accent;
   /** Optional flag for flagship deployment cross-link. */
   deployment?: string;
 }
 
-export interface Category {
-  slug: CategorySlug;
+/** A fully built module — skeleton merged with the active locale's copy. */
+export interface ModuleItem extends ModuleSkeleton {
   name: string;
-  label: string;
-  tagline: string;
-  description: string;
+  /** Short label for compact cards / chips. */
+  short: string;
+  summary: string;
+  problem: string;
+  how: string[];
+  roadmap: string[];
+}
+
+// ── Categories ──────────────────────────────────────────────────────────
+export interface CategorySkeleton {
+  slug: CategorySlug;
   accent: "zen" | "violet";
   icon: LucideIcon;
 }
 
-export interface Deployment {
-  slug: string;
+export interface Category extends CategorySkeleton {
   name: string;
-  institution: string;
-  kind: string;
+  label: string;
+  tagline: string;
+  description: string;
+}
+
+// ── Deployments ─────────────────────────────────────────────────────────
+export interface DeploymentSkeleton {
+  slug: string;
+  /** Proper noun — stays the same across locales. */
+  name: string;
+  /** Proper noun — stays the same across locales. */
   location: string;
   status: ModuleStatus;
-  summary: string;
-  live: string[];
   icon: LucideIcon;
 }
 
-export interface TeamMember {
+export interface Deployment extends DeploymentSkeleton {
+  institution: string;
+  kind: string;
+  summary: string;
+  live: string[];
+}
+
+// ── Team ────────────────────────────────────────────────────────────────
+export interface TeamSkeleton {
+  /** Catalog key (george / vlad / horea). */
+  key: string;
+  /** Proper noun — stays the same across locales. */
   name: string;
-  role: string;
   initials: string;
-  /** Local headshot in /public/team — fetched from the live site. */
+  /** Local headshot in /public/team. */
   photo: string;
-  bio: string;
   linkedin: string;
+}
+
+export interface TeamMember extends TeamSkeleton {
+  role: string;
+  bio: string;
 }

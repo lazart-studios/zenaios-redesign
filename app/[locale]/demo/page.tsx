@@ -1,37 +1,47 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowUpRight, Check, Clock, ShieldCheck } from "lucide-react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/motion/Reveal";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/lib/data/site";
-import { pageMeta } from "@/lib/seo";
+import { metaFromCatalog } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata = pageMeta({
-  title: "Request a demo",
-  description:
-    "Book a guided walkthrough of ZenAiOS — the AI epicrisis, triage, executive dashboards and sovereign RAG — mapped to your institution.",
-  path: "/demo",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return metaFromCatalog({ locale: locale as Locale, page: "demo", path: "/demo" });
+}
 
-const expect = [
-  "A 30-minute guided walkthrough, tailored to your role",
-  "The AI epicrisis, triage and executive dashboards, live",
-  "How sovereign offline RAG keeps your data on-premise",
-  "A straight answer on what fits your institution — and what doesn't yet",
-];
+export default async function DemoPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
 
-export default function DemoPage() {
+  const t = await getTranslations("demoPage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const expect = t.raw("expect") as string[];
+
   return (
     <>
       <PageHeader
-        eyebrow="Request a demo"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Request a demo" }]}
+        eyebrow={t("eyebrow")}
+        crumbs={[{ label: common("home"), href: "/" }, { label: nav("requestDemo") }]}
         title={
           <>
-            See it running in a <span className="text-gradient">real hospital</span>
+            {t("titleLead")} <span className="text-gradient">{t("titleAccent")}</span>
           </>
         }
-        description="Tell us a little about your institution and we'll set up a walkthrough focused on what matters to you."
+        description={t("description")}
       />
 
       <Section className="!pt-4">
@@ -39,7 +49,7 @@ export default function DemoPage() {
           {/* Left — what to expect */}
           <div className="space-y-8">
             <Reveal>
-              <h2 className="text-lg font-bold text-ink">What to expect</h2>
+              <h2 className="text-lg font-bold text-ink">{t("expectTitle")}</h2>
               <ul className="mt-5 space-y-3.5">
                 {expect.map((e) => (
                   <li key={e} className="flex items-start gap-3 text-sm text-ink/90">
@@ -56,33 +66,28 @@ export default function DemoPage() {
               <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card/40 p-4">
                 <Clock className="size-5 shrink-0 text-sky" />
                 <p className="text-sm text-muted">
-                  We typically reply within{" "}
-                  <span className="text-ink">one business day</span>.
+                  {t.rich("replyNote", {
+                    b: (chunks) => <span className="text-ink">{chunks}</span>,
+                  })}
                 </p>
               </div>
               <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card/40 p-4">
                 <ShieldCheck className="size-5 shrink-0 text-success" />
-                <p className="text-sm text-muted">
-                  No data leaves the building in a self-hosted deployment.
-                </p>
+                <p className="text-sm text-muted">{t("sovereignNote")}</p>
               </div>
             </Reveal>
 
             <Reveal delay={0.15}>
               <div className="rounded-2xl border border-hairline bg-gradient-to-br from-card/70 to-card/20 p-5">
-                <p className="text-sm font-medium text-ink">
-                  Prefer to look around first?
-                </p>
-                <p className="mt-1 text-sm text-muted">
-                  The live platform is open to explore.
-                </p>
+                <p className="text-sm font-medium text-ink">{t("lookAroundTitle")}</p>
+                <p className="mt-1 text-sm text-muted">{t("lookAroundBody")}</p>
                 <a
                   href={siteConfig.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-sky"
                 >
-                  Open {siteConfig.demoUrl.replace("https://", "")}
+                  {t("open", { url: siteConfig.demoUrl.replace("https://", "") })}
                   <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               </div>

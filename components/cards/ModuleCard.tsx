@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import type { ModuleItem } from "@/lib/data/types";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { cn } from "@/lib/utils";
@@ -21,6 +22,7 @@ const glowMap: Record<ModuleItem["accent"], string> = {
 };
 
 export function ModuleCard({ module: m }: { module: ModuleItem }) {
+  const t = useTranslations("common");
   const Icon = m.icon;
   return (
     <Link
@@ -56,7 +58,7 @@ export function ModuleCard({ module: m }: { module: ModuleItem }) {
           {m.version}
         </span>
         <span className="inline-flex items-center gap-1 text-sm font-medium text-sky">
-          Details
+          {t("details")}
           <ArrowRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>

@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "titleDefault": "ZenAiOS — Das KI-Betriebssystem für moderne Krankenhäuser.",
+    "titleTemplate": "%s · ZenAiOS",
+    "description": "Das KI-Betriebssystem für moderne Krankenhäuser — 17 KI-Module für klinische Versorgung, Krankenhausmanagement und öffentliche Gesundheit, bereits live in realen Institutionen.",
+    "platform": {
+      "title": "Die Plattform",
+      "description": "17 KI-Module über drei interoperierende Bereiche hinweg — medizinisch, administrativ und KI-Infrastruktur. Ein Assistent, fünf Sprachen, live in realen Institutionen."
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "ZenAiOS wird von einem klinischen, technischen und kommerziellen Team in Oradea, România, entwickelt — ein KI-Betriebssystem, das auf realer Krankenhauspraxis und Datensouveränität beruht."
+    },
+    "deployments": {
+      "title": "Einsätze",
+      "description": "ZenAiOS ist im Feld live — ein Kreisnotfallkrankenhaus (SJUO Oradea) und ein Rathaus (Primăria Oradea). Reale Institutionen, reale Arbeitsabläufe."
+    },
+    "demo": {
+      "title": "Demo anfragen",
+      "description": "Buchen Sie eine geführte Tour durch ZenAiOS — die KI-Epikrise, Triage, Management-Dashboards und souveränes RAG — zugeschnitten auf Ihre Institution."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Nehmen Sie Kontakt mit dem ZenAiOS-Team in Oradea, România, auf — per Telefon, E-Mail oder über das Formular. Wir antworten innerhalb eines Werktags."
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "description": "Fallstudien, Dokumentation, klinische CME und Presse zu ZenAiOS — dem KI-Betriebssystem für moderne Krankenhäuser."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "description": "Wie ZenAiOS personenbezogene Daten auf dieser Website und über die gesamte Plattform hinweg verarbeitet, einschließlich unseres Ansatzes zur Datensouveränität."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "description": "Die Bedingungen, die Ihre Nutzung der ZenAiOS-Website und der darauf dargestellten Informationen regeln."
+    }
+  },
+  "nav": {
+    "homeAria": "ZenAiOS Startseite",
+    "platform": "Plattform",
+    "deployments": "Einsätze",
+    "about": "Über uns",
+    "resources": "Ressourcen",
+    "livePlatform": "Live-Plattform",
+    "requestDemo": "Demo anfragen",
+    "toggleMenu": "Menü umschalten",
+    "byDomain": "Nach Bereich",
+    "explore": "Entdecken",
+    "platformOverview": "Plattform-Überblick",
+    "liveDeployments": "Live-Einsätze",
+    "modulesCount": "{count} Module",
+    "liveNow": "Jetzt live",
+    "megaTagline": "{count} Module. 3 Bereiche. 2 Live-Einsätze.",
+    "megaCta": "Sehen Sie, wie das Betriebssystem zusammenpasst →"
+  },
+  "footer": {
+    "tagline": "Das KI-Betriebssystem für moderne Krankenhäuser. 17 KI-Module für klinische Versorgung, Krankenhausmanagement und öffentliche Gesundheit — live in realen Institutionen.",
+    "columns": {
+      "platform": "Plattform",
+      "company": "Unternehmen",
+      "getStarted": "Loslegen"
+    },
+    "links": {
+      "overview": "Überblick",
+      "medical": "Medizinisch",
+      "administrative": "Administrativ",
+      "aiInfrastructure": "KI-Infrastruktur",
+      "about": "Über uns",
+      "deployments": "Einsätze",
+      "resources": "Ressourcen",
+      "contact": "Kontakt",
+      "requestDemo": "Demo anfragen",
+      "livePlatform": "Live-Plattform",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Bedingungen"
+    },
+    "rights": "© {year} ZenAiOS. Alle Rechte vorbehalten.",
+    "builtFor": "Entwickelt für Vertrauen in klinischer Qualität · WCAG 2.1 AA · {location}"
+  },
+  "common": {
+    "details": "Details",
+    "viewAll": "Alle ansehen",
+    "seeModules": "Module ansehen",
+    "builtOnPlatform": "Auf der Plattform aufgebaut",
+    "modules": "Module",
+    "moreCount": "+{count} weitere",
+    "moduleCount": "{count, plural, one {# Modul} other {# Module}}",
+    "liveDeploymentCount": "{count, plural, one {# Live-Einsatz} other {# Live-Einsätze}}",
+    "home": "Start"
+  },
+  "status": {
+    "active": "Aktiv",
+    "module": "Modul",
+    "dev": "Entwicklung"
+  },
+  "languageSwitcher": {
+    "label": "Sprache"
+  },
+  "hero": {
+    "badge": "Live in realen Krankenhäusern & städtischen Institutionen",
+    "titleLine1": "Das KI-Betriebssystem",
+    "titleLine2": "für moderne Krankenhäuser.",
+    "description": "17 KI-Module für <b>klinische Versorgung</b>, <b>Krankenhausmanagement</b> und <b>öffentliche Gesundheit</b> — bereits live in einem Kreisnotfallkrankenhaus und einem Rathaus.",
+    "ctaPrimary": "Demo anfragen",
+    "ctaSecondary": "Plattform entdecken",
+    "deployedAt": "Im Einsatz bei",
+    "scrollCue": "Scrollen zum Entdecken"
+  },
+  "proof": {
+    "heading": "Reale Einsätze, reale Standards — keine Platzhalter-Logos"
+  },
+  "threeDomains": {
+    "eyebrow": "Eine Plattform, drei Bereiche",
+    "titleLead": "Nicht drei Module.",
+    "titleAccent": "Siebzehn.",
+    "description": "ZenAiOS ist ein Betriebssystem, kein Chatbot — gegliedert in drei Bereiche, die interoperieren, einen Assistenten teilen und fünf Sprachen sprechen."
+  },
+  "audiences": {
+    "eyebrow": "Eine Website, drei Käufer",
+    "titleLead": "Finden Sie Ihren",
+    "titleAccent": "„für mich“",
+    "titleTrail": "Weg",
+    "description": "Dieselbe Plattform, zugeschnitten auf die Person, die liest. Management, Klinikpersonal und Investoren erhalten jeweils einen direkten Weg zu dem, was für sie zählt.",
+    "items": [
+      {
+        "role": "Krankenhausleitung",
+        "tag": "CMO · CIO · wirtschaftlicher Entscheider",
+        "needs": "ROI, Interoperabilität (CNAS/DSP), Datensouveränität, eine echte Erfolgsbilanz.",
+        "show": ["Hospital Manager", "SJUO-Einsatz", "Souveränes RAG"],
+        "links": ["Hospital Manager", "Einsätze"]
+      },
+      {
+        "role": "Klinikpersonal",
+        "tag": "Ärzte · Pflegekräfte · Assistenzärzte",
+        "needs": "Weniger Verwaltung, präzise KI-Epikrise, reibungslose Entscheidungsunterstützung, CME.",
+        "show": ["Arzt & Pflege", "Triage & Labor", "Akkreditierte CME"],
+        "links": ["Arzt-Modul", "CME / QUIZ"]
+      },
+      {
+        "role": "Investoren",
+        "tag": "& EU-Fördermittelgutachter",
+        "needs": "Traktion, ein glaubwürdiges Team, Breite, technischer Vorsprung und eine klare Vision.",
+        "show": ["2 Live-Einsätze", "17 Module", "Eigene KI-Infrastruktur"],
+        "links": ["Die Plattform", "Team & Vision"]
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "Vorzeige-Einsatz",
+    "description": "Ein vollständig integriertes Krankenhaussystem im Betrieb in einem Kreisnotfallkrankenhaus — der stärkste Beweis, dass ZenAiOS in realem Maßstab funktioniert.",
+    "link": "Die Einsätze lesen",
+    "statProduction": "im Produktivbetrieb",
+    "statCoding": "Kodierung integriert"
+  },
+  "capabilities": {
+    "eyebrow": "Was es tatsächlich leistet",
+    "titleLead": "Funktionen, die",
+    "titleAccent": "klinisches Vertrauen verdienen",
+    "description": "Vier der Dinge, die ZenAiOS jeden Tag leistet — Entscheidungsunterstützung, Triage, Prognose und souveräne KI.",
+    "features": {
+      "doctor": {
+        "eyebrow": "Arzt-Modul",
+        "title": "Entscheidungsunterstützung, die im Arbeitsfluss bleibt",
+        "description": "Kontextbezogene Differenzialdiagnose- und Behandlungsvorschläge erscheinen dort, wo die Arbeit stattfindet — und erzeugen automatisch die Epikrise und Dokumente, sodass Ärzte schneller fertig sind und pünktlich nach Hause kommen.",
+        "bullets": [
+          "Differenzialdiagnose- & Behandlungsvorschläge",
+          "Automatische Epikrise & klinische Notizen",
+          "Evidenzbasiert, verknüpft mit Leitlinien"
+        ],
+        "link": "Arzt-Modul entdecken"
+      },
+      "triage": {
+        "eyebrow": "Notfall-Triage",
+        "title": "Priorisiert nach realem Schweregrad, nicht nach Ankunftsreihenfolge",
+        "description": "Das Manchester-Protokoll in Kombination mit KI klassifiziert jeden Patienten in fünf Stufen, hält die Warteschlange nach Akuität geordnet und alarmiert den diensthabenden Arzt, sobald ein Fall der Stufe 1 eintrifft.",
+        "bullets": [
+          "Manchester + KI, 5 Schweregradstufen",
+          "Automatische Priorisierung der Warteschlange",
+          "Sofortige Arztalarme bei hoher Akuität"
+        ],
+        "link": "Triage entdecken"
+      },
+      "management": {
+        "eyebrow": "Management",
+        "title": "Dashboards, die vorhersagen, nicht nur berichten",
+        "description": "Management-Dashboards verwandeln operative Echtzeitdaten in Prognosen — Andrang, Personalengpässe, Engstellen — mit CNAS/DSP-Interoperabilität und einem KI-Avatar für Echtzeitentscheidungen, auf Desktop und Mobilgerät.",
+        "bullets": [
+          "Prädiktive KI-Analytik",
+          "CNAS / DSP-Interoperabilität",
+          "Desktop- + Manager-Mobile-Dashboard"
+        ],
+        "link": "Hospital Manager entdecken"
+      },
+      "infrastructure": {
+        "eyebrow": "KI-Infrastruktur",
+        "title": "Souveräne KI — Ihre Daten verlassen niemals das Gebäude",
+        "description": "ZEN_RAG betreibt ein zu 100 % offline arbeitendes, lokales Retrieval-Augmented-System auf llama.cpp + FAISS. Keine Cloud, kein Datenabfluss — die Grundlage jedes Gesprächs über Datensouveränität und DSGVO.",
+        "bullets": [
+          "Zu 100 % offline, On-Premise-RAG",
+          "llama.cpp + FAISS, 6+ Modelle",
+          "Abgestimmt auf medizinische & legislative Korpora"
+        ],
+        "link": "Die KI-Infrastruktur ansehen"
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Glaubwürdigkeit statt großer Zahlen",
+    "title": "Die Zahlen, die tatsächlich stimmen",
+    "description": "Wir führen mit dem, was überprüfbar ist. Effizienzwerte werden als ehrliche Prognosen ausgewiesen — niemals als unbelegte Behauptungen.",
+    "footnote": "Prognosen sind illustrative Zielwerte, vorbehaltlich veröffentlichter Pilotergebnisse — keine gemessenen Resultate."
+  },
+  "team": {
+    "eyebrow": "Die Menschen dahinter",
+    "titleLead": "Ein echtes Team,",
+    "titleAccent": "das im Offenen baut",
+    "description": "Klinische, technische und kommerzielle Führung — dieselben Gründer, die die Plattform entworfen haben, setzen sie auch ein."
+  },
+  "cta": {
+    "default": {
+      "eyebrow": "Bereit, wann Sie es sind",
+      "title": "Sehen Sie ZenAiOS im Betrieb in einem realen Krankenhaus",
+      "description": "Buchen Sie eine geführte Tour durch die Plattform — von der KI-Epikrise bis zu den Management-Dashboards — und sehen Sie, wie sie zu Ihrer Institution passen würde."
+    },
+    "about": {
+      "eyebrow": "Arbeiten Sie mit uns",
+      "title": "Wir gestalten die Zukunft der Krankenhaus-KI",
+      "description": "Ob Sie eine Institution, eine Klinikfachkraft oder ein Investor sind — wir zeigen Ihnen gerne, was ZenAiOS leisten kann."
+    },
+    "deployments": {
+      "eyebrow": "Als Nächstes Ihre Institution?",
+      "title": "Sprechen wir über Ihren Einsatz",
+      "description": "Erzählen Sie uns von Ihrem Krankenhaus oder Ihrer Institution, und wir bilden ZenAiOS auf Ihre Arbeitsabläufe ab."
+    },
+    "requestDemo": "Demo anfragen",
+    "openLive": "Live-Plattform öffnen",
+    "callUs": "Oder rufen Sie uns direkt an — {phone}"
+  },
+  "form": {
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Erika Mustermann",
+    "workEmail": "Geschäftliche E-Mail",
+    "workEmailPlaceholder": "erika@krankenhaus.ro",
+    "organization": "Organisation",
+    "organizationPlaceholder": "Kreisnotfallkrankenhaus",
+    "roleLabel": "Sie sind …",
+    "messageDemo": "Was möchten Sie sehen?",
+    "messageContact": "Wie können wir helfen?",
+    "messagePlaceholderDemo": "Wir sind ein Krankenhaus mit 400 Betten und interessieren uns für die KI-Epikrise und die Triage-Module …",
+    "messagePlaceholderContact": "Erzählen Sie uns kurz, wonach Sie suchen …",
+    "disclaimer": "Demo-Formular — Eingaben werden weder gespeichert noch gesendet.",
+    "submitDemo": "Demo anfragen",
+    "submitContact": "Nachricht senden",
+    "sending": "Wird gesendet …",
+    "successTitle": "Vielen Dank — fast geschafft",
+    "successBody": "Dies ist ein Demo-Formular, daher wurde nichts gesendet. Auf der Live-Website würde dies das ZenAiOS-Team erreichen, und wir würden innerhalb eines Werktags antworten.",
+    "sendAnother": "Weitere senden",
+    "roles": [
+      "Krankenhausleitung (CMO / CIO / CEO)",
+      "Klinikfachkraft (Arzt / Pflegekraft / Assistenzarzt)",
+      "Öffentliche Institution",
+      "Investor / EU-Fördermittelgutachter",
+      "Partner / Integrator",
+      "Sonstige"
+    ],
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "email": "Geben Sie eine gültige geschäftliche E-Mail ein.",
+      "org": "Sagen Sie uns, wo Sie arbeiten.",
+      "message": "Ein oder zwei Sätze helfen uns bei der Vorbereitung."
+    }
+  },
+  "notFound": {
+    "title": "Diese Seite hat heute freigenommen",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben. Bringen wir Sie zurück zu etwas Nützlichem.",
+    "backHome": "Zurück zur Startseite",
+    "explore": "Die Plattform entdecken",
+    "contact": "Oder kontaktieren Sie uns, falls etwas defekt ist"
+  },
+  "platformPage": {
+    "eyebrow": "Die Plattform",
+    "titleLead": "Ein Betriebssystem.",
+    "titleAccent": "{count} KI-Module.",
+    "description": "ZenAiOS ist kein einzelnes, einem Krankenhaus aufgesetztes Werkzeug — es ist ein mehrschichtiges Betriebssystem. Drei Bereiche, ein gemeinsamer Assistent, alle sprechen dieselben Daten.",
+    "statModules": "KI-Module",
+    "statDomains": "Bereiche",
+    "statDeployments": "Live-Einsätze",
+    "domainsEyebrow": "Drei Bereiche",
+    "domainsTitle": "Wählen Sie die Ebene, in der Sie leben",
+    "domainsDescription": "Jeder Bereich ist für sich ein stimmiges Produkt — und sie teilen ein Datenmodell, einen Assistenten und eine Designsprache.",
+    "catalogueEyebrow": "Jedes Modul",
+    "catalogueTitle": "Der vollständige Katalog",
+    "catalogueDescription": "Von der Anmeldung bis zur Chefetage — entdecken Sie jedes Modul im Detail.",
+    "modulesLabel": "{count} Module"
+  },
+  "categoryPage": {
+    "moduleCountTitle": "{count, plural, one {# Modul} other {# Module}}",
+    "liveCount": "{count, plural, one {# Live-Einsatz} other {# Live-Einsätze}}",
+    "allDomains": "Alle Bereiche",
+    "highlights": {
+      "medical": [
+        "Der vollständige klinische Weg — Anmeldung, Triage, Diagnose, Versorgung, Labor, Management & CME",
+        "KI-Epikrise mit ICD-10- & DRG-Kodierung",
+        "Live in einem Kreisnotfallkrankenhaus (SJUO)"
+      ],
+      "administrative": [
+        "Bürgerdienste und Back-Office-Prozesse",
+        "RAG über Rechts-, Compliance- & Buchhaltungsdokumente",
+        "Live im Rathaus von Oradea"
+      ],
+      "ai-infrastructure": [
+        "Zu 100 % offline, On-Premise-RAG (llama.cpp + FAISS)",
+        "Multi-Modell-Vergleich & Benchmarking",
+        "Das souveräne Fundament unter jedem anderen Modul"
+      ]
+    }
+  },
+  "modulePage": {
+    "problemEyebrow": "Das Problem, das es löst",
+    "howEyebrow": "So funktioniert es",
+    "roadmapEyebrow": "Auf der Roadmap",
+    "roadmapIntro": "Wohin sich dieses Modul als Nächstes entwickelt — klar zukunftsgerichtet, noch nicht ausgeliefert.",
+    "liveDeployment": "Live-Einsatz",
+    "seeDeployment": "Den Einsatz ansehen",
+    "moreIn": "Mehr in {category}",
+    "viewAll": "Alle ansehen"
+  },
+  "aboutPage": {
+    "eyebrow": "Über ZenAiOS",
+    "titleLead": "Das Gesundheitswesen",
+    "titleAccent": "zum Laufen bringen.",
+    "description": "Krankenhäuser gehören zu den komplexesten Organisationen der Welt. Wir bauen das KI-Betriebssystem, das ihre fragmentierten Systeme zu einem zusammenfügt — von der Anmeldung bis zur Chefetage.",
+    "missionEyebrow": "Warum es uns gibt",
+    "missionTitle": "Eine Plattform statt zwanzig unverbundener Werkzeuge",
+    "missionP1": "Klinikpersonal verliert täglich Stunden an Dokumentation und an Systeme, die nicht miteinander kommunizieren. Das Management kann nicht in Echtzeit sehen, was geschieht. Patienten haben Mühe, den richtigen Dienst zu finden.",
+    "missionP2": "ZenAiOS ersetzt diese Fragmentierung durch ein einziges, KI-natives Betriebssystem: 17 Module für klinische Versorgung, Krankenhausmanagement und öffentliche Verwaltung, die ein Datenmodell und einen Assistenten teilen.",
+    "missionP3": "Es ist bereits live — in einem Kreisnotfallkrankenhaus und in einem Rathaus — und wird von Menschen gebaut, die es selbst einsetzen.",
+    "principlesEyebrow": "Woran wir glauben",
+    "principlesTitle": "Vier Prinzipien, bei denen wir keine Kompromisse machen",
+    "principles": [
+      {
+        "title": "Klinisch fundiert",
+        "body": "Jedes Modul wird gemeinsam mit einem Chief Medical Officer gestaltet und an realen klinischen Arbeitsabläufen getestet — nicht im luftleeren Raum entwickelt."
+      },
+      {
+        "title": "Souverän by Design",
+        "body": "Sensible Daten können On-Premise bleiben. Unser Offline-RAG bedeutet, dass Krankenhäuser die Kontrolle über ihre eigenen Informationen behalten."
+      },
+      {
+        "title": "Mehrsprachig & barrierefrei",
+        "body": "Fünf Sprachen und ein Assistent, der Patienten und Personal dort abholt, wo sie sind — Versorgung sollte nicht von Fachjargon abhängen."
+      },
+      {
+        "title": "Im Feld bewährt",
+        "body": "Live in einem Kreisnotfallkrankenhaus und einem Rathaus. Wir zeigen lieber reale Einsätze, als große Zahlen zu versprechen."
+      }
+    ]
+  },
+  "deploymentsPage": {
+    "eyebrow": "Im Feld",
+    "titleLead": "Live, nicht",
+    "titleAccent": "in einer Foliensammlung.",
+    "description": "Das Stärkste, das wir zeigen können, ist keine Zahl — es ist Software, die in realen Institutionen läuft, von echtem Personal genutzt, jeden Tag.",
+    "exploreModule": "Das {module}-Modul entdecken",
+    "noteEyebrow": "Ein Hinweis zum Beweis",
+    "noteBody": "Wir führen mit Einsätzen statt mit plakativen Statistiken. Effizienzwerte an anderer Stelle auf dieser Website sind klar als Prognosen gekennzeichnet — was Sie hier sehen, ist schlicht das, was heute läuft."
+  },
+  "demoPage": {
+    "eyebrow": "Demo anfragen",
+    "titleLead": "Sehen Sie es im Betrieb in einem",
+    "titleAccent": "realen Krankenhaus",
+    "description": "Erzählen Sie uns ein wenig über Ihre Institution, und wir richten eine Tour ein, die sich auf das konzentriert, was für Sie zählt.",
+    "expectTitle": "Was Sie erwartet",
+    "expect": [
+      "Eine 30-minütige geführte Tour, zugeschnitten auf Ihre Rolle",
+      "Die KI-Epikrise, Triage und Management-Dashboards, live",
+      "Wie souveränes Offline-RAG Ihre Daten On-Premise hält",
+      "Eine klare Antwort, was zu Ihrer Institution passt — und was noch nicht"
+    ],
+    "replyNote": "Wir antworten in der Regel innerhalb <b>eines Werktags</b>.",
+    "sovereignNote": "Bei einem selbst gehosteten Einsatz verlassen keine Daten das Gebäude.",
+    "lookAroundTitle": "Lieber zuerst umsehen?",
+    "lookAroundBody": "Die Live-Plattform steht zum Erkunden offen.",
+    "open": "{url} öffnen"
+  },
+  "contactPage": {
+    "eyebrow": "Kontakt",
+    "titleLead": "Lassen Sie uns",
+    "titleAccent": "sprechen.",
+    "description": "Fragen zur Plattform, zu einem Einsatz oder zu einer Partnerschaft? Erreichen Sie uns direkt — oder senden Sie eine Nachricht, und wir melden uns bei Ihnen.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "location": "Standort"
+  },
+  "resourcesPage": {
+    "eyebrow": "Ressourcen",
+    "titleLead": "Mehr erfahren,",
+    "titleAccent": "im Detail.",
+    "description": "Wir bauen Fallstudien, Dokumentation und Presse aus. Hier sehen Sie, was kommt — und was heute bereits live ist.",
+    "openModule": "Modul öffnen",
+    "lookingFor": "Suchen Sie etwas Bestimmtes?",
+    "getInTouch": "Kontakt aufnehmen",
+    "pointYou": "und wir weisen Ihnen den Weg dorthin.",
+    "statusInPrep": "In Vorbereitung",
+    "statusLive": "Live-Modul",
+    "items": [
+      {
+        "title": "Fallstudien",
+        "body": "Tiefgehende Einblicke in die Einsätze bei SJUO Oradea und im Rathaus — was eingeführt wurde und was sich verändert hat."
+      },
+      {
+        "title": "Dokumentation",
+        "body": "Technische und klinische Dokumentation für die Plattform, die Module und den souveränen RAG-Stack."
+      },
+      {
+        "title": "Klinisch & CME",
+        "body": "Akkreditierte Fortbildung und adaptive klinische Fälle über das QUIZ-Modul."
+      },
+      {
+        "title": "Presse & Updates",
+        "body": "Ankündigungen, Meilensteine und Berichterstattung, während ZenAiOS auf neue Institutionen ausgeweitet wird."
+      }
+    ]
+  },
+  "legal": {
+    "eyebrow": "Rechtliches",
+    "lastUpdated": "Zuletzt aktualisiert {date}",
+    "lastUpdatedDate": "13. Juni 2026",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Datenschutzerklärung erläutert, wie {name} („wir“, „uns“) personenbezogene Daten im Zusammenhang mit dieser Website ({domain}) und unserer Plattform verarbeitet. Wir haben unseren Sitz in {location} und sind verpflichtet, personenbezogene Daten im Einklang mit der EU-Datenschutz-Grundverordnung (DSGVO) zu verarbeiten.",
+      "h1": "1. Daten, die wir auf dieser Website erheben",
+      "p1a": "Diese Marketing-Website ist bewusst minimal gehalten. Das Demo- und das Kontaktformular werden als Demonstration präsentiert und übermitteln oder speichern keine Eingaben. Falls und sobald diese Formulare an ein Backend angebunden werden, erheben wir ausschließlich die Informationen, die Sie freiwillig angeben — in der Regel Ihren Namen, Ihre geschäftliche E-Mail, Ihre Organisation und Ihre Nachricht —, um auf Ihre Anfrage zu antworten.",
+      "p1b": "Wir können begrenzte, aggregierte technische Informationen (etwa grundlegende Analysedaten) erheben, um zu verstehen, wie die Website genutzt wird. Wir verkaufen keine personenbezogenen Daten.",
+      "h2": "2. Daten innerhalb der Plattform",
+      "p2a": "Die ZenAiOS-Plattform verarbeitet Daten im Auftrag der Institutionen, die sie einsetzen (zum Beispiel Krankenhäuser und Behörden), welche als Verantwortliche handeln. In diesen Konstellationen handelt {name} als Auftragsverarbeiter auf Grundlage einer schriftlichen Vereinbarung.",
+      "p2b": "<strong>Datensouveränität.</strong> Unsere Infrastruktur ist so konzipiert, dass sensible klinische und administrative Daten On-Premise verbleiben können. Unsere Retrieval-Augmented-KI (ZEN_RAG) kann zu 100 % offline laufen, das heißt, regulierte Daten müssen die eigene Umgebung der Institution nicht verlassen.",
+      "h3": "3. Rechtsgrundlagen",
+      "p3": "Soweit wir personenbezogene Daten verarbeiten, stützen wir uns auf eine oder mehrere der folgenden Rechtsgrundlagen: Ihre Einwilligung, die Erfüllung eines Vertrags, die Erfüllung einer rechtlichen Verpflichtung oder unsere berechtigten Interessen am Betrieb und an der Verbesserung unserer Dienste.",
+      "h4": "4. Aufbewahrung",
+      "p4": "Wir bewahren personenbezogene Daten nur so lange auf, wie es für die hier beschriebenen Zwecke erforderlich oder gesetzlich vorgeschrieben ist. Anfragedaten werden so lange aufbewahrt, wie es zur Bearbeitung Ihres Anliegens nötig ist, sowie für einen angemessenen Zeitraum danach.",
+      "h5": "5. Ihre Rechte",
+      "p5": "Vorbehaltlich geltenden Rechts haben Sie das Recht,",
+      "rights": [
+        "auf die personenbezogenen Daten zuzugreifen, die wir über Sie speichern;",
+        "die Berichtigung oder Löschung Ihrer Daten zu verlangen;",
+        "bestimmten Verarbeitungen zu widersprechen oder sie einzuschränken;",
+        "die Übertragbarkeit der von Ihnen bereitgestellten Daten zu verlangen;",
+        "eine Beschwerde bei Ihrer Datenschutzbehörde einzureichen."
+      ],
+      "h6": "6. Kontakt",
+      "p6": "Für jede Datenschutzfrage oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter <email></email> oder telefonisch unter <phone></phone>.",
+      "h7": "7. Änderungen",
+      "p7": "Wir können diese Erklärung von Zeit zu Zeit aktualisieren. Das oben angegebene Datum „zuletzt aktualisiert“ spiegelt die jüngste Überarbeitung wider."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "intro": "Diese Nutzungsbedingungen regeln Ihren Zugriff auf und Ihre Nutzung der {name}-Website unter {domain} (die „Website“). Durch die Nutzung der Website stimmen Sie diesen Bedingungen zu.",
+      "h1": "1. Die Website ist informativ",
+      "p1": "Diese Website präsentiert Informationen über die {name}-Plattform und ihre Module. Die Inhalte dienen ausschließlich der allgemeinen Information und stellen keine medizinische, rechtliche oder berufliche Beratung dar. Die hier gezeigten Produkt-Mockups und Illustrationen sind repräsentativ für die Fähigkeiten der Plattform.",
+      "h2": "2. Demonstrationsformulare",
+      "p2": "Das Demo- und das Kontaktformular auf dieser Website sind Demonstrationen. Sofern nicht ausdrücklich anders angegeben, werden Eingaben weder übermittelt noch gespeichert noch bearbeitet. Um uns zuverlässig zu kontaktieren, nutzen Sie die E-Mail-Adresse oder Telefonnummer auf unserer <contact>Kontaktseite</contact>.",
+      "h3": "3. Prognosen und Zahlen",
+      "p3": "Sämtliche auf dieser Website gezeigten Effizienz- oder Ergebniswerte sind klar als Prognosen oder illustrative Zielwerte gekennzeichnet. Sie sind keine Garantien und sollten nicht als gemessene Resultate herangezogen werden. Überprüfbare Fakten über die Plattform (etwa die Anzahl der Module und Live-Einsätze) werden als solche dargestellt.",
+      "h4": "4. Geistiges Eigentum",
+      "p4": "Der Name {name}, das Logo, die Marke, Texte, Grafiken und Software, die auf dieser Website gezeigt werden, sind Eigentum von uns oder unseren Lizenzgebern und durch geltende Gesetze zum Schutz geistigen Eigentums geschützt. Sie dürfen sie ohne unsere vorherige schriftliche Genehmigung nicht kopieren, vervielfältigen oder verbreiten.",
+      "h5": "5. Links zu Dritten",
+      "p5": "Die Website kann auf Websites oder Dienste Dritter verlinken (zum Beispiel die Live-Plattform-Umgebung). Wir sind nicht für die Inhalte oder Praktiken dieser Dritten verantwortlich.",
+      "h6": "6. Haftungsausschluss & Haftung",
+      "p6": "Die Website wird im größtmöglichen gesetzlich zulässigen Umfang „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Wir haften nicht für Schäden, die aus Ihrer Nutzung der Website oder Ihrem Vertrauen darauf entstehen.",
+      "h7": "7. Anwendbares Recht",
+      "p7": "Diese Bedingungen unterliegen dem Recht von România, ungeachtet kollisionsrechtlicher Grundsätze. Etwaige Streitigkeiten unterliegen den zuständigen Gerichten von România.",
+      "h8": "8. Kontakt",
+      "p8": "Fragen zu diesen Bedingungen? Kontaktieren Sie uns unter <email></email>."
+    }
+  },
+  "visuals": {
+    "dashboard": {
+      "title": "Hospital Manager",
+      "subtitle": "Management-Überblick",
+      "aiPredictive": "KI-Prognose",
+      "kpiOccupancy": "Bettenbelegung",
+      "kpiAdmissions": "Aufnahmen heute",
+      "kpiWait": "Durchschn. Wartezeit",
+      "minSuffix": " Min.",
+      "admissions14": "Aufnahmen · 14 Tage",
+      "forecast": "Prognose",
+      "capacity": "Kapazität",
+      "inUse": "in Nutzung",
+      "deptLoad": "Abteilungsauslastung",
+      "deptEmergency": "Notaufnahme",
+      "deptCardiology": "Kardiologie",
+      "deptRadiology": "Radiologie",
+      "alert": "Notaufnahme nähert sich der Kapazitätsgrenze — prognostizierter Andrang in <b>~2 Std.</b>. +2 Mitarbeitende empfohlen."
+    },
+    "triage": {
+      "title": "Notfall-Triage",
+      "subtitle": "Manchester + KI · automatisch sortiert",
+      "levels": {
+        "1": "Sofort",
+        "2": "Sehr dringend",
+        "3": "Dringend",
+        "4": "Standard",
+        "5": "Nicht dringend"
+      },
+      "queue": [
+        "Brustschmerz, Atemnot",
+        "Kopfverletzung",
+        "Bauchschmerzen",
+        "Verstauchter Knöchel"
+      ],
+      "alert": "Stufe 1 an diensthabenden Arzt gemeldet"
+    },
+    "epicrisis": {
+      "title": "Epikrise — Entwurf",
+      "subtitle": "Patient #2241 · automatisch erstellt",
+      "linked": "FOCG verknüpft",
+      "ready": "Bereit zur klinischen Prüfung · 8 Sek."
+    },
+    "decision": {
+      "title": "Entscheidungsunterstützung",
+      "subtitle": "Brustschmerz · 58 M · kontextbezogen",
+      "differential": "Differenzialdiagnose",
+      "dx": [
+        "Akutes Koronarsyndrom",
+        "Perikarditis",
+        "Lungenembolie"
+      ],
+      "evidence": "Evidenzbasiert · verknüpft mit Leitlinien"
+    },
+    "rag": {
+      "title": "ZEN_RAG",
+      "subtitle": "On-Premise · datensouverän",
+      "noCloud": "Keine Cloud",
+      "onPremise": "On-Premise",
+      "nodeDocuments": "Dokumente",
+      "nodeDocumentsSub": "medizinisch · rechtlich",
+      "nodeLlm": "Lokales LLM",
+      "nodeAnswer": "Antwort",
+      "nodeAnswerSub": "belegt · privat",
+      "statOffline": "offline",
+      "statDataLeaves": "Datenabfluss",
+      "statModels": "Modelle"
+    }
+  },
+  "categories": {
+    "medical": {
+      "name": "Medizinisch",
+      "label": "Kategorie A — Medizinisch",
+      "tagline": "Das Vorzeigeprodukt.",
+      "description": "Klinische Lösungen, Krankenhausmodule und medizinische Ausbildung — das Herzstück des Angebots, geordnet entlang des realen klinischen Arbeitsablaufs von der Anmeldung bis zur Chefetage."
+    },
+    "administrative": {
+      "name": "Administrativ",
+      "label": "Kategorie B — Administrativ",
+      "tagline": "Bürgernah & Back-Office.",
+      "description": "Bürgerverwaltung, administrative Prozesse und RAG-basierte Compliance — bereits live in einer öffentlichen Institution."
+    },
+    "ai-infrastructure": {
+      "name": "KI-Infrastruktur",
+      "label": "Kategorie C — Allgemein",
+      "tagline": "Die souveräne Schicht.",
+      "description": "KI-Werkzeuge, lokale Modelle und RAG-Infrastruktur — das offline-fähige technische Fundament, auf dem die gesamte Plattform aufgebaut ist."
+    }
+  },
+  "deploymentsData": {
+    "sjuo-oradea": {
+      "institution": "SJUO · Kreisnotfallkrankenhaus Bihor",
+      "kind": "Krankenhaus",
+      "summary": "Der Vorzeige-Einsatz: ein vollständig integriertes Krankenhaussystem im Betrieb in einem Kreisnotfallkrankenhaus.",
+      "live": [
+        "Elektronisches FOCG mit ICD-10- & DRG-Kodierung",
+        "KI-gestützte Epikrise",
+        "Echtzeit-Betten- & Abteilungsmanagement",
+        "ZenA-Assistent mit Sprachunterstützung"
+      ]
+    },
+    "oradea-city-hall": {
+      "institution": "Rathaus Oradea",
+      "kind": "Öffentliche Institution",
+      "summary": "Ein bürgernaher Einsatz, der beweist, dass ZenAiOS über das Krankenhaus hinaus bis in die öffentliche Verwaltung reicht.",
+      "live": [
+        "KI-generierte Berichte & Online-Dienste",
+        "Interaktive Stadtteilkarte",
+        "ZenA-Bürgerassistent",
+        "Mehrsprachiger Bürgerzugang"
+      ]
+    }
+  },
+  "teamData": {
+    "george": {
+      "role": "Chief Executive Officer",
+      "bio": "Setzt die Vision und bringt ZenAiOS zu Institutionen, Partnern und Investoren."
+    },
+    "vlad": {
+      "role": "Chief Technology Officer",
+      "bio": "Leitet die Plattform und die hauseigene KI-Infrastruktur — vom souveränen RAG bis zu den 17 Modulen."
+    },
+    "horea": {
+      "role": "Chief Medical Officer",
+      "bio": "Hält jedes Modul in der realen klinischen Praxis und den Versorgungsstandards verankert."
+    },
+    "vision": {
+      "text": "Das Gesundheitswesen ist komplex. Unsere Aufgabe ist es, es zum Laufen zu bringen — ein KI-Betriebssystem, von der Anmeldung bis zur Chefetage.",
+      "role": "CEO, ZenAiOS"
+    }
+  },
+  "outcomesData": {
+    "facts": {
+      "modules": { "label": "KI-Module", "sub": "Über drei Bereiche hinweg" },
+      "domains": { "label": "Produktbereiche", "sub": "Medizinisch · Admin · KI-Infra" },
+      "deployments": { "label": "Live-Einsätze", "sub": "Krankenhaus + Rathaus" },
+      "languages": { "label": "Sprachen", "sub": "EN · RO · HU · DE · FR" }
+    },
+    "projections": {
+      "admin": { "label": "Weniger Zeit für Verwaltungsaufgaben", "sub": "Prognose" },
+      "errors": { "label": "Weniger Diagnosefehler", "sub": "Prognose" },
+      "cost": { "label": "Geringere Kosten pro Besuch", "sub": "Prognose" },
+      "rag": { "label": "Offline-fähiges RAG", "sub": "Daten bleiben On-Premise" }
+    },
+    "badges": [
+      "SJUO Oradea",
+      "Rathaus Oradea",
+      "5 Sprachen",
+      "Souveränes Offline-RAG",
+      "ICD-10 · DRG · FOCG",
+      "Azure Speech Sprachausgabe"
+    ]
+  },
+  "modules": {
+    "items": {
+      "zenaios-hospital": {
+        "name": "ZenAiOS Hospital — SJUO",
+        "short": "Krankenhaus-OS",
+        "summary": "Integriertes Krankenhausmanagement im Einsatz am Spitalul Județean de Urgență Oradea — Betten, FOCG mit ICD-10- & DRG-Kodierung, KI-Epikrise und der ZenA-Assistent in einem System.",
+        "problem": "Krankenhausdaten leben in unverbundenen Systemen, sodass Klinikpersonal Informationen erneut eingibt und das Management nie ein Echtzeitbild hat. ZenAiOS Hospital vereint die klinische Akte, die Kodierung und den Betrieb auf einer KI-nativen Plattform.",
+        "how": [
+          "Elektronisches FOCG (Beobachtungsbogen) mit ICD-10- & DRG-Kodierung",
+          "KI-gestützte Epikrise und Entlassdokumente",
+          "Echtzeit-Betten- und Abteilungsmanagement",
+          "Eingebetteter ZenA-Assistent für das Personal, mit Sprachunterstützung"
+        ],
+        "roadmap": [
+          "Breitere Abteilungsabdeckung",
+          "Tiefere Automatisierung der CNAS- / DSP-Berichterstattung",
+          "Erweiterte mehrsprachige klinische Dokumentation"
+        ]
+      },
+      "patient": {
+        "name": "Patienten-Modul",
+        "short": "Patient",
+        "summary": "Online-Termine, Ergebniszugang, KI-Kommunikation, Symptomüberwachung und personalisierte Anleitung für Patienten.",
+        "problem": "Patienten haben Mühe, den richtigen Dienst zu erreichen und ihren nächsten Schritt zu verstehen. Das Patienten-Modul bietet ihnen einen geführten, mehrsprachigen Zugang zur Versorgung.",
+        "how": [
+          "Termine online buchen und verwalten",
+          "Sicherer Zugang zu Ergebnissen und Akten",
+          "KI-Symptomüberwachung und personalisierte Anleitung",
+          "Dialoggestützte Unterstützung in fünf Sprachen"
+        ],
+        "roadmap": ["Erinnerungen zum Behandlungsplan", "Heimüberwachung & Wearable-Integrationen"]
+      },
+      "doctor": {
+        "name": "Arzt-Modul",
+        "short": "Arzt",
+        "summary": "KI-Entscheidungsunterstützung für Diagnose und Behandlung, automatische Epikrise und Dokumentenerstellung sowie Workflow-Optimierung für Ärzte.",
+        "problem": "Ärzte verlieren Stunden an Dokumentation und Kontextwechsel. Das Arzt-Modul bringt Entscheidungsunterstützung und automatisch erstellte Notizen in den klinischen Arbeitsfluss hinein, nicht obendrauf.",
+        "how": [
+          "Kontextbezogene Differenzialdiagnose- und Behandlungsvorschläge",
+          "Automatische Erstellung von Epikrise & klinischen Dokumenten",
+          "Evidenzbasierte Anleitung am Behandlungsort",
+          "Workflow-Optimierung über die gesamte Schicht hinweg"
+        ],
+        "roadmap": ["Fachspezifische Leitlinienpakete", "Tiefere EHR-Rückschreibung"]
+      },
+      "nursing": {
+        "name": "Pflege-Modul",
+        "short": "Pflege",
+        "summary": "Behandlungsverabreichung, Vitalzeichenüberwachung, Prozedur-Checklisten und Kommunikation im Behandlungsteam für das Pflegepersonal.",
+        "problem": "Die Versorgung hängt von präziser, zeitnaher Koordination ab. Das Pflege-Modul hält Verabreichung, Vitalwerte und Checklisten an einem Ort und das gesamte Behandlungsteam synchron.",
+        "how": [
+          "Nachverfolgung der Behandlungsverabreichung",
+          "Vitalzeichenüberwachung und -trends",
+          "Prozedur-Checklisten",
+          "Kommunikation im Behandlungsteam"
+        ],
+        "roadmap": ["Zusammenfassungen zur Schichtübergabe", "Aufnahme von Gerätedaten"]
+      },
+      "emergency-triage": {
+        "name": "Notfall-Triage",
+        "short": "Triage",
+        "summary": "Manchester-Protokoll kombiniert mit KI, um Patienten in fünf Schweregradstufen zu klassifizieren, die Warteschlange automatisch zu priorisieren und Ärzte zu alarmieren.",
+        "problem": "In einer ausgelasteten Notaufnahme muss die Priorisierung schnell und nachvollziehbar sein. Triage verbindet den Manchester-Standard mit KI, um die Warteschlange nach realem Schweregrad zu ordnen.",
+        "how": [
+          "Manchester- + KI-Klassifizierung in 5 Schweregradstufen",
+          "Automatische Priorisierung der Warteschlange",
+          "Arztalarme bei Fällen hoher Akuität"
+        ],
+        "roadmap": ["Vitalwertgesteuerte Re-Triage", "Kapazitätsbewusste Steuerung"]
+      },
+      "laboratory": {
+        "name": "Labor-Modul",
+        "short": "Labor",
+        "summary": "Probenahme, Verarbeitung und KI-Interpretation mit Hervorhebung pathologischer Werte und automatischer FOCG-Integration.",
+        "problem": "Laborergebnisse müssen die richtige Akte erreichen, gekennzeichnet und im Kontext. Das Labor-Modul verbindet die Laborbank automatisch mit dem Beobachtungsbogen.",
+        "how": [
+          "Arbeitsablauf für Probenahme und Verarbeitung",
+          "KI-Interpretation mit Hervorhebung pathologischer Werte",
+          "Automatische FOCG-Integration"
+        ],
+        "roadmap": ["Analysegerät-Integrationen", "Personalisierung der Referenzbereiche"]
+      },
+      "labiq": {
+        "name": "LabIQ",
+        "short": "LabIQ",
+        "summary": "KI-Analyse von Laborberichten aus PDF- oder Bild-Uploads, mit Erklärungen in einfacher Sprache und Anleitung zur Nachsorge.",
+        "problem": "Ein Laborbericht ist für die meisten Menschen schwer zu lesen. LabIQ verwandelt ein hochgeladenes PDF oder Foto in eine Erklärung in einfacher Sprache und klare nächste Schritte.",
+        "how": [
+          "Einen Laborbericht als PDF oder Bild hochladen",
+          "KI-Extraktion und -Analyse der Werte",
+          "Erklärung in einfacher Sprache und Anleitung zur Nachsorge"
+        ],
+        "roadmap": ["Trendverfolgung über mehrere Berichte hinweg", "Freigabe-Links für Klinikpersonal"]
+      },
+      "hospital-manager": {
+        "name": "Hospital Manager",
+        "short": "Manager",
+        "summary": "Management-Dashboards, prädiktive KI-Analytik, CNAS- / DSP-Interoperabilität und ein KI-Avatar für Echtzeitentscheidungen.",
+        "problem": "Managemententscheidungen sind nur so gut wie die Daten dahinter. Hospital Manager verwandelt operative Echtzeitdaten in Prognosen und Antworten, auf die die Führung handeln kann.",
+        "how": [
+          "Management-Dashboards über das gesamte Krankenhaus hinweg",
+          "Prädiktive KI-Analytik für Nachfrage und Personaleinsatz",
+          "CNAS- / DSP-Interoperabilität",
+          "KI-Avatar für Echtzeit-Entscheidungsunterstützung"
+        ],
+        "roadmap": ["Szenarioplanung", "Benchmark-Berichterstattung"]
+      },
+      "manager-mobile": {
+        "name": "Manager-Mobile-Dashboard",
+        "short": "Mobil",
+        "summary": "Mobile Übersicht über Abteilungen, Personaleinsatz, Alarme und Finanzen, mit einem Manager-KI-Assistenten in Ihrer Tasche.",
+        "problem": "Die Führung sitzt selten am Schreibtisch. Das Manager-Mobile-Dashboard bringt das operative Bild und einen KI-Assistenten aufs Telefon, mobile-first gestaltet.",
+        "how": [
+          "Abteilungen, Personaleinsatz und Finanzen auf einen Blick",
+          "Push-Alarme für das, was Aufmerksamkeit erfordert",
+          "Manager-KI-Assistent auf dem Mobilgerät"
+        ],
+        "roadmap": ["Offline-Momentaufnahmen", "Freigaben unterwegs"]
+      },
+      "risk-assessment": {
+        "name": "Risikobewertung",
+        "short": "Risiko",
+        "summary": "Ein KI-Risiko-Arbeitsbereich mit Wahrscheinlichkeitsbändern, Zeitfenstern und einer Gesamtrisikostufe.",
+        "problem": "Risiko ist ein bewegliches Ziel. Dieser Arbeitsbereich macht Wahrscheinlichkeit, Zeitpunkt und Gesamtstufe explizit, sodass klinische Entscheidungen fundiert und überprüfbar sind.",
+        "how": [
+          "Wahrscheinlichkeitsbänder pro Risikofaktor",
+          "Zeitfenster-Schätzungen",
+          "Eine gesamthafte, erklärbare Risikostufe"
+        ],
+        "roadmap": ["Kohortenvergleiche", "Leitlinienverknüpfte Begründungen"]
+      },
+      "data-collection": {
+        "name": "Krankenhaus-Datenerfassung",
+        "short": "Daten",
+        "summary": "Aufnahmen, Stammdaten, Bettenpläne, Versicherung, Apotheke und Berichterstattung in einem strukturierten Arbeitsbereich.",
+        "problem": "Saubere strukturierte Daten sind das Fundament, auf dem alles andere läuft. Dieses Modul erfasst sie einmal, an der Quelle, und hält sie über das gesamte Krankenhaus hinweg konsistent.",
+        "how": [
+          "Aufnahmen und Stammdaten",
+          "Bettenpläne und Kapazität",
+          "Versicherung, Apotheke und Berichterstattung"
+        ],
+        "roadmap": ["Konfigurierbare Berichtsvorlagen", "Datenqualitätsprüfungen"]
+      },
+      "quiz": {
+        "name": "QUIZ-Modul",
+        "short": "CME",
+        "summary": "Akkreditierte CME für Ärzte und Assistenzärzte: KI-generierte adaptive klinische Fälle, Kompetenzbewertung und zertifizierte CME-Stunden.",
+        "problem": "Fortbildung konkurriert mit klinischer Zeit. Das QUIZ-Modul macht CME adaptiv und fallbasiert, sodass das Lernen in reale Zeitpläne passt und zählt.",
+        "how": [
+          "KI-generierte adaptive klinische Fälle",
+          "Kompetenzbewertung",
+          "Akkreditierte CME-Stunden"
+        ],
+        "roadmap": ["Fachspezifische Lernpfade", "Team-Bestenlisten"]
+      },
+      "analytics": {
+        "name": "Analytics-Dashboard",
+        "short": "Analytik",
+        "summary": "Ein eigenständiges Dashboard für das Analytiksystem des Chat-Widgets, gespeist aus Echtzeit-Telemetrie.",
+        "problem": "Wenn der Assistent der Zugang ist, sind seine Analytikdaten der Grundriss. Dieses Dashboard macht Konversationstelemetrie lesbar und handlungsfähig.",
+        "how": [
+          "Echtzeit-Telemetrie aus dem Chat-Widget",
+          "Nutzungs-, Themen- und Lösungskennzahlen",
+          "Eigenständiges, einbettbares Dashboard"
+        ],
+        "roadmap": ["Individuelle Funnels", "Alarmierung bei Anomalien"]
+      },
+      "citizen": {
+        "name": "Bürger-Modul — Rathaus Oradea",
+        "short": "Bürger",
+        "summary": "KI-generierte Berichte, Online-Dienste, eine interaktive Stadtteilkarte und der ZenA-Bürgerassistent — live im Rathaus von Oradea.",
+        "problem": "Bürger brauchen einen einzigen, klaren Weg, um öffentliche Dienste zu erreichen. Das Bürger-Modul ist der bürgernahe Zugang — Dienste, Karten und ein mehrsprachiger Assistent an einem Ort.",
+        "how": [
+          "KI-generierte Berichte und Anträge",
+          "Kommunale Online-Dienste",
+          "Interaktive Stadtteilkarte",
+          "ZenA-Bürgerassistent"
+        ],
+        "roadmap": ["Mehr Dienstkategorien", "Abteilungsübergreifende Steuerung"]
+      },
+      "administrative-module": {
+        "name": "Administratives Modul",
+        "short": "Admin",
+        "summary": "RAG für nicht-klinische Prozesse: rechtliche Compliance, CNAS-Buchhaltung, Medikamentenverwaltung und KI-Krankenhausinventar.",
+        "problem": "Back-Office-Prozesse sind dokumentenlastig und regelgebunden. Das administrative Modul wendet Retrieval-Augmented-KI auf Compliance, Buchhaltung und Inventar an.",
+        "how": [
+          "RAG über Rechts- & Compliance-Dokumente",
+          "Unterstützung der CNAS-Buchhaltung",
+          "Medikamentenverwaltung",
+          "KI-Krankenhausinventar"
+        ],
+        "roadmap": ["Beschaffungsabläufe", "Prüfprotokolle"]
+      },
+      "zen-rag": {
+        "name": "ZEN_RAG / Git_RAG_Zena",
+        "short": "ZEN_RAG",
+        "summary": "Ein zu 100 % offline arbeitendes, lokales RAG für medizinische und legislative Dokumente — keine Cloud, aufgebaut auf llama.cpp + FAISS. Das Rückgrat jedes Gesprächs über Datensouveränität.",
+        "problem": "Klinische und rechtliche Daten können das Gebäude nicht immer verlassen. ZEN_RAG läuft vollständig On-Premise, sodass sensible Dokumente souverän bleiben und dennoch per KI durchsuchbar sind.",
+        "how": [
+          "Zu 100 % offline, lokale Retrieval-Augmented Generation",
+          "Keine Cloud-Abhängigkeit — läuft On-Premise",
+          "Aufgebaut auf llama.cpp + FAISS",
+          "Abgestimmt auf medizinische & legislative Korpora"
+        ],
+        "roadmap": ["Breitere Modellunterstützung", "Gehärtetes On-Premise-Deployment-Werkzeug"]
+      },
+      "llm-compare": {
+        "name": "Zen_LLM_Compare",
+        "short": "LLM Compare",
+        "summary": "Ein Nebeneinander-Vergleicher für 6+ lokale und Cloud-LLMs — derselbe Prompt, parallele Antworten und ein Latenz-Benchmark.",
+        "problem": "Das richtige Modell zu wählen ist eine technische Entscheidung, keine Vermutung. LLM Compare führt einen Prompt gleichzeitig über viele Modelle aus und misst die Abwägungen.",
+        "how": [
+          "Derselbe Prompt parallel an 6+ Modelle gesendet",
+          "Nebeneinander-Vergleich der Antworten",
+          "Latenz-Benchmarking"
+        ],
+        "roadmap": ["Qualitätsbewertung", "Schätzungen der Kosten pro Aufgabe"]
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, Check, MapPin } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -8,34 +10,54 @@ import { Reveal } from "@/components/motion/Reveal";
 import { CTASection } from "@/components/sections/CTASection";
 import { EpicrisisDoc } from "@/components/visuals/EpicrisisDoc";
 import { ZenAChat } from "@/components/visuals/ZenAChat";
-import { deployments } from "@/lib/data/deployments";
-import { modules } from "@/lib/data/modules";
-import { pageMeta } from "@/lib/seo";
+import { buildDeployments } from "@/lib/data/deployments";
+import { moduleSkeletons, buildModule } from "@/lib/data/modules";
+import { metaFromCatalog } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata = pageMeta({
-  title: "Deployments",
-  description:
-    "ZenAiOS is live in the field — a county emergency hospital (SJUO Oradea) and a city hall (Primăria Oradea). Real institutions, real workflows.",
-  path: "/deployments",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return metaFromCatalog({
+    locale: locale as Locale,
+    page: "deployments",
+    path: "/deployments",
+  });
+}
 
 const visuals: Record<string, React.ReactNode> = {
   "sjuo-oradea": <EpicrisisDoc />,
   "oradea-city-hall": <ZenAChat />,
 };
 
-export default function DeploymentsPage() {
+export default async function DeploymentsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
+
+  const t = await getTranslations("deploymentsPage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const deployments = buildDeployments(await getTranslations("deploymentsData"));
+  const tModules = await getTranslations("modules.items");
+
   return (
     <>
       <PageHeader
-        eyebrow="In the field"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Deployments" }]}
+        eyebrow={t("eyebrow")}
+        crumbs={[{ label: common("home"), href: "/" }, { label: nav("deployments") }]}
         title={
           <>
-            Live, not <span className="text-gradient">in a slide deck.</span>
+            {t("titleLead")} <span className="text-gradient">{t("titleAccent")}</span>
           </>
         }
-        description="The strongest thing we can show isn't a number — it's software running in real institutions, used by real staff, every day."
+        description={t("description")}
       />
 
       <Section>
@@ -43,7 +65,12 @@ export default function DeploymentsPage() {
           {deployments.map((d, i) => {
             const Icon = d.icon;
             const reversed = i % 2 === 1;
-            const relatedModule = modules.find((m) => m.deployment === d.slug);
+            const relatedSkeleton = moduleSkeletons.find(
+              (m) => m.deployment === d.slug,
+            );
+            const relatedModule = relatedSkeleton
+              ? buildModule(tModules, relatedSkeleton.slug)
+              : undefined;
             return (
               <div
                 key={d.slug}
@@ -90,7 +117,7 @@ export default function DeploymentsPage() {
                       href={`/modules/${relatedModule.slug}`}
                       className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky"
                     >
-                      Explore the {relatedModule.short} module
+                      {t("exploreModule", { module: relatedModule.short })}
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   )}
@@ -114,21 +141,15 @@ export default function DeploymentsPage() {
       <Section className="!pt-0">
         <Reveal>
           <div className="rounded-3xl border border-hairline bg-card/40 p-6 md:p-10">
-            <Eyebrow>A note on proof</Eyebrow>
+            <Eyebrow>{t("noteEyebrow")}</Eyebrow>
             <p className="mt-4 max-w-3xl text-balance text-lg leading-relaxed text-ink/90">
-              We lead with deployments rather than headline statistics. Efficiency
-              figures elsewhere on this site are clearly labelled as projections —
-              what you see here is simply what&apos;s running today.
+              {t("noteBody")}
             </p>
           </div>
         </Reveal>
       </Section>
 
-      <CTASection
-        eyebrow="Your institution next?"
-        title="Let's talk about your deployment"
-        description="Tell us about your hospital or institution and we'll map ZenAiOS to your workflows."
-      />
+      <CTASection variant="deployments" />
     </>
   );
 }

@@ -1,21 +1,25 @@
+import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { DomainCard } from "@/components/cards/DomainCard";
-import { categories } from "@/lib/data/categories";
+import { buildCategories } from "@/lib/data/categories";
 
 export function ThreeDomains() {
+  const t = useTranslations("threeDomains");
+  const categories = buildCategories(useTranslations("categories"));
   return (
     <Section id="domains">
       <Reveal>
         <SectionHeading
-          eyebrow="One platform, three domains"
+          eyebrow={t("eyebrow")}
           title={
             <>
-              Not three modules. <span className="text-gradient">Seventeen.</span>
+              {t("titleLead")}{" "}
+              <span className="text-gradient">{t("titleAccent")}</span>
             </>
           }
-          description="ZenAiOS is an operating system, not a chatbot — organised into three domains that interoperate, share one assistant, and speak five languages."
+          description={t("description")}
         />
       </Reveal>
 

@@ -1,11 +1,13 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import type { Category } from "@/lib/data/types";
-import { modulesByCategory } from "@/lib/data/modules";
+import { buildModulesByCategory } from "@/lib/data/modules";
 import { cn } from "@/lib/utils";
 
 export function DomainCard({ category }: { category: Category }) {
-  const mods = modulesByCategory(category.slug);
+  const t = useTranslations("common");
+  const mods = buildModulesByCategory(useTranslations("modules.items"), category.slug);
   const Icon = category.icon;
   const isViolet = category.accent === "violet";
   const live = mods.filter((m) => m.status === "active").length;
@@ -40,7 +42,7 @@ export function DomainCard({ category }: { category: Category }) {
         <span className="text-right">
           <span className="block text-3xl font-bold text-ink">{mods.length}</span>
           <span className="text-[11px] uppercase tracking-wider text-faint">
-            modules
+            {t("modules")}
           </span>
         </span>
       </div>
@@ -65,7 +67,7 @@ export function DomainCard({ category }: { category: Category }) {
         ))}
         {mods.length > 4 && (
           <span className="rounded-md px-2 py-1 text-[11px] text-faint">
-            +{mods.length - 4} more
+            {t("moreCount", { count: mods.length - 4 })}
           </span>
         )}
       </div>
@@ -74,13 +76,13 @@ export function DomainCard({ category }: { category: Category }) {
         {live > 0 ? (
           <span className="inline-flex items-center gap-1.5 text-xs text-success">
             <span className="size-1.5 rounded-full bg-success" />
-            {live} live deployment{live > 1 ? "s" : ""}
+            {t("liveDeploymentCount", { count: live })}
           </span>
         ) : (
-          <span className="text-xs text-faint">Built on the platform</span>
+          <span className="text-xs text-faint">{t("builtOnPlatform")}</span>
         )}
         <span className="inline-flex items-center gap-1 text-sm font-medium text-sky">
-          See modules
+          {t("seeModules")}
           <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
         </span>
       </div>

@@ -1,17 +1,24 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useTransition } from "react";
 import { Check, ChevronDown, Globe } from "lucide-react";
-import { locales } from "@/lib/data/site";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { locales, localeNames, localeShort, type Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 /**
- * Language switcher scaffold. EN is active at launch; the RO route is wired for
- * next-intl later (selecting it shows a "coming soon" hint rather than 404-ing).
+ * Locale switcher. Five languages by written, in-language name (no flags, no
+ * region codes). Selecting one navigates to the same page in that locale via
+ * next-intl's router — English stays at `/`, the rest get a `/<locale>` prefix.
  */
 export function LanguageSwitcher({ className }: { className?: string }) {
+  const t = useTranslations("languageSwitcher");
+  const active = useLocale() as Locale;
+  const pathname = usePathname();
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("en");
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,7 +29,13 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     return () => document.removeEventListener("mousedown", onDoc);
   }, []);
 
-  const current = locales.find((l) => l.code === active) ?? locales[0];
+  function select(locale: Locale) {
+    setOpen(false);
+    if (locale === active) return;
+    startTransition(() => {
+      router.replace(pathname, { locale });
+    });
+  }
 
   return (
     <div ref={ref} className={cn("relative", className)}>
@@ -31,10 +44,12 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className="inline-flex items-center gap-1.5 rounded-lg border border-hairline px-2.5 py-2 text-sm text-muted transition-colors hover:border-hairline-strong hover:text-ink"
+        aria-label={t("label")}
+        disabled={isPending}
+        className="inline-flex items-center gap-1.5 rounded-lg border border-hairline px-2.5 py-2 text-sm text-muted transition-colors hover:border-hairline-strong hover:text-ink disabled:opacity-60"
       >
         <Globe className="size-4" />
-        <span className="font-medium">{current.short}</span>
+        <span className="font-medium">{localeShort[active]}</span>
         <ChevronDown
           className={cn("size-3.5 transition-transform", open && "rotate-180")}
         />
@@ -43,36 +58,26 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       {open && (
         <div
           role="listbox"
+          aria-label={t("label")}
           className="glass-strong absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl p-1 shadow-soft"
         >
-          {locales.map((l) => {
-            const isActive = l.code === active;
-            const comingSoon = l.code !== "en";
+          {locales.map((code) => {
+            const isActive = code === active;
             return (
               <button
-                key={l.code}
+                key={code}
                 role="option"
                 aria-selected={isActive}
-                onClick={() => {
-                  if (!comingSoon) setActive(l.code);
-                  setOpen(false);
-                }}
+                onClick={() => select(code)}
                 className={cn(
                   "flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm transition-colors",
-                  isActive ? "text-ink" : "text-muted hover:bg-white/5 hover:text-ink"
+                  isActive
+                    ? "text-ink"
+                    : "text-muted hover:bg-white/5 hover:text-ink"
                 )}
               >
-                <span className="flex items-center gap-2">
-                  <span aria-hidden>{l.flag}</span>
-                  {l.label}
-                </span>
-                {isActive ? (
-                  <Check className="size-4 text-sky" />
-                ) : comingSoon ? (
-                  <span className="text-[10px] uppercase tracking-wide text-faint">
-                    soon
-                  </span>
-                ) : null}
+                <span>{localeNames[code]}</span>
+                {isActive && <Check className="size-4 text-sky" />}
               </button>
             );
           })}

@@ -2,12 +2,16 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { FileText, Sparkles, Check } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 const lines = [88, 96, 72, 90, 64, 82];
 
 export function EpicrisisDoc({ className }: { className?: string }) {
   const reduce = useReducedMotion();
+  const t = useTranslations("visuals.epicrisis");
+  // ICD-10 / DRG coding tokens stay literal; only "linked" is translated.
+  const chips = ["ICD-10 · I21.9", "DRG · 04M", t("linked")];
   return (
     <div
       className={cn(
@@ -21,8 +25,8 @@ export function EpicrisisDoc({ className }: { className?: string }) {
             <FileText className="size-4" />
           </span>
           <div>
-            <p className="text-sm font-semibold text-ink">Epicrisis — draft</p>
-            <p className="text-[10px] text-faint">Patient #2241 · auto-generated</p>
+            <p className="text-sm font-semibold text-ink">{t("title")}</p>
+            <p className="text-[10px] text-faint">{t("subtitle")}</p>
           </div>
         </div>
         <span className="inline-flex items-center gap-1 rounded-full bg-sky/10 px-2 py-1 text-[10px] font-medium text-sky ring-1 ring-sky/25">
@@ -33,7 +37,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
 
       {/* Coding chips */}
       <div className="flex flex-wrap gap-1.5 py-3">
-        {["ICD-10 · I21.9", "DRG · 04M", "FOCG linked"].map((c) => (
+        {chips.map((c) => (
           <span
             key={c}
             className="rounded-md bg-white/[0.04] px-2 py-1 font-mono text-[10px] text-muted ring-1 ring-hairline"
@@ -62,7 +66,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
         <span className="grid size-4 place-items-center rounded-full bg-success/15">
           <Check className="size-2.5" />
         </span>
-        Ready for clinician review · 8s
+        {t("ready")}
       </div>
     </div>
   );

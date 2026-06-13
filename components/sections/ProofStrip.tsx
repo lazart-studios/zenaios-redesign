@@ -1,13 +1,16 @@
 import { CheckCircle2 } from "lucide-react";
-import { proofBadges } from "@/lib/data/outcomes";
+import { useTranslations } from "next-intl";
+import { buildProofBadges } from "@/lib/data/outcomes";
 
 export function ProofStrip() {
-  const items = [...proofBadges, ...proofBadges];
+  const t = useTranslations("proof");
+  const badges = buildProofBadges(useTranslations("outcomesData"));
+  const items = [...badges, ...badges];
   return (
     <section className="border-y border-hairline bg-white/[0.015] py-8">
       <div className="container-z">
         <p className="mb-6 text-center text-[11px] font-medium uppercase tracking-[0.2em] text-faint">
-          Real deployments, real standards — no placeholder logos
+          {t("heading")}
         </p>
       </div>
       <div className="mask-x relative flex overflow-hidden">

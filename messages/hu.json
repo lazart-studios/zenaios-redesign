@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "titleDefault": "ZenAiOS — A modern kórházak AI operációs rendszere.",
+    "titleTemplate": "%s · ZenAiOS",
+    "description": "A modern kórházak AI operációs rendszere — 17 AI modul a klinikai ellátás, a kórházmenedzsment és a közegészségügy területén, már élesben működik valós intézményekben.",
+    "platform": {
+      "title": "A platform",
+      "description": "17 AI modul három együttműködő területen — orvosi, adminisztratív és AI-infrastruktúra. Egyetlen asszisztens, öt nyelv, élesben működik valós intézményekben."
+    },
+    "about": {
+      "title": "Rólunk",
+      "description": "A ZenAiOS-t egy klinikai, technikai és kereskedelmi csapat építi az erdélyi Nagyváradon (Oradea, România) — egy valós kórházi gyakorlatra és adatszuverenitásra épülő AI operációs rendszer."
+    },
+    "deployments": {
+      "title": "Telepítések",
+      "description": "A ZenAiOS élesben működik a terepen — egy megyei sürgősségi kórházban (SJUO Oradea) és egy polgármesteri hivatalban (Primăria Oradea). Valós intézmények, valós munkafolyamatok."
+    },
+    "demo": {
+      "title": "Demó kérése",
+      "description": "Foglaljon egy vezetett bemutatót a ZenAiOS-ról — az AI epikrízisről, a triázsról, a vezetői irányítópultokról és a szuverén RAG-ról — az Ön intézményére szabva."
+    },
+    "contact": {
+      "title": "Kapcsolat",
+      "description": "Lépjen kapcsolatba a ZenAiOS csapatával Nagyváradon (Oradea, România) — telefonon, e-mailben vagy az űrlapon keresztül. Egy munkanapon belül válaszolunk."
+    },
+    "resources": {
+      "title": "Források",
+      "description": "Esettanulmányok, dokumentáció, klinikai CME és sajtóanyagok a ZenAiOS-ról — a modern kórházak AI operációs rendszeréről."
+    },
+    "privacy": {
+      "title": "Adatvédelmi szabályzat",
+      "description": "Hogyan kezeli a ZenAiOS a személyes adatokat ezen a weboldalon és a platformon, beleértve az adatszuverenitási megközelítésünket."
+    },
+    "terms": {
+      "title": "Felhasználási feltételek",
+      "description": "A ZenAiOS weboldal és a rajta megjelenített információk használatát szabályozó feltételek."
+    }
+  },
+  "nav": {
+    "homeAria": "ZenAiOS kezdőlap",
+    "platform": "Platform",
+    "deployments": "Telepítések",
+    "about": "Rólunk",
+    "resources": "Források",
+    "livePlatform": "Élő platform",
+    "requestDemo": "Demó kérése",
+    "toggleMenu": "Menü be-/kikapcsolása",
+    "byDomain": "Terület szerint",
+    "explore": "Felfedezés",
+    "platformOverview": "A platform áttekintése",
+    "liveDeployments": "Élő telepítések",
+    "modulesCount": "{count} modul",
+    "liveNow": "Most élesben",
+    "megaTagline": "{count} modul. 3 terület. 2 élő telepítés.",
+    "megaCta": "Nézze meg, hogyan illeszkedik össze az operációs rendszer →"
+  },
+  "footer": {
+    "tagline": "A modern kórházak AI operációs rendszere. 17 AI modul a klinikai ellátás, a kórházmenedzsment és a közegészségügy területén — élesben működik valós intézményekben.",
+    "columns": {
+      "platform": "Platform",
+      "company": "Cég",
+      "getStarted": "Kezdés"
+    },
+    "links": {
+      "overview": "Áttekintés",
+      "medical": "Orvosi",
+      "administrative": "Adminisztratív",
+      "aiInfrastructure": "AI-infrastruktúra",
+      "about": "Rólunk",
+      "deployments": "Telepítések",
+      "resources": "Források",
+      "contact": "Kapcsolat",
+      "requestDemo": "Demó kérése",
+      "livePlatform": "Élő platform",
+      "privacy": "Adatvédelmi szabályzat",
+      "terms": "Feltételek"
+    },
+    "rights": "© {year} ZenAiOS. Minden jog fenntartva.",
+    "builtFor": "Klinikai szintű bizalomra építve · WCAG 2.1 AA · {location}"
+  },
+  "common": {
+    "details": "Részletek",
+    "viewAll": "Összes megtekintése",
+    "seeModules": "Modulok megtekintése",
+    "builtOnPlatform": "A platformra építve",
+    "modules": "modul",
+    "moreCount": "+{count} további",
+    "moduleCount": "{count, plural, one {# modul} other {# modul}}",
+    "liveDeploymentCount": "{count, plural, one {# élő telepítés} other {# élő telepítés}}",
+    "home": "Kezdőlap"
+  },
+  "status": {
+    "active": "Aktív",
+    "module": "Modul",
+    "dev": "Fejlesztés"
+  },
+  "languageSwitcher": {
+    "label": "Nyelv"
+  },
+  "hero": {
+    "badge": "Élesben működik valós kórházakban és városi intézményekben",
+    "titleLine1": "Az AI operációs rendszer",
+    "titleLine2": "a modern kórházak számára.",
+    "description": "17 AI modul a <b>klinikai ellátás</b>, a <b>kórházmenedzsment</b> és a <b>közegészségügy</b> területén — már élesben működik egy megyei sürgősségi kórházban és egy polgármesteri hivatalban.",
+    "ctaPrimary": "Demó kérése",
+    "ctaSecondary": "A platform felfedezése",
+    "deployedAt": "Telepítve itt:",
+    "scrollCue": "Görgessen a felfedezéshez"
+  },
+  "proof": {
+    "heading": "Valós telepítések, valós szabványok — nincsenek helykitöltő logók"
+  },
+  "threeDomains": {
+    "eyebrow": "Egy platform, három terület",
+    "titleLead": "Nem három modul.",
+    "titleAccent": "Tizenhét.",
+    "description": "A ZenAiOS egy operációs rendszer, nem egy csevegőrobot — három együttműködő területre szervezve, amelyek egyetlen asszisztenst osztanak meg és öt nyelven beszélnek."
+  },
+  "audiences": {
+    "eyebrow": "Egy oldal, három vásárló",
+    "titleLead": "Találja meg a saját",
+    "titleAccent": "„nekem szól”",
+    "titleTrail": "útvonalát",
+    "description": "Ugyanaz a platform, az olvasóra szabva. A vezetőség, a klinikusok és a befektetők mind közvetlen utat kapnak ahhoz, ami számukra fontos.",
+    "items": [
+      {
+        "role": "Kórházvezetés",
+        "tag": "CMO · CIO · gazdasági döntéshozó",
+        "needs": "Megtérülés, interoperabilitás (CNAS/DSP), adatszuverenitás, valós eredmények.",
+        "show": ["Hospital Manager", "SJUO telepítés", "Szuverén RAG"],
+        "links": ["Hospital Manager", "Telepítések"]
+      },
+      {
+        "role": "Klinikusok",
+        "tag": "Orvosok · ápolók · rezidensek",
+        "needs": "Kevesebb adminisztráció, pontos AI epikrízis, súrlódásmentes döntéstámogatás, CME.",
+        "show": ["Orvos és ápolás", "Triázs és labor", "Akkreditált CME"],
+        "links": ["Orvos modul", "CME / QUIZ"]
+      },
+      {
+        "role": "Befektetők",
+        "tag": "és EU-támogatás értékelők",
+        "needs": "Lendület, hiteles csapat, széles kínálat, technikai előny és világos jövőkép.",
+        "show": ["2 élő telepítés", "17 modul", "Saját fejlesztésű AI-infrastruktúra"],
+        "links": ["A platform", "Csapat és jövőkép"]
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "Zászlóshajó telepítés",
+    "description": "Egy teljes integrált kórházi rendszer fut egy megyei sürgősségi kórházban — a legerősebb bizonyíték arra, hogy a ZenAiOS valós méretekben működik.",
+    "link": "Olvassa el a telepítéseket",
+    "statProduction": "éles üzemben",
+    "statCoding": "beépített kódolás"
+  },
+  "capabilities": {
+    "eyebrow": "Mit csinál valójában",
+    "titleLead": "Képességek, amelyek kivívják a",
+    "titleAccent": "klinikai bizalmat",
+    "description": "Négy dolog azok közül, amiket a ZenAiOS nap mint nap elvégez — döntéstámogatás, triázs, előrejelzés és szuverén AI.",
+    "features": {
+      "doctor": {
+        "eyebrow": "Orvos modul",
+        "title": "Döntéstámogatás, amely a munkafolyamatban marad",
+        "description": "A kontextusérzékeny differenciáldiagnosztikai és kezelési javaslatok ott jelennek meg, ahol a munka zajlik — és automatikusan elkészítik az epikrízist és a dokumentumokat, így az orvosok gyorsabban végeznek és időben hazaérnek.",
+        "bullets": [
+          "Differenciáldiagnosztikai és kezelési javaslatok",
+          "Automatikus epikrízis és klinikai feljegyzések",
+          "Bizonyítékalapú, irányelvekhez kapcsolt"
+        ],
+        "link": "Az Orvos modul felfedezése"
+      },
+      "triage": {
+        "eyebrow": "Sürgősségi triázs",
+        "title": "A valós súlyosság szerint rangsorolva, nem érkezési sorrendben",
+        "description": "A Manchester-protokoll AI-val párosítva minden beteget öt szintbe sorol, súlyossági fok szerint tartja rendezve a sort, és értesíti az ügyeletes orvost abban a pillanatban, amikor egy 1-es szintű eset érkezik.",
+        "bullets": [
+          "Manchester + AI, 5 súlyossági szint",
+          "Automatikus sorrend-rangsorolás",
+          "Azonnali orvosi riasztás nagy súlyosság esetén"
+        ],
+        "link": "A triázs felfedezése"
+      },
+      "management": {
+        "eyebrow": "Menedzsment",
+        "title": "Irányítópultok, amelyek előre jeleznek, nem csak jelentenek",
+        "description": "A vezetői irányítópultok az élő üzemeltetési adatokat előrejelzésekké alakítják — túlterheltség, létszámhiányok, szűk keresztmetszetek — CNAS/DSP-interoperabilitással és egy AI-avatárral a valós idejű döntésekhez, asztali gépen és mobilon.",
+        "bullets": [
+          "AI prediktív analitika",
+          "CNAS / DSP interoperabilitás",
+          "Asztali és Manager Mobile irányítópult"
+        ],
+        "link": "A Hospital Manager felfedezése"
+      },
+      "infrastructure": {
+        "eyebrow": "AI-infrastruktúra",
+        "title": "Szuverén AI — az adatai soha nem hagyják el az épületet",
+        "description": "A ZEN_RAG egy 100%-ban offline, helyi visszakeresés-támogatott rendszert futtat llama.cpp + FAISS alapon. Nincs felhő, nincs adatkiszivárgás — ez minden adatszuverenitási és GDPR-beszélgetés alapja.",
+        "bullets": [
+          "100% offline, helyben futó RAG",
+          "llama.cpp + FAISS, 6+ modell",
+          "Orvosi és jogszabályi korpuszokra hangolva"
+        ],
+        "link": "Az AI-infrastruktúra megtekintése"
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Hitelesség a nagy számok helyett",
+    "title": "A számok, amelyek valóban igazak",
+    "description": "Azzal vezetünk, ami ellenőrizhető. A hatékonysági adatokat őszinte előrejelzésekként mutatjuk be — soha nem forrás nélküli állításokként.",
+    "footnote": "Az előrejelzések szemléltető célok, a közzétett pilot-eredmények függvényében — nem mért eredmények."
+  },
+  "team": {
+    "eyebrow": "Az emberek mögötte",
+    "titleLead": "Egy valódi csapat,",
+    "titleAccent": "amely nyíltan építkezik",
+    "description": "Klinikai, technikai és kereskedelmi vezetés — ugyanazok az alapítók, akik a platformot tervezték, telepítik is azt."
+  },
+  "cta": {
+    "default": {
+      "eyebrow": "Készen állunk, amikor Ön is",
+      "title": "Nézze meg a ZenAiOS-t működés közben egy valós kórházban",
+      "description": "Foglaljon egy vezetett bemutatót a platformról — az AI epikrízistől a vezetői irányítópultokig — és nézze meg, hogyan illeszkedne az Ön intézményébe."
+    },
+    "about": {
+      "eyebrow": "Dolgozzon velünk",
+      "title": "A kórházi AI jövőjét építjük",
+      "description": "Akár intézmény, klinikus vagy befektető — szívesen megmutatjuk, mire képes a ZenAiOS."
+    },
+    "deployments": {
+      "eyebrow": "Legközelebb az Ön intézménye?",
+      "title": "Beszéljünk az Ön telepítéséről",
+      "description": "Mesélje el, milyen a kórháza vagy intézménye, és a ZenAiOS-t az Ön munkafolyamataira szabjuk."
+    },
+    "requestDemo": "Demó kérése",
+    "openLive": "Élő platform megnyitása",
+    "callUs": "Vagy hívjon minket közvetlenül — {phone}"
+  },
+  "form": {
+    "fullName": "Teljes név",
+    "fullNamePlaceholder": "Kovács Anna",
+    "workEmail": "Munkahelyi e-mail",
+    "workEmailPlaceholder": "anna@korhaz.ro",
+    "organization": "Szervezet",
+    "organizationPlaceholder": "Megyei Sürgősségi Kórház",
+    "roleLabel": "Ön…",
+    "messageDemo": "Mit szeretne látni?",
+    "messageContact": "Hogyan segíthetünk?",
+    "messagePlaceholderDemo": "Egy 400 ágyas kórház vagyunk, és érdekel minket az AI epikrízis és a triázs modul…",
+    "messagePlaceholderContact": "Meséljen egy kicsit arról, amit keres…",
+    "disclaimer": "Demó űrlap — a beküldéseket nem tároljuk és nem küldjük el.",
+    "submitDemo": "Demó kérése",
+    "submitContact": "Üzenet küldése",
+    "sending": "Küldés…",
+    "successTitle": "Köszönjük — már majdnem kész",
+    "successBody": "Ez egy demó űrlap, így semmi nem került elküldésre. Az éles oldalon ez eljutna a ZenAiOS csapatához, és egy munkanapon belül válaszolnánk.",
+    "sendAnother": "Új üzenet küldése",
+    "roles": [
+      "Kórházvezetés (CMO / CIO / CEO)",
+      "Klinikus (orvos / ápoló / rezidens)",
+      "Közintézmény",
+      "Befektető / EU-támogatás értékelő",
+      "Partner / integrátor",
+      "Egyéb"
+    ],
+    "errors": {
+      "name": "Kérjük, adja meg a nevét.",
+      "email": "Adjon meg egy érvényes munkahelyi e-mail-címet.",
+      "org": "Mondja el, hol dolgozik.",
+      "message": "Egy-két mondat segít a felkészülésben."
+    }
+  },
+  "notFound": {
+    "title": "Ez az oldal ma szabadnapos",
+    "description": "A keresett oldal nem létezik vagy áthelyezték. Vezessük vissza valami hasznoshoz.",
+    "backHome": "Vissza a kezdőlapra",
+    "explore": "A platform felfedezése",
+    "contact": "Vagy lépjen velünk kapcsolatba, ha valami nem működik"
+  },
+  "platformPage": {
+    "eyebrow": "A platform",
+    "titleLead": "Egyetlen operációs rendszer.",
+    "titleAccent": "{count} AI modul.",
+    "description": "A ZenAiOS nem egy különálló eszköz, amelyet egy kórházra csavaroznak — egy rétegzett operációs rendszer. Három terület, egyetlen közös asszisztens, mindegyik ugyanazt az adatot beszéli.",
+    "statModules": "AI modul",
+    "statDomains": "Terület",
+    "statDeployments": "Élő telepítés",
+    "domainsEyebrow": "Három terület",
+    "domainsTitle": "Válassza ki azt a réteget, amelyben Ön él",
+    "domainsDescription": "Minden terület önmagában is koherens termék — és egy adatmodellt, egy asszisztenst és egy dizájnnyelvet osztanak meg.",
+    "catalogueEyebrow": "Minden modul",
+    "catalogueTitle": "A teljes katalógus",
+    "catalogueDescription": "A recepciótól az igazgatótanácsig — fedezzen fel részletesen minden modult.",
+    "modulesLabel": "{count} modul"
+  },
+  "categoryPage": {
+    "moduleCountTitle": "{count, plural, one {# modul} other {# modul}}",
+    "liveCount": "{count, plural, one {# élő telepítés} other {# élő telepítés}}",
+    "allDomains": "Minden terület",
+    "highlights": {
+      "medical": [
+        "A teljes klinikai út — recepció, triázs, diagnózis, ellátás, labor, menedzsment és CME",
+        "AI epikrízis ICD-10 és DRG kódolással",
+        "Élesben működik egy megyei sürgősségi kórházban (SJUO)"
+      ],
+      "administrative": [
+        "Polgári szolgáltatások és háttérirodai folyamatok",
+        "RAG jogi, megfelelőségi és számviteli dokumentumokon",
+        "Élesben működik a Nagyváradi Polgármesteri Hivatalban"
+      ],
+      "ai-infrastructure": [
+        "100% offline, helyben futó RAG (llama.cpp + FAISS)",
+        "Több modell összehasonlítása és teljesítményértékelése",
+        "A szuverén alap minden más modul alatt"
+      ]
+    }
+  },
+  "modulePage": {
+    "problemEyebrow": "A probléma, amit megold",
+    "howEyebrow": "Hogyan működik",
+    "roadmapEyebrow": "A fejlesztési tervben",
+    "roadmapIntro": "Merre tart legközelebb ez a modul — egyértelműen előretekintő, még nem elérhető.",
+    "liveDeployment": "Élő telepítés",
+    "seeDeployment": "A telepítés megtekintése",
+    "moreIn": "Több itt: {category}",
+    "viewAll": "Összes megtekintése"
+  },
+  "aboutPage": {
+    "eyebrow": "A ZenAiOS-ról",
+    "titleLead": "Hogy az egészségügy",
+    "titleAccent": "működjön.",
+    "description": "A kórházak a Föld legösszetettebb szervezetei közé tartoznak. Mi azt az AI operációs rendszert építjük, amely egyetlen egésszé fűzi össze széttöredezett rendszereiket — a recepciótól az igazgatótanácsig.",
+    "missionEyebrow": "Miért létezünk",
+    "missionTitle": "Egyetlen platform húsz összefüggéstelen eszköz helyett",
+    "missionP1": "A klinikusok naponta órákat veszítenek a dokumentációra és olyan rendszerekre, amelyek nem beszélnek egymással. A vezetőség nem látja valós időben, mi történik. A betegek nehezen találják meg a megfelelő szolgáltatást.",
+    "missionP2": "A ZenAiOS ezt a széttöredezettséget egyetlen, eredendően AI-alapú operációs rendszerrel váltja fel: 17 modul a klinikai ellátás, a kórházmenedzsment és a közigazgatás területén, egy adatmodellt és egy asszisztenst megosztva.",
+    "missionP3": "Már élesben működik — egy megyei sürgősségi kórházban és egy polgármesteri hivatalban — és olyan emberek építik, akik maguk telepítik.",
+    "principlesEyebrow": "Amiben hiszünk",
+    "principlesTitle": "Négy elv, amiből nem engedünk",
+    "principles": [
+      {
+        "title": "Klinikailag megalapozott",
+        "body": "Minden modult egy Chief Medical Officer alakít ki, és valós klinikai munkafolyamatokon teszteljük — nem légüres térben építjük."
+      },
+      {
+        "title": "Tervezésében szuverén",
+        "body": "Az érzékeny adatok helyben maradhatnak. Offline RAG-unk azt jelenti, hogy a kórházak megőrzik az ellenőrzést saját információik felett."
+      },
+      {
+        "title": "Többnyelvű és hozzáférhető",
+        "body": "Öt nyelv és egy asszisztens, amely ott találkozik a betegekkel és a személyzettel, ahol éppen vannak — az ellátás nem függhet a szakzsargontól."
+      },
+      {
+        "title": "A terepen bizonyított",
+        "body": "Élesben működik egy megyei sürgősségi kórházban és egy polgármesteri hivatalban. Inkább mutatunk valós telepítéseket, mint hogy nagy számokat ígérjünk."
+      }
+    ]
+  },
+  "deploymentsPage": {
+    "eyebrow": "A terepen",
+    "titleLead": "Élesben, nem",
+    "titleAccent": "egy diavetítésben.",
+    "description": "A legerősebb dolog, amit megmutathatunk, nem egy szám — hanem a szoftver, amely valós intézményekben fut, amelyet valós személyzet használ, minden nap.",
+    "exploreModule": "A(z) {module} modul felfedezése",
+    "noteEyebrow": "Megjegyzés a bizonyítékról",
+    "noteBody": "Inkább telepítésekkel vezetünk, mint látványos statisztikákkal. Az ezen az oldalon máshol szereplő hatékonysági adatok egyértelműen előrejelzésekként vannak megjelölve — amit itt lát, az egyszerűen az, ami ma fut."
+  },
+  "demoPage": {
+    "eyebrow": "Demó kérése",
+    "titleLead": "Nézze meg működés közben egy",
+    "titleAccent": "valós kórházban",
+    "description": "Meséljen egy kicsit az intézményéről, és összeállítunk egy bemutatót, amely arra fókuszál, ami Önnek fontos.",
+    "expectTitle": "Mire számíthat",
+    "expect": [
+      "Egy 30 perces vezetett bemutató, az Ön szerepköréhez igazítva",
+      "Az AI epikrízis, a triázs és a vezetői irányítópultok, élőben",
+      "Hogyan tartja a szuverén offline RAG az adatait helyben",
+      "Egyenes válasz arra, mi illik az intézményéhez — és mi nem még"
+    ],
+    "replyNote": "Általában <b>egy munkanapon belül</b> válaszolunk.",
+    "sovereignNote": "Saját üzemeltetésű telepítés esetén semmilyen adat nem hagyja el az épületet.",
+    "lookAroundTitle": "Inkább körülnézne előbb?",
+    "lookAroundBody": "Az élő platform szabadon felfedezhető.",
+    "open": "{url} megnyitása"
+  },
+  "contactPage": {
+    "eyebrow": "Kapcsolat",
+    "titleLead": "Beszéljünk",
+    "titleAccent": "róla.",
+    "description": "Kérdése van a platformról, egy telepítésről vagy egy partnerségről? Érjen el minket közvetlenül — vagy küldjön üzenetet, és visszajelzünk.",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "location": "Helyszín"
+  },
+  "resourcesPage": {
+    "eyebrow": "Források",
+    "titleLead": "Tudjon meg többet,",
+    "titleAccent": "mélységben.",
+    "description": "Esettanulmányokat, dokumentációt és sajtóanyagokat építünk fel. Íme, mi készül — és mi az, ami ma már élesben elérhető.",
+    "openModule": "Modul megnyitása",
+    "lookingFor": "Valami konkrétumot keres?",
+    "getInTouch": "Lépjen kapcsolatba",
+    "pointYou": "és megmutatjuk Önnek.",
+    "statusInPrep": "Előkészítés alatt",
+    "statusLive": "Élő modul",
+    "items": [
+      {
+        "title": "Esettanulmányok",
+        "body": "Mélyelemzések az SJUO Oradea és a polgármesteri hivatali telepítésekről — mit vezettünk be, és mi változott."
+      },
+      {
+        "title": "Dokumentáció",
+        "body": "Technikai és klinikai dokumentáció a platformhoz, a modulokhoz és a szuverén RAG-rendszerhez."
+      },
+      {
+        "title": "Klinikai és CME",
+        "body": "Akkreditált továbbképzés és adaptív klinikai esetek a QUIZ modulon keresztül."
+      },
+      {
+        "title": "Sajtó és hírek",
+        "body": "Bejelentések, mérföldkövek és médiamegjelenések, ahogy a ZenAiOS új intézményekre terjeszkedik."
+      }
+    ]
+  },
+  "legal": {
+    "eyebrow": "Jogi információk",
+    "lastUpdated": "Utoljára frissítve: {date}",
+    "lastUpdatedDate": "2026. június 13.",
+    "privacy": {
+      "title": "Adatvédelmi szabályzat",
+      "intro": "Ez az Adatvédelmi szabályzat ismerteti, hogyan kezeli a(z) {name} („mi”, „minket”) a személyes adatokat ezzel a weboldallal ({domain}) és a platformunkkal összefüggésben. Székhelyünk {location} területén van, és elkötelezettek vagyunk a személyes adatok feldolgozása mellett az EU Általános Adatvédelmi Rendeletével (GDPR) összhangban.",
+      "h1": "1. A weboldalon gyűjtött adatok",
+      "p1a": "Ez a marketingweboldal szándékosan minimális. A demó és kapcsolatfelvételi űrlapok bemutató jelleggel jelennek meg, és nem továbbítják vagy tárolják a beküldéseket. Ha és amikor ezeket az űrlapokat egy háttérrendszerhez kötjük, csak az Ön által megadni választott információkat gyűjtjük — jellemzően a nevét, munkahelyi e-mail-címét, szervezetét és üzenetét — annak érdekében, hogy megválaszoljuk a megkeresését.",
+      "p1b": "Korlátozott, összesített technikai információkat (például alapvető analitikát) gyűjthetünk annak megértéséhez, hogyan használják az oldalt. Nem adunk el személyes adatokat.",
+      "h2": "2. Adatok a platformon belül",
+      "p2a": "A ZenAiOS platform azon intézmények nevében dolgozza fel az adatokat, amelyek telepítik (például kórházak és közhatóságok), és amelyek adatkezelőként járnak el. Ezekben az esetekben a(z) {name} írásbeli megállapodás alapján adatfeldolgozóként jár el.",
+      "p2b": "<strong>Adatszuverenitás.</strong> Infrastruktúránk úgy van kialakítva, hogy az érzékeny klinikai és adminisztratív adatok helyben maradhassanak. Visszakeresés-támogatott AI-nk (ZEN_RAG) 100%-ban offline futtatható, ami azt jelenti, hogy a szabályozott adatoknak nem kell elhagyniuk az intézmény saját környezetét.",
+      "h3": "3. Jogalapok",
+      "p3": "Amikor személyes adatokat dolgozunk fel, az alábbi jogalapok közül egyre vagy többre támaszkodunk: az Ön hozzájárulása, egy szerződés teljesítése, jogi kötelezettségnek való megfelelés, vagy jogos érdekünk szolgáltatásaink működtetésében és fejlesztésében.",
+      "h4": "4. Megőrzés",
+      "p4": "A személyes adatokat csak addig őrizzük meg, ameddig az itt leírt célokhoz szükséges, vagy ameddig a törvény előírja. A megkeresési adatokat addig tartjuk meg, ameddig a kérése kezeléséhez szükséges, és azt követően ésszerű ideig.",
+      "h5": "5. Az Ön jogai",
+      "p5": "Az alkalmazandó jog függvényében Önnek joga van:",
+      "rights": [
+        "hozzáférni az Önről tárolt személyes adatokhoz;",
+        "kérni adatai helyesbítését vagy törlését;",
+        "tiltakozni bizonyos feldolgozás ellen vagy korlátozni azt;",
+        "kérni az Ön által megadott adatok hordozhatóságát;",
+        "panaszt benyújtani az adatvédelmi hatóságához."
+      ],
+      "h6": "6. Kapcsolat",
+      "p6": "Bármilyen adatvédelmi kérdés esetén vagy jogai gyakorlásához vegye fel velünk a kapcsolatot itt: <email></email> vagy telefonon: <phone></phone>.",
+      "h7": "7. Változások",
+      "p7": "Időről időre frissíthetjük ezt a szabályzatot. A fenti „utoljára frissítve” dátum tükrözi a legutóbbi módosítást."
+    },
+    "terms": {
+      "title": "Felhasználási feltételek",
+      "intro": "Ezek a Felhasználási feltételek szabályozzák a(z) {name} weboldalához ({domain}, a továbbiakban „Oldal”) való hozzáférését és annak használatát. Az Oldal használatával Ön elfogadja ezeket a feltételeket.",
+      "h1": "1. Az Oldal tájékoztató jellegű",
+      "p1": "Ez az Oldal a(z) {name} platformról és moduljairól nyújt információkat. A tartalom kizárólag általános tájékoztatás céljából áll rendelkezésre, és nem minősül orvosi, jogi vagy szakmai tanácsadásnak. Az itt bemutatott termékmodellek és illusztrációk a platform képességeit szemléltetik.",
+      "h2": "2. Bemutató űrlapok",
+      "p2": "Az Oldalon található demó és kapcsolatfelvételi űrlapok bemutató jellegűek. Hacsak kifejezetten másként nincs feltüntetve, a beküldéseket nem továbbítjuk, nem tároljuk és nem dolgozzuk fel. A megbízható kapcsolatfelvételhez használja a <contact>kapcsolati oldalunkon</contact> található e-mail-címet vagy telefonszámot.",
+      "h3": "3. Előrejelzések és számok",
+      "p3": "Az Oldalon megjelenített bármely hatékonysági vagy eredményadat egyértelműen előrejelzésként vagy szemléltető célként van megjelölve. Ezek nem garanciák, és nem szabad mért eredményként rájuk hagyatkozni. A platformról szóló ellenőrizhető tényeket (például a modulok és élő telepítések számát) ekként mutatjuk be.",
+      "h4": "4. Szellemi tulajdon",
+      "p4": "A(z) {name} név, logó, márka, szöveg, grafika és szoftver, amely ezen az Oldalon megjelenik, a mi vagy licencadóink tulajdonát képezi, és az alkalmazandó szellemitulajdon-jogi törvények védik. Ezeket előzetes írásbeli engedélyünk nélkül nem másolhatja, reprodukálhatja vagy terjesztheti.",
+      "h5": "5. Harmadik felek hivatkozásai",
+      "p5": "Az Oldal harmadik felek weboldalaira vagy szolgáltatásaira hivatkozhat (például az élő platformkörnyezetre). Nem vállalunk felelősséget e harmadik felek tartalmáért vagy gyakorlatáért.",
+      "h6": "6. Felelősség kizárása",
+      "p6": "Az Oldal „adott állapotban” áll rendelkezésre, mindenféle garancia nélkül, a törvény által megengedett legteljesebb mértékben. Nem vállalunk felelősséget az Oldal használatából vagy az arra való hagyatkozásból eredő bármilyen veszteségért.",
+      "h7": "7. Irányadó jog",
+      "p7": "Ezekre a feltételekre România törvényei az irányadók, a kollíziós jogi elvek figyelmen kívül hagyásával. Bármely jogvita România illetékes bíróságainak hatáskörébe tartozik.",
+      "h8": "8. Kapcsolat",
+      "p8": "Kérdése van ezekkel a feltételekkel kapcsolatban? Vegye fel velünk a kapcsolatot itt: <email></email>."
+    }
+  },
+  "visuals": {
+    "dashboard": {
+      "title": "Hospital Manager",
+      "subtitle": "Vezetői áttekintés",
+      "aiPredictive": "AI prediktív",
+      "kpiOccupancy": "Ágykihasználtság",
+      "kpiAdmissions": "Mai felvételek",
+      "kpiWait": "Átl. várakozás",
+      "minSuffix": " perc",
+      "admissions14": "Felvételek · 14 nap",
+      "forecast": "előrejelzés",
+      "capacity": "Kapacitás",
+      "inUse": "használatban",
+      "deptLoad": "Osztályok terheltsége",
+      "deptEmergency": "Sürgősségi",
+      "deptCardiology": "Kardiológia",
+      "deptRadiology": "Radiológia",
+      "alert": "A sürgősségi a kapacitás határán — előrejelzett túlterheltség <b>~2 óra</b> múlva. Javaslat: +2 fő."
+    },
+    "triage": {
+      "title": "Sürgősségi triázs",
+      "subtitle": "Manchester + AI · automatikusan rendezve",
+      "levels": {
+        "1": "Azonnali",
+        "2": "Nagyon sürgős",
+        "3": "Sürgős",
+        "4": "Általános",
+        "5": "Nem sürgős"
+      },
+      "queue": [
+        "Mellkasi fájdalom, légszomj",
+        "Fejsérülés",
+        "Hasi fájdalom",
+        "Bokarándulás"
+      ],
+      "alert": "1-es szint jelezve az ügyeletes orvosnak"
+    },
+    "epicrisis": {
+      "title": "Epikrízis — vázlat",
+      "subtitle": "#2241 beteg · automatikusan generálva",
+      "linked": "FOCG csatolva",
+      "ready": "Készen áll a klinikus felülvizsgálatára · 8 mp"
+    },
+    "decision": {
+      "title": "Döntéstámogatás",
+      "subtitle": "Mellkasi fájdalom · 58 F · kontextusérzékeny",
+      "differential": "Differenciáldiagnózis",
+      "dx": [
+        "Akut koronária szindróma",
+        "Pericarditis",
+        "Tüdőembólia"
+      ],
+      "evidence": "Bizonyítékalapú · irányelvekhez kapcsolt"
+    },
+    "rag": {
+      "title": "ZEN_RAG",
+      "subtitle": "Helyben · adatszuverén",
+      "noCloud": "Nincs felhő",
+      "onPremise": "Helyben",
+      "nodeDocuments": "Dokumentumok",
+      "nodeDocumentsSub": "orvosi · jogi",
+      "nodeLlm": "Helyi LLM",
+      "nodeAnswer": "Válasz",
+      "nodeAnswerSub": "hivatkozott · privát",
+      "statOffline": "offline",
+      "statDataLeaves": "kiszivárgó adat",
+      "statModels": "modell"
+    }
+  },
+  "categories": {
+    "medical": {
+      "name": "Orvosi",
+      "label": "A kategória — Orvosi",
+      "tagline": "A zászlóshajó.",
+      "description": "Klinikai megoldások, kórházi modulok és orvosi képzés — a kínálat szíve, a valós klinikai munkafolyamat mentén csoportosítva a recepciótól az igazgatótanácsig."
+    },
+    "administrative": {
+      "name": "Adminisztratív",
+      "label": "B kategória — Adminisztratív",
+      "tagline": "Polgári és háttériroda.",
+      "description": "Polgári ügyintézés, adminisztratív folyamatok és RAG-alapú megfelelőség — már élesben működik egy közintézményben."
+    },
+    "ai-infrastructure": {
+      "name": "AI-infrastruktúra",
+      "label": "C kategória — Általános",
+      "tagline": "A szuverén réteg.",
+      "description": "AI-eszközök, helyi modellek és RAG-infrastruktúra — az offline képes technikai alap, amelyre az egész platform épül."
+    }
+  },
+  "deploymentsData": {
+    "sjuo-oradea": {
+      "institution": "SJUO · Bihar Megyei Sürgősségi Kórház",
+      "kind": "Kórház",
+      "summary": "A zászlóshajó telepítés: egy teljes integrált kórházi rendszer fut egy megyei sürgősségi kórházban.",
+      "live": [
+        "Elektronikus FOCG ICD-10 és DRG kódolással",
+        "AI-támogatott epikrízis",
+        "Valós idejű ágy- és osztálymenedzsment",
+        "ZenA asszisztens hangtámogatással"
+      ]
+    },
+    "oradea-city-hall": {
+      "institution": "Nagyváradi Polgármesteri Hivatal",
+      "kind": "Közintézmény",
+      "summary": "Egy polgári telepítés, amely bizonyítja, hogy a ZenAiOS a kórházon túl a közigazgatásba is eljut.",
+      "live": [
+        "AI-generált jelentések és online szolgáltatások",
+        "Interaktív kerülettérkép",
+        "ZenA polgári asszisztens",
+        "Többnyelvű állampolgári hozzáférés"
+      ]
+    }
+  },
+  "teamData": {
+    "george": {
+      "role": "Chief Executive Officer",
+      "bio": "Meghatározza a jövőképet, és a ZenAiOS-t intézményekhez, partnerekhez és befektetőkhöz viszi."
+    },
+    "vlad": {
+      "role": "Chief Technology Officer",
+      "bio": "A platformot és a saját fejlesztésű AI-infrastruktúrát vezeti — a szuverén RAG-tól a 17 modulig."
+    },
+    "horea": {
+      "role": "Chief Medical Officer",
+      "bio": "Minden modult a valós klinikai gyakorlatban és az ellátási szabványokban tart megalapozva."
+    },
+    "vision": {
+      "text": "Az egészségügy összetett. A mi feladatunk, hogy működjön — egyetlen AI operációs rendszer, a recepciótól az igazgatótanácsig.",
+      "role": "CEO, ZenAiOS"
+    }
+  },
+  "outcomesData": {
+    "facts": {
+      "modules": { "label": "AI modul", "sub": "Három területen át" },
+      "domains": { "label": "Termékterület", "sub": "Orvosi · Admin · AI-infra" },
+      "deployments": { "label": "Élő telepítés", "sub": "Kórház + polgármesteri hivatal" },
+      "languages": { "label": "Nyelv", "sub": "EN · RO · HU · DE · FR" }
+    },
+    "projections": {
+      "admin": { "label": "Kevesebb idő adminisztratív feladatokra", "sub": "Előrejelzés" },
+      "errors": { "label": "Kevesebb diagnosztikai hiba", "sub": "Előrejelzés" },
+      "cost": { "label": "Alacsonyabb látogatásonkénti költség", "sub": "Előrejelzés" },
+      "rag": { "label": "Offline képes RAG", "sub": "Az adatok helyben maradnak" }
+    },
+    "badges": [
+      "SJUO Oradea",
+      "Nagyváradi Polgármesteri Hivatal",
+      "5 nyelv",
+      "Szuverén offline RAG",
+      "ICD-10 · DRG · FOCG",
+      "Azure Speech hang"
+    ]
+  },
+  "modules": {
+    "items": {
+      "zenaios-hospital": {
+        "name": "ZenAiOS Hospital — SJUO",
+        "short": "Kórházi OS",
+        "summary": "Integrált kórházmenedzsment a Spitalul Județean de Urgență Oradea intézményében telepítve — ágyak, FOCG ICD-10 és DRG kódolással, AI epikrízis és a ZenA asszisztens egyetlen rendszerben.",
+        "problem": "A kórházi adatok különálló rendszerekben élnek, így a klinikusok újra begépelik az információkat, és a vezetőségnek soha nincs élő képe. A ZenAiOS Hospital egyetlen, eredendően AI-alapú platformon egyesíti a klinikai dokumentációt, a kódolást és az üzemeltetést.",
+        "how": [
+          "Elektronikus FOCG (megfigyelési lap) ICD-10 és DRG kódolással",
+          "AI-támogatott epikrízis és zárójelentési dokumentumok",
+          "Valós idejű ágy- és osztálymenedzsment",
+          "A személyzetbe ágyazott ZenA asszisztens, hangtámogatással"
+        ],
+        "roadmap": [
+          "Szélesebb osztálylefedettség",
+          "Mélyebb CNAS / DSP jelentési automatizálás",
+          "Bővített többnyelvű klinikai dokumentáció"
+        ]
+      },
+      "patient": {
+        "name": "Beteg modul",
+        "short": "Beteg",
+        "summary": "Online időpontfoglalás, eredményekhez való hozzáférés, AI-kommunikáció, tünetmonitorozás és személyre szabott útmutatás betegeknek.",
+        "problem": "A betegek nehezen érik el a megfelelő szolgáltatást, és nehezen értik meg a következő lépésüket. A Beteg modul vezetett, többnyelvű bejáratot biztosít az ellátáshoz.",
+        "how": [
+          "Időpontok foglalása és kezelése online",
+          "Biztonságos hozzáférés az eredményekhez és dokumentumokhoz",
+          "AI tünetmonitorozás és személyre szabott útmutatás",
+          "Társalgási támogatás öt nyelven"
+        ],
+        "roadmap": ["Ellátási terv emlékeztetők", "Otthoni monitorozás és viselhető eszközök integrációja"]
+      },
+      "doctor": {
+        "name": "Orvos modul",
+        "short": "Orvos",
+        "summary": "AI döntéstámogatás a diagnózishoz és kezeléshez, automatikus epikrízis- és dokumentumgenerálás, valamint munkafolyamat-optimalizálás orvosoknak.",
+        "problem": "Az orvosok órákat veszítenek a dokumentációra és a kontextusváltásra. Az Orvos modul a döntéstámogatást és az automatikusan generált feljegyzéseket a klinikai munkafolyamatba viszi, nem fölé.",
+        "how": [
+          "Kontextusérzékeny differenciáldiagnosztikai és kezelési javaslatok",
+          "Automatikus epikrízis- és klinikai dokumentumgenerálás",
+          "Bizonyítékalapú útmutatás az ellátás helyén",
+          "Munkafolyamat-optimalizálás a műszak során"
+        ],
+        "roadmap": ["Szakterület-specifikus irányelvcsomagok", "Mélyebb EHR-visszaírás"]
+      },
+      "nursing": {
+        "name": "Ápolási modul",
+        "short": "Ápolás",
+        "summary": "Kezelés-adminisztráció, vitális jelek monitorozása, eljárási ellenőrzőlisták és ellátócsapat-kommunikáció az ápolószemélyzet számára.",
+        "problem": "Az ellátás pontos, időben történő koordinációtól függ. Az Ápolási modul egy helyen tartja az adminisztrációt, a vitális jeleket és az ellenőrzőlistákat, és szinkronban tartja az egész ellátócsapatot.",
+        "how": [
+          "Kezelés-adminisztráció követése",
+          "Vitális jelek monitorozása és trendek",
+          "Eljárási ellenőrzőlisták",
+          "Ellátócsapat-kommunikáció"
+        ],
+        "roadmap": ["Műszakátadási összefoglalók", "Eszközadatok beolvasása"]
+      },
+      "emergency-triage": {
+        "name": "Sürgősségi triázs",
+        "short": "Triázs",
+        "summary": "A Manchester-protokoll AI-val kombinálva a betegek öt súlyossági szintbe sorolásához, a sor automatikus rangsorolásához és az orvosok riasztásához.",
+        "problem": "Egy forgalmas sürgősségi osztályon a rangsorolásnak gyorsnak és védhetőnek kell lennie. A Triázs a Manchester-szabványt AI-val párosítja, hogy a sort a valós súlyosság szerint tartsa rendezve.",
+        "how": [
+          "Manchester + AI besorolás 5 súlyossági szintbe",
+          "A sor automatikus rangsorolása",
+          "Orvosi riasztások nagy súlyosságú esetekhez"
+        ],
+        "roadmap": ["Vitális jelek alapján vezérelt újratriázs", "Kapacitásérzékeny irányítás"]
+      },
+      "laboratory": {
+        "name": "Laboratóriumi modul",
+        "short": "Labor",
+        "summary": "Mintavétel, feldolgozás és AI-értelmezés a kóros értékek kiemelésével és automatikus FOCG-integrációval.",
+        "problem": "A laboreredményeknek a megfelelő dokumentumba kell eljutniuk, megjelölve és kontextusban. A Laboratóriumi modul automatikusan összeköti a labort a megfigyelési lappal.",
+        "how": [
+          "Mintavételi és feldolgozási munkafolyamat",
+          "AI-értelmezés a kóros értékek kiemelésével",
+          "Automatikus FOCG-integráció"
+        ],
+        "roadmap": ["Analizátor-integrációk", "Referenciatartomány személyre szabása"]
+      },
+      "labiq": {
+        "name": "LabIQ",
+        "short": "LabIQ",
+        "summary": "Laborjelentések AI-elemzése PDF- vagy képfeltöltésekből, közérthető magyarázatokkal és további útmutatással.",
+        "problem": "Egy laborjelentést a legtöbb ember nehezen olvas. A LabIQ egy feltöltött PDF-et vagy fényképet közérthető magyarázattá és világos következő lépésekké alakít.",
+        "how": [
+          "Töltsön fel egy laborjelentést PDF-ként vagy képként",
+          "AI-kinyerés és az értékek elemzése",
+          "Közérthető magyarázat és további útmutatás"
+        ],
+        "roadmap": ["Trendkövetés a jelentések között", "Megosztási linkek klinikusoknak"]
+      },
+      "hospital-manager": {
+        "name": "Hospital Manager",
+        "short": "Manager",
+        "summary": "Vezetői irányítópultok, AI prediktív analitika, CNAS / DSP interoperabilitás és egy AI-avatár a valós idejű döntésekhez.",
+        "problem": "A vezetői döntések csak annyira jók, mint a mögöttük álló adatok. A Hospital Manager az élő üzemeltetési adatokat olyan előrejelzésekké és válaszokká alakítja, amelyekre a vezetés cselekedni tud.",
+        "how": [
+          "Vezetői irányítópultok az egész kórházra",
+          "AI prediktív analitika a keresletre és a létszámra",
+          "CNAS / DSP interoperabilitás",
+          "AI-avatár a valós idejű döntéstámogatáshoz"
+        ],
+        "roadmap": ["Forgatókönyv-tervezés", "Teljesítményértékelési jelentések"]
+      },
+      "manager-mobile": {
+        "name": "Manager Mobile irányítópult",
+        "short": "Mobil",
+        "summary": "Osztályok, létszám, riasztások és pénzügyek mobil felügyelete, vezetői AI-asszisztenssel a zsebében.",
+        "problem": "A vezetés ritkán ül egy asztalnál. A Manager Mobile irányítópult az üzemeltetési képet és egy AI-asszisztenst a telefonra helyezi, mobilra optimalizált kialakítással.",
+        "how": [
+          "Osztályok, létszám és pénzügyek egy pillantásra",
+          "Push-riasztások arról, ami figyelmet igényel",
+          "Vezetői AI-asszisztens mobilon"
+        ],
+        "roadmap": ["Offline pillanatfelvételek", "Jóváhagyások útközben"]
+      },
+      "risk-assessment": {
+        "name": "Kockázatértékelés",
+        "short": "Kockázat",
+        "summary": "Egy AI kockázati munkaterület valószínűségi sávokkal, időablakokkal és egy átfogó kockázati szinttel.",
+        "problem": "A kockázat mozgó célpont. Ez a munkaterület egyértelművé teszi a valószínűséget, az időzítést és az átfogó szintet, így a klinikai döntések megalapozottak és felülvizsgálhatóak.",
+        "how": [
+          "Valószínűségi sávok kockázati tényezőnként",
+          "Időablak-becslések",
+          "Egy átfogó, megmagyarázható kockázati szint"
+        ],
+        "roadmap": ["Kohorsz-összehasonlítások", "Irányelvekhez kapcsolt indoklások"]
+      },
+      "data-collection": {
+        "name": "Kórházi adatgyűjtés",
+        "short": "Adat",
+        "summary": "Felvételek, törzsadatok, ágytérképek, biztosítás, gyógyszertár és jelentéskészítés egyetlen strukturált munkaterületen.",
+        "problem": "A tiszta strukturált adat az alap, amelyre minden más épül. Ez a modul egyszer rögzíti azt, a forrásnál, és következetesen tartja az egész kórházban.",
+        "how": [
+          "Felvételek és törzsadatok",
+          "Ágytérképek és kapacitás",
+          "Biztosítás, gyógyszertár és jelentéskészítés"
+        ],
+        "roadmap": ["Konfigurálható jelentéssablonok", "Adatminőségi ellenőrzések"]
+      },
+      "quiz": {
+        "name": "QUIZ modul",
+        "short": "CME",
+        "summary": "Akkreditált CME orvosoknak és rezidenseknek: AI-generált adaptív klinikai esetek, kompetenciaértékelés és tanúsított CME-órák.",
+        "problem": "A továbbképzés versenyez a klinikai idővel. A QUIZ modul adaptívvá és esetalapúvá teszi a CME-t, így a tanulás illeszkedik a valós időbeosztáshoz és beszámít.",
+        "how": [
+          "AI-generált adaptív klinikai esetek",
+          "Kompetenciaértékelés",
+          "Akkreditált CME-órák"
+        ],
+        "roadmap": ["Szakterületi tanulási utak", "Csapat-ranglisták"]
+      },
+      "analytics": {
+        "name": "Analitikai irányítópult",
+        "short": "Analitika",
+        "summary": "Egy önálló irányítópult a csevegőwidget analitikai rendszeréhez, élő telemetria alapján.",
+        "problem": "Ha az asszisztens a bejárat, akkor az analitikája az alaprajz. Ez az irányítópult olvashatóvá és cselekvőképessé teszi a beszélgetési telemetriát.",
+        "how": [
+          "Élő telemetria a csevegőwidgetből",
+          "Használati, témakör- és megoldási mutatók",
+          "Önálló, beágyazható irányítópult"
+        ],
+        "roadmap": ["Egyedi tölcsérek", "Riasztás anomáliákra"]
+      },
+      "citizen": {
+        "name": "Polgári modul — Nagyváradi Polgármesteri Hivatal",
+        "short": "Polgár",
+        "summary": "AI-generált jelentések, online szolgáltatások, interaktív kerülettérkép és a ZenA polgári asszisztens — élesben a Nagyváradi Polgármesteri Hivatalban.",
+        "problem": "Az állampolgároknak egyetlen, világos módra van szükségük a közszolgáltatások eléréséhez. A Polgári modul a polgári bejárat — szolgáltatások, térképek és egy többnyelvű asszisztens egy helyen.",
+        "how": [
+          "AI-generált jelentések és kérelmek",
+          "Online önkormányzati szolgáltatások",
+          "Interaktív kerülettérkép",
+          "ZenA polgári asszisztens"
+        ],
+        "roadmap": ["Több szolgáltatási kategória", "Osztályok közötti irányítás"]
+      },
+      "administrative-module": {
+        "name": "Adminisztratív modul",
+        "short": "Admin",
+        "summary": "RAG nem klinikai folyamatokhoz: jogi megfelelőség, CNAS könyvelés, gyógyszerkezelés és AI kórházi készletgazdálkodás.",
+        "problem": "A háttérirodai folyamatok dokumentumigényesek és szabályokhoz kötöttek. Az Adminisztratív modul visszakeresés-támogatott AI-t alkalmaz a megfelelőségre, a könyvelésre és a készletgazdálkodásra.",
+        "how": [
+          "RAG jogi és megfelelőségi dokumentumokon",
+          "CNAS könyvelési támogatás",
+          "Gyógyszerkezelés",
+          "AI kórházi készletgazdálkodás"
+        ],
+        "roadmap": ["Beszerzési munkafolyamatok", "Audit nyomvonalak"]
+      },
+      "zen-rag": {
+        "name": "ZEN_RAG / Git_RAG_Zena",
+        "short": "ZEN_RAG",
+        "summary": "Egy 100%-ban offline, helyi RAG orvosi és jogszabályi dokumentumokhoz — nincs felhő, llama.cpp + FAISS alapon épült. Minden adatszuverenitási beszélgetés gerince.",
+        "problem": "A klinikai és jogi adatok nem mindig hagyhatják el az épületet. A ZEN_RAG teljesen helyben fut, így az érzékeny dokumentumok szuverének maradnak, miközben az AI továbbra is kereshetővé teszi őket.",
+        "how": [
+          "100% offline, helyi visszakeresés-támogatott generálás",
+          "Nincs felhőfüggőség — helyben fut",
+          "llama.cpp + FAISS alapon épült",
+          "Orvosi és jogszabályi korpuszokra hangolva"
+        ],
+        "roadmap": ["Szélesebb modelltámogatás", "Megerősített helyi telepítési eszközök"]
+      },
+      "llm-compare": {
+        "name": "Zen_LLM_Compare",
+        "short": "LLM Compare",
+        "summary": "Egymás melletti összehasonlító 6+ helyi és felhőalapú LLM-hez — ugyanaz a prompt, párhuzamos válaszok és egy késleltetési teljesítményértékelés.",
+        "problem": "A megfelelő modell kiválasztása mérnöki döntés, nem találgatás. Az LLM Compare egy promptot futtat egyszerre több modellen, és méri a kompromisszumokat.",
+        "how": [
+          "Ugyanaz a prompt elküldve 6+ modellnek párhuzamosan",
+          "Egymás melletti válasz-összehasonlítás",
+          "Késleltetés teljesítményértékelése"
+        ],
+        "roadmap": ["Minőségi pontozás", "Feladatonkénti költségbecslések"]
+      }
+    }
+  }
+}

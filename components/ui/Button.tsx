@@ -1,6 +1,9 @@
-import Link from "next/link";
+import type { ComponentProps } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+
+type LinkExtraProps = Omit<ComponentProps<typeof Link>, "href" | "className">;
 
 type Variant = "primary" | "secondary" | "ghost";
 type Size = "sm" | "md" | "lg";
@@ -85,7 +88,7 @@ export function Button(props: ButtonAsButton | ButtonAsLink) {
       );
     }
     return (
-      <Link href={href} className={classes} {...anchorRest}>
+      <Link href={href} className={classes} {...(anchorRest as LinkExtraProps)}>
         {inner}
       </Link>
     );

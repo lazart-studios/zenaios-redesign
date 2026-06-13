@@ -1,72 +1,64 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, Check } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { ModuleCard } from "@/components/cards/ModuleCard";
 import { CTASection } from "@/components/sections/CTASection";
-import { categories, getCategory } from "@/lib/data/categories";
-import { modulesByCategory } from "@/lib/data/modules";
-import { pageMeta } from "@/lib/seo";
+import { categorySlugs, buildCategory } from "@/lib/data/categories";
+import { buildModulesByCategory } from "@/lib/data/modules";
+import { buildMeta } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return categories.map((c) => ({ category: c.slug }));
+  return categorySlugs.map((category) => ({ category }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ category: string }>;
-}) {
-  const { category } = await params;
-  const cat = getCategory(category);
+  params: Promise<{ locale: string; category: string }>;
+}): Promise<Metadata> {
+  const { locale, category } = await params;
+  const cat = buildCategory(await getTranslations({ locale, namespace: "categories" }), category);
   if (!cat) return {};
-  return pageMeta({
+  return buildMeta({
+    locale: locale as Locale,
     title: cat.name,
     description: cat.description,
     path: `/platform/${cat.slug}`,
   });
 }
 
-const highlights: Record<string, string[]> = {
-  medical: [
-    "The full clinical journey — front desk, triage, diagnosis, care, lab, management & CME",
-    "AI epicrisis with ICD-10 & DRG coding",
-    "Live in a county emergency hospital (SJUO)",
-  ],
-  administrative: [
-    "Civic services and back-office processes",
-    "RAG over legal, compliance & accounting documents",
-    "Live at Oradea City Hall",
-  ],
-  "ai-infrastructure": [
-    "100% offline, on-premise RAG (llama.cpp + FAISS)",
-    "Multi-model comparison & benchmarking",
-    "The sovereign foundation under every other module",
-  ],
-};
-
 export default async function CategoryPage({
   params,
 }: {
-  params: Promise<{ category: string }>;
+  params: Promise<{ locale: string; category: string }>;
 }) {
-  const { category } = await params;
-  const cat = getCategory(category);
+  const { locale, category } = await params;
+  setRequestLocale(locale as Locale);
+
+  const cat = buildCategory(await getTranslations("categories"), category);
   if (!cat) notFound();
 
-  const mods = modulesByCategory(cat.slug);
+  const t = await getTranslations("categoryPage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const mods = buildModulesByCategory(await getTranslations("modules.items"), cat.slug);
   const live = mods.filter((m) => m.status === "active").length;
   const isViolet = cat.accent === "violet";
+  const highlights = t.raw(`highlights.${cat.slug}`) as string[];
 
   return (
     <>
       <PageHeader
         eyebrow={cat.label}
         crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Platform", href: "/platform" },
+          { label: common("home"), href: "/" },
+          { label: nav("platform"), href: "/platform" },
           { label: cat.name },
         ]}
         title={
@@ -80,7 +72,7 @@ export default async function CategoryPage({
         description={cat.description}
       >
         <ul className="grid max-w-2xl gap-2.5">
-          {highlights[cat.slug]?.map((h) => (
+          {highlights?.map((h) => (
             <li key={h} className="flex items-start gap-2.5 text-sm text-ink/90">
               <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-full bg-sky/15">
                 <Check className="size-3 text-sky" />
@@ -95,12 +87,12 @@ export default async function CategoryPage({
         <Reveal>
           <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-hairline pb-4">
             <h2 className="text-xl font-bold text-ink">
-              {mods.length} module{mods.length > 1 ? "s" : ""}
+              {t("moduleCountTitle", { count: mods.length })}
             </h2>
             {live > 0 && (
               <span className="inline-flex items-center gap-1.5 text-sm text-success">
                 <span className="size-1.5 rounded-full bg-success" />
-                {live} live deployment{live > 1 ? "s" : ""}
+                {t("liveCount", { count: live })}
               </span>
             )}
           </div>
@@ -120,7 +112,7 @@ export default async function CategoryPage({
             className="group mt-12 inline-flex items-center gap-2 text-sm font-medium text-sky"
           >
             <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
-            All domains
+            {t("allDomains")}
           </Link>
         </Reveal>
       </Section>

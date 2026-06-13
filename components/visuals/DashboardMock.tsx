@@ -9,36 +9,39 @@ import {
   TriangleAlert,
   Users,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Counter } from "@/components/motion/Counter";
 import { AreaChart, BarChart, Donut } from "@/components/visuals/Charts";
 import { cn } from "@/lib/utils";
 
-const kpis = [
-  { icon: BedDouble, label: "Bed occupancy", value: 87, suffix: "%", delta: "+3.2%", up: true },
-  { icon: Users, label: "Admissions today", value: 142, delta: "+12", up: true },
-  { icon: Activity, label: "Avg. wait", value: 14, suffix: " min", delta: "-21%", up: false },
-];
-
-const departments = [
-  { name: "Emergency", load: 92, trend: [4, 6, 5, 8, 7, 9, 8] },
-  { name: "Cardiology", load: 64, trend: [3, 4, 4, 5, 6, 5, 6] },
-  { name: "Radiology", load: 48, trend: [2, 3, 3, 2, 4, 3, 4] },
-];
-
 export function DashboardMock({ className }: { className?: string }) {
+  const t = useTranslations("visuals.dashboard");
+
+  const kpis = [
+    { icon: BedDouble, label: t("kpiOccupancy"), value: 87, suffix: "%", delta: "+3.2%", up: true },
+    { icon: Users, label: t("kpiAdmissions"), value: 142, delta: "+12", up: true },
+    { icon: Activity, label: t("kpiWait"), value: 14, suffix: t("minSuffix"), delta: "-21%", up: false },
+  ];
+
+  const departments = [
+    { name: t("deptEmergency"), load: 92, trend: [4, 6, 5, 8, 7, 9, 8] },
+    { name: t("deptCardiology"), load: 64, trend: [3, 4, 4, 5, 6, 5, 6] },
+    { name: t("deptRadiology"), load: 48, trend: [2, 3, 3, 2, 4, 3, 4] },
+  ];
+
   return (
     <div className={cn("space-y-3 p-4 text-left sm:p-5", className)}>
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <p className="text-[11px] uppercase tracking-[0.14em] text-faint">
-            Hospital Manager
+            {t("title")}
           </p>
-          <p className="text-sm font-semibold text-ink">Executive overview</p>
+          <p className="text-sm font-semibold text-ink">{t("subtitle")}</p>
         </div>
         <div className="inline-flex items-center gap-1.5 rounded-full bg-zen/10 px-2.5 py-1 text-[11px] font-medium text-sky ring-1 ring-zen/25">
           <Sparkles className="size-3" />
-          AI predictive
+          {t("aiPredictive")}
         </div>
       </div>
 
@@ -78,8 +81,8 @@ export function DashboardMock({ className }: { className?: string }) {
       <div className="grid grid-cols-3 gap-2.5">
         <div className="col-span-2 rounded-lg border border-hairline bg-white/[0.02] p-3">
           <div className="flex items-center justify-between">
-            <p className="text-[11px] font-medium text-muted">Admissions · 14 days</p>
-            <p className="text-[10px] text-faint">forecast</p>
+            <p className="text-[11px] font-medium text-muted">{t("admissions14")}</p>
+            <p className="text-[10px] text-faint">{t("forecast")}</p>
           </div>
           <div className="mt-2">
             <AreaChart
@@ -89,16 +92,16 @@ export function DashboardMock({ className }: { className?: string }) {
           </div>
         </div>
         <div className="rounded-lg border border-hairline bg-white/[0.02] p-3">
-          <p className="text-[11px] font-medium text-muted">Capacity</p>
+          <p className="text-[11px] font-medium text-muted">{t("capacity")}</p>
           <div className="mt-1 grid place-items-center">
-            <Donut value={87} size={78} stroke={8} label="in use" />
+            <Donut value={87} size={78} stroke={8} label={t("inUse")} />
           </div>
         </div>
       </div>
 
       {/* Department load */}
       <div className="rounded-lg border border-hairline bg-white/[0.02] p-3">
-        <p className="mb-2.5 text-[11px] font-medium text-muted">Department load</p>
+        <p className="mb-2.5 text-[11px] font-medium text-muted">{t("deptLoad")}</p>
         <div className="space-y-2.5">
           {departments.map((d) => (
             <div key={d.name} className="flex items-center gap-3">
@@ -129,8 +132,7 @@ export function DashboardMock({ className }: { className?: string }) {
       <div className="flex items-center gap-2.5 rounded-lg border border-warning/25 bg-warning/[0.06] px-3 py-2.5">
         <TriangleAlert className="size-4 shrink-0 text-warning" />
         <p className="text-[11px] text-ink/90">
-          Emergency nearing capacity — predicted surge in <b>~2h</b>. Suggest +2
-          staff.
+          {t.rich("alert", { b: (chunks) => <b>{chunks}</b> })}
         </p>
       </div>
     </div>

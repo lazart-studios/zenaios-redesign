@@ -1,43 +1,51 @@
 import { Hospital, Landmark } from "lucide-react";
-import type { Deployment } from "./types";
+import type { Deployment, DeploymentSkeleton, Translator } from "./types";
 
-export const deployments: Deployment[] = [
+/**
+ * Locale-invariant deployment facts. Institution names that are proper nouns
+ * (the hospital and city hall) stay fixed; the rest of the copy lives under
+ * `deploymentsData.*` in the catalog.
+ */
+export const deploymentSkeletons: DeploymentSkeleton[] = [
   {
     slug: "sjuo-oradea",
     name: "Spitalul Județean de Urgență Oradea",
-    institution: "SJUO · Bihor County Emergency Hospital",
-    kind: "Hospital",
     location: "Oradea, România",
     status: "active",
-    summary:
-      "The flagship deployment: a full integrated hospital system running in a county emergency hospital.",
-    live: [
-      "Electronic FOCG with ICD-10 & DRG coding",
-      "AI-assisted epicrisis",
-      "Real-time bed & department management",
-      "ZenA assistant with voice support",
-    ],
     icon: Hospital,
   },
   {
     slug: "oradea-city-hall",
     name: "Primăria Oradea",
-    institution: "Oradea City Hall",
-    kind: "Public institution",
     location: "Oradea, România",
     status: "active",
-    summary:
-      "A civic deployment proving ZenAiOS reaches beyond the hospital into public administration.",
-    live: [
-      "AI-generated reports & online services",
-      "Interactive neighbourhood map",
-      "ZenA civic assistant",
-      "Multilingual citizen access",
-    ],
     icon: Landmark,
   },
 ];
 
-export function getDeployment(slug: string) {
-  return deployments.find((d) => d.slug === slug);
+export function getDeploymentSkeleton(slug: string) {
+  return deploymentSkeletons.find((d) => d.slug === slug);
+}
+
+/** `t` must be scoped to the `deploymentsData` namespace. */
+export function buildDeployments(t: Translator): Deployment[] {
+  return deploymentSkeletons.map((d) => ({
+    ...d,
+    institution: t(`${d.slug}.institution`),
+    kind: t(`${d.slug}.kind`),
+    summary: t(`${d.slug}.summary`),
+    live: t.raw(`${d.slug}.live`) as string[],
+  }));
+}
+
+export function buildDeployment(t: Translator, slug: string): Deployment | undefined {
+  const d = getDeploymentSkeleton(slug);
+  if (!d) return undefined;
+  return {
+    ...d,
+    institution: t(`${d.slug}.institution`),
+    kind: t(`${d.slug}.kind`),
+    summary: t(`${d.slug}.summary`),
+    live: t.raw(`${d.slug}.live`) as string[],
+  };
 }

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -5,36 +7,52 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { DomainCard } from "@/components/cards/DomainCard";
 import { ModuleCard } from "@/components/cards/ModuleCard";
 import { CTASection } from "@/components/sections/CTASection";
-import { categories } from "@/lib/data/categories";
-import { modulesByCategory, moduleCount } from "@/lib/data/modules";
-import { pageMeta } from "@/lib/seo";
+import { buildCategories } from "@/lib/data/categories";
+import { buildModulesByCategory, moduleCount } from "@/lib/data/modules";
+import { metaFromCatalog } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata = pageMeta({
-  title: "The Platform",
-  description:
-    "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, five languages, live in real institutions.",
-  path: "/platform",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return metaFromCatalog({ locale: locale as Locale, page: "platform", path: "/platform" });
+}
 
-export default function PlatformPage() {
+export default async function PlatformPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
+
+  const t = await getTranslations("platformPage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const categories = buildCategories(await getTranslations("categories"));
+  const tModules = await getTranslations("modules.items");
+
   return (
     <>
       <PageHeader
-        eyebrow="The platform"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Platform" }]}
+        eyebrow={t("eyebrow")}
+        crumbs={[{ label: common("home"), href: "/" }, { label: nav("platform") }]}
         title={
           <>
-            One operating system.{" "}
-            <span className="text-gradient">{moduleCount} AI modules.</span>
+            {t("titleLead")}{" "}
+            <span className="text-gradient">{t("titleAccent", { count: moduleCount })}</span>
           </>
         }
-        description="ZenAiOS isn't a single tool bolted onto a hospital — it's a layered operating system. Three domains, one shared assistant, all speaking the same data."
+        description={t("description")}
       >
         <Stagger className="grid max-w-2xl grid-cols-3 gap-4">
           {[
-            { v: moduleCount, l: "AI modules" },
-            { v: 3, l: "Domains" },
-            { v: 2, l: "Live deployments" },
+            { v: moduleCount, l: t("statModules") },
+            { v: 3, l: t("statDomains") },
+            { v: 2, l: t("statDeployments") },
           ].map((s) => (
             <StaggerItem key={s.l} className="rounded-2xl border border-hairline bg-card/40 p-4">
               <p className="text-3xl font-bold text-gradient-blue">{s.v}</p>
@@ -48,9 +66,9 @@ export default function PlatformPage() {
       <Section id="domains">
         <Reveal>
           <SectionHeading
-            eyebrow="Three domains"
-            title="Pick the layer you live in"
-            description="Each domain is a coherent product in its own right — and they share one data model, one assistant and one design language."
+            eyebrow={t("domainsEyebrow")}
+            title={t("domainsTitle")}
+            description={t("domainsDescription")}
           />
         </Reveal>
         <Stagger className="mt-12 grid gap-5 md:grid-cols-3">
@@ -67,16 +85,16 @@ export default function PlatformPage() {
         <Reveal>
           <SectionHeading
             align="center"
-            eyebrow="Every module"
-            title="The full catalogue"
-            description="From the front desk to the boardroom — explore each module in detail."
+            eyebrow={t("catalogueEyebrow")}
+            title={t("catalogueTitle")}
+            description={t("catalogueDescription")}
             className="mx-auto"
           />
         </Reveal>
 
         <div className="mt-14 space-y-16">
           {categories.map((cat) => {
-            const mods = modulesByCategory(cat.slug);
+            const mods = buildModulesByCategory(tModules, cat.slug);
             return (
               <div key={cat.slug}>
                 <Reveal>
@@ -87,7 +105,9 @@ export default function PlatformPage() {
                         {cat.tagline}
                       </span>
                     </h3>
-                    <span className="text-sm text-faint">{mods.length} modules</span>
+                    <span className="text-sm text-faint">
+                      {t("modulesLabel", { count: mods.length })}
+                    </span>
                   </div>
                 </Reveal>
                 <Stagger className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

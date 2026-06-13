@@ -1,4 +1,5 @@
 import { ArrowUpRight, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
 import { SwirlMotif } from "@/components/brand/SwirlMotif";
@@ -6,18 +7,16 @@ import { siteConfig } from "@/lib/data/site";
 import { cn } from "@/lib/utils";
 
 export function CTASection({
-  eyebrow = "Ready when you are",
-  title = "See ZenAiOS running in a real hospital",
-  description = "Book a guided walkthrough of the platform — from the AI epicrisis to the executive dashboards — and see how it would fit your institution.",
-  primary = { href: "/demo", label: "Request a demo" },
+  variant = "default",
+  primaryHref = "/demo",
   className,
 }: {
-  eyebrow?: string;
-  title?: React.ReactNode;
-  description?: string;
-  primary?: { href: string; label: string };
+  /** Selects the copy block under the `cta` namespace. */
+  variant?: "default" | "about" | "deployments";
+  primaryHref?: string;
   className?: string;
 }) {
+  const t = useTranslations("cta");
   return (
     <section className={cn("container-z py-20 md:py-28", className)}>
       <Reveal>
@@ -30,21 +29,21 @@ export function CTASection({
           <div className="relative mx-auto max-w-2xl">
             <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.18em] text-sky">
               <span className="size-1.5 animate-pulse rounded-full bg-success" />
-              {eyebrow}
+              {t(`${variant}.eyebrow`)}
             </span>
             <h2 className="mt-5 text-balance text-3xl font-bold sm:text-4xl md:text-5xl">
-              {title}
+              {t(`${variant}.title`)}
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-balance text-muted md:text-lg">
-              {description}
+              {t(`${variant}.description`)}
             </p>
 
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button href={primary.href} size="lg" withArrow>
-                {primary.label}
+              <Button href={primaryHref} size="lg" withArrow>
+                {t("requestDemo")}
               </Button>
               <Button href={siteConfig.demoUrl} variant="secondary" size="lg">
-                Open live platform
+                {t("openLive")}
                 <ArrowUpRight className="size-4" />
               </Button>
             </div>
@@ -54,7 +53,7 @@ export function CTASection({
               className="mt-7 inline-flex items-center gap-2 text-sm text-faint transition-colors hover:text-ink"
             >
               <Phone className="size-3.5" />
-              Or call us directly — {siteConfig.contact.phone}
+              {t("callUs", { phone: siteConfig.contact.phone })}
             </a>
           </div>
         </div>

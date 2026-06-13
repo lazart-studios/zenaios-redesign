@@ -1,65 +1,64 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FileText, Newspaper, BookOpen, GraduationCap, ArrowRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { CTASection } from "@/components/sections/CTASection";
-import { pageMeta } from "@/lib/seo";
+import { metaFromCatalog } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata = pageMeta({
-  title: "Resources",
-  description:
-    "Case studies, documentation, clinical CME and press about ZenAiOS — the AI operating system for modern hospitals.",
-  path: "/resources",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return metaFromCatalog({ locale: locale as Locale, page: "resources", path: "/resources" });
+}
 
-const resources = [
-  {
-    icon: FileText,
-    title: "Case studies",
-    body: "Deep dives into the SJUO Oradea and city-hall deployments — what was rolled out, and what changed.",
-    status: "In preparation",
-  },
-  {
-    icon: BookOpen,
-    title: "Documentation",
-    body: "Technical and clinical documentation for the platform, modules and the sovereign RAG stack.",
-    status: "In preparation",
-  },
-  {
-    icon: GraduationCap,
-    title: "Clinical & CME",
-    body: "Accredited continuing education and adaptive clinical cases via the QUIZ module.",
-    status: "Live module",
-    href: "/modules/quiz",
-  },
-  {
-    icon: Newspaper,
-    title: "Press & updates",
-    body: "Announcements, milestones and coverage as ZenAiOS expands to new institutions.",
-    status: "In preparation",
-  },
+/** Icons + the one live cross-link stay in code; titles/bodies come from the catalog. */
+const resourceMeta: { icon: LucideIcon; href?: string }[] = [
+  { icon: FileText },
+  { icon: BookOpen },
+  { icon: GraduationCap, href: "/modules/quiz" },
+  { icon: Newspaper },
 ];
 
-export default function ResourcesPage() {
+export default async function ResourcesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
+
+  const t = await getTranslations("resourcesPage");
+  const common = await getTranslations("common");
+  const nav = await getTranslations("nav");
+  const items = t.raw("items") as { title: string; body: string }[];
+
   return (
     <>
       <PageHeader
-        eyebrow="Resources"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Resources" }]}
+        eyebrow={t("eyebrow")}
+        crumbs={[{ label: common("home"), href: "/" }, { label: nav("resources") }]}
         title={
           <>
-            Learn more, <span className="text-gradient">in depth.</span>
+            {t("titleLead")} <span className="text-gradient">{t("titleAccent")}</span>
           </>
         }
-        description="We're building out case studies, documentation and press. Here's what's coming — and what's already live today."
+        description={t("description")}
       />
 
       <Section>
         <Stagger className="grid gap-5 sm:grid-cols-2">
-          {resources.map((r) => {
-            const Icon = r.icon;
-            const isLink = Boolean(r.href);
+          {items.map((r, i) => {
+            const meta = resourceMeta[i] ?? { icon: FileText };
+            const Icon = meta.icon;
+            const isLink = Boolean(meta.href);
             const inner = (
               <div className="group flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
                 <div className="flex items-start justify-between">
@@ -73,16 +72,14 @@ export default function ResourcesPage() {
                         : "rounded-full bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-faint ring-1 ring-hairline"
                     }
                   >
-                    {r.status}
+                    {isLink ? t("statusLive") : t("statusInPrep")}
                   </span>
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-ink">{r.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-                  {r.body}
-                </p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{r.body}</p>
                 {isLink && (
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-sky">
-                    Open module
+                    {t("openModule")}
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </span>
                 )}
@@ -90,7 +87,7 @@ export default function ResourcesPage() {
             );
             return (
               <StaggerItem key={r.title}>
-                {isLink ? <Link href={r.href!}>{inner}</Link> : inner}
+                {isLink ? <Link href={meta.href!}>{inner}</Link> : inner}
               </StaggerItem>
             );
           })}
@@ -98,11 +95,11 @@ export default function ResourcesPage() {
 
         <Reveal>
           <p className="mt-10 text-center text-sm text-faint">
-            Looking for something specific?{" "}
+            {t("lookingFor")}{" "}
             <Link href="/contact" className="font-medium text-sky hover:underline">
-              Get in touch
+              {t("getInTouch")}
             </Link>{" "}
-            and we&apos;ll point you to it.
+            {t("pointYou")}
           </p>
         </Reveal>
       </Section>
