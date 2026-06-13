@@ -36,3 +36,6 @@ next-env.d.ts
 
 # local tooling
 /.claude/
+
+# transient i18n translation chunks
+scripts/tmp-i18n/

@@ -1,39 +1,39 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — Le système d'exploitation IA pour les hôpitaux modernes.",
+    "titleDefault": "ZenAiOS — Le système d'exploitation IA des hôpitaux modernes.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "Le système d'exploitation IA pour les hôpitaux modernes — 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique, déjà en service dans de véritables institutions.",
+    "description": "Le système d'exploitation IA des hôpitaux modernes — 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique, déjà en service dans de véritables établissements.",
     "platform": {
       "title": "La plateforme",
-      "description": "17 modules IA répartis sur trois domaines interopérables — médical, administratif et infrastructure IA. Un seul assistant, cinq langues, en service dans de véritables institutions."
+      "description": "17 modules IA répartis sur trois domaines interopérables — médical, administratif et infrastructure IA. Un seul assistant, cinq langues, en service dans de véritables établissements."
     },
     "about": {
       "title": "À propos",
-      "description": "ZenAiOS est conçu par une équipe clinique, technique et commerciale à Oradea, România — un système d'exploitation IA ancré dans la pratique hospitalière réelle et la souveraineté des données."
+      "description": "ZenAiOS est développé par une équipe clinique, technique et commerciale à Oradea, en Roumanie — un système d'exploitation IA ancré dans la pratique hospitalière réelle et la souveraineté des données."
     },
     "deployments": {
       "title": "Déploiements",
-      "description": "ZenAiOS est déployé sur le terrain — un hôpital départemental d'urgence (SJUO Oradea) et une mairie (Primăria Oradea). De véritables institutions, de véritables flux de travail."
+      "description": "ZenAiOS est en service sur le terrain — dans un hôpital départemental d'urgence (SJUO Oradea) et dans une mairie (Primăria Oradea). De vrais établissements, de vrais flux de travail."
     },
     "demo": {
       "title": "Demander une démo",
-      "description": "Réservez une visite guidée de ZenAiOS — l'épicrise IA, le triage, les tableaux de bord exécutifs et le RAG souverain — adaptée à votre institution."
+      "description": "Réservez une présentation guidée de ZenAiOS — épicrise IA, triage, tableaux de bord exécutifs et RAG souverain — adaptée à votre établissement."
     },
     "contact": {
       "title": "Contact",
-      "description": "Contactez l'équipe ZenAiOS à Oradea, România — par téléphone, par e-mail ou via le formulaire. Nous répondons sous un jour ouvré."
+      "description": "Contactez l'équipe ZenAiOS à Oradea, en Roumanie — par téléphone, par e-mail ou via le formulaire. Nous répondons sous un jour ouvrable."
     },
     "resources": {
       "title": "Ressources",
-      "description": "Études de cas, documentation, FMC clinique et presse à propos de ZenAiOS — le système d'exploitation IA pour les hôpitaux modernes."
+      "description": "Études de cas, documentation, CME clinique et presse au sujet de ZenAiOS — le système d'exploitation IA des hôpitaux modernes."
     },
     "privacy": {
       "title": "Politique de confidentialité",
-      "description": "Comment ZenAiOS traite les données personnelles sur ce site web et sur l'ensemble de la plateforme, y compris notre approche de souveraineté des données."
+      "description": "Comment ZenAiOS traite les données personnelles sur ce site et sur l'ensemble de la plateforme, y compris notre approche de la souveraineté des données."
     },
     "terms": {
       "title": "Conditions d'utilisation",
-      "description": "Les conditions régissant votre utilisation du site web ZenAiOS et des informations qui y sont présentées."
+      "description": "Les conditions régissant votre utilisation du site ZenAiOS et des informations qui y sont présentées."
     }
   },
   "nav": {
@@ -42,27 +42,27 @@
     "deployments": "Déploiements",
     "about": "À propos",
     "resources": "Ressources",
-    "livePlatform": "Plateforme en direct",
+    "livePlatform": "Plateforme en production",
     "requestDemo": "Demander une démo",
-    "toggleMenu": "Basculer le menu",
+    "toggleMenu": "Afficher/masquer le menu",
     "byDomain": "Par domaine",
     "explore": "Explorer",
-    "platformOverview": "Aperçu de la plateforme",
-    "liveDeployments": "Déploiements en direct",
+    "platformOverview": "Vue d'ensemble de la plateforme",
+    "liveDeployments": "Déploiements en production",
     "modulesCount": "{count} modules",
-    "liveNow": "En direct",
+    "liveNow": "En production",
     "megaTagline": "{count} modules. 3 domaines. 2 déploiements en production.",
-    "megaCta": "Découvrez comment le système d'exploitation s'assemble →"
+    "megaCta": "Découvrez comment le système d'exploitation s'articule →"
   },
   "footer": {
-    "tagline": "Le système d'exploitation IA pour les hôpitaux modernes. 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique — en service dans de véritables institutions.",
+    "tagline": "Le système d'exploitation IA des hôpitaux modernes. 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique — en service dans de véritables établissements.",
     "columns": {
       "platform": "Plateforme",
       "company": "Entreprise",
       "getStarted": "Commencer"
     },
     "links": {
-      "overview": "Aperçu",
+      "overview": "Vue d'ensemble",
       "medical": "Médical",
       "administrative": "Administratif",
       "aiInfrastructure": "Infrastructure IA",
@@ -71,9 +71,9 @@
       "resources": "Ressources",
       "contact": "Contact",
       "requestDemo": "Demander une démo",
-      "livePlatform": "Plateforme en direct",
+      "livePlatform": "Plateforme en production",
       "privacy": "Politique de confidentialité",
-      "terms": "Conditions"
+      "terms": "Conditions d'utilisation"
     },
     "rights": "© {year} ZenAiOS. Tous droits réservés.",
     "builtFor": "Conçu pour une confiance de niveau clinique · WCAG 2.1 AA · {location}"
@@ -82,9 +82,9 @@
     "details": "Détails",
     "viewAll": "Tout voir",
     "seeModules": "Voir les modules",
-    "builtOnPlatform": "Conçu sur la plateforme",
+    "builtOnPlatform": "Reposant sur la plateforme",
     "modules": "modules",
-    "moreCount": "+{count} de plus",
+    "moreCount": "+{count} autres",
     "moduleCount": "{count, plural, one {# module} other {# modules}}",
     "liveDeploymentCount": "{count, plural, one {# déploiement en production} other {# déploiements en production}}",
     "home": "Accueil"
@@ -97,10 +97,17 @@
   "languageSwitcher": {
     "label": "Langue"
   },
+  "notFound": {
+    "title": "Cette page a pris sa journée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Revenons à quelque chose d'utile.",
+    "backHome": "Retour à l'accueil",
+    "explore": "Explorer la plateforme",
+    "contact": "Ou contactez-nous si quelque chose ne fonctionne pas"
+  },
   "hero": {
-    "badge": "En service dans de véritables hôpitaux et institutions municipales",
+    "badge": "En service dans de vrais hôpitaux et institutions municipales",
     "titleLine1": "Le système d'exploitation IA",
-    "titleLine2": "pour les hôpitaux modernes.",
+    "titleLine2": "des hôpitaux modernes.",
     "description": "17 modules IA couvrant les <b>soins cliniques</b>, la <b>gestion hospitalière</b> et la <b>santé publique</b> — déjà en service dans un hôpital départemental d'urgence et une mairie.",
     "ctaPrimary": "Demander une démo",
     "ctaSecondary": "Explorer la plateforme",
@@ -108,85 +115,106 @@
     "scrollCue": "Faites défiler pour explorer"
   },
   "proof": {
-    "heading": "De véritables déploiements, de véritables normes — aucun logo factice"
+    "heading": "Des déploiements réels, des standards réels — aucun logo de façade"
   },
   "threeDomains": {
     "eyebrow": "Une plateforme, trois domaines",
     "titleLead": "Pas trois modules.",
     "titleAccent": "Dix-sept.",
-    "description": "ZenAiOS est un système d'exploitation, pas un chatbot — organisé en trois domaines qui interopèrent, partagent un même assistant et parlent cinq langues."
+    "description": "ZenAiOS est un système d'exploitation, pas un chatbot — structuré en trois domaines qui interagissent, partagent un même assistant et parlent cinq langues."
   },
   "audiences": {
-    "eyebrow": "Un site, trois acheteurs",
-    "titleLead": "Trouvez votre",
-    "titleAccent": "« pour moi »",
-    "titleTrail": "parcours",
-    "description": "La même plateforme, présentée selon la personne qui lit. La direction, les cliniciens et les investisseurs disposent chacun d'un accès direct à ce qui compte pour eux.",
+    "eyebrow": "Un même site, trois profils d'acheteurs",
+    "titleLead": "Trouvez votre parcours",
+    "titleAccent": "« fait pour moi »",
+    "titleTrail": "",
+    "description": "La même plateforme, présentée selon votre profil. Direction, cliniciens et investisseurs accèdent chacun directement à ce qui compte pour eux.",
     "items": [
       {
         "role": "Direction hospitalière",
         "tag": "CMO · CIO · décideur économique",
-        "needs": "ROI, interopérabilité (CNAS/DSP), souveraineté des données, un véritable historique éprouvé.",
-        "show": ["Hospital Manager", "Déploiement SJUO", "RAG souverain"],
-        "links": ["Hospital Manager", "Déploiements"]
+        "needs": "ROI, interopérabilité (CNAS/DSP), souveraineté des données, références concrètes.",
+        "show": [
+          "Hospital Manager",
+          "Déploiement SJUO",
+          "RAG souverain"
+        ],
+        "links": [
+          "Hospital Manager",
+          "Déploiements"
+        ]
       },
       {
         "role": "Cliniciens",
         "tag": "Médecins · infirmiers · internes",
-        "needs": "Moins d'administratif, une épicrise IA précise, une aide à la décision sans friction, la FMC.",
-        "show": ["Médecin et Soins infirmiers", "Triage et Laboratoire", "FMC accréditée"],
-        "links": ["Module Médecin", "FMC / QUIZ"]
+        "needs": "Moins d'administratif, une épicrise IA fiable, une aide à la décision sans friction, CME.",
+        "show": [
+          "Médecin & Soins infirmiers",
+          "Triage & Laboratoire",
+          "CME accrédité"
+        ],
+        "links": [
+          "Module Médecin",
+          "CME / QUIZ"
+        ]
       },
       {
         "role": "Investisseurs",
-        "tag": "& évaluateurs de financements européens",
-        "needs": "Une traction, une équipe crédible, une envergure, un avantage technologique et une vision claire.",
-        "show": ["2 déploiements en production", "17 modules", "Infra IA interne"],
-        "links": ["La plateforme", "Équipe et vision"]
+        "tag": "& évaluateurs de financements UE",
+        "needs": "Traction, équipe crédible, étendue de l'offre, avantage technologique et vision claire.",
+        "show": [
+          "2 déploiements actifs",
+          "17 modules",
+          "Infrastructure IA interne"
+        ],
+        "links": [
+          "La plateforme",
+          "Équipe & vision"
+        ]
       }
     ]
   },
   "flagship": {
     "eyebrow": "Déploiement phare",
-    "description": "Un système hospitalier intégré complet en service dans un hôpital départemental d'urgence — la preuve la plus forte que ZenAiOS fonctionne à l'échelle réelle.",
-    "link": "Lire les déploiements",
+    "description": "Un système hospitalier intégré et complet, en service dans un hôpital départemental d'urgence — la preuve la plus forte que ZenAiOS tient à l'échelle réelle.",
+    "link": "Consulter les déploiements",
     "statProduction": "en production",
-    "statCoding": "codage intégré"
+    "statCoding": "codage médical intégré"
   },
   "capabilities": {
-    "eyebrow": "Ce qu'il fait vraiment",
+    "eyebrow": "Ce qu'elle fait vraiment",
     "titleLead": "Des capacités qui inspirent",
     "titleAccent": "la confiance clinique",
-    "description": "Quatre des choses que ZenAiOS fait chaque jour — aide à la décision, triage, prédiction et IA souveraine.",
+    "description": "Quatre des actions quotidiennes de ZenAiOS — aide à la décision, triage, prédiction et IA souveraine.",
     "features": {
       "doctor": {
         "eyebrow": "Module Médecin",
-        "title": "Une aide à la décision qui reste dans le flux",
-        "description": "Des suggestions de diagnostic différentiel et de traitement contextualisées apparaissent là où le travail se fait — et génèrent automatiquement l'épicrise et les documents, pour que les médecins terminent plus vite et rentrent à l'heure.",
+        "title": "Une aide à la décision qui ne rompt pas le flux",
+        "description": "Des suggestions de diagnostic différentiel et de traitement, adaptées au contexte, apparaissent là où le travail se fait — et génèrent automatiquement l'épicrise et les documents, pour que les médecins terminent plus vite et rentrent à l'heure.",
         "bullets": [
           "Suggestions de diagnostic différentiel et de traitement",
           "Épicrise et notes cliniques automatiques",
-          "Fondé sur les preuves, lié aux recommandations"
+          "Fondée sur les preuves, reliée aux recommandations"
         ],
         "link": "Explorer le module Médecin"
       },
       "triage": {
-        "eyebrow": "Triage des urgences",
-        "title": "Priorisé selon la gravité réelle, pas l'ordre d'arrivée",
-        "description": "Le protocole Manchester associé à l'IA classe chaque patient en cinq niveaux, maintient la file d'attente ordonnée par acuité et alerte le médecin de garde dès qu'un cas de niveau 1 se présente.",
+        "eyebrow": "Triage aux urgences",
+        "title": "Priorisé selon la gravité réelle, et non l'ordre d'arrivée",
+        "description": "Le protocole Manchester associé à l'IA classe chaque patient en cinq niveaux, ordonne la file d'attente par acuité et alerte le médecin de garde dès qu'un cas de niveau 1 se présente.",
         "bullets": [
           "Manchester + IA, 5 niveaux de gravité",
           "Priorisation automatique de la file d'attente",
-          "Alertes médecin instantanées pour les cas critiques"
+          "Alerte immédiate du médecin pour les cas critiques"
         ],
         "link": "Explorer le triage"
       },
       "management": {
-        "eyebrow": "Gestion",
-        "title": "Des tableaux de bord qui prédisent, pas seulement qui rapportent",
-        "description": "Les tableaux de bord exécutifs transforment les données opérationnelles en temps réel en prévisions — afflux, manques d'effectifs, goulets d'étranglement — avec l'interopérabilité CNAS/DSP et un avatar IA pour les décisions en temps réel, sur ordinateur et mobile.",
+        "eyebrow": "Pilotage",
+        "title": "Des tableaux de bord qui anticipent, au lieu de simplement rapporter",
+        "description": "Les tableaux de bord de direction transforment les données opérationnelles en temps réel en prévisions — pics d'activité, tensions sur les effectifs, goulets d'étranglement — avec interopérabilité CNAS/DSP et un avatar IA pour décider en temps réel, sur ordinateur comme sur mobile.",
         "bullets": [
-          "Analyse prédictive par IA",
+          "Analytique prédictive par IA",
           "Interopérabilité CNAS / DSP",
           "Tableau de bord ordinateur + Manager Mobile"
         ],
@@ -194,11 +222,11 @@
       },
       "infrastructure": {
         "eyebrow": "Infrastructure IA",
-        "title": "Une IA souveraine — vos données ne quittent jamais le bâtiment",
-        "description": "ZEN_RAG fait tourner un système de génération augmentée par récupération 100 % hors ligne et local sur llama.cpp + FAISS. Pas de cloud, aucune fuite de données — le socle de toute conversation sur la souveraineté des données et le RGPD.",
+        "title": "IA souveraine — vos données ne quittent jamais l'établissement",
+        "description": "ZEN_RAG exécute un système de génération augmentée par récupération 100 % hors ligne et local, sur llama.cpp + FAISS. Aucun cloud, aucune fuite de données — le socle de toute discussion sur la souveraineté des données et le RGPD.",
         "bullets": [
           "RAG 100 % hors ligne, sur site",
-          "llama.cpp + FAISS, 6+ modèles",
+          "llama.cpp + FAISS, plus de 6 modèles",
           "Optimisé pour les corpus médicaux et législatifs"
         ],
         "link": "Voir l'infrastructure IA"
@@ -206,92 +234,51 @@
     }
   },
   "outcomes": {
-    "eyebrow": "La crédibilité plutôt que les grands chiffres",
+    "eyebrow": "La crédibilité avant les grands chiffres",
     "title": "Les chiffres qui sont réellement vrais",
-    "description": "Nous mettons en avant ce qui est vérifiable. Les chiffres d'efficacité sont présentés comme des projections honnêtes — jamais des affirmations sans source.",
-    "footnote": "Les projections sont des objectifs illustratifs, en attente des résultats de pilote publiés — et non des résultats mesurés."
+    "description": "Nous mettons en avant ce qui est vérifiable. Les gains d'efficacité sont présentés comme des projections honnêtes — jamais comme des affirmations non étayées.",
+    "footnote": "Les projections sont des objectifs indicatifs, dans l'attente des résultats publiés du pilote — et non des résultats mesurés."
   },
   "team": {
-    "eyebrow": "Les personnes derrière le projet",
+    "eyebrow": "Les femmes et les hommes derrière le projet",
     "titleLead": "Une vraie équipe,",
-    "titleAccent": "qui construit en toute transparence",
-    "description": "Une direction clinique, technique et commerciale — les mêmes fondateurs qui ont conçu la plateforme sont ceux qui la déploient."
+    "titleAccent": "qui construit à découvert",
+    "description": "Une direction clinique, technique et commerciale — les fondateurs qui ont conçu la plateforme sont aussi ceux qui la déploient."
   },
   "cta": {
     "default": {
-      "eyebrow": "Prêts quand vous l'êtes",
-      "title": "Voyez ZenAiOS fonctionner dans un véritable hôpital",
-      "description": "Réservez une visite guidée de la plateforme — de l'épicrise IA aux tableaux de bord exécutifs — et découvrez comment elle s'intégrerait à votre institution."
+      "eyebrow": "Prêts dès que vous l'êtes",
+      "title": "Voyez ZenAiOS en action dans un vrai hôpital",
+      "description": "Réservez une visite guidée de la plateforme — de l'épicrise IA aux tableaux de bord de direction — et voyez comment elle s'intégrerait à votre établissement."
     },
     "about": {
       "eyebrow": "Travaillez avec nous",
       "title": "Construire l'avenir de l'IA hospitalière",
-      "description": "Que vous soyez une institution, un clinicien ou un investisseur — nous serions ravis de vous montrer ce que ZenAiOS peut faire."
+      "description": "Que vous soyez un établissement, un clinicien ou un investisseur — nous serions ravis de vous montrer ce dont ZenAiOS est capable."
     },
     "deployments": {
-      "eyebrow": "Votre institution la prochaine ?",
+      "eyebrow": "Votre établissement, le prochain ?",
       "title": "Parlons de votre déploiement",
-      "description": "Parlez-nous de votre hôpital ou de votre institution et nous adapterons ZenAiOS à vos flux de travail."
+      "description": "Parlez-nous de votre hôpital ou de votre établissement et nous adapterons ZenAiOS à vos processus."
     },
     "requestDemo": "Demander une démo",
-    "openLive": "Ouvrir la plateforme en direct",
+    "openLive": "Accéder à la plateforme en direct",
     "callUs": "Ou appelez-nous directement — {phone}"
-  },
-  "form": {
-    "fullName": "Nom complet",
-    "fullNamePlaceholder": "Jeanne Dupont",
-    "workEmail": "E-mail professionnel",
-    "workEmailPlaceholder": "jeanne@hopital.ro",
-    "organization": "Organisation",
-    "organizationPlaceholder": "Hôpital départemental d'urgence",
-    "roleLabel": "Vous êtes…",
-    "messageDemo": "Que souhaiteriez-vous voir ?",
-    "messageContact": "Comment pouvons-nous vous aider ?",
-    "messagePlaceholderDemo": "Nous sommes un hôpital de 400 lits intéressé par les modules d'épicrise IA et de triage…",
-    "messagePlaceholderContact": "Dites-nous en un peu plus sur ce que vous recherchez…",
-    "disclaimer": "Formulaire de démonstration — les soumissions ne sont ni stockées ni envoyées.",
-    "submitDemo": "Demander une démo",
-    "submitContact": "Envoyer le message",
-    "sending": "Envoi…",
-    "successTitle": "Merci — vous y êtes presque",
-    "successBody": "Ceci est un formulaire de démonstration, rien n'a donc été envoyé. Sur le site réel, ce message parviendrait à l'équipe ZenAiOS et nous répondrions sous un jour ouvré.",
-    "sendAnother": "En envoyer un autre",
-    "roles": [
-      "Direction hospitalière (CMO / CIO / CEO)",
-      "Clinicien (médecin / infirmier / interne)",
-      "Institution publique",
-      "Investisseur / évaluateur de financements européens",
-      "Partenaire / intégrateur",
-      "Autre"
-    ],
-    "errors": {
-      "name": "Veuillez saisir votre nom.",
-      "email": "Saisissez un e-mail professionnel valide.",
-      "org": "Indiquez-nous où vous travaillez.",
-      "message": "Une phrase ou deux nous aident à préparer."
-    }
-  },
-  "notFound": {
-    "title": "Cette page a pris sa journée",
-    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Ramenons-vous vers quelque chose d'utile.",
-    "backHome": "Retour à l'accueil",
-    "explore": "Explorer la plateforme",
-    "contact": "Ou contactez-nous si quelque chose ne fonctionne pas"
   },
   "platformPage": {
     "eyebrow": "La plateforme",
     "titleLead": "Un seul système d'exploitation.",
     "titleAccent": "{count} modules IA.",
-    "description": "ZenAiOS n'est pas un simple outil greffé sur un hôpital — c'est un système d'exploitation en couches. Trois domaines, un assistant partagé, tous parlant les mêmes données.",
-    "statModules": "modules IA",
+    "description": "ZenAiOS n'est pas un simple outil greffé sur un hôpital — c'est un système d'exploitation en couches. Trois domaines, un assistant partagé, le tout adossé aux mêmes données.",
+    "statModules": "Modules IA",
     "statDomains": "Domaines",
     "statDeployments": "Déploiements en production",
     "domainsEyebrow": "Trois domaines",
-    "domainsTitle": "Choisissez la couche dans laquelle vous évoluez",
-    "domainsDescription": "Chaque domaine est un produit cohérent à part entière — et ils partagent un même modèle de données, un même assistant et un même langage de conception.",
-    "catalogueEyebrow": "Chaque module",
+    "domainsTitle": "Choisissez la couche où vous évoluez",
+    "domainsDescription": "Chaque domaine est un produit cohérent à part entière — et tous partagent un même modèle de données, un même assistant et un même langage de conception.",
+    "catalogueEyebrow": "Tous les modules",
     "catalogueTitle": "Le catalogue complet",
-    "catalogueDescription": "De l'accueil à la salle du conseil — explorez chaque module en détail.",
+    "catalogueDescription": "De l'accueil à la direction générale — explorez chaque module en détail.",
     "modulesLabel": "{count} modules"
   },
   "categoryPage": {
@@ -300,104 +287,104 @@
     "allDomains": "Tous les domaines",
     "highlights": {
       "medical": [
-        "Le parcours clinique complet — accueil, triage, diagnostic, soins, laboratoire, gestion et FMC",
+        "L'ensemble du parcours clinique — accueil, triage, diagnostic, soins, laboratoire, gestion et CME",
         "Épicrise IA avec codage ICD-10 et DRG",
-        "En service dans un hôpital départemental d'urgence (SJUO)"
+        "En production dans un hôpital départemental d'urgence (SJUO)"
       ],
       "administrative": [
-        "Services aux citoyens et processus back-office",
-        "RAG sur les documents juridiques, de conformité et comptables",
-        "En service à la mairie d'Oradea"
+        "Services aux citoyens et processus de back-office",
+        "RAG sur les documents juridiques, de conformité et de comptabilité",
+        "En production à la Primăria Oradea"
       ],
       "ai-infrastructure": [
         "RAG 100 % hors ligne, sur site (llama.cpp + FAISS)",
-        "Comparaison et évaluation multimodèles",
-        "Le socle souverain sous chaque autre module"
+        "Comparaison et évaluation multi-modèles",
+        "Le socle souverain sur lequel reposent tous les autres modules"
       ]
     }
   },
   "modulePage": {
     "problemEyebrow": "Le problème qu'il résout",
-    "howEyebrow": "Comment ça fonctionne",
-    "roadmapEyebrow": "Dans la feuille de route",
-    "roadmapIntro": "La prochaine direction de ce module — clairement prospective, pas encore livrée.",
+    "howEyebrow": "Son fonctionnement",
+    "roadmapEyebrow": "Sur la feuille de route",
+    "roadmapIntro": "Les prochaines orientations de ce module — résolument prospectives, pas encore disponibles.",
     "liveDeployment": "Déploiement en production",
     "seeDeployment": "Voir le déploiement",
-    "moreIn": "Plus dans {category}",
-    "viewAll": "Tout voir"
+    "moreIn": "Autres modules dans {category}",
+    "viewAll": "Tout afficher"
   },
   "aboutPage": {
     "eyebrow": "À propos de ZenAiOS",
     "titleLead": "Faire fonctionner",
     "titleAccent": "la santé.",
-    "description": "Les hôpitaux comptent parmi les organisations les plus complexes au monde. Nous construisons le système d'exploitation IA qui réunit leurs systèmes fragmentés en un seul — de l'accueil à la salle du conseil.",
-    "missionEyebrow": "Pourquoi nous existons",
-    "missionTitle": "Une seule plateforme au lieu de vingt outils déconnectés",
-    "missionP1": "Les cliniciens perdent des heures chaque jour à cause de la documentation et de systèmes qui ne communiquent pas entre eux. La direction ne peut pas voir ce qui se passe en temps réel. Les patients peinent à trouver le bon service.",
-    "missionP2": "ZenAiOS remplace cette fragmentation par un système d'exploitation unique et nativement IA : 17 modules couvrant les soins cliniques, la gestion hospitalière et l'administration publique, partageant un même modèle de données et un même assistant.",
-    "missionP3": "Il est déjà en service — dans un hôpital départemental d'urgence et dans une mairie — et conçu par des personnes qui le déploient elles-mêmes.",
-    "principlesEyebrow": "Ce en quoi nous croyons",
+    "description": "Les hôpitaux comptent parmi les organisations les plus complexes au monde. Nous construisons le système d'exploitation IA qui unifie leurs systèmes fragmentés — de l'accueil à la direction générale.",
+    "missionEyebrow": "Notre raison d'être",
+    "missionTitle": "Une plateforme unifiée plutôt que vingt outils déconnectés",
+    "missionP1": "Les cliniciens perdent des heures chaque jour à documenter leurs actes et à composer avec des systèmes qui ne communiquent pas entre eux. La direction n'a aucune visibilité en temps réel. Et les patients peinent à trouver le bon service.",
+    "missionP2": "ZenAiOS remplace cette fragmentation par un système d'exploitation unique, nativement conçu pour l'IA : 17 modules couvrant les soins cliniques, la gestion hospitalière et l'administration publique, partageant un même modèle de données et un même assistant.",
+    "missionP3": "Il est déjà en production — dans un hôpital départemental d'urgence et dans une mairie — et conçu par celles et ceux qui le déploient eux-mêmes.",
+    "principlesEyebrow": "Nos convictions",
     "principlesTitle": "Quatre principes sur lesquels nous ne transigeons pas",
     "principles": [
       {
         "title": "Ancré dans la clinique",
-        "body": "Chaque module est façonné avec un directeur médical et testé par rapport à de véritables flux de travail cliniques — jamais conçu en vase clos."
+        "body": "Chaque module est conçu avec un Directeur Médical et éprouvé sur des flux cliniques réels — jamais hors-sol."
       },
       {
         "title": "Souverain par conception",
-        "body": "Les données sensibles peuvent rester sur site. Notre RAG hors ligne permet aux hôpitaux de garder le contrôle de leurs propres informations."
+        "body": "Les données sensibles peuvent rester sur site. Notre RAG hors ligne garantit aux hôpitaux la pleine maîtrise de leurs informations."
       },
       {
         "title": "Multilingue et accessible",
-        "body": "Cinq langues et un assistant qui rejoint patients et personnel là où ils en sont — les soins ne devraient pas dépendre du jargon."
+        "body": "Cinq langues et un assistant qui s'adresse aux patients comme aux équipes dans leurs propres mots — la qualité des soins ne devrait pas dépendre du jargon."
       },
       {
         "title": "Éprouvé sur le terrain",
-        "body": "En service dans un hôpital départemental d'urgence et une mairie. Nous préférons montrer de véritables déploiements plutôt que de promettre de grands chiffres."
+        "body": "En production dans un hôpital départemental d'urgence et dans une mairie. Nous préférons montrer de vrais déploiements plutôt que promettre de grands chiffres."
       }
     ]
   },
   "deploymentsPage": {
     "eyebrow": "Sur le terrain",
     "titleLead": "En production, pas",
-    "titleAccent": "dans une présentation.",
-    "description": "La chose la plus forte que nous puissions montrer n'est pas un chiffre — c'est un logiciel qui fonctionne dans de véritables institutions, utilisé par de vrais personnels, chaque jour.",
+    "titleAccent": "dans un diaporama.",
+    "description": "La meilleure preuve que nous puissions apporter n'est pas un chiffre — c'est un logiciel en fonctionnement dans de vraies institutions, utilisé chaque jour par de vraies équipes.",
     "exploreModule": "Explorer le module {module}",
     "noteEyebrow": "Une note sur la preuve",
-    "noteBody": "Nous mettons en avant les déploiements plutôt que les statistiques d'accroche. Les chiffres d'efficacité ailleurs sur ce site sont clairement présentés comme des projections — ce que vous voyez ici est simplement ce qui fonctionne aujourd'hui."
+    "noteBody": "Nous mettons en avant nos déploiements plutôt que des statistiques d'affiche. Les gains d'efficacité cités ailleurs sur ce site sont clairement présentés comme des projections — ce que vous voyez ici, c'est simplement ce qui tourne aujourd'hui."
   },
   "demoPage": {
     "eyebrow": "Demander une démo",
-    "titleLead": "Voyez-le fonctionner dans un",
+    "titleLead": "Découvrez-le en action dans un",
     "titleAccent": "véritable hôpital",
-    "description": "Parlez-nous un peu de votre institution et nous organiserons une visite guidée axée sur ce qui compte pour vous.",
-    "expectTitle": "À quoi s'attendre",
+    "description": "Parlez-nous de votre établissement et nous organiserons une présentation centrée sur ce qui compte vraiment pour vous.",
+    "expectTitle": "Au programme",
     "expect": [
-      "Une visite guidée de 30 minutes, adaptée à votre rôle",
-      "L'épicrise IA, le triage et les tableaux de bord exécutifs, en direct",
-      "Comment le RAG souverain hors ligne garde vos données sur site",
-      "Une réponse franche sur ce qui convient à votre institution — et ce qui ne convient pas encore"
+      "Une présentation guidée de 30 minutes, adaptée à votre fonction",
+      "L'épicrise IA, le triage et les tableaux de bord de direction, en conditions réelles",
+      "Comment le RAG souverain hors ligne maintient vos données sur site",
+      "Une réponse franche sur ce qui correspond à votre établissement — et ce qui n'est pas encore au point"
     ],
     "replyNote": "Nous répondons généralement sous <b>un jour ouvré</b>.",
-    "sovereignNote": "Aucune donnée ne quitte le bâtiment dans un déploiement auto-hébergé.",
-    "lookAroundTitle": "Vous préférez explorer d'abord ?",
-    "lookAroundBody": "La plateforme en direct est ouverte à l'exploration.",
+    "sovereignNote": "Dans un déploiement auto-hébergé, aucune donnée ne quitte l'établissement.",
+    "lookAroundTitle": "Vous préférez explorer par vous-même d'abord ?",
+    "lookAroundBody": "La plateforme en production est ouverte à l'exploration.",
     "open": "Ouvrir {url}"
   },
   "contactPage": {
     "eyebrow": "Contact",
-    "titleLead": "Discutons",
-    "titleAccent": ".",
-    "description": "Des questions sur la plateforme, un déploiement ou un partenariat ? Joignez-nous directement — ou envoyez un message et nous vous recontacterons.",
+    "titleLead": "Parlons",
+    "titleAccent": "ensemble.",
+    "description": "Une question sur la plateforme, un déploiement ou un partenariat ? Contactez-nous directement — ou laissez-nous un message et nous reviendrons vers vous.",
     "phone": "Téléphone",
     "email": "E-mail",
     "location": "Localisation"
   },
   "resourcesPage": {
     "eyebrow": "Ressources",
-    "titleLead": "En savoir plus,",
+    "titleLead": "Pour aller plus loin,",
     "titleAccent": "en profondeur.",
-    "description": "Nous développons des études de cas, de la documentation et de la presse. Voici ce qui arrive — et ce qui est déjà en ligne aujourd'hui.",
+    "description": "Nous développons études de cas, documentation et contenus presse. Voici ce qui arrive — et ce qui est déjà disponible aujourd'hui.",
     "openModule": "Ouvrir le module",
     "lookingFor": "Vous cherchez quelque chose de précis ?",
     "getInTouch": "Contactez-nous",
@@ -407,95 +394,185 @@
     "items": [
       {
         "title": "Études de cas",
-        "body": "Analyses approfondies des déploiements SJUO Oradea et de la mairie — ce qui a été déployé, et ce qui a changé."
+        "body": "Analyses approfondies des déploiements au Spitalul Județean de Urgență Oradea et à la mairie — ce qui a été mis en place, et ce qui a changé."
       },
       {
         "title": "Documentation",
-        "body": "Documentation technique et clinique pour la plateforme, les modules et la pile RAG souveraine."
+        "body": "Documentation technique et clinique de la plateforme, des modules et de la pile RAG souveraine."
       },
       {
-        "title": "Clinique et FMC",
+        "title": "Clinique et CME",
         "body": "Formation continue accréditée et cas cliniques adaptatifs via le module QUIZ."
       },
       {
         "title": "Presse et actualités",
-        "body": "Annonces, jalons et couverture médiatique à mesure que ZenAiOS s'étend à de nouvelles institutions."
+        "body": "Annonces, jalons et retombées médiatiques au fil du déploiement de ZenAiOS dans de nouvelles institutions."
       }
     ]
   },
-  "legal": {
-    "eyebrow": "Mentions légales",
-    "lastUpdated": "Dernière mise à jour {date}",
-    "lastUpdatedDate": "13 juin 2026",
-    "privacy": {
-      "title": "Politique de confidentialité",
-      "intro": "La présente Politique de confidentialité explique comment {name} (« nous ») traite les données personnelles dans le cadre de ce site web ({domain}) et de notre plateforme. Nous sommes établis à {location} et nous nous engageons à traiter les données personnelles conformément au Règlement général sur la protection des données de l'UE (RGPD).",
-      "h1": "1. Données que nous collectons sur ce site web",
-      "p1a": "Ce site web marketing est volontairement minimaliste. Les formulaires de démo et de contact sont présentés à titre de démonstration et ne transmettent ni ne stockent aucune soumission. Si et lorsque ces formulaires seront connectés à un backend, nous ne collecterons que les informations que vous choisirez de fournir — généralement votre nom, votre e-mail professionnel, votre organisation et votre message — afin de répondre à votre demande.",
-      "p1b": "Nous pouvons collecter des informations techniques limitées et agrégées (telles que des statistiques de base) pour comprendre comment le site est utilisé. Nous ne vendons pas de données personnelles.",
-      "h2": "2. Données au sein de la plateforme",
-      "p2a": "La plateforme ZenAiOS traite des données pour le compte des institutions qui la déploient (par exemple les hôpitaux et les autorités publiques), qui agissent en tant que responsables du traitement. Dans ces contextes, {name} agit en tant que sous-traitant en vertu d'un accord écrit.",
-      "p2b": "<strong>Souveraineté des données.</strong> Notre infrastructure est conçue de sorte que les données cliniques et administratives sensibles puissent rester sur site. Notre IA à génération augmentée par récupération (ZEN_RAG) peut fonctionner 100 % hors ligne, ce qui signifie que les données réglementées n'ont pas besoin de quitter l'environnement propre à l'institution.",
-      "h3": "3. Bases juridiques",
-      "p3": "Lorsque nous traitons des données personnelles, nous nous appuyons sur une ou plusieurs des bases juridiques suivantes : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale, ou nos intérêts légitimes à exploiter et à améliorer nos services.",
-      "h4": "4. Conservation",
-      "p4": "Nous ne conservons les données personnelles que le temps nécessaire aux finalités décrites ici ou tel qu'exigé par la loi. Les données de demande sont conservées aussi longtemps que nécessaire pour traiter votre requête, puis pendant une période raisonnable.",
-      "h5": "5. Vos droits",
-      "p5": "Sous réserve de la loi applicable, vous avez le droit de :",
-      "rights": [
-        "accéder aux données personnelles que nous détenons à votre sujet ;",
-        "demander la rectification ou la suppression de vos données ;",
-        "vous opposer à certains traitements ou les limiter ;",
-        "demander la portabilité des données que vous nous avez fournies ;",
-        "déposer une plainte auprès de votre autorité de protection des données."
-      ],
-      "h6": "6. Contact",
-      "p6": "Pour toute question relative à la confidentialité ou pour exercer vos droits, contactez-nous à <email></email> ou par téléphone au <phone></phone>.",
-      "h7": "7. Modifications",
-      "p7": "Nous pouvons mettre à jour cette politique de temps à autre. La date de « dernière mise à jour » ci-dessus reflète la révision la plus récente."
-    },
-    "terms": {
-      "title": "Conditions d'utilisation",
-      "intro": "Les présentes Conditions d'utilisation régissent votre accès et votre utilisation du site web de {name} à l'adresse {domain} (le « Site »). En utilisant le Site, vous acceptez ces conditions.",
-      "h1": "1. Le Site est informatif",
-      "p1": "Ce Site présente des informations sur la plateforme {name} et ses modules. Le contenu est fourni à titre d'information générale uniquement et ne constitue pas un conseil médical, juridique ou professionnel. Les maquettes et illustrations de produit présentées ici sont représentatives des capacités de la plateforme.",
-      "h2": "2. Formulaires de démonstration",
-      "p2": "Les formulaires de démo et de contact de ce Site sont des démonstrations. Sauf mention contraire explicite, les soumissions ne sont ni transmises, ni stockées, ni suivies d'effet. Pour nous contacter de manière fiable, utilisez l'e-mail ou le numéro de téléphone figurant sur notre <contact>page de contact</contact>.",
-      "h3": "3. Projections et chiffres",
-      "p3": "Tous les chiffres d'efficacité ou de résultats présentés sur ce Site sont clairement indiqués comme des projections ou des objectifs illustratifs. Ce ne sont pas des garanties et ils ne doivent pas être considérés comme des résultats mesurés. Les faits vérifiables concernant la plateforme (tels que le nombre de modules et de déploiements en production) sont présentés comme tels.",
-      "h4": "4. Propriété intellectuelle",
-      "p4": "Le nom {name}, le logo, la marque, les textes, les graphismes et le logiciel présentés sur ce Site nous appartiennent ou appartiennent à nos concédants de licence et sont protégés par les lois applicables en matière de propriété intellectuelle. Vous ne pouvez pas les copier, les reproduire ou les distribuer sans notre autorisation écrite préalable.",
-      "h5": "5. Liens vers des tiers",
-      "p5": "Le Site peut renvoyer vers des sites web ou services tiers (par exemple l'environnement de la plateforme en direct). Nous ne sommes pas responsables du contenu ou des pratiques de ces tiers.",
-      "h6": "6. Avertissement et responsabilité",
-      "p6": "Le Site est fourni « tel quel », sans garantie d'aucune sorte, dans toute la mesure permise par la loi. Nous ne sommes pas responsables des pertes découlant de votre utilisation du Site ou de la confiance que vous lui accordez.",
-      "h7": "7. Droit applicable",
-      "p7": "Les présentes conditions sont régies par les lois de România, sans égard aux principes de conflit de lois. Tout litige relèvera des tribunaux compétents de România.",
-      "h8": "8. Contact",
-      "p8": "Des questions sur ces conditions ? Contactez-nous à <email></email>."
+  "form": {
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "workEmail": "E-mail professionnel",
+    "workEmailPlaceholder": "jean@hopital.fr",
+    "organization": "Établissement",
+    "organizationPlaceholder": "Hôpital départemental d'urgence",
+    "roleLabel": "Vous êtes…",
+    "messageDemo": "Que souhaitez-vous découvrir ?",
+    "messageContact": "Comment pouvons-nous vous aider ?",
+    "messagePlaceholderDemo": "Nous sommes un hôpital de 400 lits intéressé par les modules épicrise IA et triage…",
+    "messagePlaceholderContact": "Décrivez-nous brièvement ce que vous recherchez…",
+    "disclaimer": "Formulaire de démonstration — les saisies ne sont ni enregistrées ni transmises.",
+    "submitDemo": "Demander une démo",
+    "submitContact": "Envoyer le message",
+    "sending": "Envoi en cours…",
+    "successTitle": "Merci — vous y êtes presque",
+    "successBody": "Il s'agit d'un formulaire de démonstration : rien n'a donc été envoyé. Sur le site en production, votre message parviendrait à l'équipe ZenAiOS et nous vous répondrions sous un jour ouvré.",
+    "sendAnother": "Envoyer un autre message",
+    "roles": [
+      "Direction hospitalière (CMO / CIO / CEO)",
+      "Clinicien(ne) (médecin / infirmier(-ère) / interne)",
+      "Institution publique",
+      "Investisseur / évaluateur de financements européens",
+      "Partenaire / intégrateur",
+      "Autre"
+    ],
+    "errors": {
+      "name": "Veuillez indiquer votre nom.",
+      "email": "Saisissez une adresse e-mail professionnelle valide.",
+      "org": "Indiquez votre établissement.",
+      "message": "Une ou deux phrases nous aideront à mieux préparer l'échange."
     }
+  },
+  "categories": {
+    "medical": {
+      "name": "Médical",
+      "label": "Catégorie A — Médical",
+      "tagline": "Le produit phare.",
+      "description": "Solutions cliniques, modules hospitaliers et formation médicale — le cœur de l'offre, structuré selon le parcours clinique réel, du guichet d'accueil à la direction."
+    },
+    "administrative": {
+      "name": "Administratif",
+      "label": "Catégorie B — Administratif",
+      "tagline": "Services aux citoyens et back-office.",
+      "description": "Gestion des services publics, processus administratifs et conformité assistée par RAG — déjà en production dans une institution publique."
+    },
+    "ai-infrastructure": {
+      "name": "Infrastructure IA",
+      "label": "Catégorie C — Général",
+      "tagline": "La couche souveraine.",
+      "description": "Outils IA, modèles locaux et infrastructure RAG — la fondation technique capable de fonctionner hors ligne sur laquelle repose toute la plateforme."
+    }
+  },
+  "deploymentsData": {
+    "sjuo-oradea": {
+      "institution": "SJUO · Hôpital départemental d'urgence du Bihor",
+      "kind": "Hôpital",
+      "summary": "Le déploiement phare : un système hospitalier intégré complet, en production dans un hôpital départemental d'urgence.",
+      "live": [
+        "FOCG électronique avec codage ICD-10 et DRG",
+        "Épicrise assistée par IA",
+        "Gestion des lits et des services en temps réel",
+        "Assistant ZenA avec prise en charge vocale"
+      ]
+    },
+    "oradea-city-hall": {
+      "institution": "Mairie d'Oradea",
+      "kind": "Institution publique",
+      "summary": "Un déploiement civique qui prouve que ZenAiOS dépasse le cadre hospitalier pour gagner l'administration publique.",
+      "live": [
+        "Rapports générés par IA et services en ligne",
+        "Carte interactive des quartiers",
+        "Assistant civique ZenA",
+        "Accès multilingue pour les citoyens"
+      ]
+    }
+  },
+  "teamData": {
+    "george": {
+      "role": "Chief Executive Officer",
+      "bio": "Définit la vision et porte ZenAiOS auprès des institutions, des partenaires et des investisseurs."
+    },
+    "vlad": {
+      "role": "Chief Technology Officer",
+      "bio": "Pilote la plateforme et l'infrastructure IA développée en interne — du RAG souverain aux 17 modules."
+    },
+    "horea": {
+      "role": "Chief Medical Officer",
+      "bio": "Ancre chaque module dans la pratique clinique réelle et les normes de soins."
+    },
+    "vision": {
+      "text": "La santé est complexe. Notre métier : la faire fonctionner — un seul système d'exploitation IA, du guichet d'accueil à la direction.",
+      "role": "CEO, ZenAiOS"
+    }
+  },
+  "outcomesData": {
+    "facts": {
+      "modules": {
+        "label": "Modules IA",
+        "sub": "Sur trois domaines"
+      },
+      "domains": {
+        "label": "Domaines produit",
+        "sub": "Médical · Admin · Infra IA"
+      },
+      "deployments": {
+        "label": "Déploiements en production",
+        "sub": "Hôpital + mairie"
+      },
+      "languages": {
+        "label": "Langues",
+        "sub": "EN · RO · HU · DE · FR"
+      }
+    },
+    "projections": {
+      "admin": {
+        "label": "Moins de temps consacré aux tâches administratives",
+        "sub": "Projection"
+      },
+      "errors": {
+        "label": "Moins d'erreurs de diagnostic",
+        "sub": "Projection"
+      },
+      "cost": {
+        "label": "Coût par consultation réduit",
+        "sub": "Projection"
+      },
+      "rag": {
+        "label": "RAG fonctionnel hors ligne",
+        "sub": "Les données restent sur site"
+      }
+    },
+    "badges": [
+      "SJUO Oradea",
+      "Mairie d'Oradea",
+      "5 langues",
+      "RAG souverain hors ligne",
+      "ICD-10 · DRG · FOCG",
+      "Voix Azure Speech"
+    ]
   },
   "visuals": {
     "dashboard": {
       "title": "Hospital Manager",
-      "subtitle": "Vue d'ensemble exécutive",
+      "subtitle": "Vue d'ensemble pour la direction",
       "aiPredictive": "IA prédictive",
       "kpiOccupancy": "Taux d'occupation des lits",
-      "kpiAdmissions": "Admissions aujourd'hui",
+      "kpiAdmissions": "Admissions du jour",
       "kpiWait": "Attente moy.",
       "minSuffix": " min",
       "admissions14": "Admissions · 14 jours",
       "forecast": "prévision",
       "capacity": "Capacité",
       "inUse": "en service",
-      "deptLoad": "Charge des services",
+      "deptLoad": "Charge par service",
       "deptEmergency": "Urgences",
       "deptCardiology": "Cardiologie",
       "deptRadiology": "Radiologie",
-      "alert": "Les urgences approchent de la saturation — afflux prévu dans <b>~2 h</b>. Renfort suggéré : +2 personnels."
+      "alert": "Les urgences approchent de la saturation — afflux prévu dans <b>~2 h</b>. Recommandation : +2 agents."
     },
     "triage": {
-      "title": "Triage des urgences",
+      "title": "Triage aux urgences",
       "subtitle": "Manchester + IA · tri automatique",
       "levels": {
         "1": "Immédiat",
@@ -514,25 +591,25 @@
     },
     "epicrisis": {
       "title": "Épicrise — brouillon",
-      "subtitle": "Patient n° 2241 · généré automatiquement",
-      "linked": "FOCG liée",
-      "ready": "Prêt pour la relecture du clinicien · 8 s"
+      "subtitle": "Patient n° 2241 · générée automatiquement",
+      "linked": "FOCG associé",
+      "ready": "Prête pour relecture par le clinicien · 8 s"
     },
     "decision": {
       "title": "Aide à la décision",
-      "subtitle": "Douleur thoracique · 58 H · contextualisée",
+      "subtitle": "Douleur thoracique · H 58 ans · contextuelle",
       "differential": "Diagnostic différentiel",
       "dx": [
         "Syndrome coronarien aigu",
         "Péricardite",
         "Embolie pulmonaire"
       ],
-      "evidence": "Fondé sur les preuves · lié aux recommandations"
+      "evidence": "Fondé sur les données probantes · lié aux recommandations"
     },
     "rag": {
       "title": "ZEN_RAG",
-      "subtitle": "Sur site · données souveraines",
-      "noCloud": "Pas de cloud",
+      "subtitle": "Sur site · souveraineté des données",
+      "noCloud": "Sans cloud",
       "onPremise": "Sur site",
       "nodeDocuments": "Documents",
       "nodeDocumentsSub": "médical · juridique",
@@ -544,308 +621,324 @@
       "statModels": "modèles"
     }
   },
-  "categories": {
-    "medical": {
-      "name": "Médical",
-      "label": "Catégorie A — Médical",
-      "tagline": "Le produit phare.",
-      "description": "Solutions cliniques, modules hospitaliers et éducation médicale — le cœur de l'offre, organisé selon le flux clinique réel, de l'accueil à la salle du conseil."
-    },
-    "administrative": {
-      "name": "Administratif",
-      "label": "Catégorie B — Administratif",
-      "tagline": "Citoyen et back-office.",
-      "description": "Gestion citoyenne, processus administratifs et conformité fondée sur le RAG — déjà en service dans une institution publique."
-    },
-    "ai-infrastructure": {
-      "name": "Infrastructure IA",
-      "label": "Catégorie C — Général",
-      "tagline": "La couche souveraine.",
-      "description": "Outillage IA, modèles locaux et infrastructure RAG — le socle technique capable de fonctionner hors ligne sur lequel toute la plateforme est construite."
-    }
-  },
-  "deploymentsData": {
-    "sjuo-oradea": {
-      "institution": "SJUO · Hôpital départemental d'urgence de Bihor",
-      "kind": "Hôpital",
-      "summary": "Le déploiement phare : un système hospitalier intégré complet en service dans un hôpital départemental d'urgence.",
-      "live": [
-        "FOCG électronique avec codage ICD-10 et DRG",
-        "Épicrise assistée par IA",
-        "Gestion des lits et des services en temps réel",
-        "Assistant ZenA avec prise en charge vocale"
-      ]
-    },
-    "oradea-city-hall": {
-      "institution": "Mairie d'Oradea",
-      "kind": "Institution publique",
-      "summary": "Un déploiement citoyen prouvant que ZenAiOS dépasse le cadre de l'hôpital pour atteindre l'administration publique.",
-      "live": [
-        "Rapports et services en ligne générés par IA",
-        "Carte interactive des quartiers",
-        "Assistant citoyen ZenA",
-        "Accès citoyen multilingue"
-      ]
-    }
-  },
-  "teamData": {
-    "george": {
-      "role": "Chief Executive Officer",
-      "bio": "Définit la vision et porte ZenAiOS auprès des institutions, des partenaires et des investisseurs."
-    },
-    "vlad": {
-      "role": "Chief Technology Officer",
-      "bio": "Dirige la plateforme et l'infrastructure IA interne — du RAG souverain aux 17 modules."
-    },
-    "horea": {
-      "role": "Chief Medical Officer",
-      "bio": "Maintient chaque module ancré dans la pratique clinique réelle et les standards de soins."
-    },
-    "vision": {
-      "text": "La santé est complexe. Notre travail est de la faire fonctionner — un seul système d'exploitation IA, de l'accueil à la salle du conseil.",
-      "role": "CEO, ZenAiOS"
-    }
-  },
-  "outcomesData": {
-    "facts": {
-      "modules": { "label": "modules IA", "sub": "Sur trois domaines" },
-      "domains": { "label": "Domaines de produits", "sub": "Médical · Admin · Infra IA" },
-      "deployments": { "label": "Déploiements en production", "sub": "Hôpital + mairie" },
-      "languages": { "label": "Langues", "sub": "EN · RO · HU · DE · FR" }
-    },
-    "projections": {
-      "admin": { "label": "Moins de temps sur les tâches administratives", "sub": "Projection" },
-      "errors": { "label": "Moins d'erreurs diagnostiques", "sub": "Projection" },
-      "cost": { "label": "Coût par visite réduit", "sub": "Projection" },
-      "rag": { "label": "RAG capable de fonctionner hors ligne", "sub": "Les données restent sur site" }
-    },
-    "badges": [
-      "SJUO Oradea",
-      "Mairie d'Oradea",
-      "5 langues",
-      "RAG souverain hors ligne",
-      "ICD-10 · DRG · FOCG",
-      "Voix Azure Speech"
-    ]
-  },
   "modules": {
     "items": {
       "zenaios-hospital": {
         "name": "ZenAiOS Hospital — SJUO",
-        "short": "OS hospitalier",
-        "summary": "Gestion hospitalière intégrée déployée à Spitalul Județean de Urgență Oradea — lits, FOCG avec codage ICD-10 et DRG, épicrise IA et assistant ZenA dans un seul système.",
-        "problem": "Les données hospitalières résident dans des systèmes déconnectés, si bien que les cliniciens ressaisissent les informations et que la direction n'a jamais de vue en temps réel. ZenAiOS Hospital unifie le dossier clinique, le codage et les opérations sur une seule plateforme nativement IA.",
+        "short": "Hospital OS",
+        "summary": "Gestion hospitalière intégrée, déployée au Spitalul Județean de Urgență Oradea — lits, FOCG avec codification ICD-10 et DRG, épicrise assistée par IA et assistant ZenA réunis dans un seul système.",
+        "problem": "Les données hospitalières sont éclatées entre des systèmes cloisonnés : les cliniciens ressaisissent sans cesse les informations et la direction n'a jamais de vision en temps réel. ZenAiOS Hospital réunit le dossier clinique, la codification et les opérations sur une plateforme nativement conçue pour l'IA.",
         "how": [
-          "FOCG électronique (feuille d'observation) avec codage ICD-10 et DRG",
+          "FOCG électronique (dossier d'observation) avec codification ICD-10 et DRG",
           "Épicrise et documents de sortie assistés par IA",
           "Gestion des lits et des services en temps réel",
-          "Assistant ZenA intégré pour le personnel, avec prise en charge vocale"
+          "Assistant ZenA intégré pour les équipes, avec commande vocale"
         ],
         "roadmap": [
-          "Couverture élargie des services",
-          "Automatisation plus poussée des déclarations CNAS / DSP",
-          "Documentation clinique multilingue étendue"
+          "Couverture étendue à de nouveaux services",
+          "Automatisation poussée des déclarations CNAS / DSP",
+          "Documentation clinique multilingue enrichie"
         ]
       },
       "patient": {
         "name": "Module Patient",
         "short": "Patient",
-        "summary": "Rendez-vous en ligne, accès aux résultats, communication IA, suivi des symptômes et orientation personnalisée pour les patients.",
-        "problem": "Les patients peinent à atteindre le bon service et à comprendre leur prochaine étape. Le module Patient leur offre une porte d'entrée guidée et multilingue vers les soins.",
+        "summary": "Rendez-vous en ligne, accès aux résultats, communication par IA, suivi des symptômes et accompagnement personnalisé pour les patients.",
+        "problem": "Les patients peinent à trouver le bon service et à savoir quoi faire ensuite. Le Module Patient leur offre un point d'entrée guidé et multilingue vers les soins.",
         "how": [
-          "Prendre et gérer ses rendez-vous en ligne",
+          "Prise et gestion des rendez-vous en ligne",
           "Accès sécurisé aux résultats et aux dossiers",
-          "Suivi des symptômes par IA et orientation personnalisée",
-          "Assistance conversationnelle dans cinq langues"
+          "Suivi des symptômes par IA et accompagnement personnalisé",
+          "Assistance conversationnelle en cinq langues"
         ],
-        "roadmap": ["Rappels de plan de soins", "Suivi à domicile et intégrations avec les objets connectés"]
+        "roadmap": [
+          "Rappels liés au plan de soins",
+          "Intégration de la télésurveillance et des objets connectés"
+        ]
       },
       "doctor": {
         "name": "Module Médecin",
         "short": "Médecin",
-        "summary": "Aide à la décision par IA pour le diagnostic et le traitement, épicrise et génération de documents automatiques, et optimisation du flux de travail pour les médecins.",
-        "problem": "Les médecins perdent des heures à la documentation et aux changements de contexte. Le module Médecin intègre l'aide à la décision et les notes générées automatiquement dans le flux clinique, et non par-dessus.",
+        "summary": "Aide à la décision clinique pour le diagnostic et le traitement, génération automatique d'épicrises et de documents, et optimisation du flux de travail des médecins.",
+        "problem": "Les médecins perdent des heures en saisie documentaire et en allers-retours d'un outil à l'autre. Le Module Médecin intègre l'aide à la décision et la rédaction automatique des comptes rendus au cœur du parcours clinique, et non par-dessus.",
         "how": [
-          "Suggestions de diagnostic différentiel et de traitement contextualisées",
-          "Génération automatique d'épicrise et de documents cliniques",
-          "Orientation fondée sur les preuves au point de soin",
-          "Optimisation du flux de travail tout au long de la garde"
+          "Suggestions diagnostiques et thérapeutiques contextualisées",
+          "Génération automatique d'épicrises et de documents cliniques",
+          "Recommandations fondées sur les preuves, au moment du soin",
+          "Optimisation du flux de travail sur toute la garde"
         ],
-        "roadmap": ["Packs de recommandations par spécialité", "Réécriture plus poussée dans le DPI"]
+        "roadmap": [
+          "Référentiels de recommandations par spécialité",
+          "Mise à jour approfondie du dossier patient (DPI)"
+        ]
       },
       "nursing": {
-        "name": "Module Soins infirmiers",
-        "short": "Soins infirmiers",
-        "summary": "Administration des traitements, surveillance des signes vitaux, listes de contrôle procédurales et communication de l'équipe soignante pour le personnel infirmier.",
-        "problem": "La prestation des soins dépend d'une coordination précise et opportune. Le module Soins infirmiers regroupe l'administration, les signes vitaux et les listes de contrôle en un seul endroit et maintient toute l'équipe soignante en phase.",
+        "name": "Module Soins Infirmiers",
+        "short": "Soins",
+        "summary": "Administration des traitements, surveillance des constantes vitales, listes de contrôle des procédures et communication au sein de l'équipe soignante.",
+        "problem": "La qualité des soins repose sur une coordination précise et au bon moment. Le Module Soins Infirmiers centralise l'administration des traitements, les constantes et les listes de contrôle, et garde toute l'équipe soignante synchronisée.",
         "how": [
           "Suivi de l'administration des traitements",
-          "Surveillance et tendances des signes vitaux",
-          "Listes de contrôle procédurales",
-          "Communication de l'équipe soignante"
+          "Surveillance des constantes vitales et de leurs tendances",
+          "Listes de contrôle des procédures",
+          "Communication au sein de l'équipe soignante"
         ],
-        "roadmap": ["Résumés de transmission entre équipes", "Intégration des données des appareils"]
+        "roadmap": [
+          "Synthèses de transmission entre équipes",
+          "Récupération des données des dispositifs médicaux"
+        ]
       },
       "emergency-triage": {
-        "name": "Triage des urgences",
+        "name": "Triage des Urgences",
         "short": "Triage",
-        "summary": "Protocole Manchester combiné à l'IA pour classer les patients en cinq niveaux de gravité, prioriser automatiquement la file d'attente et alerter les médecins.",
-        "problem": "Dans un service d'urgences chargé, la priorisation doit être rapide et défendable. Le triage associe la norme Manchester à l'IA pour maintenir la file d'attente ordonnée selon la gravité réelle.",
+        "summary": "Protocole Manchester associé à l'IA pour classer les patients selon cinq niveaux de gravité, prioriser automatiquement la file d'attente et alerter les médecins.",
+        "problem": "Dans un service d'urgences saturé, la priorisation doit être rapide et justifiable. Le triage associe le standard Manchester à l'IA pour maintenir la file d'attente ordonnée selon la gravité réelle.",
         "how": [
-          "Classification Manchester + IA en 5 niveaux de gravité",
+          "Classification Manchester + IA selon 5 niveaux de gravité",
           "Priorisation automatique de la file d'attente",
-          "Alertes médecin pour les cas critiques"
+          "Alertes aux médecins pour les cas les plus graves"
         ],
-        "roadmap": ["Re-triage piloté par les signes vitaux", "Orientation tenant compte de la capacité"]
+        "roadmap": [
+          "Reclassement piloté par les constantes vitales",
+          "Orientation tenant compte des capacités disponibles"
+        ]
       },
       "laboratory": {
         "name": "Module Laboratoire",
-        "short": "Laboratoire",
-        "summary": "Prélèvement, traitement et interprétation IA avec mise en évidence des valeurs pathologiques et intégration automatique à la FOCG.",
-        "problem": "Les résultats de laboratoire doivent parvenir au bon dossier, signalés et en contexte. Le module Laboratoire relie automatiquement la paillasse à la feuille d'observation.",
+        "short": "Labo",
+        "summary": "Prélèvement, traitement et interprétation par IA, avec mise en évidence des valeurs pathologiques et intégration automatique au FOCG.",
+        "problem": "Les résultats d'analyses doivent parvenir au bon dossier, signalés et replacés dans leur contexte. Le Module Laboratoire relie automatiquement la paillasse au dossier d'observation.",
         "how": [
-          "Flux de travail de prélèvement et de traitement",
-          "Interprétation IA avec mise en évidence des valeurs pathologiques",
-          "Intégration automatique à la FOCG"
+          "Flux de prélèvement et de traitement",
+          "Interprétation par IA avec mise en évidence des valeurs pathologiques",
+          "Intégration automatique au FOCG"
         ],
-        "roadmap": ["Intégrations avec les analyseurs", "Personnalisation des plages de référence"]
+        "roadmap": [
+          "Intégration des analyseurs",
+          "Personnalisation des plages de référence"
+        ]
       },
       "labiq": {
         "name": "LabIQ",
         "short": "LabIQ",
-        "summary": "Analyse IA des comptes rendus de laboratoire à partir de fichiers PDF ou d'images, avec explications en langage clair et orientation de suivi.",
-        "problem": "Un compte rendu de laboratoire est difficile à lire pour la plupart des gens. LabIQ transforme un PDF ou une photo téléchargé en une explication en langage clair et des étapes suivantes nettes.",
+        "summary": "Analyse par IA de comptes rendus d'analyses à partir de PDF ou d'images téléversés, avec explications en langage clair et conseils de suivi.",
+        "problem": "Un compte rendu d'analyses reste difficile à déchiffrer pour la plupart des patients. LabIQ transforme un PDF ou une photo téléversée en une explication en langage clair et en étapes concrètes à suivre.",
         "how": [
-          "Téléchargez un compte rendu de laboratoire en PDF ou en image",
-          "Extraction et analyse IA des valeurs",
-          "Explication en langage clair et orientation de suivi"
+          "Téléversement d'un compte rendu d'analyses en PDF ou en image",
+          "Extraction et analyse des valeurs par IA",
+          "Explication en langage clair et conseils de suivi"
         ],
-        "roadmap": ["Suivi des tendances entre comptes rendus", "Liens de partage pour les cliniciens"]
+        "roadmap": [
+          "Suivi des tendances sur l'ensemble des comptes rendus",
+          "Liens de partage avec le clinicien"
+        ]
       },
       "hospital-manager": {
         "name": "Hospital Manager",
         "short": "Manager",
-        "summary": "Tableaux de bord exécutifs, analyse prédictive par IA, interopérabilité CNAS / DSP et un avatar IA pour les décisions en temps réel.",
-        "problem": "Les décisions de la direction ne valent que par les données qui les sous-tendent. Hospital Manager transforme les données opérationnelles en temps réel en prévisions et en réponses sur lesquelles la direction peut agir.",
+        "summary": "Tableaux de bord de direction, analyses prédictives par IA, interopérabilité CNAS / DSP et avatar IA pour décider en temps réel.",
+        "problem": "Une décision de direction ne vaut que par les données qui la fondent. Hospital Manager transforme les données opérationnelles en temps réel en prévisions et en réponses sur lesquelles la direction peut s'appuyer.",
         "how": [
-          "Tableaux de bord exécutifs à l'échelle de l'hôpital",
-          "Analyse prédictive par IA pour la demande et les effectifs",
+          "Tableaux de bord de direction à l'échelle de l'hôpital",
+          "Analyses prédictives par IA pour la demande et les effectifs",
           "Interopérabilité CNAS / DSP",
           "Avatar IA pour l'aide à la décision en temps réel"
         ],
-        "roadmap": ["Planification de scénarios", "Rapports de référence"]
+        "roadmap": [
+          "Planification de scénarios",
+          "Rapports comparatifs (benchmarking)"
+        ]
       },
       "manager-mobile": {
-        "name": "Tableau de bord Manager Mobile",
+        "name": "Tableau de Bord Mobile Dirigeant",
         "short": "Mobile",
-        "summary": "Supervision mobile des services, des effectifs, des alertes et des finances, avec un assistant IA pour les managers dans votre poche.",
-        "problem": "La direction est rarement à un bureau. Le tableau de bord Manager Mobile met la vue opérationnelle et un assistant IA sur le téléphone, conçu en priorité pour le mobile.",
+        "summary": "Supervision mobile des services, des effectifs, des alertes et des finances, avec un assistant IA de direction dans votre poche.",
+        "problem": "La direction est rarement à son bureau. Le Tableau de Bord Mobile Dirigeant place la vision opérationnelle et un assistant IA sur le téléphone, pensé d'abord pour le mobile.",
         "how": [
           "Services, effectifs et finances en un coup d'œil",
-          "Alertes push pour ce qui nécessite votre attention",
-          "Assistant IA pour managers sur mobile"
+          "Alertes push sur ce qui requiert votre attention",
+          "Assistant IA de direction sur mobile"
         ],
-        "roadmap": ["Instantanés hors ligne", "Approbations en déplacement"]
+        "roadmap": [
+          "Instantanés disponibles hors connexion",
+          "Validations à distance"
+        ]
       },
       "risk-assessment": {
-        "name": "Évaluation des risques",
-        "short": "Risque",
-        "summary": "Un espace de travail IA pour les risques, avec des fourchettes de probabilité, des fenêtres temporelles et un niveau de risque global.",
-        "problem": "Le risque est une cible mouvante. Cet espace de travail rend explicites la probabilité, le moment et le niveau global, afin que les décisions cliniques soient fondées et révisables.",
+        "name": "Évaluation des Risques",
+        "short": "Risques",
+        "summary": "Un espace de travail IA dédié aux risques, avec plages de probabilité, fenêtres temporelles et niveau de risque global.",
+        "problem": "Le risque est une cible mouvante. Cet espace de travail explicite la probabilité, l'échéance et le niveau global, pour des décisions cliniques fondées et vérifiables.",
         "how": [
-          "Fourchettes de probabilité par facteur de risque",
-          "Estimations de fenêtre temporelle",
+          "Plages de probabilité par facteur de risque",
+          "Estimations par fenêtre temporelle",
           "Un niveau de risque global et explicable"
         ],
-        "roadmap": ["Comparaisons de cohortes", "Justifications liées aux recommandations"]
+        "roadmap": [
+          "Comparaisons entre cohortes",
+          "Justifications adossées aux recommandations cliniques"
+        ]
       },
       "data-collection": {
-        "name": "Collecte de données hospitalières",
+        "name": "Collecte de Données Hospitalières",
         "short": "Données",
-        "summary": "Admissions, données de référence, plans des lits, assurances, pharmacie et déclarations dans un seul espace de travail structuré.",
-        "problem": "Des données structurées et propres sont le socle sur lequel tout le reste fonctionne. Ce module les capte une seule fois, à la source, et les maintient cohérentes dans tout l'hôpital.",
+        "summary": "Admissions, données de référence, plans des lits, assurance, pharmacie et reporting réunis dans un espace de travail structuré.",
+        "problem": "Des données structurées et fiables, c'est le socle sur lequel tout le reste fonctionne. Ce module les saisit une seule fois, à la source, et en garantit la cohérence à l'échelle de l'hôpital.",
         "how": [
           "Admissions et données de référence",
-          "Plans des lits et capacité",
-          "Assurances, pharmacie et déclarations"
+          "Plans des lits et capacités",
+          "Assurance, pharmacie et reporting"
         ],
-        "roadmap": ["Modèles de déclaration configurables", "Contrôles de qualité des données"]
+        "roadmap": [
+          "Modèles de rapports configurables",
+          "Contrôles de la qualité des données"
+        ]
       },
       "quiz": {
         "name": "Module QUIZ",
-        "short": "FMC",
-        "summary": "FMC accréditée pour les médecins et les internes : cas cliniques adaptatifs générés par IA, évaluation des compétences et heures de FMC certifiées.",
-        "problem": "La formation continue rivalise avec le temps clinique. Le module QUIZ rend la FMC adaptative et fondée sur des cas, pour que l'apprentissage s'intègre aux emplois du temps réels et soit valorisé.",
+        "short": "CME",
+        "summary": "CME accrédité pour les médecins et les internes : cas cliniques adaptatifs générés par IA, évaluation des compétences et heures de CME certifiées.",
+        "problem": "La formation continue rivalise avec le temps clinique. Le Module QUIZ rend le CME adaptatif et fondé sur des cas, pour que l'apprentissage s'intègre aux emplois du temps réels et soit valorisé.",
         "how": [
           "Cas cliniques adaptatifs générés par IA",
           "Évaluation des compétences",
-          "Heures de FMC accréditées"
+          "Heures de CME accréditées"
         ],
-        "roadmap": ["Parcours par spécialité", "Classements d'équipe"]
+        "roadmap": [
+          "Parcours par spécialité",
+          "Classements par équipe"
+        ]
       },
       "analytics": {
-        "name": "Tableau de bord Analytique",
-        "short": "Analytique",
-        "summary": "Un tableau de bord autonome pour le système d'analyse du widget de chat, alimenté par la télémétrie en direct.",
-        "problem": "Si l'assistant est la porte d'entrée, son analyse en est le plan d'étage. Ce tableau de bord rend la télémétrie des conversations lisible et exploitable.",
+        "name": "Tableau de Bord Analytics",
+        "short": "Analytics",
+        "summary": "Un tableau de bord autonome pour le système d'analyse du widget de chat, alimenté par la télémétrie en temps réel.",
+        "problem": "Si l'assistant est la porte d'entrée, ses analyses en sont le plan. Ce tableau de bord rend la télémétrie des conversations lisible et exploitable.",
         "how": [
-          "Télémétrie en direct depuis le widget de chat",
-          "Indicateurs d'utilisation, de sujets et de résolution",
+          "Télémétrie en temps réel issue du widget de chat",
+          "Indicateurs d'usage, de thématiques et de résolution",
           "Tableau de bord autonome et intégrable"
         ],
-        "roadmap": ["Entonnoirs personnalisés", "Alertes sur les anomalies"]
+        "roadmap": [
+          "Entonnoirs personnalisés",
+          "Alertes en cas d'anomalie"
+        ]
       },
       "citizen": {
-        "name": "Module Citoyen — Mairie d'Oradea",
+        "name": "Module Citoyen — Primăria Oradea",
         "short": "Citoyen",
-        "summary": "Rapports générés par IA, services en ligne, carte interactive des quartiers et assistant citoyen ZenA — en service à la mairie d'Oradea.",
-        "problem": "Les citoyens ont besoin d'un moyen unique et clair d'atteindre les services publics. Le module Citoyen est la porte d'entrée citoyenne — services, cartes et un assistant multilingue en un seul endroit.",
+        "summary": "Rapports générés par IA, services en ligne, carte de quartier interactive et assistant civique ZenA — en service à la Primăria Oradea.",
+        "problem": "Les citoyens ont besoin d'un accès unique et clair aux services publics. Le Module Citoyen est la porte d'entrée civique : services, cartes et assistant multilingue réunis au même endroit.",
         "how": [
           "Rapports et demandes générés par IA",
           "Services municipaux en ligne",
-          "Carte interactive des quartiers",
-          "Assistant citoyen ZenA"
+          "Carte de quartier interactive",
+          "Assistant civique ZenA"
         ],
-        "roadmap": ["Davantage de catégories de services", "Orientation entre services"]
+        "roadmap": [
+          "Davantage de catégories de services",
+          "Orientation entre les services municipaux"
+        ]
       },
       "administrative-module": {
         "name": "Module Administratif",
         "short": "Admin",
-        "summary": "RAG pour les processus non cliniques : conformité juridique, comptabilité CNAS, gestion des médicaments et inventaire hospitalier IA.",
-        "problem": "Les processus back-office reposent fortement sur les documents et les règles. Le module Administratif applique l'IA à génération augmentée par récupération à la conformité, à la comptabilité et à l'inventaire.",
+        "summary": "RAG pour les processus non cliniques : conformité juridique, comptabilité CNAS, gestion des médicaments et inventaire hospitalier par IA.",
+        "problem": "Les processus administratifs reposent sur de nombreux documents et des règles strictes. Le Module Administratif applique l'IA à génération augmentée par récupération à la conformité, à la comptabilité et à la gestion des stocks.",
         "how": [
           "RAG sur les documents juridiques et de conformité",
-          "Soutien à la comptabilité CNAS",
+          "Aide à la comptabilité CNAS",
           "Gestion des médicaments",
-          "Inventaire hospitalier IA"
+          "Inventaire hospitalier par IA"
         ],
-        "roadmap": ["Flux de travail d'achats", "Pistes d'audit"]
+        "roadmap": [
+          "Flux d'approvisionnement",
+          "Pistes d'audit"
+        ]
       },
       "zen-rag": {
         "name": "ZEN_RAG / Git_RAG_Zena",
         "short": "ZEN_RAG",
-        "summary": "Un RAG local 100 % hors ligne pour les documents médicaux et législatifs — sans cloud, construit sur llama.cpp + FAISS. La colonne vertébrale de toute conversation sur la souveraineté des données.",
-        "problem": "Les données cliniques et juridiques ne peuvent pas toujours quitter le bâtiment. ZEN_RAG fonctionne entièrement sur site, de sorte que les documents sensibles restent souverains tout en demeurant consultables par l'IA.",
+        "summary": "Un RAG 100 % hors ligne et local pour les documents médicaux et législatifs — sans cloud, bâti sur llama.cpp + FAISS. La colonne vertébrale de toute réflexion sur la souveraineté des données.",
+        "problem": "Les données cliniques et juridiques ne peuvent pas toujours quitter l'établissement. ZEN_RAG fonctionne entièrement sur site : les documents sensibles restent souverains tout en demeurant interrogeables par l'IA.",
         "how": [
-          "Génération augmentée par récupération locale, 100 % hors ligne",
-          "Aucune dépendance au cloud — fonctionne sur site",
-          "Construit sur llama.cpp + FAISS",
+          "Génération augmentée par récupération, 100 % hors ligne et locale",
+          "Aucune dépendance au cloud — fonctionnement sur site",
+          "Bâti sur llama.cpp + FAISS",
           "Optimisé pour les corpus médicaux et législatifs"
         ],
-        "roadmap": ["Prise en charge plus large des modèles", "Outillage de déploiement sur site renforcé"]
+        "roadmap": [
+          "Prise en charge élargie des modèles",
+          "Outillage de déploiement sur site renforcé"
+        ]
       },
       "llm-compare": {
         "name": "Zen_LLM_Compare",
         "short": "LLM Compare",
-        "summary": "Un comparateur côte à côte pour 6+ LLM locaux et cloud — même invite, réponses parallèles et un test de latence.",
-        "problem": "Choisir le bon modèle est une décision d'ingénierie, pas une supposition. LLM Compare exécute une même invite sur plusieurs modèles à la fois et mesure les compromis.",
+        "summary": "Un comparateur côte à côte pour plus de 6 LLM, locaux et cloud — même requête, réponses en parallèle et mesure de latence.",
+        "problem": "Choisir le bon modèle relève de l'ingénierie, pas de l'intuition. LLM Compare soumet une même requête à plusieurs modèles en simultané et en mesure les compromis.",
         "how": [
-          "Même invite envoyée à 6+ modèles en parallèle",
-          "Comparaison côte à côte des réponses",
-          "Évaluation de la latence"
+          "Même requête envoyée à plus de 6 modèles en parallèle",
+          "Comparaison des réponses côte à côte",
+          "Mesure de la latence"
         ],
-        "roadmap": ["Notation de la qualité", "Estimations de coût par tâche"]
+        "roadmap": [
+          "Notation de la qualité",
+          "Estimation du coût par tâche"
+        ]
       }
+    }
+  },
+  "legal": {
+    "eyebrow": "Mentions légales",
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "lastUpdatedDate": "13 juin 2026",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "La présente Politique de confidentialité explique comment {name} (« nous ») traite les données personnelles dans le cadre de ce site web ({domain}) et de notre plateforme. Établis à {location}, nous nous engageons à traiter les données personnelles conformément au Règlement général sur la protection des données (RGPD) de l'Union européenne.",
+      "h1": "1. Données collectées sur ce site",
+      "p1a": "Ce site marketing est volontairement épuré. Les formulaires de démonstration et de contact sont présentés à titre illustratif et ne transmettent ni ne stockent aucune donnée saisie. Si ces formulaires venaient à être reliés à un back-end, nous ne collecterions que les informations que vous choisissez de nous communiquer — généralement vos nom, adresse e-mail professionnelle, organisation et message — afin de répondre à votre demande.",
+      "p1b": "Nous sommes susceptibles de collecter des informations techniques limitées et agrégées (telles que des statistiques de base) afin de comprendre comment le site est utilisé. Nous ne vendons aucune donnée personnelle.",
+      "h2": "2. Données au sein de la plateforme",
+      "p2a": "La plateforme ZenAiOS traite des données pour le compte des institutions qui la déploient (par exemple les hôpitaux et les autorités publiques), lesquelles agissent en qualité de responsables du traitement. Dans ce cadre, {name} intervient comme sous-traitant au titre d'un accord écrit.",
+      "p2b": "<strong>Souveraineté des données.</strong> Notre infrastructure est conçue pour que les données cliniques et administratives sensibles puissent rester sur site. Notre IA à génération augmentée par récupération (ZEN_RAG) peut fonctionner 100 % hors ligne : les données réglementées n'ont ainsi jamais besoin de quitter l'environnement même de l'institution.",
+      "h3": "3. Bases juridiques",
+      "p3": "Lorsque nous traitons des données personnelles, nous nous appuyons sur une ou plusieurs des bases juridiques suivantes : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale ou nos intérêts légitimes à exploiter et à améliorer nos services.",
+      "h4": "4. Conservation",
+      "p4": "Nous ne conservons les données personnelles que le temps nécessaire aux finalités décrites ici ou aussi longtemps que la loi l'exige. Les données issues de vos demandes sont conservées le temps de traiter votre requête, puis pendant une période raisonnable.",
+      "h5": "5. Vos droits",
+      "p5": "Dans les limites du droit applicable, vous disposez du droit de :",
+      "rights": [
+        "accéder aux données personnelles que nous détenons à votre sujet ;",
+        "demander la rectification ou la suppression de vos données ;",
+        "vous opposer à certains traitements ou en demander la limitation ;",
+        "demander la portabilité des données que vous nous avez fournies ;",
+        "introduire une réclamation auprès de votre autorité de protection des données."
+      ],
+      "h6": "6. Contact",
+      "p6": "Pour toute question relative à la confidentialité ou pour exercer vos droits, écrivez-nous à <email></email> ou appelez-nous au <phone></phone>.",
+      "h7": "7. Modifications",
+      "p7": "Nous sommes susceptibles de mettre à jour cette politique de temps à autre. La date de « dernière mise à jour » indiquée ci-dessus correspond à la révision la plus récente."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "intro": "Les présentes Conditions d'utilisation régissent votre accès au site web {name} disponible à l'adresse {domain} (le « Site ») ainsi que son utilisation. En utilisant le Site, vous acceptez ces conditions.",
+      "h1": "1. Le Site a une vocation informative",
+      "p1": "Ce Site présente des informations sur la plateforme {name} et ses modules. Les contenus sont fournis à titre purement informatif et ne constituent pas un avis médical, juridique ou professionnel. Les maquettes de produit et illustrations présentées ici sont représentatives des capacités de la plateforme.",
+      "h2": "2. Formulaires de démonstration",
+      "p2": "Les formulaires de démonstration et de contact présents sur ce Site sont fournis à titre illustratif. Sauf mention contraire explicite, les données saisies ne sont ni transmises, ni stockées, ni exploitées. Pour nous contacter de manière fiable, utilisez l'adresse e-mail ou le numéro de téléphone figurant sur notre <contact>page de contact</contact>.",
+      "h3": "3. Projections et chiffres",
+      "p3": "Tout chiffre d'efficacité ou de résultat présenté sur ce Site est clairement signalé comme une projection ou un objectif indicatif. Il ne s'agit pas de garanties, et ces chiffres ne sauraient être tenus pour des résultats mesurés. Les éléments vérifiables relatifs à la plateforme (tels que le nombre de modules et de déploiements en production) sont présentés comme tels.",
+      "h4": "4. Propriété intellectuelle",
+      "p4": "Le nom, le logo, la marque, les textes, les graphismes et les logiciels {name} présentés sur ce Site nous appartiennent ou appartiennent à nos concédants de licence, et sont protégés par les lois applicables en matière de propriété intellectuelle. Vous ne pouvez ni les copier, ni les reproduire, ni les distribuer sans notre autorisation écrite préalable.",
+      "h5": "5. Liens vers des tiers",
+      "p5": "Le Site peut renvoyer vers des sites web ou services tiers (par exemple l'environnement de la plateforme en production). Nous ne sommes pas responsables du contenu ni des pratiques de ces tiers.",
+      "h6": "6. Avertissement et responsabilité",
+      "p6": "Le Site est fourni « en l'état », sans garantie d'aucune sorte, dans toute la mesure permise par la loi. Nous déclinons toute responsabilité pour tout préjudice résultant de votre utilisation du Site ou de la confiance que vous accordez à son contenu.",
+      "h7": "7. Droit applicable",
+      "p7": "Les présentes conditions sont régies par le droit de la Roumanie, sans égard aux principes de conflits de lois. Tout litige relèvera des tribunaux compétents de Roumanie.",
+      "h8": "8. Contact",
+      "p8": "Des questions sur ces conditions ? Écrivez-nous à <email></email>."
     }
   }
 }
