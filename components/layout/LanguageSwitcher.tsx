@@ -43,7 +43,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       {open && (
         <div
           role="listbox"
-          className="glass absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl p-1 shadow-soft"
+          className="glass-strong absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl p-1 shadow-soft"
         >
           {locales.map((l) => {
             const isActive = l.code === active;

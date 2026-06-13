@@ -16,11 +16,13 @@ export function SmoothScroll() {
       return;
     }
 
+    // Lerp-based smoothing tracks the wheel directly (snappy, no input lag),
+    // instead of animating each scroll over a fixed duration (which felt floaty).
     const lenis = new Lenis({
-      duration: 1.1,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.13,
+      wheelMultiplier: 1,
       smoothWheel: true,
-      touchMultiplier: 1.6,
+      touchMultiplier: 1.8,
     });
 
     let frame = 0;

@@ -43,9 +43,11 @@ export function Nav() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled || megaOpen
-          ? "border-b border-hairline bg-abyss/80 backdrop-blur-xl"
-          : "border-b border-transparent"
+        mobileOpen
+          ? "border-b border-hairline bg-abyss"
+          : scrolled || megaOpen
+            ? "border-b border-hairline bg-abyss/80 backdrop-blur-xl"
+            : "border-b border-transparent"
       )}
     >
       <div className="container-z flex h-16 items-center justify-between gap-4 md:h-[72px]">
@@ -159,7 +161,7 @@ export function Nav() {
 
 function MegaMenu() {
   return (
-    <div className="glass overflow-hidden rounded-2xl shadow-soft">
+    <div className="glass-strong overflow-hidden rounded-2xl shadow-soft">
       <div className="grid grid-cols-5">
         {/* By domain */}
         <div className="col-span-3 p-3">
@@ -245,7 +247,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
-      className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-hairline bg-abyss/95 backdrop-blur-xl lg:hidden"
+      className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-hairline bg-abyss lg:hidden"
     >
       <div className="container-z flex flex-col gap-1 py-6">
         <p className="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-faint">

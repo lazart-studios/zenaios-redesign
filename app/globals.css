@@ -110,6 +110,7 @@
   html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: auto; /* Lenis owns smooth scroll */
+    overflow-x: clip; /* belt-and-suspenders: no horizontal wobble on mobile */
   }
 
   body {
@@ -174,7 +175,7 @@
     color: transparent;
   }
 
-  /* Glass card surface */
+  /* Glass card surface (translucent — for decorative mockups) */
   .glass {
     background: linear-gradient(
       180deg,
@@ -183,6 +184,18 @@
     );
     backdrop-filter: blur(12px);
     border: 1px solid var(--color-hairline);
+  }
+
+  /* Near-opaque glass — for menus/dropdowns that overlay live content
+     and must stay fully legible (no bleed-through). */
+  .glass-strong {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 28, 85, 0.98) 0%,
+      rgba(4, 14, 50, 0.985) 100%
+    );
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--color-hairline-strong);
   }
 
   /* Soft brand glow */
