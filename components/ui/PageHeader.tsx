@@ -1,14 +1,13 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/motion/Reveal";
-import { SwirlMotif } from "@/components/brand/SwirlMotif";
 import { cn } from "@/lib/utils";
 
 export type Crumb = { label: string; href?: string };
 
 /**
  * Shared hero/header for inner pages: breadcrumbs + eyebrow + title +
- * description, with the brand swirl bleeding in from the right.
+ * description on a clean, flat surface.
  */
 export function PageHeader({
   eyebrow,
@@ -34,9 +33,6 @@ export function PageHeader({
         className
       )}
     >
-      <SwirlMotif className="pointer-events-none absolute -right-32 -top-20 size-[440px] opacity-25 md:opacity-30" />
-      <div className="pointer-events-none absolute -left-24 top-10 size-72 rounded-full bg-zen/10 blur-[120px]" />
-
       <div
         className={cn(
           "container-z relative",
@@ -52,7 +48,7 @@ export function PageHeader({
               <span key={c.label} className="inline-flex items-center gap-1.5">
                 {i > 0 && <ChevronRight className="size-3 text-faint/60" />}
                 {c.href ? (
-                  <Link href={c.href} className="transition-colors hover:text-sky">
+                  <Link href={c.href} className="transition-colors hover:text-zen">
                     {c.label}
                   </Link>
                 ) : (
@@ -65,8 +61,8 @@ export function PageHeader({
 
         <Reveal>
           {eyebrow && (
-            <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.18em] text-sky">
-              <span className="h-px w-6 bg-gradient-to-r from-transparent to-sky" />
+            <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-faint">
+              <span className="h-px w-6 bg-hairline-strong" />
               {eyebrow}
             </span>
           )}

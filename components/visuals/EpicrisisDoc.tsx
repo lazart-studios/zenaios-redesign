@@ -21,7 +21,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
     >
       <div className="flex items-center justify-between border-b border-hairline pb-3">
         <div className="flex items-center gap-2.5">
-          <span className="grid size-8 place-items-center rounded-lg bg-zen/15 text-sky ring-1 ring-zen/25">
+          <span className="grid size-8 place-items-center rounded-lg bg-zen/15 text-zen ring-1 ring-zen/25">
             <FileText className="size-4" />
           </span>
           <div>
@@ -29,7 +29,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
             <p className="text-[10px] text-faint">{t("subtitle")}</p>
           </div>
         </div>
-        <span className="inline-flex items-center gap-1 rounded-full bg-sky/10 px-2 py-1 text-[10px] font-medium text-sky ring-1 ring-sky/25">
+        <span className="inline-flex items-center gap-1 rounded-full bg-zen/10 px-2 py-1 text-[10px] font-medium text-zen ring-1 ring-zen/20">
           <Sparkles className="size-3" />
           AI
         </span>
@@ -40,7 +40,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
         {chips.map((c) => (
           <span
             key={c}
-            className="rounded-md bg-white/[0.04] px-2 py-1 font-mono text-[10px] text-muted ring-1 ring-hairline"
+            className="rounded-md bg-card-2 px-2 py-1 font-mono text-[10px] text-muted ring-1 ring-hairline"
           >
             {c}
           </span>
@@ -52,7 +52,7 @@ export function EpicrisisDoc({ className }: { className?: string }) {
         {lines.map((w, i) => (
           <motion.div
             key={i}
-            className="h-2 rounded-full bg-gradient-to-r from-white/15 to-white/5"
+            className="h-2 rounded-full bg-card-2"
             style={{ width: `${w}%`, transformOrigin: "left" }}
             initial={reduce ? { opacity: 1 } : { opacity: 0, scaleX: 0 }}
             whileInView={{ opacity: 1, scaleX: 1 }}

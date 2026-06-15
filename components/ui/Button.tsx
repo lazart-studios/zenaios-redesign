@@ -9,20 +9,16 @@ type Variant = "primary" | "secondary" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "group relative inline-flex items-center justify-center gap-2 rounded-[10px] font-medium tracking-tight " +
-  "transition-all duration-300 will-change-transform focus-visible:outline-2 focus-visible:outline-offset-2 " +
-  "focus-visible:outline-sky disabled:pointer-events-none disabled:opacity-50 select-none";
+  "group relative inline-flex items-center justify-center gap-2 rounded-md font-medium " +
+  "transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 " +
+  "focus-visible:outline-zen disabled:pointer-events-none disabled:opacity-50 select-none";
 
 const variants: Record<Variant, string> = {
-  // Primary = Zen Blue fill, white text, glow + lift on hover
-  primary:
-    "bg-zen text-white shadow-[0_10px_30px_-12px_rgba(0,118,253,0.9)] " +
-    "hover:bg-zen-600 hover:-translate-y-0.5 hover:shadow-[0_18px_44px_-14px_rgba(0,118,253,1)] active:translate-y-0",
-  // Secondary = sky outline on dark
-  secondary:
-    "border border-hairline-strong bg-white/[0.02] text-ink backdrop-blur-sm " +
-    "hover:border-sky/60 hover:bg-sky/[0.08] hover:-translate-y-0.5",
-  ghost: "text-muted hover:text-ink hover:bg-white/[0.04]",
+  // Primary = Zen Blue fill, white text — flat
+  primary: "bg-zen text-white shadow-[0_1px_2px_rgba(17,24,39,0.05)] hover:bg-zen-600",
+  // Secondary = hairline outline on white
+  secondary: "border border-hairline-strong bg-card text-ink hover:bg-card-2",
+  ghost: "text-muted hover:text-ink hover:bg-card-2",
 };
 
 const sizes: Record<Size, string> = {

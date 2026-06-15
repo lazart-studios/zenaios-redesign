@@ -45,7 +45,7 @@ export function TriageBoard({ className }: { className?: string }) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.45, delay: i * 0.1 }}
-              className="flex items-center gap-3 rounded-lg border border-hairline bg-white/[0.02] px-3 py-2"
+              className="flex items-center gap-3 rounded-lg border border-hairline bg-surface px-3 py-2"
             >
               <span
                 className={cn(

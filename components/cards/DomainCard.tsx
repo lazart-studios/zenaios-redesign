@@ -34,7 +34,7 @@ export function DomainCard({ category }: { category: Category }) {
             "grid size-12 place-items-center rounded-xl ring-1 transition-transform duration-300 group-hover:scale-110",
             isViolet
               ? "bg-violet/12 text-violet ring-violet/25"
-              : "bg-zen/12 text-sky ring-zen/25"
+              : "bg-zen/12 text-zen ring-zen/25"
           )}
         >
           <Icon className="size-6" />
@@ -60,7 +60,7 @@ export function DomainCard({ category }: { category: Category }) {
         {mods.slice(0, 4).map((m) => (
           <span
             key={m.slug}
-            className="rounded-md bg-white/[0.04] px-2 py-1 text-[11px] text-muted ring-1 ring-hairline"
+            className="rounded-md bg-card-2 px-2 py-1 text-[11px] text-muted ring-1 ring-hairline"
           >
             {m.short}
           </span>
@@ -81,7 +81,7 @@ export function DomainCard({ category }: { category: Category }) {
         ) : (
           <span className="text-xs text-faint">{t("builtOnPlatform")}</span>
         )}
-        <span className="inline-flex items-center gap-1 text-sm font-medium text-sky">
+        <span className="inline-flex items-center gap-1 text-sm font-medium text-zen">
           {t("seeModules")}
           <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
         </span>

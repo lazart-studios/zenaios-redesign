@@ -58,7 +58,7 @@ export function Nav() {
           aria-label={t("homeAria")}
           className="relative z-10 transition-opacity hover:opacity-80"
         >
-          <Logo variant="light" className="h-7 w-auto md:h-8" />
+          <Logo variant="dark" className="h-7 w-auto md:h-8" />
         </Link>
 
         {/* Desktop nav */}
@@ -130,7 +130,7 @@ export function Nav() {
             href={siteConfig.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-1 text-sm font-medium text-muted transition-colors hover:text-sky xl:inline-flex"
+            className="hidden items-center gap-1 text-sm font-medium text-muted transition-colors hover:text-zen xl:inline-flex"
           >
             {t("livePlatform")}
             <ArrowUpRight className="size-3.5" />
@@ -178,14 +178,14 @@ function MegaMenu() {
                 <Link
                   key={cat.slug}
                   href={`/platform/${cat.slug}`}
-                  className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-white/[0.04]"
+                  className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-card-2"
                 >
                   <span
                     className={cn(
                       "mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg ring-1",
                       cat.accent === "violet"
                         ? "bg-violet/10 text-violet ring-violet/25"
-                        : "bg-zen/10 text-sky ring-zen/25"
+                        : "bg-zen/10 text-zen ring-zen/25"
                     )}
                   >
                     <Icon className="size-4.5" />
@@ -208,26 +208,26 @@ function MegaMenu() {
         </div>
 
         {/* Explore + featured */}
-        <div className="col-span-2 border-l border-hairline bg-white/[0.02] p-3">
+        <div className="col-span-2 border-l border-hairline bg-surface p-3">
           <p className="px-3 pb-2 pt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-faint">
             {t("explore")}
           </p>
           <Link
             href="/platform"
-            className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-white/[0.04] hover:text-ink"
+            className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-card-2 hover:text-ink"
           >
             {t("platformOverview")}
           </Link>
           <Link
             href="/deployments"
-            className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-white/[0.04] hover:text-ink"
+            className="block rounded-xl px-3 py-2 text-sm text-muted transition-colors hover:bg-card-2 hover:text-ink"
           >
             {t("liveDeployments")}
           </Link>
 
           <Link
             href="/platform"
-            className="glow-zen mt-3 block rounded-xl bg-gradient-to-br from-zen/15 to-transparent p-4 ring-1 ring-hairline transition-transform hover:-translate-y-0.5"
+            className="mt-3 block rounded-xl bg-zen-tint p-4 ring-1 ring-zen-tint-border transition-colors hover:bg-card-2"
           >
             <StatusBadge status="active" label={t("liveNow")} />
             <p className="mt-3 text-sm font-semibold text-ink">

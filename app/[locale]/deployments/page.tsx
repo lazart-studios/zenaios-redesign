@@ -82,7 +82,7 @@ export default async function DeploymentsPage({
                   className={reversed ? "lg:order-2" : undefined}
                 >
                   <div className="flex items-center gap-3">
-                    <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-sky ring-1 ring-zen/25">
+                    <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25">
                       <Icon className="size-5" />
                     </span>
                     <StatusBadge status={d.status} />
@@ -115,7 +115,7 @@ export default async function DeploymentsPage({
                   {relatedModule && (
                     <Link
                       href={`/modules/${relatedModule.slug}`}
-                      className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky"
+                      className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-zen"
                     >
                       {t("exploreModule", { module: relatedModule.short })}
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

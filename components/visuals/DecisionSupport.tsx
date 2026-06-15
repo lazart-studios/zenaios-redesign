@@ -15,7 +15,7 @@ export function DecisionSupport({ className }: { className?: string }) {
   return (
     <div className={cn("glass rounded-2xl p-5 shadow-soft", className)}>
       <div className="flex items-center gap-2.5 border-b border-hairline pb-3">
-        <span className="grid size-8 place-items-center rounded-lg bg-zen/15 text-sky ring-1 ring-zen/25">
+        <span className="grid size-8 place-items-center rounded-lg bg-zen/15 text-zen ring-1 ring-zen/25">
           <Stethoscope className="size-4" />
         </span>
         <div>
@@ -34,13 +34,13 @@ export function DecisionSupport({ className }: { className?: string }) {
               <span className="text-ink/90">{d.dx}</span>
               <span className="font-medium text-muted">{d.conf}%</span>
             </div>
-            <div className="h-1.5 overflow-hidden rounded-full bg-white/5">
+            <div className="h-1.5 overflow-hidden rounded-full bg-card-2">
               <motion.div
                 className={cn(
                   "h-full rounded-full",
                   i === 0
-                    ? "bg-gradient-to-r from-zen to-sky"
-                    : "bg-gradient-to-r from-zen/40 to-sky/30"
+                    ? "bg-zen"
+                    : "bg-zen/30"
                 )}
                 initial={reduce ? { width: `${d.conf}%` } : { width: 0 }}
                 whileInView={{ width: `${d.conf}%` }}
@@ -52,8 +52,8 @@ export function DecisionSupport({ className }: { className?: string }) {
         ))}
       </div>
 
-      <div className="mt-4 flex items-center gap-2 rounded-lg bg-white/[0.03] px-3 py-2 text-[11px] text-muted ring-1 ring-hairline">
-        <BookOpen className="size-3.5 text-sky" />
+      <div className="mt-4 flex items-center gap-2 rounded-lg bg-card-2 px-3 py-2 text-[11px] text-muted ring-1 ring-hairline">
+        <BookOpen className="size-3.5 text-zen" />
         {t("evidence")}
       </div>
     </div>

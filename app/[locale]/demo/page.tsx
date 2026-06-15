@@ -53,8 +53,8 @@ export default async function DemoPage({
               <ul className="mt-5 space-y-3.5">
                 {expect.map((e) => (
                   <li key={e} className="flex items-start gap-3 text-sm text-ink/90">
-                    <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sky/15">
-                      <Check className="size-3 text-sky" />
+                    <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-zen/10">
+                      <Check className="size-3 text-zen" />
                     </span>
                     <span className="leading-relaxed">{e}</span>
                   </li>
@@ -64,7 +64,7 @@ export default async function DemoPage({
 
             <Reveal delay={0.1} className="space-y-3">
               <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card/40 p-4">
-                <Clock className="size-5 shrink-0 text-sky" />
+                <Clock className="size-5 shrink-0 text-zen" />
                 <p className="text-sm text-muted">
                   {t.rich("replyNote", {
                     b: (chunks) => <span className="text-ink">{chunks}</span>,
@@ -78,14 +78,14 @@ export default async function DemoPage({
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="rounded-2xl border border-hairline bg-gradient-to-br from-card/70 to-card/20 p-5">
+              <div className="rounded-2xl border border-hairline bg-surface p-5">
                 <p className="text-sm font-medium text-ink">{t("lookAroundTitle")}</p>
                 <p className="mt-1 text-sm text-muted">{t("lookAroundBody")}</p>
                 <a
                   href={siteConfig.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-sky"
+                  className="group mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-zen"
                 >
                   {t("open", { url: siteConfig.demoUrl.replace("https://", "") })}
                   <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

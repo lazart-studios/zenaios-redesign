@@ -62,14 +62,14 @@ export default async function ResourcesPage({
             const inner = (
               <div className="group flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
                 <div className="flex items-start justify-between">
-                  <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-sky ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
+                  <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
                     <Icon className="size-5" />
                   </span>
                   <span
                     className={
                       isLink
                         ? "rounded-full bg-success/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-success ring-1 ring-success/25"
-                        : "rounded-full bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-faint ring-1 ring-hairline"
+                        : "rounded-full bg-card-2 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wider text-faint ring-1 ring-hairline"
                     }
                   >
                     {isLink ? t("statusLive") : t("statusInPrep")}
@@ -78,7 +78,7 @@ export default async function ResourcesPage({
                 <h3 className="mt-4 text-lg font-bold text-ink">{r.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{r.body}</p>
                 {isLink && (
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-sky">
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-zen">
                     {t("openModule")}
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                   </span>
@@ -96,7 +96,7 @@ export default async function ResourcesPage({
         <Reveal>
           <p className="mt-10 text-center text-sm text-faint">
             {t("lookingFor")}{" "}
-            <Link href="/contact" className="font-medium text-sky hover:underline">
+            <Link href="/contact" className="font-medium text-zen hover:underline">
               {t("getInTouch")}
             </Link>{" "}
             {t("pointYou")}

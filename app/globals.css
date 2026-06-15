@@ -2,52 +2,54 @@
 
 /* ============================================================================
    ZenAiOS — Design tokens
-   Brand colours are LOCKED (extracted from the logo SVG): never recolour.
-   Zen Blue #0076FD · Sky #71BEFF · Deep Navy #031044.
-   The marketing site is navy-dominant (enterprise health software, not clinic).
+   Brand blue is LOCKED (from the logo): Zen Blue #0076FD. Never recolour it.
+   The site is LIGHT / FLAT / MINIMAL — white surfaces, near-black ink, hairline
+   borders, tiny radii, almost no shadow. No glass, glow, gradient or texture.
+   Token NAMES are kept stable (components reference bg-card, text-ink, …);
+   only their VALUES changed from the old dark theme, so the new look cascades.
    ========================================================================== */
 @theme {
   /* Brand — locked */
   --color-zen: #0076fd;
   --color-zen-600: #0061d6;
+  --color-zen-700: #0052b4;
   --color-sky: #71beff;
   --color-navy: #031044;
 
-  /* Dark surfaces (derived, on-brand) */
-  --color-abyss: #02081c;
-  --color-surface: #06164a;
-  --color-card: #0a1c55;
-  --color-card-2: #0c2266;
+  /* Surfaces (name kept; "abyss" is now the page background = white) */
+  --color-abyss: #ffffff;
+  --color-surface: #f9fafb;
+  --color-card: #ffffff;
+  --color-card-2: #f3f4f6;
 
   /* Text */
-  --color-ink: #eaf2ff;
-  --color-muted: #9db4d9;
-  --color-faint: #6b82ac;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-faint: #6b7280;
 
   /* Hairlines & status */
-  --color-hairline: rgba(113, 190, 255, 0.18);
-  --color-hairline-strong: rgba(113, 190, 255, 0.32);
-  --color-success: #33d6a6;
-  --color-warning: #ffb547;
-  --color-violet: #a78bfa;
+  --color-hairline: #e5e7eb;
+  --color-hairline-strong: #d1d5db;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-violet: #6d28d9;
+
+  /* Soft brand tint (chips / subtle fills) */
+  --color-zen-tint: #eff6ff;
+  --color-zen-tint-border: #bfdbfe;
 
   /* Type */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
 
-  /* Radii */
-  --radius-card: 14px;
-  --radius-lg: 20px;
+  /* Radii — small & architectural */
+  --radius-sm: 4px;
+  --radius-card: 8px;
+  --radius-lg: 12px;
 
-  /* Motion */
+  /* Motion — only the legitimate marquee remains in use */
   --animate-marquee: marquee 42s linear infinite;
-  --animate-float: float 7s ease-in-out infinite;
-  --animate-spin-slow: spinSlow 26s linear infinite;
-  --animate-spin-rev: spinRev 34s linear infinite;
-  --animate-pulse-glow: pulseGlow 3.6s ease-in-out infinite;
-  --animate-shimmer: shimmer 2.6s linear infinite;
-  --animate-grid: gridDrift 28s linear infinite;
 }
 
 @keyframes marquee {
@@ -56,46 +58,6 @@
   }
   to {
     transform: translateX(-50%);
-  }
-}
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-}
-@keyframes spinSlow {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes spinRev {
-  to {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes pulseGlow {
-  0%,
-  100% {
-    opacity: 0.55;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.04);
-  }
-}
-@keyframes shimmer {
-  to {
-    background-position: 200% center;
-  }
-}
-@keyframes gridDrift {
-  to {
-    background-position: 0 60px;
   }
 }
 
@@ -125,21 +87,22 @@
   }
 
   ::selection {
-    background: rgba(0, 118, 253, 0.35);
-    color: #fff;
+    background: rgba(0, 118, 253, 0.16);
+    color: var(--color-ink);
   }
 
   h1,
   h2,
   h3,
   h4 {
-    letter-spacing: -0.022em;
-    line-height: 1.04;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
     text-wrap: balance;
+    font-weight: 650;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-sky);
+    outline: 2px solid var(--color-zen);
     outline-offset: 3px;
     border-radius: 4px;
   }
@@ -158,75 +121,61 @@
 }
 
 /* ============================================================================
-   Utilities
+   Utilities — flattened. The old decorative classes (text-gradient, glass,
+   glow-zen, bg-grid…) are kept by NAME so existing markup keeps working, but
+   they now resolve to clean, flat, minimal styling instead of effects.
    ========================================================================== */
 @layer utilities {
-  /* Brand gradient text (logo gradient: Zen Blue → Sky) */
+  /* Headlines are solid ink now — no gradient. */
   .text-gradient {
-    background: linear-gradient(100deg, #ffffff 0%, var(--color-sky) 55%, var(--color-zen) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--color-ink);
   }
+  /* The rare accent word renders in solid brand blue. */
   .text-gradient-blue {
-    background: linear-gradient(100deg, var(--color-sky) 0%, var(--color-zen) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--color-zen);
   }
 
-  /* Glass card surface (translucent — for decorative mockups) */
+  /* Flat white card (was translucent glass). */
   .glass {
-    background: linear-gradient(
-      180deg,
-      rgba(12, 34, 102, 0.55) 0%,
-      rgba(6, 22, 74, 0.55) 100%
-    );
-    backdrop-filter: blur(12px);
+    background: var(--color-card);
     border: 1px solid var(--color-hairline);
+    backdrop-filter: none;
   }
 
-  /* Near-opaque glass — for menus/dropdowns that overlay live content
-     and must stay fully legible (no bleed-through). */
+  /* Solid white overlay surface for menus/dropdowns. */
   .glass-strong {
-    background: linear-gradient(
-      180deg,
-      rgba(10, 28, 85, 0.98) 0%,
-      rgba(4, 14, 50, 0.985) 100%
-    );
-    backdrop-filter: blur(20px);
+    background: var(--color-card);
     border: 1px solid var(--color-hairline-strong);
+    backdrop-filter: none;
+    box-shadow: 0 10px 30px -16px rgba(17, 24, 39, 0.18),
+      0 2px 6px -3px rgba(17, 24, 39, 0.08);
   }
 
-  /* Soft brand glow */
+  /* Was a blue glow — now a hairline ring + whisper of shadow. */
   .glow-zen {
-    box-shadow: 0 0 0 1px var(--color-hairline),
-      0 24px 60px -28px rgba(0, 118, 253, 0.65);
+    box-shadow: 0 1px 2px rgba(17, 24, 39, 0.05),
+      0 12px 32px -22px rgba(17, 24, 39, 0.22);
   }
 
   .shadow-soft {
-    box-shadow: 0 30px 80px -40px rgba(2, 8, 28, 0.9),
-      0 8px 24px -16px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 2px rgba(17, 24, 39, 0.05),
+      0 18px 40px -28px rgba(17, 24, 39, 0.18);
   }
 
-  /* Dotted/line grid background motif */
+  /* Decorative grids/dots removed for a clean, minimal canvas. */
   .bg-grid {
-    background-image: linear-gradient(var(--color-hairline) 1px, transparent 1px),
-      linear-gradient(90deg, var(--color-hairline) 1px, transparent 1px);
-    background-size: 60px 60px;
+    background-image: none;
   }
-
   .bg-dots {
-    background-image: radial-gradient(var(--color-hairline) 1px, transparent 1px);
-    background-size: 26px 26px;
+    background-image: none;
   }
 
-  /* Shimmer for skeleton/loading accents */
+  /* Light shimmer for skeleton/loading accents. */
   .shimmer {
     background: linear-gradient(
       90deg,
       transparent 0%,
-      rgba(113, 190, 255, 0.18) 50%,
+      rgba(0, 118, 253, 0.06) 50%,
       transparent 100%
     );
     background-size: 200% 100%;

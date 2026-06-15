@@ -39,7 +39,7 @@ export function DashboardMock({ className }: { className?: string }) {
           </p>
           <p className="text-sm font-semibold text-ink">{t("subtitle")}</p>
         </div>
-        <div className="inline-flex items-center gap-1.5 rounded-full bg-zen/10 px-2.5 py-1 text-[11px] font-medium text-sky ring-1 ring-zen/25">
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-zen/10 px-2.5 py-1 text-[11px] font-medium text-zen ring-1 ring-zen/25">
           <Sparkles className="size-3" />
           {t("aiPredictive")}
         </div>
@@ -52,9 +52,9 @@ export function DashboardMock({ className }: { className?: string }) {
           return (
             <div
               key={k.label}
-              className="rounded-lg border border-hairline bg-white/[0.02] p-3"
+              className="rounded-lg border border-hairline bg-surface p-3"
             >
-              <Icon className="size-4 text-sky" />
+              <Icon className="size-4 text-zen" />
               <p className="mt-2 text-lg font-bold text-ink">
                 <Counter value={k.value} suffix={k.suffix} duration={1.4} />
               </p>
@@ -62,7 +62,7 @@ export function DashboardMock({ className }: { className?: string }) {
               <span
                 className={cn(
                   "mt-1 inline-flex items-center gap-0.5 text-[10px] font-medium",
-                  k.up ? "text-success" : "text-sky"
+                  k.up ? "text-success" : "text-zen"
                 )}
               >
                 {k.up ? (
@@ -79,7 +79,7 @@ export function DashboardMock({ className }: { className?: string }) {
 
       {/* Chart + donut */}
       <div className="grid grid-cols-3 gap-2.5">
-        <div className="col-span-2 rounded-lg border border-hairline bg-white/[0.02] p-3">
+        <div className="col-span-2 rounded-lg border border-hairline bg-surface p-3">
           <div className="flex items-center justify-between">
             <p className="text-[11px] font-medium text-muted">{t("admissions14")}</p>
             <p className="text-[10px] text-faint">{t("forecast")}</p>
@@ -91,7 +91,7 @@ export function DashboardMock({ className }: { className?: string }) {
             />
           </div>
         </div>
-        <div className="rounded-lg border border-hairline bg-white/[0.02] p-3">
+        <div className="rounded-lg border border-hairline bg-surface p-3">
           <p className="text-[11px] font-medium text-muted">{t("capacity")}</p>
           <div className="mt-1 grid place-items-center">
             <Donut value={87} size={78} stroke={8} label={t("inUse")} />
@@ -100,19 +100,19 @@ export function DashboardMock({ className }: { className?: string }) {
       </div>
 
       {/* Department load */}
-      <div className="rounded-lg border border-hairline bg-white/[0.02] p-3">
+      <div className="rounded-lg border border-hairline bg-surface p-3">
         <p className="mb-2.5 text-[11px] font-medium text-muted">{t("deptLoad")}</p>
         <div className="space-y-2.5">
           {departments.map((d) => (
             <div key={d.name} className="flex items-center gap-3">
               <span className="w-20 shrink-0 text-[11px] text-ink">{d.name}</span>
-              <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/5">
+              <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-card-2">
                 <div
                   className={cn(
                     "h-full rounded-full",
                     d.load > 85
-                      ? "bg-gradient-to-r from-warning to-warning/60"
-                      : "bg-gradient-to-r from-zen to-sky"
+                      ? "bg-warning"
+                      : "bg-zen"
                   )}
                   style={{ width: `${d.load}%` }}
                 />

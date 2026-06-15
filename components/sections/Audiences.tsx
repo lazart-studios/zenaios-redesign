@@ -51,7 +51,7 @@ export function Audiences() {
           return (
             <StaggerItem key={a.role}>
               <div className="group relative flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
-                <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-sky ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
+                <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
                   <Icon className="size-5" />
                 </span>
                 <h3 className="mt-4 text-lg font-bold text-ink">{a.role}</h3>
@@ -64,7 +64,7 @@ export function Audiences() {
                   {a.show.map((s) => (
                     <span
                       key={s}
-                      className="rounded-md bg-white/[0.04] px-2 py-1 text-[11px] text-muted ring-1 ring-hairline"
+                      className="rounded-md bg-card-2 px-2 py-1 text-[11px] text-muted ring-1 ring-hairline"
                     >
                       {s}
                     </span>
@@ -76,7 +76,7 @@ export function Audiences() {
                     <Link
                       key={skeleton.hrefs[j]}
                       href={skeleton.hrefs[j]}
-                      className="group/link inline-flex items-center gap-1 text-sm font-medium text-sky"
+                      className="group/link inline-flex items-center gap-1 text-sm font-medium text-zen"
                     >
                       {label}
                       <ArrowRight className="size-3.5 transition-transform group-hover/link:translate-x-0.5" />

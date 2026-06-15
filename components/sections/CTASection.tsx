@@ -2,7 +2,6 @@ import { ArrowUpRight, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
-import { SwirlMotif } from "@/components/brand/SwirlMotif";
 import { siteConfig } from "@/lib/data/site";
 import { cn } from "@/lib/utils";
 
@@ -20,15 +19,10 @@ export function CTASection({
   return (
     <section className={cn("container-z py-20 md:py-28", className)}>
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-hairline-strong bg-gradient-to-br from-card/80 via-surface/60 to-abyss px-6 py-14 text-center md:px-12 md:py-20">
-          {/* Ambient glow + motif */}
-          <div className="pointer-events-none absolute -right-20 -top-24 size-[26rem] rounded-full bg-zen/15 blur-[130px]" />
-          <div className="pointer-events-none absolute -bottom-32 -left-16 size-80 rounded-full bg-sky/10 blur-[120px]" />
-          <SwirlMotif className="pointer-events-none absolute -right-10 top-1/2 size-72 -translate-y-1/2 opacity-25 md:size-96" />
-
+        <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface px-6 py-14 text-center md:px-12 md:py-20">
           <div className="relative mx-auto max-w-2xl">
-            <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.18em] text-sky">
-              <span className="size-1.5 animate-pulse rounded-full bg-success" />
+            <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-faint">
+              <span className="size-1.5 rounded-full bg-success" />
               {t(`${variant}.eyebrow`)}
             </span>
             <h2 className="mt-5 text-balance text-3xl font-bold sm:text-4xl md:text-5xl">

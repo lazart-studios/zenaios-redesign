@@ -10,8 +10,8 @@ type Field = "name" | "email" | "org" | "role" | "message";
 type Errors = Partial<Record<Field, string>>;
 
 const inputBase =
-  "w-full rounded-xl border border-hairline bg-white/[0.02] px-4 py-2.5 text-sm text-ink " +
-  "placeholder:text-faint outline-none transition-colors focus:border-sky/60 focus:bg-white/[0.04]";
+  "w-full rounded-xl border border-hairline bg-surface px-4 py-2.5 text-sm text-ink " +
+  "placeholder:text-faint outline-none transition-colors focus:border-zen focus:bg-card-2";
 
 function isEmail(v: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -86,7 +86,7 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStatus("idle")}
-              className="mt-6 text-sm font-medium text-sky transition-colors hover:text-sky/80"
+              className="mt-6 text-sm font-medium text-zen transition-colors hover:text-zen/80"
             >
               {t("sendAnother")}
             </button>
@@ -157,8 +157,8 @@ export function LeadForm({
                 disabled={status === "sending"}
                 className={cn(
                   "group inline-flex h-11 items-center justify-center gap-2 rounded-[10px] bg-zen px-6 text-[15px] font-medium text-white",
-                  "shadow-[0_10px_30px_-12px_rgba(0,118,253,0.9)] transition-all duration-300",
-                  "hover:bg-zen-600 hover:-translate-y-0.5 disabled:pointer-events-none disabled:opacity-70"
+                  "shadow-[0_1px_2px_rgba(17,24,39,0.05)] transition-colors duration-200",
+                  "hover:bg-zen-600 disabled:pointer-events-none disabled:opacity-70"
                 )}
               >
                 {status === "sending" ? (

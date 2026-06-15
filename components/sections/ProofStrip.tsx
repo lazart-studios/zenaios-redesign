@@ -7,7 +7,7 @@ export function ProofStrip() {
   const badges = buildProofBadges(useTranslations("outcomesData"));
   const items = [...badges, ...badges];
   return (
-    <section className="border-y border-hairline bg-white/[0.015] py-8">
+    <section className="border-y border-hairline bg-surface py-8">
       <div className="container-z">
         <p className="mb-6 text-center text-[11px] font-medium uppercase tracking-[0.2em] text-faint">
           {t("heading")}
@@ -20,7 +20,7 @@ export function ProofStrip() {
               key={i}
               className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card/40 px-4 py-2 text-sm text-muted"
             >
-              <CheckCircle2 className="size-4 text-sky" />
+              <CheckCircle2 className="size-4 text-zen" />
               {badge}
             </span>
           ))}
@@ -34,7 +34,7 @@ export function ProofStrip() {
               key={i}
               className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card/40 px-4 py-2 text-sm text-muted"
             >
-              <CheckCircle2 className="size-4 text-sky" />
+              <CheckCircle2 className="size-4 text-zen" />
               {badge}
             </span>
           ))}

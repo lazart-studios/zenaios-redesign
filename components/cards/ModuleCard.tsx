@@ -6,8 +6,8 @@ import { StatusBadge } from "@/components/ui/StatusBadge";
 import { cn } from "@/lib/utils";
 
 const accentMap: Record<ModuleItem["accent"], string> = {
-  zen: "bg-zen/12 text-sky ring-zen/25 group-hover:bg-zen/20",
-  sky: "bg-sky/12 text-sky ring-sky/25 group-hover:bg-sky/20",
+  zen: "bg-zen/12 text-zen ring-zen/25 group-hover:bg-zen/20",
+  sky: "bg-zen/10 text-zen ring-zen/20 group-hover:bg-zen/15",
   success: "bg-success/12 text-success ring-success/25 group-hover:bg-success/20",
   violet: "bg-violet/12 text-violet ring-violet/25 group-hover:bg-violet/20",
   warning: "bg-warning/12 text-warning ring-warning/25 group-hover:bg-warning/20",
@@ -15,7 +15,7 @@ const accentMap: Record<ModuleItem["accent"], string> = {
 
 const glowMap: Record<ModuleItem["accent"], string> = {
   zen: "bg-zen/20",
-  sky: "bg-sky/20",
+  sky: "bg-zen/15",
   success: "bg-success/20",
   violet: "bg-violet/25",
   warning: "bg-warning/20",
@@ -57,7 +57,7 @@ export function ModuleCard({ module: m }: { module: ModuleItem }) {
         <span className="font-mono text-[11px] uppercase tracking-wider text-faint">
           {m.version}
         </span>
-        <span className="inline-flex items-center gap-1 text-sm font-medium text-sky">
+        <span className="inline-flex items-center gap-1 text-sm font-medium text-zen">
           {t("details")}
           <ArrowRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </span>

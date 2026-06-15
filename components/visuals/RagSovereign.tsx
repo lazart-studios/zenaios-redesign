@@ -50,7 +50,7 @@ export function RagSovereign({ className }: { className?: string }) {
         {stats.map(([v, l]) => (
           <div
             key={l}
-            className="rounded-lg border border-hairline bg-white/[0.02] py-2"
+            className="rounded-lg border border-hairline bg-surface py-2"
           >
             <p className="text-sm font-bold text-ink">{v}</p>
             <p className="text-[10px] text-faint">{l}</p>
@@ -79,7 +79,7 @@ function Node({
           "grid size-10 place-items-center rounded-xl ring-1",
           accent
             ? "bg-violet/15 text-violet ring-violet/30"
-            : "bg-white/[0.04] text-sky ring-hairline"
+            : "bg-card-2 text-zen ring-hairline"
         )}
       >
         <Icon className="size-4.5" />
@@ -95,7 +95,7 @@ function Flow({ reduce, delay = 0 }: { reduce: boolean; delay?: number }) {
     <div className="relative h-px flex-1 bg-violet/20">
       {!reduce && (
         <motion.span
-          className="absolute top-1/2 size-1.5 -translate-y-1/2 rounded-full bg-violet shadow-[0_0_8px_2px_rgba(167,139,250,0.6)]"
+          className="absolute top-1/2 size-1.5 -translate-y-1/2 rounded-full bg-violet"
           animate={{ left: ["0%", "100%"] }}
           transition={{
             duration: 1.6,

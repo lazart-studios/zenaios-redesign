@@ -57,7 +57,7 @@ export function Outcomes() {
                 />
               </p>
               <p className="mt-1.5 text-sm text-muted">{s.label}</p>
-              <span className="mt-2 inline-block rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] uppercase tracking-wider text-faint ring-1 ring-hairline">
+              <span className="mt-2 inline-block rounded-full bg-card-2 px-2 py-0.5 text-[10px] uppercase tracking-wider text-faint ring-1 ring-hairline">
                 {s.sub}
               </span>
             </StaggerItem>

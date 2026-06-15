@@ -73,11 +73,11 @@ export function LanguageSwitcher({ className }: { className?: string }) {
                   "flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm transition-colors",
                   isActive
                     ? "text-ink"
-                    : "text-muted hover:bg-white/5 hover:text-ink"
+                    : "text-muted hover:bg-card-2 hover:text-ink"
                 )}
               >
                 <span>{localeNames[code]}</span>
-                {isActive && <Check className="size-4 text-sky" />}
+                {isActive && <Check className="size-4 text-zen" />}
               </button>
             );
           })}

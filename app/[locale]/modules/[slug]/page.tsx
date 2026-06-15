@@ -113,7 +113,7 @@ export default async function ModulePage({
         description={m.summary}
       >
         <div className="flex flex-wrap items-center gap-3">
-          <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-sky ring-1 ring-zen/25">
+          <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25">
             <Icon className="size-5" />
           </span>
           <StatusBadge status={m.status} />
@@ -149,8 +149,8 @@ export default async function ModulePage({
             <ul className="mt-6 space-y-4">
               {m.how.map((h) => (
                 <li key={h} className="flex items-start gap-3 text-ink/90">
-                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sky/15">
-                    <Check className="size-3 text-sky" />
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-zen/10">
+                    <Check className="size-3 text-zen" />
                   </span>
                   <span className="leading-relaxed">{h}</span>
                 </li>
@@ -167,7 +167,7 @@ export default async function ModulePage({
       </Section>
 
       {/* Roadmap */}
-      <Section className="bg-white/[0.012]">
+      <Section className="bg-surface">
         <Reveal>
           <div className="flex items-center gap-2">
             <Sparkles className="size-4 text-violet" />
@@ -208,7 +208,7 @@ export default async function ModulePage({
                   <MapPin className="size-3.5" /> {deployment.location}
                 </p>
               </div>
-              <span className="relative inline-flex items-center gap-1.5 text-sm font-medium text-sky">
+              <span className="relative inline-flex items-center gap-1.5 text-sm font-medium text-zen">
                 {t("seeDeployment")}
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
               </span>
@@ -227,7 +227,7 @@ export default async function ModulePage({
               </h2>
               <Link
                 href={`/platform/${m.category}`}
-                className="group inline-flex items-center gap-1.5 text-sm font-medium text-sky"
+                className="group inline-flex items-center gap-1.5 text-sm font-medium text-zen"
               >
                 {t("viewAll")}
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

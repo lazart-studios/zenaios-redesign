@@ -8,12 +8,12 @@ export function Footer() {
   const t = useTranslations("footer");
   const year = 2026;
   return (
-    <footer className="relative border-t border-hairline bg-abyss">
+    <footer className="relative border-t border-hairline bg-surface">
       <div className="container-z py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           {/* Brand + contact */}
           <div>
-            <Logo variant="light" className="h-8 w-auto" />
+            <Logo variant="dark" className="h-8 w-auto" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
               {t("tagline")}
             </p>
@@ -23,18 +23,18 @@ export function Footer() {
                 href={siteConfig.contact.phoneHref}
                 className="flex items-center gap-2.5 text-muted transition-colors hover:text-ink"
               >
-                <Phone className="size-4 text-sky" />
+                <Phone className="size-4 text-zen" />
                 {siteConfig.contact.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.contact.email}`}
                 className="flex items-center gap-2.5 text-muted transition-colors hover:text-ink"
               >
-                <Mail className="size-4 text-sky" />
+                <Mail className="size-4 text-zen" />
                 {siteConfig.contact.email}
               </a>
               <p className="flex items-center gap-2.5 text-muted">
-                <MapPin className="size-4 text-sky" />
+                <MapPin className="size-4 text-zen" />
                 {siteConfig.contact.location}
               </p>
             </div>

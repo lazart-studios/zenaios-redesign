@@ -50,7 +50,7 @@ export function Team() {
               {/* Body */}
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="text-lg font-bold text-ink">{m.name}</h3>
-                <p className="text-xs font-medium uppercase tracking-wider text-sky">
+                <p className="text-xs font-medium uppercase tracking-wider text-zen">
                   {m.role}
                 </p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
@@ -60,7 +60,7 @@ export function Team() {
                   href={m.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-sky"
+                  className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-zen"
                 >
                   <Linkedin className="size-3.5" />
                   LinkedIn
@@ -73,7 +73,7 @@ export function Team() {
 
       {/* Vision quote — full-width banner below the team */}
       <Reveal delay={0.05}>
-        <figure className="relative mt-8 overflow-hidden rounded-3xl border border-hairline bg-gradient-to-br from-card/70 to-card/20 p-8 md:p-12">
+        <figure className="relative mt-8 overflow-hidden rounded-3xl border border-hairline bg-surface p-8 md:p-12">
           <Quote
             className="size-10 text-zen/40"
             aria-hidden
@@ -83,7 +83,7 @@ export function Team() {
             {visionQuote.text}
           </blockquote>
           <figcaption className="mt-6 flex items-center gap-3">
-            <span className="h-px w-8 bg-gradient-to-r from-sky to-transparent" />
+            <span className="h-px w-8 bg-hairline-strong" />
             <span>
               <span className="block text-sm font-semibold text-ink">
                 {visionQuote.attribution}

@@ -80,7 +80,7 @@ export default async function ContactPage({
                       : {})}
                     className="group flex items-center gap-4 rounded-2xl border border-hairline bg-card/40 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-hairline-strong hover:bg-card/70"
                   >
-                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-zen/12 text-sky ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
                       <Icon className="size-5" />
                     </span>
                     <span className="min-w-0">
@@ -92,7 +92,7 @@ export default async function ContactPage({
                       </span>
                     </span>
                     {external && (
-                      <ArrowUpRight className="ml-auto size-4 text-faint transition-colors group-hover:text-sky" />
+                      <ArrowUpRight className="ml-auto size-4 text-faint transition-colors group-hover:text-zen" />
                     )}
                   </a>
                 </Reveal>
@@ -105,7 +105,7 @@ export default async function ContactPage({
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
                   <div className="absolute inset-0 grid place-items-center">
                     <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-abyss/70 px-3 py-1.5 text-xs text-muted backdrop-blur">
-                      <MapPin className="size-3.5 text-sky" />
+                      <MapPin className="size-3.5 text-zen" />
                       {siteConfig.contact.location}
                     </span>
                   </div>

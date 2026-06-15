@@ -14,10 +14,10 @@ const config: Record<
     bg: "bg-success/10",
   },
   module: {
-    dot: "bg-sky",
-    text: "text-sky",
-    ring: "ring-sky/25",
-    bg: "bg-sky/10",
+    dot: "bg-zen",
+    text: "text-zen",
+    ring: "ring-zen/20",
+    bg: "bg-zen/10",
   },
   dev: {
     dot: "bg-warning",

@@ -13,7 +13,7 @@ export function Capabilities() {
   const t = useTranslations("capabilities");
   const f = useTranslations("capabilities.features");
   return (
-    <Section id="capabilities" className="bg-white/[0.012]">
+    <Section id="capabilities" className="bg-surface">
       <Reveal>
         <SectionHeading
           align="center"

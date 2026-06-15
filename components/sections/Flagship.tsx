@@ -15,9 +15,7 @@ export function Flagship() {
 
   return (
     <Section id="flagship">
-      <div className="relative overflow-hidden rounded-3xl border border-hairline bg-card/40 p-6 md:p-10">
-        <div className="pointer-events-none absolute -left-24 top-0 size-72 rounded-full bg-zen/15 blur-[120px]" />
-
+      <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface p-6 md:p-10">
         <div className="relative grid items-center gap-10 lg:grid-cols-2">
           {/* Copy */}
           <Reveal>
@@ -46,7 +44,7 @@ export function Flagship() {
 
             <Link
               href={`/deployments`}
-              className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky"
+              className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-zen"
             >
               {t("link")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -58,11 +56,11 @@ export function Flagship() {
             <div className="relative">
               <EpicrisisDoc />
               <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-hairline bg-white/[0.02] p-4">
+                <div className="rounded-xl border border-hairline bg-card p-4">
                   <p className="text-2xl font-bold text-ink">v2.4</p>
                   <p className="text-xs text-faint">{t("statProduction")}</p>
                 </div>
-                <div className="rounded-xl border border-hairline bg-white/[0.02] p-4">
+                <div className="rounded-xl border border-hairline bg-card p-4">
                   <p className="text-2xl font-bold text-ink">ICD-10 · DRG</p>
                   <p className="text-xs text-faint">{t("statCoding")}</p>
                 </div>

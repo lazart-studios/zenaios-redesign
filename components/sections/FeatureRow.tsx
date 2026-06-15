@@ -36,8 +36,8 @@ export function FeatureRow({
           <ul className="mt-6 space-y-3">
             {bullets.map((b) => (
               <li key={b} className="flex items-start gap-2.5 text-sm text-ink/90">
-                <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-full bg-sky/15">
-                  <Check className="size-3 text-sky" />
+                <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-full bg-zen/10">
+                  <Check className="size-3 text-zen" />
                 </span>
                 {b}
               </li>
@@ -48,7 +48,7 @@ export function FeatureRow({
         {link && (
           <Link
             href={link.href}
-            className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-sky"
+            className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-zen"
           >
             {link.label}
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

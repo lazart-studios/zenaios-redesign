@@ -4,7 +4,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
-import { SwirlMotif } from "@/components/brand/SwirlMotif";
 import { BrowserFrame } from "@/components/visuals/BrowserFrame";
 import { DashboardMock } from "@/components/visuals/DashboardMock";
 import { ZenAChat } from "@/components/visuals/ZenAChat";
@@ -19,8 +18,6 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
-      <SwirlMotif className="absolute -right-40 -top-24 size-[640px] opacity-30 md:opacity-40" />
-
       <div className="container-z grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         {/* Copy */}
         <div className="relative z-10 max-w-xl">
@@ -28,16 +25,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EASE }}
-            className="inline-flex items-center gap-2 rounded-full border border-hairline bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-muted"
+            className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card-2 px-3 py-1.5 text-xs font-medium text-muted"
           >
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
-              <span className="relative inline-flex size-2 rounded-full bg-success" />
-            </span>
+            <span className="size-2 rounded-full bg-success" />
             {t("badge")}
           </motion.span>
 
-          <h1 className="mt-6 text-balance text-[2.6rem] font-bold leading-[1.03] sm:text-5xl md:text-[3.75rem]">
+          <h1 className="mt-6 text-balance text-[2.5rem] font-bold leading-[1.08] sm:text-5xl md:text-[3.6rem]">
             {titleLines.map((line, i) => (
               <span key={i} className="block overflow-hidden">
                 <motion.span
@@ -47,7 +41,7 @@ export function Hero() {
                   transition={{ duration: 0.8, delay: 0.15 + i * 0.12, ease: EASE }}
                 >
                   {i === 1 ? (
-                    <span className="text-gradient">{line}</span>
+                    <span className="text-gradient-blue">{line}</span>
                   ) : (
                     line
                   )}
@@ -102,24 +96,16 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.3, ease: EASE }}
           className="relative z-10"
         >
-          <motion.div
-            animate={reduce ? undefined : { y: [0, -12, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            className="relative"
-          >
-            <BrowserFrame className="glow-zen">
+          <div className="relative">
+            <BrowserFrame>
               <DashboardMock />
             </BrowserFrame>
 
-            {/* Floating ZenA chat */}
-            <motion.div
-              animate={reduce ? undefined : { y: [0, 14, 0] }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -bottom-10 -left-6 hidden w-[260px] sm:block lg:-left-14"
-            >
+            {/* ZenA chat card */}
+            <div className="absolute -bottom-10 -left-6 hidden w-[260px] sm:block lg:-left-14">
               <ZenAChat />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </motion.div>
       </div>
 

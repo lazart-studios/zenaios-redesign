@@ -40,7 +40,7 @@ export function ZenAChat({ className }: { className?: string }) {
         <div className="min-w-0">
           <p className="flex items-center gap-1.5 text-sm font-semibold text-ink">
             ZenA
-            <Sparkles className="size-3 text-sky" />
+            <Sparkles className="size-3 text-zen" />
           </p>
           <p className="text-[10px] text-faint">Assistant · 5 languages · voice</p>
         </div>
@@ -66,7 +66,7 @@ export function ZenAChat({ className }: { className?: string }) {
               "max-w-[85%] rounded-2xl px-3 py-2 text-[12px] leading-snug",
               m.from === "user"
                 ? "self-end rounded-br-sm bg-zen text-white"
-                : "self-start rounded-bl-sm bg-white/[0.05] text-ink/90 ring-1 ring-hairline"
+                : "self-start rounded-bl-sm bg-card-2 text-ink/90 ring-1 ring-hairline"
             )}
           >
             {m.text}
@@ -75,13 +75,13 @@ export function ZenAChat({ className }: { className?: string }) {
         {/* typing indicator */}
         <motion.div
           variants={bubble}
-          className="self-start rounded-2xl rounded-bl-sm bg-white/[0.05] px-3 py-2.5 ring-1 ring-hairline"
+          className="self-start rounded-2xl rounded-bl-sm bg-card-2 px-3 py-2.5 ring-1 ring-hairline"
         >
           <span className="flex gap-1">
             {[0, 1, 2].map((d) => (
               <motion.span
                 key={d}
-                className="size-1.5 rounded-full bg-sky"
+                className="size-1.5 rounded-full bg-zen"
                 animate={reduce ? undefined : { opacity: [0.3, 1, 0.3] }}
                 transition={{ duration: 1.1, repeat: Infinity, delay: d * 0.18 }}
               />
@@ -91,13 +91,13 @@ export function ZenAChat({ className }: { className?: string }) {
       </motion.div>
 
       {/* Composer + voice */}
-      <div className="mt-auto flex items-center gap-2 rounded-xl border border-hairline bg-abyss/50 px-3 py-2">
+      <div className="mt-auto flex items-center gap-2 rounded-xl border border-hairline bg-surface px-3 py-2">
         <span className="text-[12px] text-faint">Ask ZenA…</span>
         <div className="ml-auto flex items-end gap-0.5">
           {[6, 11, 8, 14, 9, 5].map((h, i) => (
             <motion.span
               key={i}
-              className="w-0.5 rounded-full bg-sky/70"
+              className="w-0.5 rounded-full bg-zen/70"
               style={{ height: h }}
               animate={reduce ? undefined : { scaleY: [0.5, 1.3, 0.7, 1] }}
               transition={{
@@ -108,7 +108,7 @@ export function ZenAChat({ className }: { className?: string }) {
               }}
             />
           ))}
-          <Mic className="ml-1 size-3.5 text-sky" />
+          <Mic className="ml-1 size-3.5 text-zen" />
         </div>
       </div>
     </div>

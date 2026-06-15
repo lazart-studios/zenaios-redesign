@@ -74,8 +74,8 @@ export default async function CategoryPage({
         <ul className="grid max-w-2xl gap-2.5">
           {highlights?.map((h) => (
             <li key={h} className="flex items-start gap-2.5 text-sm text-ink/90">
-              <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-full bg-sky/15">
-                <Check className="size-3 text-sky" />
+              <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-full bg-zen/10">
+                <Check className="size-3 text-zen" />
               </span>
               {h}
             </li>
@@ -109,7 +109,7 @@ export default async function CategoryPage({
         <Reveal>
           <Link
             href="/platform"
-            className="group mt-12 inline-flex items-center gap-2 text-sm font-medium text-sky"
+            className="group mt-12 inline-flex items-center gap-2 text-sm font-medium text-zen"
           >
             <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
             {t("allDomains")}

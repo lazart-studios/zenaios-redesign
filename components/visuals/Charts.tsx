@@ -28,8 +28,8 @@ export function BarChart({
             className={cn(
               "flex-1 rounded-t-[3px]",
               isHi
-                ? "bg-gradient-to-t from-zen to-sky"
-                : "bg-gradient-to-t from-zen/40 to-sky/30"
+                ? "bg-zen"
+                : "bg-zen/30"
             )}
             initial={reduce ? { height: h } : { height: 0 }}
             whileInView={{ height: h }}
@@ -85,7 +85,7 @@ export function AreaChart({
       <motion.path
         d={line}
         fill="none"
-        stroke="#71beff"
+        stroke="#0076fd"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -124,7 +124,7 @@ export function Donut({
           cy={size / 2}
           r={r}
           fill="none"
-          stroke="rgba(113,190,255,0.14)"
+          stroke="#e5e7eb"
           strokeWidth={stroke}
         />
         <motion.circle

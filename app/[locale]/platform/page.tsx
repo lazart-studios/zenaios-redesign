@@ -81,7 +81,7 @@ export default async function PlatformPage({
       </Section>
 
       {/* Every module, grouped */}
-      <Section id="all-modules" className="bg-white/[0.012]">
+      <Section id="all-modules" className="bg-surface">
         <Reveal>
           <SectionHeading
             align="center"

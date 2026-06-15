@@ -2,13 +2,11 @@ import { useTranslations } from "next-intl";
 import { ArrowLeft, Home } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
-import { SwirlMotif } from "@/components/brand/SwirlMotif";
 
 export default function NotFound() {
   const t = useTranslations("notFound");
   return (
     <section className="relative flex min-h-[80vh] items-center overflow-hidden">
-      <SwirlMotif className="pointer-events-none absolute -right-32 top-1/4 size-[520px] opacity-25" />
       <div className="container-z relative flex flex-col items-center text-center">
         <p className="text-gradient text-[7rem] font-bold leading-none md:text-[10rem]">
           404
@@ -28,7 +26,7 @@ export default function NotFound() {
         </div>
         <Link
           href="/contact"
-          className="group mt-8 inline-flex items-center gap-1.5 text-sm text-faint transition-colors hover:text-sky"
+          className="group mt-8 inline-flex items-center gap-1.5 text-sm text-faint transition-colors hover:text-zen"
         >
           <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-1" />
           {t("contact")}
