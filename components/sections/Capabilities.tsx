@@ -3,10 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/motion/Reveal";
 import { FeatureRow } from "@/components/sections/FeatureRow";
-import { BrowserFrame } from "@/components/visuals/BrowserFrame";
 import { DecisionSupport } from "@/components/visuals/DecisionSupport";
-import { TriageBoard } from "@/components/visuals/TriageBoard";
-import { DashboardMock } from "@/components/visuals/DashboardMock";
 import { RagSovereign } from "@/components/visuals/RagSovereign";
 
 export function Capabilities() {
@@ -24,7 +21,6 @@ export function Capabilities() {
               <span className="text-gradient">{t("titleAccent")}</span>
             </>
           }
-          description={t("description")}
           className="mx-auto"
         />
       </Reveal>
@@ -37,29 +33,6 @@ export function Capabilities() {
           bullets={f.raw("doctor.bullets") as string[]}
           visual={<DecisionSupport />}
           link={{ href: "/modules/doctor", label: f("doctor.link") }}
-        />
-
-        <FeatureRow
-          eyebrow={f("triage.eyebrow")}
-          title={f("triage.title")}
-          description={f("triage.description")}
-          bullets={f.raw("triage.bullets") as string[]}
-          visual={<TriageBoard />}
-          reversed
-          link={{ href: "/modules/emergency-triage", label: f("triage.link") }}
-        />
-
-        <FeatureRow
-          eyebrow={f("management.eyebrow")}
-          title={f("management.title")}
-          description={f("management.description")}
-          bullets={f.raw("management.bullets") as string[]}
-          visual={
-            <BrowserFrame url="platform.zenaios.com/manager" className="glow-zen">
-              <DashboardMock />
-            </BrowserFrame>
-          }
-          link={{ href: "/modules/hospital-manager", label: f("management.link") }}
         />
 
         <FeatureRow

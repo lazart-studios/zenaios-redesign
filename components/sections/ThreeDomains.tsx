@@ -19,7 +19,6 @@ export function ThreeDomains() {
               <span className="text-gradient">{t("titleAccent")}</span>
             </>
           }
-          description={t("description")}
         />
       </Reveal>
 

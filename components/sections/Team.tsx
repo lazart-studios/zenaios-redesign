@@ -22,7 +22,6 @@ export function Team() {
               <span className="text-gradient">{t("titleAccent")}</span>
             </>
           }
-          description={t("description")}
         />
       </Reveal>
 

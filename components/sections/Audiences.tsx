@@ -40,7 +40,6 @@ export function Audiences() {
               {t("titleTrail")}
             </>
           }
-          description={t("description")}
         />
       </Reveal>
 
