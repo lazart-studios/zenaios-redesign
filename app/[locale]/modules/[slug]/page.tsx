@@ -178,7 +178,7 @@ export default async function ModulePage({
         <Stagger className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {m.roadmap.map((r, i) => (
             <StaggerItem key={r}>
-              <div className="flex h-full items-start gap-3 rounded-2xl border border-dashed border-hairline-strong bg-card/30 p-5">
+              <div className="flex h-full items-start gap-3 rounded-2xl border border-dashed border-hairline-strong bg-surface p-5">
                 <span className="font-mono text-sm text-violet">
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -197,7 +197,6 @@ export default async function ModulePage({
               href="/deployments"
               className="group relative flex flex-col gap-4 overflow-hidden rounded-3xl border border-success/25 bg-success/[0.04] p-6 md:flex-row md:items-center md:justify-between md:p-8"
             >
-              <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-success/10 blur-3xl" />
               <div className="relative">
                 <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-success">
                   <span className="size-1.5 rounded-full bg-success" />

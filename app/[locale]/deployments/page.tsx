@@ -140,7 +140,7 @@ export default async function DeploymentsPage({
       {/* Honesty note */}
       <Section className="!pt-0">
         <Reveal>
-          <div className="rounded-3xl border border-hairline bg-card/40 p-6 md:p-10">
+          <div className="rounded-3xl border border-hairline bg-card p-6 shadow-card md:p-10">
             <Eyebrow>{t("noteEyebrow")}</Eyebrow>
             <p className="mt-4 max-w-3xl text-balance text-lg leading-relaxed text-ink/90">
               {t("noteBody")}

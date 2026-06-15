@@ -66,7 +66,7 @@ export function LeadForm({
   return (
     <div
       className={cn(
-        "relative rounded-3xl border border-hairline bg-card/40 p-6 md:p-8",
+        "relative rounded-3xl border border-hairline bg-card p-6 shadow-card md:p-8",
         className
       )}
     >

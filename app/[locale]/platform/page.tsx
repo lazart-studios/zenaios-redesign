@@ -54,7 +54,7 @@ export default async function PlatformPage({
             { v: 3, l: t("statDomains") },
             { v: 2, l: t("statDeployments") },
           ].map((s) => (
-            <StaggerItem key={s.l} className="rounded-2xl border border-hairline bg-card/40 p-4">
+            <StaggerItem key={s.l} className="rounded-2xl border border-hairline bg-card p-4 shadow-card">
               <p className="text-3xl font-bold text-gradient-blue">{s.v}</p>
               <p className="mt-1 text-xs text-faint">{s.l}</p>
             </StaggerItem>

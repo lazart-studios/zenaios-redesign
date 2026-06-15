@@ -78,7 +78,7 @@ export default async function ContactPage({
                     {...(external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    className="group flex items-center gap-4 rounded-2xl border border-hairline bg-card/40 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-hairline-strong hover:bg-card/70"
+                    className="group flex items-center gap-4 rounded-2xl border border-hairline bg-card p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-hairline-strong hover:shadow-card-hover"
                   >
                     <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
                       <Icon className="size-5" />
@@ -100,11 +100,11 @@ export default async function ContactPage({
             })}
 
             <Reveal delay={0.2}>
-              <div className="overflow-hidden rounded-2xl border border-hairline bg-card/40">
+              <div className="overflow-hidden rounded-2xl border border-hairline bg-card shadow-card">
                 <div className="bg-grid relative h-40">
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
                   <div className="absolute inset-0 grid place-items-center">
-                    <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-abyss/70 px-3 py-1.5 text-xs text-muted backdrop-blur">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card px-3 py-1.5 text-xs text-muted">
                       <MapPin className="size-3.5 text-zen" />
                       {siteConfig.contact.location}
                     </span>

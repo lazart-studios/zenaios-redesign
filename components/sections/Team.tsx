@@ -30,7 +30,7 @@ export function Team() {
       <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {team.map((m) => (
           <StaggerItem key={m.name}>
-            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card/40 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70 hover:shadow-soft">
+            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover">
               {/* Photo */}
               <div className="relative aspect-[4/5] overflow-hidden bg-surface">
                 <Image

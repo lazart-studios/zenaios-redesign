@@ -50,7 +50,7 @@ export function Audiences() {
           const Icon = skeleton.icon;
           return (
             <StaggerItem key={a.role}>
-              <div className="group relative flex h-full flex-col rounded-2xl border border-hairline bg-card/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70">
+              <div className="group relative flex h-full flex-col rounded-2xl border border-hairline bg-card p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover">
                 <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
                   <Icon className="size-5" />
                 </span>

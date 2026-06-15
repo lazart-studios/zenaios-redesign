@@ -63,7 +63,7 @@ export default async function DemoPage({
             </Reveal>
 
             <Reveal delay={0.1} className="space-y-3">
-              <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card/40 p-4">
+              <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card p-4">
                 <Clock className="size-5 shrink-0 text-zen" />
                 <p className="text-sm text-muted">
                   {t.rich("replyNote", {
@@ -71,7 +71,7 @@ export default async function DemoPage({
                   })}
                 </p>
               </div>
-              <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card/40 p-4">
+              <div className="flex items-center gap-3 rounded-xl border border-hairline bg-card p-4">
                 <ShieldCheck className="size-5 shrink-0 text-success" />
                 <p className="text-sm text-muted">{t("sovereignNote")}</p>
               </div>

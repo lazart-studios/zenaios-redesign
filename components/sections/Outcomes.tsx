@@ -13,7 +13,7 @@ export function Outcomes() {
   const outcomeProjections = buildOutcomeProjections(data);
   return (
     <Section id="outcomes">
-      <div className="rounded-3xl border border-hairline bg-card/40 p-6 md:p-12">
+      <div className="rounded-3xl border border-hairline bg-card p-6 shadow-card md:p-12">
         <Reveal>
           <SectionHeading
             align="center"

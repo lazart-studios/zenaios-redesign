@@ -4,7 +4,9 @@
    ZenAiOS — Design tokens
    Brand blue is LOCKED (from the logo): Zen Blue #0076FD. Never recolour it.
    The site is LIGHT / FLAT / MINIMAL — white surfaces, near-black ink, hairline
-   borders, tiny radii, almost no shadow. No glass, glow, gradient or texture.
+   borders, tiny radii. Cards carry a subtle, consistent elevation (--shadow-card)
+   that lifts on hover — that quiet depth is what reads as "premium flat" rather
+   than "wireframe". No glass, coloured glow, gradient text or texture.
    Token NAMES are kept stable (components reference bg-card, text-ink, …);
    only their VALUES changed from the old dark theme, so the new look cascades.
    ========================================================================== */
@@ -59,6 +61,20 @@
   to {
     transform: translateX(-50%);
   }
+}
+
+/* ============================================================================
+   Elevation — quiet, consistent card depth. A subtle resting shadow lifts on
+   hover; this is what reads as "premium flat" rather than "wireframe". Neutral
+   ink-tinted shadows only (no coloured glow). Defined as @utility so the hover:
+   variant (hover:shadow-card-hover) is generated.
+   ========================================================================== */
+@utility shadow-card {
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04), 0 1px 3px rgba(17, 24, 39, 0.06);
+}
+@utility shadow-card-hover {
+  box-shadow: 0 2px 4px rgba(17, 24, 39, 0.05),
+    0 12px 28px -10px rgba(17, 24, 39, 0.14);
 }
 
 /* ============================================================================

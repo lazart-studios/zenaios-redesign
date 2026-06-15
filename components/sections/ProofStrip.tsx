@@ -18,7 +18,7 @@ export function ProofStrip() {
           {items.map((badge, i) => (
             <span
               key={i}
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card/40 px-4 py-2 text-sm text-muted"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card px-4 py-2 text-sm text-muted"
             >
               <CheckCircle2 className="size-4 text-zen" />
               {badge}
@@ -32,7 +32,7 @@ export function ProofStrip() {
           {items.map((badge, i) => (
             <span
               key={i}
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card/40 px-4 py-2 text-sm text-muted"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card px-4 py-2 text-sm text-muted"
             >
               <CheckCircle2 className="size-4 text-zen" />
               {badge}

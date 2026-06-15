@@ -13,29 +13,14 @@ const accentMap: Record<ModuleItem["accent"], string> = {
   warning: "bg-warning/12 text-warning ring-warning/25 group-hover:bg-warning/20",
 };
 
-const glowMap: Record<ModuleItem["accent"], string> = {
-  zen: "bg-zen/20",
-  sky: "bg-zen/15",
-  success: "bg-success/20",
-  violet: "bg-violet/25",
-  warning: "bg-warning/20",
-};
-
 export function ModuleCard({ module: m }: { module: ModuleItem }) {
   const t = useTranslations("common");
   const Icon = m.icon;
   return (
     <Link
       href={`/modules/${m.slug}`}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:bg-card/70 hover:shadow-soft"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover"
     >
-      <div
-        className={cn(
-          "pointer-events-none absolute -right-12 -top-12 size-36 rounded-full opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100",
-          glowMap[m.accent]
-        )}
-      />
-
       <div className="relative flex items-start justify-between gap-3">
         <span
           className={cn(
