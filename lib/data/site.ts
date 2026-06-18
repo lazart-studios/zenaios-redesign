@@ -26,8 +26,8 @@ export const siteConfig = {
   platformUrl: "https://platform.zenaios.com",
   demoUrl: "https://demo.zenaios.com",
   contact: {
-    phone: "+40 735 779 579",
-    phoneHref: "tel:+40735779579",
+    phone: "+40 724 257 745",
+    phoneHref: "tel:+40724257745",
     email: "office@zenaios.com",
     location: "Oradea, România",
   },
