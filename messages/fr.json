@@ -501,6 +501,18 @@
       "role": "Chief Medical Officer",
       "bio": "Ancre chaque module dans la pratique clinique réelle et les normes de soins."
     },
+    "florina": {
+      "role": "Directrice régionale",
+      "bio": "Déploie ZenAiOS dans les hôpitaux et les institutions publiques de la région."
+    },
+    "lazar": {
+      "role": "Directeur régional",
+      "bio": "Noue les partenariats qui font travailler ZenAiOS dans les cliniques et les mairies."
+    },
+    "loujaina": {
+      "role": "Directrice régionale",
+      "bio": "Accompagne les institutions à chaque étape du déploiement de ZenAiOS."
+    },
     "vision": {
       "text": "La santé est complexe. Notre métier : la faire fonctionner — un seul système d'exploitation IA, du guichet d'accueil à la direction.",
       "role": "CEO, ZenAiOS"

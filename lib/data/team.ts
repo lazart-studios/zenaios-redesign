@@ -27,6 +27,27 @@ export const teamSkeletons: TeamSkeleton[] = [
     photo: "/team/horea-timis.webp",
     linkedin: "https://www.linkedin.com/in/timis-horea-146372bb/",
   },
+  {
+    key: "florina",
+    name: "Florina-Olivia Buzdug",
+    initials: "FB",
+    photo: "/team/florina-buzdug.jpg",
+    linkedin: "https://www.linkedin.com/in/florina-olivia-buzdug-ba925232b",
+  },
+  {
+    key: "lazar",
+    name: "Vlad Lazar",
+    initials: "VL",
+    photo: "/team/vlad-lazar.jpg",
+    linkedin: "https://www.linkedin.com/in/vlad-lazar-220a30240",
+  },
+  {
+    key: "loujaina",
+    name: "Loujaina Shehade Karsifi",
+    initials: "LS",
+    photo: "/team/loujaina-shehade.jpg",
+    linkedin: "https://www.linkedin.com/in/loujishehade15",
+  },
 ];
 
 /** `t` must be scoped to the `teamData` namespace. */

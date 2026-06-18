@@ -601,6 +601,18 @@
       "role": "Chief Medical Officer",
       "bio": "Keeps every module grounded in real clinical practice and standards of care."
     },
+    "florina": {
+      "role": "Regional Director",
+      "bio": "Brings ZenAiOS to hospitals and public institutions across the region."
+    },
+    "lazar": {
+      "role": "Regional Director",
+      "bio": "Builds the partnerships that put ZenAiOS to work in clinics and city halls."
+    },
+    "loujaina": {
+      "role": "Regional Director",
+      "bio": "Supports institutions through every step of their ZenAiOS rollout."
+    },
     "vision": {
       "text": "Healthcare is complex. Our job is to make it run — one AI operating system, from the front desk to the boardroom.",
       "role": "CEO, ZenAiOS"

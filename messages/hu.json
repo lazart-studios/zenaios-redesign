@@ -501,6 +501,18 @@
       "role": "Orvosigazgató",
       "bio": "Gondoskodik róla, hogy minden modul a valós klinikai gyakorlatban és az ellátási sztenderdekben gyökerezzen."
     },
+    "florina": {
+      "role": "Regionális igazgató",
+      "bio": "A ZenAiOS-t viszi el a régió kórházaihoz és közintézményeihez."
+    },
+    "lazar": {
+      "role": "Regionális igazgató",
+      "bio": "Azokat a partnerségeket építi, amelyek a klinikákon és a polgármesteri hivatalokban is munkába állítják a ZenAiOS-t."
+    },
+    "loujaina": {
+      "role": "Regionális igazgató",
+      "bio": "Végigkíséri az intézményeket a ZenAiOS bevezetésének minden lépésén."
+    },
     "vision": {
       "text": "Az egészségügy összetett. A mi dolgunk, hogy működjön — egyetlen AI operációs rendszerrel, a recepciótól a tárgyalóteremig.",
       "role": "CEO, ZenAiOS"

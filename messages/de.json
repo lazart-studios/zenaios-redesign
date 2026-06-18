@@ -501,6 +501,18 @@
       "role": "Chief Medical Officer",
       "bio": "Sorgt dafür, dass jedes Modul fest in der klinischen Praxis und den Versorgungsstandards verankert bleibt."
     },
+    "florina": {
+      "role": "Regionaldirektorin",
+      "bio": "Bringt ZenAiOS in Krankenhäuser und öffentliche Einrichtungen der Region."
+    },
+    "lazar": {
+      "role": "Regionaldirektor",
+      "bio": "Baut die Partnerschaften auf, die ZenAiOS in Kliniken und Rathäusern zum Einsatz bringen."
+    },
+    "loujaina": {
+      "role": "Regionaldirektorin",
+      "bio": "Begleitet Einrichtungen durch jeden Schritt ihrer ZenAiOS-Einführung."
+    },
     "vision": {
       "text": "Das Gesundheitswesen ist komplex. Unsere Aufgabe ist es, es zum Laufen zu bringen — ein KI-Betriebssystem, vom Empfang bis in den Vorstand.",
       "role": "CEO, ZenAiOS"

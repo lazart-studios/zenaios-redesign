@@ -501,6 +501,18 @@
       "role": "Chief Medical Officer",
       "bio": "Menține fiecare modul ancorat în practica clinică reală și în standardele de îngrijire."
     },
+    "florina": {
+      "role": "Director Regional",
+      "bio": "Duce ZenAiOS în spitale și instituții publice din regiune."
+    },
+    "lazar": {
+      "role": "Director Regional",
+      "bio": "Construiește parteneriatele care aduc ZenAiOS în clinici și primării."
+    },
+    "loujaina": {
+      "role": "Director Regional",
+      "bio": "Însoțește instituțiile la fiecare pas al implementării ZenAiOS."
+    },
     "vision": {
       "text": "Medicina este complexă. Rolul nostru este să o facem să funcționeze — un singur sistem de operare AI, de la recepție până la conducere.",
       "role": "CEO, ZenAiOS"
