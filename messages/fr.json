@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — Le système d'exploitation IA des hôpitaux modernes.",
+    "titleDefault": "ZenAiOS — La santé, en plus simple.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "Le système d'exploitation IA des hôpitaux modernes — 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique, déjà en service dans de véritables établissements.",
+    "description": "Une plateforme IA sécurisée qui réduit le travail administratif et aide les équipes de santé à se concentrer sur les personnes.",
     "platform": {
       "title": "La plateforme",
       "description": "17 modules IA répartis sur trois domaines interopérables — médical, administratif et infrastructure IA. Un seul assistant, cinq langues, en service dans de véritables établissements."
@@ -39,7 +39,7 @@
   "nav": {
     "homeAria": "Accueil ZenAiOS",
     "platform": "Plateforme",
-    "deployments": "Déploiements",
+    "deployments": "En service",
     "about": "À propos",
     "resources": "Ressources",
     "livePlatform": "Plateforme en production",
@@ -55,7 +55,7 @@
     "megaCta": "Découvrez comment le système d'exploitation s'articule →"
   },
   "footer": {
-    "tagline": "Le système d'exploitation IA des hôpitaux modernes. 17 modules IA couvrant les soins cliniques, la gestion hospitalière et la santé publique — en service dans de véritables établissements.",
+    "tagline": "Une plateforme IA sécurisée qui simplifie le travail de santé pour tous.",
     "columns": {
       "platform": "Plateforme",
       "company": "Entreprise",
@@ -67,7 +67,7 @@
       "administrative": "Administratif",
       "aiInfrastructure": "Infrastructure IA",
       "about": "À propos",
-      "deployments": "Déploiements",
+      "deployments": "En service",
       "resources": "Ressources",
       "contact": "Contact",
       "requestDemo": "Demander une démo",
@@ -105,17 +105,17 @@
     "contact": "Ou contactez-nous si quelque chose ne fonctionne pas"
   },
   "hero": {
-    "badge": "En service dans de vrais hôpitaux et institutions municipales",
-    "titleLine1": "Le système d'exploitation IA",
-    "titleLine2": "des hôpitaux modernes.",
-    "description": "17 modules IA couvrant les <b>soins cliniques</b>, la <b>gestion hospitalière</b> et la <b>santé publique</b> — déjà en service dans un hôpital départemental d'urgence et une mairie.",
-    "ctaPrimary": "Demander une démo",
-    "ctaSecondary": "Explorer la plateforme",
+    "badge": "L'IA pour la santé, conçue autour de l'humain",
+    "titleLine1": "La santé est complexe.",
+    "titleLine2": "Nous la simplifions.",
+    "description": "ZenAiOS aide les équipes de santé à passer <b>moins de temps sur l'administratif</b> et plus de temps auprès des personnes.",
+    "ctaPrimary": "Découvrir son fonctionnement",
+    "ctaSecondary": "Demander une démo",
     "deployedAt": "Déployé à",
     "scrollCue": "Faites défiler pour explorer"
   },
   "proof": {
-    "heading": "Des déploiements réels, des standards réels — aucun logo de façade"
+    "heading": "Déjà utilisée dans des institutions réelles"
   },
   "threeDomains": {
     "eyebrow": "Une plateforme, trois domaines",
@@ -123,11 +123,30 @@
     "titleAccent": "Dix-sept.",
     "description": "ZenAiOS est un système d'exploitation, pas un chatbot — structuré en trois domaines qui interagissent, partagent un même assistant et parlent cinq langues."
   },
+  "simpleValue": {
+    "eyebrow": "Simple par conception",
+    "title": "Une plateforme. Trois priorités essentielles.",
+    "description": "Utile dès le premier jour, claire pour chaque équipe et sécurisée par défaut.",
+    "items": [
+      {
+        "title": "Moins de paperasse",
+        "description": "Transformez automatiquement les échanges et les données en notes, formulaires et rapports."
+      },
+      {
+        "title": "Des décisions plus claires",
+        "description": "Donnez à chaque équipe la bonne information au moment où elle en a besoin."
+      },
+      {
+        "title": "Vos données restent les vôtres",
+        "description": "Fonctionnez en toute sécurité dans votre établissement, y compris entièrement sur site."
+      }
+    ]
+  },
   "audiences": {
     "eyebrow": "Un même site, trois profils d'acheteurs",
     "titleLead": "Trouvez votre parcours",
     "titleAccent": "« fait pour moi »",
-    "titleTrail": "",
+    "titleTrail": "personnalisé",
     "description": "La même plateforme, présentée selon votre profil. Direction, cliniciens et investisseurs accèdent chacun directement à ce qui compte pour eux.",
     "items": [
       {
@@ -175,22 +194,23 @@
     ]
   },
   "flagship": {
-    "eyebrow": "Déploiement phare",
-    "description": "Un système hospitalier intégré et complet, en service dans un hôpital départemental d'urgence — la preuve la plus forte que ZenAiOS tient à l'échelle réelle.",
-    "link": "Consulter les déploiements",
+    "eyebrow": "Utilisée aujourd'hui",
+    "title": "Conçue avec des médecins. Utilisée dans un vrai hôpital.",
+    "description": "ZenAiOS accompagne chaque jour le travail clinique et administratif — non pas en laboratoire, mais là où les soins ont lieu.",
+    "link": "Voir le déploiement",
     "statProduction": "en production",
     "statCoding": "codage médical intégré"
   },
   "capabilities": {
-    "eyebrow": "Ce qu'elle fait vraiment",
-    "titleLead": "Des capacités qui inspirent",
-    "titleAccent": "la confiance clinique",
+    "eyebrow": "Conçue pour le travail réel",
+    "titleLead": "Une technologie puissante.",
+    "titleAccent": "Simple à utiliser.",
     "description": "Quatre des actions quotidiennes de ZenAiOS — aide à la décision, triage, prédiction et IA souveraine.",
     "features": {
       "doctor": {
         "eyebrow": "Module Médecin",
-        "title": "Une aide à la décision qui ne rompt pas le flux",
-        "description": "Des suggestions de diagnostic différentiel et de traitement, adaptées au contexte, apparaissent là où le travail se fait — et génèrent automatiquement l'épicrise et les documents, pour que les médecins terminent plus vite et rentrent à l'heure.",
+        "title": "Moins de saisie. Plus de temps pour soigner.",
+        "description": "ZenAiOS intègre une aide utile et la documentation automatique dans les pratiques cliniques existantes.",
         "bullets": [
           "Suggestions de diagnostic différentiel et de traitement",
           "Épicrise et notes cliniques automatiques",
@@ -222,8 +242,8 @@
       },
       "infrastructure": {
         "eyebrow": "Infrastructure IA",
-        "title": "IA souveraine — vos données ne quittent jamais l'établissement",
-        "description": "ZEN_RAG exécute un système de génération augmentée par récupération 100 % hors ligne et local, sur llama.cpp + FAISS. Aucun cloud, aucune fuite de données — le socle de toute discussion sur la souveraineté des données et le RGPD.",
+        "title": "Confidentielle dès la conception.",
+        "description": "ZenAiOS peut fonctionner dans votre établissement afin que les données sensibles restent sous votre contrôle.",
         "bullets": [
           "RAG 100 % hors ligne, sur site",
           "llama.cpp + FAISS, plus de 6 modèles",
@@ -234,9 +254,9 @@
     }
   },
   "outcomes": {
-    "eyebrow": "La crédibilité avant les grands chiffres",
-    "title": "Les chiffres qui sont réellement vrais",
-    "description": "Nous mettons en avant ce qui est vérifiable. Les gains d'efficacité sont présentés comme des projections honnêtes — jamais comme des affirmations non étayées.",
+    "eyebrow": "Conçue et déployée",
+    "title": "Un vrai logiciel. De vraies institutions.",
+    "description": "Une plateforme en pleine croissance qui accompagne déjà les équipes de santé et de service public.",
     "footnote": "Les projections sont des objectifs indicatifs, dans l'attente des résultats publiés du pilote — et non des résultats mesurés."
   },
   "team": {
@@ -603,7 +623,7 @@
     },
     "epicrisis": {
       "title": "Épicrise — brouillon",
-      "subtitle": "Patient n° 2241 · générée automatiquement",
+      "subtitle": "Patient #2241 · générée automatiquement",
       "linked": "FOCG associé",
       "ready": "Prête pour relecture par le clinicien · 8 s"
     },

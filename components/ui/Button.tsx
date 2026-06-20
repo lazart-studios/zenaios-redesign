@@ -9,7 +9,7 @@ type Variant = "primary" | "secondary" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "group relative inline-flex items-center justify-center gap-2 rounded-md font-medium " +
+  "group relative inline-flex items-center justify-center gap-2 rounded-full font-medium " +
   "transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 " +
   "focus-visible:outline-zen disabled:pointer-events-none disabled:opacity-50 select-none";
 

@@ -4,39 +4,18 @@ import { buildProofBadges } from "@/lib/data/outcomes";
 
 export function ProofStrip() {
   const t = useTranslations("proof");
-  const badges = buildProofBadges(useTranslations("outcomesData"));
-  const items = [...badges, ...badges];
+  const badges = buildProofBadges(useTranslations("outcomesData")).slice(0, 4);
+
   return (
-    <section className="border-y border-hairline bg-surface py-8">
+    <section className="border-y border-black/[0.06] bg-[#f5f5f7] py-12">
       <div className="container-z">
-        <p className="mb-6 text-center text-[11px] font-medium uppercase tracking-[0.2em] text-faint">
-          {t("heading")}
-        </p>
-      </div>
-      <div className="mask-x relative flex overflow-hidden">
-        <div className="flex shrink-0 animate-marquee items-center gap-4 pr-4">
-          {items.map((badge, i) => (
-            <span
-              key={i}
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card px-4 py-2 text-sm text-muted"
-            >
-              <CheckCircle2 className="size-4 text-zen" />
-              {badge}
-            </span>
-          ))}
-        </div>
-        <div
-          className="flex shrink-0 animate-marquee items-center gap-4 pr-4"
-          aria-hidden
-        >
-          {items.map((badge, i) => (
-            <span
-              key={i}
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-hairline bg-card px-4 py-2 text-sm text-muted"
-            >
-              <CheckCircle2 className="size-4 text-zen" />
-              {badge}
-            </span>
+        <p className="text-center text-sm font-medium text-muted">{t("heading")}</p>
+        <div className="mx-auto mt-7 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {badges.map((badge) => (
+            <div key={badge} className="flex items-center justify-center gap-2 text-center text-sm font-medium text-ink">
+              <CheckCircle2 className="size-4 shrink-0 text-zen" />
+              <span>{badge}</span>
+            </div>
           ))}
         </div>
       </div>

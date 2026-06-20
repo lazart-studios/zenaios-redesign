@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Reveal } from "@/components/motion/Reveal";
 import { EpicrisisDoc } from "@/components/visuals/EpicrisisDoc";
 import { buildDeployment } from "@/lib/data/deployments";
@@ -15,21 +14,18 @@ export function Flagship() {
 
   return (
     <Section id="flagship">
-      <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface p-6 md:p-10">
-        <div className="relative grid items-center gap-10 lg:grid-cols-2">
+      <div className="relative overflow-hidden rounded-[2rem] bg-[#f5f5f7] p-7 md:p-12">
+        <div className="relative grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Copy */}
           <Reveal>
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <div className="mt-4 flex items-center gap-3">
-              <StatusBadge status="active" />
-              <span className="inline-flex items-center gap-1 text-xs text-faint">
-                <MapPin className="size-3.5" /> {d.location}
-              </span>
-            </div>
-            <h2 className="mt-3 text-balance text-2xl font-bold sm:text-3xl">
-              {d.name}
+            <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+              {t("title")}
             </h2>
-            <p className="mt-3 max-w-md text-muted">{t("description")}</p>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">{t("description")}</p>
+            <p className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-ink">
+              <MapPin className="size-4 text-zen" /> {d.name} · {d.location}
+            </p>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {d.live.map((item) => (
@@ -44,7 +40,7 @@ export function Flagship() {
 
             <Link
               href={`/deployments`}
-              className="group mt-7 inline-flex items-center gap-2 text-sm font-medium text-zen"
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-zen"
             >
               {t("link")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -55,16 +51,6 @@ export function Flagship() {
           <Reveal direction="left" delay={0.1}>
             <div className="relative">
               <EpicrisisDoc />
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-hairline bg-card p-4">
-                  <p className="text-2xl font-bold text-ink">v2.4</p>
-                  <p className="text-xs text-faint">{t("statProduction")}</p>
-                </div>
-                <div className="rounded-xl border border-hairline bg-card p-4">
-                  <p className="text-2xl font-bold text-ink">ICD-10 · DRG</p>
-                  <p className="text-xs text-faint">{t("statCoding")}</p>
-                </div>
-              </div>
             </div>
           </Reveal>
         </div>

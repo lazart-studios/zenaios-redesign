@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — Sistemul de operare AI pentru spitalele moderne.",
+    "titleDefault": "ZenAiOS — Sănătate, făcută simplă.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "Sistemul de operare AI pentru spitalele moderne — 17 module AI pentru îngrijirea clinică, managementul spitalicesc și sănătatea publică, deja active în instituții reale.",
+    "description": "O platformă AI sigură care reduce munca administrativă și ajută echipele medicale să se concentreze pe oameni.",
     "platform": {
       "title": "Platforma",
       "description": "17 module AI în trei domenii interoperabile — medical, administrativ și infrastructură AI. Un singur asistent, cinci limbi, activ în instituții reale."
@@ -39,7 +39,7 @@
   "nav": {
     "homeAria": "Pagina principală ZenAiOS",
     "platform": "Platformă",
-    "deployments": "Implementări",
+    "deployments": "În practică",
     "about": "Despre noi",
     "resources": "Resurse",
     "livePlatform": "Platformă activă",
@@ -55,7 +55,7 @@
     "megaCta": "Descoperiți cum se îmbină sistemul de operare →"
   },
   "footer": {
-    "tagline": "Sistemul de operare AI pentru spitalele moderne. 17 module AI pentru îngrijirea clinică, managementul spitalicesc și sănătatea publică — active în instituții reale.",
+    "tagline": "O platformă AI sigură care face activitatea medicală mai simplă pentru toți.",
     "columns": {
       "platform": "Platformă",
       "company": "Companie",
@@ -67,7 +67,7 @@
       "administrative": "Administrativ",
       "aiInfrastructure": "Infrastructură AI",
       "about": "Despre noi",
-      "deployments": "Implementări",
+      "deployments": "În practică",
       "resources": "Resurse",
       "contact": "Contact",
       "requestDemo": "Solicitați o demonstrație",
@@ -105,23 +105,42 @@
     "contact": "Sau contactați-ne dacă ceva nu funcționează"
   },
   "hero": {
-    "badge": "Funcțional în spitale și instituții publice reale",
-    "titleLine1": "Sistemul de operare AI",
-    "titleLine2": "pentru spitalele moderne.",
-    "description": "17 module AI care acoperă <b>îngrijirea clinică</b>, <b>managementul spitalicesc</b> și <b>sănătatea publică</b> — deja funcționale într-un spital județean de urgență și o primărie.",
-    "ctaPrimary": "Solicitați o demonstrație",
-    "ctaSecondary": "Explorați platforma",
+    "badge": "AI pentru sănătate, construit în jurul oamenilor",
+    "titleLine1": "Sănătatea este complexă.",
+    "titleLine2": "Noi o facem simplă.",
+    "description": "ZenAiOS ajută echipele medicale să petreacă <b>mai puțin timp cu birocrația</b> și mai mult timp cu oamenii.",
+    "ctaPrimary": "Vedeți cum funcționează",
+    "ctaSecondary": "Solicitați o demonstrație",
     "deployedAt": "Implementat la",
     "scrollCue": "Derulați pentru a explora"
   },
   "proof": {
-    "heading": "Implementări reale, standarde reale — fără logo-uri de fațadă"
+    "heading": "Deja funcționează în instituții reale"
   },
   "threeDomains": {
     "eyebrow": "O singură platformă, trei domenii",
     "titleLead": "Nu trei module.",
     "titleAccent": "Șaptesprezece.",
     "description": "ZenAiOS este un sistem de operare, nu un chatbot — structurat în trei domenii care interoperează, folosesc același asistent și vorbesc cinci limbi."
+  },
+  "simpleValue": {
+    "eyebrow": "Simplu prin design",
+    "title": "O platformă. Trei lucruri care contează.",
+    "description": "Utilă din prima zi, clară pentru fiecare echipă și sigură implicit.",
+    "items": [
+      {
+        "title": "Mai puțină birocrație",
+        "description": "Transformă conversațiile și datele în note, formulare și rapoarte — automat."
+      },
+      {
+        "title": "Decizii mai clare",
+        "description": "Oferă fiecărei echipe informația potrivită exact când are nevoie."
+      },
+      {
+        "title": "Datele rămân ale dumneavoastră",
+        "description": "Rulează în siguranță în instituție, inclusiv complet on-premise."
+      }
+    ]
   },
   "audiences": {
     "eyebrow": "Un singur site, trei tipuri de cumpărători",
@@ -175,22 +194,23 @@
     ]
   },
   "flagship": {
-    "eyebrow": "Implementare de referință",
-    "description": "Un sistem spitalicesc complet integrat, funcțional într-un spital județean de urgență — cea mai puternică dovadă că ZenAiOS funcționează la scară reală.",
-    "link": "Citiți despre implementări",
+    "eyebrow": "Folosit astăzi",
+    "title": "Construit cu medici. Folosit într-un spital real.",
+    "description": "ZenAiOS susține zilnic activitatea clinică și administrativă — nu într-un laborator, ci acolo unde are loc îngrijirea.",
+    "link": "Vedeți implementarea",
     "statProduction": "în producție",
     "statCoding": "codificare inclusă"
   },
   "capabilities": {
-    "eyebrow": "Ce face, concret",
-    "titleLead": "Capabilități care câștigă",
-    "titleAccent": "încrederea clinicienilor",
+    "eyebrow": "Creat pentru munca reală",
+    "titleLead": "Tehnologie puternică.",
+    "titleAccent": "Simplu de folosit.",
     "description": "Patru dintre lucrurile pe care ZenAiOS le face zi de zi — suport decizional, triaj, predicție și AI suveran.",
     "features": {
       "doctor": {
         "eyebrow": "Modulul Doctor",
-        "title": "Suport decizional care nu vă scoate din fluxul de lucru",
-        "description": "Sugestiile de diagnostic diferențial și tratament, adaptate la context, apar exact acolo unde se desfășoară activitatea — și generează automat epicriza și documentele, astfel încât medicii termină mai repede și ajung acasă la timp.",
+        "title": "Mai puțin de tastat. Mai mult timp pentru oameni.",
+        "description": "ZenAiOS aduce îndrumarea utilă și documentarea automată direct în activitatea clinică existentă.",
         "bullets": [
           "Sugestii de diagnostic diferențial și tratament",
           "Epicriză și note clinice automate",
@@ -222,8 +242,8 @@
       },
       "infrastructure": {
         "eyebrow": "Infrastructură AI",
-        "title": "AI suveran — datele nu vă părăsesc niciodată instituția",
-        "description": "ZEN_RAG rulează un sistem de generare augmentată prin regăsire 100% offline și local, pe llama.cpp + FAISS. Fără cloud, fără transfer de date în exterior — temelia oricărei discuții despre suveranitatea datelor și GDPR.",
+        "title": "Confidențial prin design.",
+        "description": "ZenAiOS poate rula în interiorul instituției, astfel încât datele sensibile rămân sub controlul dumneavoastră.",
         "bullets": [
           "RAG 100% offline, on-premise",
           "llama.cpp + FAISS, peste 6 modele",
@@ -234,9 +254,9 @@
     }
   },
   "outcomes": {
-    "eyebrow": "Credibilitate, nu cifre umflate",
-    "title": "Cifrele care sunt cu adevărat reale",
-    "description": "Pornim de la ceea ce se poate verifica. Indicatorii de eficiență sunt prezentați ca proiecții oneste — niciodată ca afirmații fără sursă.",
+    "eyebrow": "Construit și implementat",
+    "title": "Software real. Instituții reale.",
+    "description": "O platformă în creștere care sprijină deja echipe medicale și servicii publice.",
     "footnote": "Proiecțiile sunt ținte orientative, în așteptarea rezultatelor publicate ale pilotului — nu rezultate măsurate."
   },
   "team": {

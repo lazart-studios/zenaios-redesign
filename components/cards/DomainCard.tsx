@@ -16,14 +16,14 @@ export function DomainCard({ category }: { category: Category }) {
     <Link
       href={`/platform/${category.slug}`}
       className={cn(
-        "group relative flex flex-col overflow-hidden rounded-2xl border border-hairline bg-card p-6 shadow-card transition-all duration-300",
-        "hover:-translate-y-1.5 hover:border-hairline-strong hover:shadow-card-hover"
+        "group relative flex flex-col overflow-hidden rounded-[1.75rem] bg-surface p-7 transition-colors duration-200",
+        "hover:bg-[#eeeeF0]"
       )}
     >
       <div className="relative flex items-center justify-between">
         <span
           className={cn(
-            "grid size-12 place-items-center rounded-xl ring-1 transition-transform duration-300 group-hover:scale-110",
+            "grid size-12 place-items-center rounded-full ring-1",
             isViolet
               ? "bg-violet/12 text-violet ring-violet/25"
               : "bg-zen/12 text-zen ring-zen/25"

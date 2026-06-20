@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — The AI operating system for modern hospitals.",
+    "titleDefault": "ZenAiOS — Healthcare, made simple.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "The AI operating system for modern hospitals — 17 AI modules across clinical care, hospital management and public health, already live in real institutions.",
+    "description": "One secure AI platform that reduces administrative work and helps healthcare teams focus on people.",
     "platform": {
       "title": "The Platform",
       "description": "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, five languages, live in real institutions."
@@ -39,7 +39,7 @@
   "nav": {
     "homeAria": "ZenAiOS home",
     "platform": "Platform",
-    "deployments": "Deployments",
+    "deployments": "In use",
     "about": "About",
     "resources": "Resources",
     "livePlatform": "Live platform",
@@ -55,7 +55,7 @@
     "megaCta": "See how the operating system fits together →"
   },
   "footer": {
-    "tagline": "The AI operating system for modern hospitals. 17 AI modules across clinical care, hospital management and public health — live in real institutions.",
+    "tagline": "One secure AI platform that makes healthcare work simpler for everyone.",
     "columns": {
       "platform": "Platform",
       "company": "Company",
@@ -67,7 +67,7 @@
       "administrative": "Administrative",
       "aiInfrastructure": "AI Infrastructure",
       "about": "About",
-      "deployments": "Deployments",
+      "deployments": "In use",
       "resources": "Resources",
       "contact": "Contact",
       "requestDemo": "Request a demo",
@@ -98,23 +98,42 @@
     "label": "Language"
   },
   "hero": {
-    "badge": "Live in real hospitals & city institutions",
-    "titleLine1": "The AI operating system",
-    "titleLine2": "for modern hospitals.",
-    "description": "17 AI modules across <b>clinical care</b>, <b>hospital management</b> and <b>public health</b> — already live at a county emergency hospital and a city hall.",
-    "ctaPrimary": "Request a demo",
-    "ctaSecondary": "Explore the platform",
+    "badge": "AI for healthcare, built around people",
+    "titleLine1": "Healthcare is complex.",
+    "titleLine2": "We make it simple.",
+    "description": "ZenAiOS helps healthcare teams spend <b>less time on admin</b> and more time caring for people.",
+    "ctaPrimary": "See how it works",
+    "ctaSecondary": "Request a demo",
     "deployedAt": "Deployed at",
     "scrollCue": "Scroll to explore"
   },
   "proof": {
-    "heading": "Real deployments, real standards — no placeholder logos"
+    "heading": "Already working in real institutions"
   },
   "threeDomains": {
     "eyebrow": "One platform, three domains",
     "titleLead": "Not three modules.",
     "titleAccent": "Seventeen.",
     "description": "ZenAiOS is an operating system, not a chatbot — organised into three domains that interoperate, share one assistant, and speak five languages."
+  },
+  "simpleValue": {
+    "eyebrow": "Simple by design",
+    "title": "One platform. Three things that matter.",
+    "description": "Useful from the first day, clear for every team and secure by default.",
+    "items": [
+      {
+        "title": "Less paperwork",
+        "description": "Turn conversations and data into notes, forms and reports — automatically."
+      },
+      {
+        "title": "Clearer decisions",
+        "description": "Give every team the right information at the moment they need it."
+      },
+      {
+        "title": "Your data stays yours",
+        "description": "Run securely in your institution, including fully on-premise."
+      }
+    ]
   },
   "audiences": {
     "eyebrow": "One site, three buyers",
@@ -147,22 +166,23 @@
     ]
   },
   "flagship": {
-    "eyebrow": "Flagship deployment",
-    "description": "A full integrated hospital system running in a county emergency hospital — the strongest proof that ZenAiOS works at real scale.",
-    "link": "Read the deployments",
+    "eyebrow": "In use today",
+    "title": "Built with doctors. Running in a real hospital.",
+    "description": "ZenAiOS supports real clinical and administrative work every day — not in a lab, but where care happens.",
+    "link": "See the deployment",
     "statProduction": "in production",
     "statCoding": "coding built in"
   },
   "capabilities": {
-    "eyebrow": "What it actually does",
-    "titleLead": "Capabilities that earn",
-    "titleAccent": "clinical trust",
+    "eyebrow": "Made for real work",
+    "titleLead": "Powerful technology.",
+    "titleAccent": "Simple to use.",
     "description": "Four of the things ZenAiOS does every day — decision support, triage, prediction and sovereign AI.",
     "features": {
       "doctor": {
         "eyebrow": "Doctor module",
-        "title": "Decision support that stays in the flow",
-        "description": "Context-aware differential and treatment suggestions surface where the work happens — and auto-generate the epicrisis and documents, so doctors finish faster and get home on time.",
+        "title": "Less typing. More time for care.",
+        "description": "ZenAiOS brings useful guidance and automatic documentation into the work clinicians already do.",
         "bullets": [
           "Differential & treatment suggestions",
           "Automatic epicrisis & clinical notes",
@@ -194,8 +214,8 @@
       },
       "infrastructure": {
         "eyebrow": "AI infrastructure",
-        "title": "Sovereign AI — your data never leaves the building",
-        "description": "ZEN_RAG runs a 100% offline, local retrieval-augmented system on llama.cpp + FAISS. No cloud, no data egress — the foundation of every data-sovereignty and GDPR conversation.",
+        "title": "Private by design.",
+        "description": "ZenAiOS can run inside your institution, so sensitive data stays under your control.",
         "bullets": [
           "100% offline, on-premise RAG",
           "llama.cpp + FAISS, 6+ models",
@@ -206,9 +226,9 @@
     }
   },
   "outcomes": {
-    "eyebrow": "Credibility over big numbers",
-    "title": "The numbers that are actually true",
-    "description": "We lead with what is verifiable. Efficiency figures are shown as honest projections — never unsourced claims.",
+    "eyebrow": "Built and deployed",
+    "title": "Real software. Real institutions.",
+    "description": "A growing platform that is already supporting healthcare and public-service teams.",
     "footnote": "Projections are illustrative targets, pending published pilot results — not measured outcomes."
   },
   "team": {

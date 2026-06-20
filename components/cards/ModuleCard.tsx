@@ -19,12 +19,12 @@ export function ModuleCard({ module: m }: { module: ModuleItem }) {
   return (
     <Link
       href={`/modules/${m.slug}`}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover"
+      className="group relative flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-black/[0.05] bg-card p-6 transition-colors duration-200 hover:bg-[#fafafa]"
     >
       <div className="relative flex items-start justify-between gap-3">
         <span
           className={cn(
-            "grid size-11 shrink-0 place-items-center rounded-xl ring-1 transition-all duration-300 group-hover:scale-105",
+            "grid size-11 shrink-0 place-items-center rounded-full ring-1",
             accentMap[m.accent]
           )}
         >

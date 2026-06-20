@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — Az AI operációs rendszer a modern kórházak számára.",
+    "titleDefault": "ZenAiOS — Egyszerűbb egészségügy.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "Az AI operációs rendszer a modern kórházak számára — 17 AI-modul a klinikai ellátás, a kórházvezetés és a közegészségügy területén, már valódi intézményekben élesben.",
+    "description": "Egy biztonságos AI-platform, amely csökkenti az adminisztrációt, és segít az egészségügyi csapatoknak az emberekre összpontosítani.",
     "platform": {
       "title": "A platform",
       "description": "17 AI-modul három, egymással együttműködő területen — orvosi, adminisztratív és AI-infrastruktúra. Egyetlen asszisztens, öt nyelven, valódi intézményekben élesben."
@@ -39,7 +39,7 @@
   "nav": {
     "homeAria": "ZenAiOS főoldal",
     "platform": "Platform",
-    "deployments": "Telepítések",
+    "deployments": "Használatban",
     "about": "Rólunk",
     "resources": "Anyagok",
     "livePlatform": "Élő platform",
@@ -55,7 +55,7 @@
     "megaCta": "Nézze meg, hogyan áll össze az operációs rendszer →"
   },
   "footer": {
-    "tagline": "Az AI operációs rendszer a modern kórházak számára. 17 AI-modul a klinikai ellátás, a kórházvezetés és a közegészségügy területén — valódi intézményekben élesben.",
+    "tagline": "Egy biztonságos AI-platform, amely mindenki számára egyszerűbbé teszi az egészségügyi munkát.",
     "columns": {
       "platform": "Platform",
       "company": "Vállalat",
@@ -67,7 +67,7 @@
       "administrative": "Adminisztratív",
       "aiInfrastructure": "AI-infrastruktúra",
       "about": "Rólunk",
-      "deployments": "Telepítések",
+      "deployments": "Használatban",
       "resources": "Anyagok",
       "contact": "Kapcsolat",
       "requestDemo": "Demó kérése",
@@ -105,23 +105,42 @@
     "contact": "Vagy lépjen kapcsolatba velünk, ha valami nem működik"
   },
   "hero": {
-    "badge": "Már éles üzemben valódi kórházakban és önkormányzati intézményekben",
-    "titleLine1": "Az AI operációs rendszer",
-    "titleLine2": "a modern kórházak számára.",
-    "description": "17 AI-modul a <b>klinikai ellátás</b>, a <b>kórházmenedzsment</b> és a <b>közegészségügy</b> területén — már éles üzemben egy megyei sürgősségi kórházban és egy polgármesteri hivatalban.",
-    "ctaPrimary": "Demót kérek",
-    "ctaSecondary": "Fedezze fel a platformot",
+    "badge": "Emberközpontú AI az egészségügy számára",
+    "titleLine1": "Az egészségügy összetett.",
+    "titleLine2": "Mi egyszerűvé tesszük.",
+    "description": "A ZenAiOS segít az egészségügyi csapatoknak, hogy <b>kevesebb időt töltsenek adminisztrációval</b>, és többet az emberekkel.",
+    "ctaPrimary": "Így működik",
+    "ctaSecondary": "Demót kérek",
     "deployedAt": "Bevezetve itt:",
     "scrollCue": "Görgessen a felfedezéshez"
   },
   "proof": {
-    "heading": "Valódi bevezetések, valódi szabványok — semmi látszatlogó"
+    "heading": "Már valódi intézményekben működik"
   },
   "threeDomains": {
     "eyebrow": "Egy platform, három terület",
     "titleLead": "Nem három modul.",
     "titleAccent": "Tizenhét.",
     "description": "A ZenAiOS operációs rendszer, nem csevegőbot — három, egymással együttműködő területre szervezve, közös asszisztenssel, öt nyelven."
+  },
+  "simpleValue": {
+    "eyebrow": "Egyszerűre tervezve",
+    "title": "Egy platform. Három dolog, ami számít.",
+    "description": "Az első naptól hasznos, minden csapat számára világos és alapértelmezetten biztonságos.",
+    "items": [
+      {
+        "title": "Kevesebb papírmunka",
+        "description": "A beszélgetésekből és adatokból automatikusan készülnek jegyzetek, űrlapok és jelentések."
+      },
+      {
+        "title": "Átláthatóbb döntések",
+        "description": "Minden csapat a megfelelő információt kapja, pontosan akkor, amikor szüksége van rá."
+      },
+      {
+        "title": "Az adatok Önnél maradnak",
+        "description": "Biztonságosan futtatható az intézményben, akár teljesen helyben is."
+      }
+    ]
   },
   "audiences": {
     "eyebrow": "Egy platform, három célcsoport",
@@ -175,22 +194,23 @@
     ]
   },
   "flagship": {
-    "eyebrow": "Kiemelt bevezetés",
-    "description": "Egy teljes, integrált kórházi rendszer éles üzemben egy megyei sürgősségi kórházban — a legmeggyőzőbb bizonyíték arra, hogy a ZenAiOS valós léptékben is megállja a helyét.",
-    "link": "A bevezetések részletei",
+    "eyebrow": "Ma is használatban",
+    "title": "Orvosokkal fejlesztve. Valódi kórházban használva.",
+    "description": "A ZenAiOS nap mint nap támogatja a klinikai és adminisztratív munkát — nem laborban, hanem ott, ahol az ellátás történik.",
+    "link": "Bevezetés megtekintése",
     "statProduction": "éles üzemben",
     "statCoding": "beépített kódolás"
   },
   "capabilities": {
-    "eyebrow": "Amit valóban nyújt",
-    "titleLead": "Képességek, amelyek",
-    "titleAccent": "klinikai bizalmat építenek",
+    "eyebrow": "Valódi munkára tervezve",
+    "titleLead": "Erős technológia.",
+    "titleAccent": "Egyszerű használat.",
     "description": "Négy dolog, amit a ZenAiOS nap mint nap elvégez: döntéstámogatás, triage, predikció és szuverén AI.",
     "features": {
       "doctor": {
         "eyebrow": "Orvosi modul",
-        "title": "Döntéstámogatás, amely nem szakítja meg a munkát",
-        "description": "A kontextusérzékeny differenciáldiagnózis és terápiás javaslatok ott jelennek meg, ahol a munka zajlik — az epikrízist és a dokumentumokat pedig automatikusan elkészíti, így az orvosok gyorsabban végeznek, és időben hazaérnek.",
+        "title": "Kevesebb gépelés. Több idő az ellátásra.",
+        "description": "A ZenAiOS hasznos támogatást és automatikus dokumentációt épít be a meglévő klinikai munkába.",
         "bullets": [
           "Differenciáldiagnózis és terápiás javaslatok",
           "Automatikus epikrízis és klinikai dokumentáció",
@@ -222,8 +242,8 @@
       },
       "infrastructure": {
         "eyebrow": "AI-infrastruktúra",
-        "title": "Szuverén AI — az adatok soha nem hagyják el az épületet",
-        "description": "A ZEN_RAG 100%-ban offline, helyi retrieval-augmented rendszert futtat llama.cpp + FAISS alapon. Sem felhő, sem adatkivitel — ez az alapja minden adatszuverenitási és GDPR-egyeztetésnek.",
+        "title": "Alapértelmezetten privát.",
+        "description": "A ZenAiOS az intézményen belül is futtatható, így az érzékeny adatok az Ön ellenőrzése alatt maradnak.",
         "bullets": [
           "100%-ban offline, helyszíni RAG",
           "llama.cpp + FAISS, 6+ modell",
@@ -234,9 +254,9 @@
     }
   },
   "outcomes": {
-    "eyebrow": "Hitelesség a hangzatos számok helyett",
-    "title": "A számok, amelyek valóban igazak",
-    "description": "Csak azt mutatjuk meg, ami ellenőrizhető. A hatékonysági adatokat őszinte becslésként tüntetjük fel — soha nem forrás nélküli állításként.",
+    "eyebrow": "Kifejlesztve és bevezetve",
+    "title": "Valódi szoftver. Valódi intézmények.",
+    "description": "Egy növekvő platform, amely már ma támogatja az egészségügyi és közszolgálati csapatokat.",
     "footnote": "A becslések tájékoztató célértékek, közzétett piloteredmények hiányában — nem mért eredmények."
   },
   "team": {
@@ -603,7 +623,7 @@
     },
     "epicrisis": {
       "title": "Epikrízis — tervezet",
-      "subtitle": "2241. sz. beteg · automatikusan generálva",
+      "subtitle": "Beteg #2241 · automatikusan generálva",
       "linked": "FOCG csatolva",
       "ready": "Készen áll orvosi ellenőrzésre · 8 mp"
     },

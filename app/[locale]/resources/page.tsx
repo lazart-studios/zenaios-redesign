@@ -60,9 +60,9 @@ export default async function ResourcesPage({
             const Icon = meta.icon;
             const isLink = Boolean(meta.href);
             const inner = (
-              <div className="group flex h-full flex-col rounded-2xl border border-hairline bg-card p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover">
+              <div className="flex h-full flex-col rounded-[1.5rem] border border-black/[0.05] bg-card p-7">
                 <div className="flex items-start justify-between">
-                  <span className="grid size-11 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
+                  <span className="grid size-11 place-items-center rounded-full bg-zen/12 text-zen ring-1 ring-zen/25">
                     <Icon className="size-5" />
                   </span>
                   <span

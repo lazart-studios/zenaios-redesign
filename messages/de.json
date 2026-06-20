@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "ZenAiOS — Das KI-Betriebssystem für moderne Krankenhäuser.",
+    "titleDefault": "ZenAiOS — Gesundheit, einfach gemacht.",
     "titleTemplate": "%s · ZenAiOS",
-    "description": "Das KI-Betriebssystem für moderne Krankenhäuser — 17 KI-Module für klinische Versorgung, Krankenhausmanagement und öffentliches Gesundheitswesen, bereits im Einsatz in realen Einrichtungen.",
+    "description": "Eine sichere KI-Plattform, die Verwaltungsarbeit reduziert und Gesundheitsteams hilft, sich auf Menschen zu konzentrieren.",
     "platform": {
       "title": "Die Plattform",
       "description": "17 KI-Module in drei interoperierenden Bereichen — Medizin, Verwaltung und KI-Infrastruktur. Ein Assistent, fünf Sprachen, im realen Einsatz."
@@ -39,7 +39,7 @@
   "nav": {
     "homeAria": "ZenAiOS Startseite",
     "platform": "Plattform",
-    "deployments": "Implementierungen",
+    "deployments": "Im Einsatz",
     "about": "Über uns",
     "resources": "Ressourcen",
     "livePlatform": "Live-Plattform",
@@ -55,7 +55,7 @@
     "megaCta": "So greift das Betriebssystem ineinander →"
   },
   "footer": {
-    "tagline": "Das KI-Betriebssystem für moderne Krankenhäuser. 17 KI-Module für klinische Versorgung, Krankenhausmanagement und öffentliches Gesundheitswesen — im Einsatz in realen Einrichtungen.",
+    "tagline": "Eine sichere KI-Plattform, die die Arbeit im Gesundheitswesen für alle einfacher macht.",
     "columns": {
       "platform": "Plattform",
       "company": "Unternehmen",
@@ -67,7 +67,7 @@
       "administrative": "Verwaltung",
       "aiInfrastructure": "KI-Infrastruktur",
       "about": "Über uns",
-      "deployments": "Implementierungen",
+      "deployments": "Im Einsatz",
       "resources": "Ressourcen",
       "contact": "Kontakt",
       "requestDemo": "Demo anfragen",
@@ -105,23 +105,42 @@
     "contact": "Oder kontaktieren Sie uns, falls etwas nicht funktioniert"
   },
   "hero": {
-    "badge": "Im Einsatz in echten Krankenhäusern und kommunalen Einrichtungen",
-    "titleLine1": "Das KI-Betriebssystem",
-    "titleLine2": "für moderne Krankenhäuser.",
-    "description": "17 KI-Module für <b>klinische Versorgung</b>, <b>Krankenhausmanagement</b> und <b>öffentliche Gesundheit</b> — bereits produktiv im Einsatz in einem Kreiskrankenhaus und einer Stadtverwaltung.",
-    "ctaPrimary": "Demo anfragen",
-    "ctaSecondary": "Plattform entdecken",
+    "badge": "KI für das Gesundheitswesen — für Menschen entwickelt",
+    "titleLine1": "Gesundheit ist komplex.",
+    "titleLine2": "Wir machen sie einfach.",
+    "description": "ZenAiOS hilft Gesundheitsteams, <b>weniger Zeit mit Verwaltung</b> und mehr Zeit mit Menschen zu verbringen.",
+    "ctaPrimary": "So funktioniert es",
+    "ctaSecondary": "Demo anfragen",
     "deployedAt": "Im Einsatz bei",
     "scrollCue": "Scrollen für mehr"
   },
   "proof": {
-    "heading": "Echte Einsätze, echte Standards — keine Platzhalter-Logos"
+    "heading": "Bereits im Einsatz in echten Institutionen"
   },
   "threeDomains": {
     "eyebrow": "Eine Plattform, drei Bereiche",
     "titleLead": "Nicht drei Module.",
     "titleAccent": "Siebzehn.",
     "description": "ZenAiOS ist ein Betriebssystem, kein Chatbot — gegliedert in drei Bereiche, die nahtlos ineinandergreifen, einen gemeinsamen Assistenten nutzen und fünf Sprachen sprechen."
+  },
+  "simpleValue": {
+    "eyebrow": "Einfach gestaltet",
+    "title": "Eine Plattform. Drei Dinge, die zählen.",
+    "description": "Vom ersten Tag an nützlich, für jedes Team klar und standardmäßig sicher.",
+    "items": [
+      {
+        "title": "Weniger Papierarbeit",
+        "description": "Gespräche und Daten werden automatisch zu Notizen, Formularen und Berichten."
+      },
+      {
+        "title": "Klarere Entscheidungen",
+        "description": "Jedes Team erhält die richtigen Informationen genau zum richtigen Zeitpunkt."
+      },
+      {
+        "title": "Ihre Daten bleiben bei Ihnen",
+        "description": "Sicher in Ihrer Institution betreiben — auch vollständig vor Ort."
+      }
+    ]
   },
   "audiences": {
     "eyebrow": "Eine Plattform, drei Zielgruppen",
@@ -175,22 +194,23 @@
     ]
   },
   "flagship": {
-    "eyebrow": "Leuchtturm-Implementierung",
-    "description": "Ein vollständig integriertes Krankenhaussystem im produktiven Einsatz in einem Kreiskrankenhaus — der stärkste Beweis, dass ZenAiOS unter realen Bedingungen funktioniert.",
-    "link": "Implementierungen lesen",
+    "eyebrow": "Heute im Einsatz",
+    "title": "Mit Ärzten entwickelt. In einem echten Krankenhaus im Einsatz.",
+    "description": "ZenAiOS unterstützt täglich klinische und administrative Arbeit — nicht im Labor, sondern dort, wo Versorgung stattfindet.",
+    "link": "Implementierung ansehen",
     "statProduction": "im produktiven Betrieb",
     "statCoding": "Kodierung integriert"
   },
   "capabilities": {
-    "eyebrow": "Was es tatsächlich leistet",
-    "titleLead": "Funktionen, die",
-    "titleAccent": "klinisches Vertrauen schaffen",
+    "eyebrow": "Für echte Arbeit entwickelt",
+    "titleLead": "Leistungsstarke Technologie.",
+    "titleAccent": "Einfach zu bedienen.",
     "description": "Vier der Aufgaben, die ZenAiOS täglich übernimmt — Entscheidungsunterstützung, Triage, Prognose und souveräne KI.",
     "features": {
       "doctor": {
         "eyebrow": "Arztmodul",
-        "title": "Entscheidungsunterstützung mitten im Arbeitsfluss",
-        "description": "Kontextbezogene Differenzialdiagnosen und Therapievorschläge erscheinen genau dort, wo gearbeitet wird — Epikrise und Dokumente entstehen automatisch, sodass Ärzte schneller fertig sind und pünktlich nach Hause kommen.",
+        "title": "Weniger tippen. Mehr Zeit für Versorgung.",
+        "description": "ZenAiOS bringt hilfreiche Unterstützung und automatische Dokumentation direkt in bestehende klinische Abläufe.",
         "bullets": [
           "Differenzialdiagnose & Therapievorschläge",
           "Automatische Epikrise & klinische Dokumentation",
@@ -222,8 +242,8 @@
       },
       "infrastructure": {
         "eyebrow": "KI-Infrastruktur",
-        "title": "Souveräne KI — Ihre Daten verlassen das Haus nie",
-        "description": "ZEN_RAG betreibt ein zu 100 % offline laufendes, lokales Retrieval-Augmented-System auf Basis von llama.cpp + FAISS. Keine Cloud, kein Datenabfluss — das Fundament jedes Gesprächs über Datensouveränität und DSGVO.",
+        "title": "Datenschutz von Anfang an.",
+        "description": "ZenAiOS kann in Ihrer Institution laufen, damit sensible Daten unter Ihrer Kontrolle bleiben.",
         "bullets": [
           "100 % offline, On-Premise-RAG",
           "llama.cpp + FAISS, 6+ Modelle",
@@ -234,9 +254,9 @@
     }
   },
   "outcomes": {
-    "eyebrow": "Glaubwürdigkeit statt großer Zahlen",
-    "title": "Die Zahlen, die wirklich stimmen",
-    "description": "Wir führen mit dem, was nachprüfbar ist. Effizienzangaben weisen wir als ehrliche Prognosen aus — niemals als unbelegte Behauptungen.",
+    "eyebrow": "Entwickelt und im Einsatz",
+    "title": "Echte Software. Echte Institutionen.",
+    "description": "Eine wachsende Plattform, die bereits Teams im Gesundheitswesen und im öffentlichen Dienst unterstützt.",
     "footnote": "Prognosen sind illustrative Zielwerte, vorbehaltlich veröffentlichter Pilotergebnisse — keine gemessenen Resultate."
   },
   "team": {

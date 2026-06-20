@@ -29,7 +29,7 @@ export function Team() {
       <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {team.map((m) => (
           <StaggerItem key={m.name}>
-            <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-hairline bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-hairline-strong hover:shadow-card-hover">
+            <div className="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/[0.05] bg-card">
               {/* Photo */}
               <div className="relative aspect-[4/5] overflow-hidden bg-surface">
                 <Image
@@ -37,7 +37,7 @@ export function Team() {
                   alt={`${m.name} — ${m.role}`}
                   fill
                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="object-cover object-top"
                 />
                 {/* Bottom fade so the name plate reads cleanly */}
                 <div

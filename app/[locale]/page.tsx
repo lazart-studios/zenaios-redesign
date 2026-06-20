@@ -5,12 +5,10 @@ import { routing, type Locale } from "@/i18n/routing";
 import { localizedPath } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
 import { ProofStrip } from "@/components/sections/ProofStrip";
-import { ThreeDomains } from "@/components/sections/ThreeDomains";
-import { Audiences } from "@/components/sections/Audiences";
+import { SimpleValue } from "@/components/sections/SimpleValue";
 import { Flagship } from "@/components/sections/Flagship";
 import { Capabilities } from "@/components/sections/Capabilities";
 import { Outcomes } from "@/components/sections/Outcomes";
-import { Team } from "@/components/sections/Team";
 import { CTASection } from "@/components/sections/CTASection";
 
 export function generateStaticParams() {
@@ -45,12 +43,10 @@ export default async function Home({
     <>
       <Hero />
       <ProofStrip />
-      <ThreeDomains />
-      <Audiences />
+      <SimpleValue />
       <Flagship />
       <Capabilities />
       <Outcomes />
-      <Team />
       <CTASection />
     </>
   );

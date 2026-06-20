@@ -29,7 +29,7 @@ export function PageHeader({
   return (
     <header
       className={cn(
-        "relative overflow-hidden border-b border-hairline pt-32 pb-14 md:pt-40 md:pb-20",
+        "relative overflow-hidden pb-14 pt-28 md:pb-20 md:pt-36",
         className
       )}
     >
@@ -61,12 +61,11 @@ export function PageHeader({
 
         <Reveal>
           {eyebrow && (
-            <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-faint">
-              <span className="h-px w-6 bg-hairline-strong" />
+            <span className="inline-flex items-center text-sm font-semibold text-zen">
               {eyebrow}
             </span>
           )}
-          <h1 className="mt-5 max-w-3xl text-balance text-4xl font-bold leading-[1.05] sm:text-5xl md:text-[3.5rem]">
+          <h1 className="mt-4 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] tracking-[-0.045em] sm:text-5xl md:text-[4rem]">
             {title}
           </h1>
           {description && (

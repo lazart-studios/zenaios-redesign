@@ -19,13 +19,13 @@ export function CTASection({
   return (
     <section className={cn("container-z py-20 md:py-28", className)}>
       <Reveal>
-        <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface px-6 py-14 text-center md:px-12 md:py-20">
+        <div className="relative overflow-hidden rounded-[2rem] bg-[#f5f5f7] px-6 py-14 text-center md:px-12 md:py-20">
           <div className="relative mx-auto max-w-2xl">
             <span className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-faint">
               <span className="size-1.5 rounded-full bg-success" />
               {t(`${variant}.eyebrow`)}
             </span>
-            <h2 className="mt-5 text-balance text-3xl font-bold sm:text-4xl md:text-5xl">
+            <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {t(`${variant}.title`)}
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-balance text-muted md:text-lg">

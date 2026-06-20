@@ -78,9 +78,9 @@ export default async function ContactPage({
                     {...(external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    className="group flex items-center gap-4 rounded-2xl border border-hairline bg-card p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-hairline-strong hover:shadow-card-hover"
+                    className="group flex items-center gap-4 rounded-[1.25rem] bg-surface p-5 transition-colors hover:bg-[#eeeeF0]"
                   >
-                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-zen/12 text-zen ring-1 ring-zen/25 transition-transform duration-300 group-hover:scale-110">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-full bg-card text-zen">
                       <Icon className="size-5" />
                     </span>
                     <span className="min-w-0">
