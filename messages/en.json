@@ -7,6 +7,10 @@
       "title": "The Platform",
       "description": "17 AI modules across three interoperating domains — medical, administrative and AI infrastructure. One assistant, five languages, live in real institutions."
     },
+    "industries": {
+      "title": "Industries",
+      "description": "ZenAiOS started in healthcare and reaches further — education, insurance, public administration, pharmacy and B2B. One AI operating system, many sectors."
+    },
     "about": {
       "title": "About",
       "description": "ZenAiOS is built by a clinical, technical and commercial team in Oradea, România — an AI operating system grounded in real hospital practice and data sovereignty."
@@ -39,6 +43,7 @@
   "nav": {
     "homeAria": "ZenAiOS home",
     "platform": "Platform",
+    "industries": "Industries",
     "deployments": "In use",
     "about": "About",
     "resources": "Resources",
@@ -67,6 +72,7 @@
       "administrative": "Administrative",
       "aiInfrastructure": "AI Infrastructure",
       "about": "About",
+      "industries": "Industries",
       "deployments": "In use",
       "resources": "Resources",
       "contact": "Contact",
@@ -93,6 +99,46 @@
     "active": "Active",
     "module": "Module",
     "dev": "Dev"
+  },
+  "industries": {
+    "eyebrow": "Industries",
+    "titleLead": "Built for healthcare.",
+    "titleAccent": "Ready for the rest.",
+    "description": "Healthcare is where we proved it. The same AI operating system extends to education, insurance, public administration and the wider business world.",
+    "explore": "See the platform",
+    "seeAll": "Explore all industries",
+    "note": "Status reflects where ZenAiOS stands today — live deployments, modules in active development, and sectors we're expanding into next.",
+    "status": {
+      "live": "Live",
+      "building": "In development",
+      "exploring": "Expanding"
+    },
+    "items": {
+      "healthcare": {
+        "name": "Healthcare",
+        "tagline": "One AI operating system for the whole hospital — live in a county emergency hospital today."
+      },
+      "publicAdministration": {
+        "name": "Public Administration",
+        "tagline": "Civic services, documents and citizen support on the same AI layer — already running in a city hall."
+      },
+      "education": {
+        "name": "Education",
+        "tagline": "Training, assessment and continuous learning, powered by AI — starting with our quiz module."
+      },
+      "insurance": {
+        "name": "Insurance",
+        "tagline": "Claims, policies and member questions, handled and triaged by AI."
+      },
+      "business": {
+        "name": "Business & B2B",
+        "tagline": "The same platform, shaped to your operations — support, documents and internal workflows."
+      },
+      "pharmacy": {
+        "name": "Pharmacy",
+        "tagline": "A dedicated pharmacy module in the works, bringing ZenAiOS to the counter."
+      }
+    }
   },
   "languageSwitcher": {
     "label": "Language"
@@ -168,7 +214,7 @@
   "flagship": {
     "eyebrow": "In use today",
     "title": "Built with doctors. Running in a real hospital.",
-    "description": "ZenAiOS supports real clinical and administrative work every day — not in a lab, but where care happens.",
+    "description": "ZenAiOS supports real clinical and administrative work every day — live where care happens.",
     "link": "See the deployment",
     "statProduction": "in production",
     "statCoding": "coding built in"
@@ -177,7 +223,7 @@
     "eyebrow": "Made for real work",
     "titleLead": "Powerful technology.",
     "titleAccent": "Simple to use.",
-    "description": "Four of the things ZenAiOS does every day — decision support, triage, prediction and sovereign AI.",
+    "description": "What ZenAiOS does every day — decision support, triage, prediction and data sovereignty.",
     "features": {
       "doctor": {
         "eyebrow": "Doctor module",
@@ -241,7 +287,7 @@
     "default": {
       "eyebrow": "Ready when you are",
       "title": "See ZenAiOS running in a real hospital",
-      "description": "Book a guided walkthrough of the platform — from the AI epicrisis to the executive dashboards — and see how it would fit your institution."
+      "description": "Book a guided walkthrough and see how ZenAiOS fits your institution."
     },
     "about": {
       "eyebrow": "Work with us",
@@ -340,7 +386,7 @@
     "problemEyebrow": "The problem it solves",
     "howEyebrow": "How it works",
     "roadmapEyebrow": "On the roadmap",
-    "roadmapIntro": "Where this module is heading next — clearly forward-looking, not yet shipped.",
+    "roadmapIntro": "Where this module is heading next.",
     "liveDeployment": "Live deployment",
     "seeDeployment": "See the deployment",
     "moreIn": "More in {category}",
@@ -353,8 +399,8 @@
     "description": "Hospitals are some of the most complex organisations on earth. We're building the AI operating system that ties their fragmented systems into one — from the front desk to the boardroom.",
     "missionEyebrow": "Why we exist",
     "missionTitle": "One platform instead of twenty disconnected tools",
-    "missionP1": "Clinicians lose hours every day to documentation and to systems that don't talk to each other. Management can't see what's happening in real time. Patients struggle to find the right service.",
-    "missionP2": "ZenAiOS replaces that fragmentation with a single, AI-native operating system: 17 modules across clinical care, hospital management and public administration, sharing one data model and one assistant.",
+    "missionP1": "Clinicians lose hours to documentation and disconnected systems. Management can't see what's happening in real time. Patients struggle to find the right service.",
+    "missionP2": "ZenAiOS replaces that fragmentation with one AI-native operating system — 17 modules across clinical care, hospital management and public administration, on a shared data model.",
     "missionP3": "It's already live — in a county emergency hospital and at a city hall — and built by people who deploy it themselves.",
     "principlesEyebrow": "What we believe",
     "principlesTitle": "Four principles we don't compromise on",
@@ -381,10 +427,10 @@
     "eyebrow": "In the field",
     "titleLead": "Live, not",
     "titleAccent": "in a slide deck.",
-    "description": "The strongest thing we can show isn't a number — it's software running in real institutions, used by real staff, every day.",
+    "description": "Software running in real institutions, used by real staff, every day.",
     "exploreModule": "Explore the {module} module",
     "noteEyebrow": "A note on proof",
-    "noteBody": "We lead with deployments rather than headline statistics. Efficiency figures elsewhere on this site are clearly labelled as projections — what you see here is simply what's running today."
+    "noteBody": "We lead with deployments, not headline statistics. What you see here is simply what's running today."
   },
   "demoPage": {
     "eyebrow": "Request a demo",
@@ -417,7 +463,7 @@
     "eyebrow": "Resources",
     "titleLead": "Learn more,",
     "titleAccent": "in depth.",
-    "description": "We're building out case studies, documentation and press. Here's what's coming — and what's already live today.",
+    "description": "Case studies, documentation and press — some live today, more coming.",
     "openModule": "Open module",
     "lookingFor": "Looking for something specific?",
     "getInTouch": "Get in touch",
@@ -569,19 +615,19 @@
       "name": "Medical",
       "label": "Category A — Medical",
       "tagline": "The flagship.",
-      "description": "Clinical solutions, hospital modules and medical education — the heart of the offering, grouped along the real clinical workflow from front desk to boardroom."
+      "description": "Clinical care, hospital operations and medical education — across the full workflow, from front desk to boardroom."
     },
     "administrative": {
       "name": "Administrative",
       "label": "Category B — Administrative",
       "tagline": "Civic & back-office.",
-      "description": "Civic management, administrative processes and RAG-based compliance — already live in a public institution."
+      "description": "Civic management, administrative processes and RAG-based compliance — live in a city hall."
     },
     "ai-infrastructure": {
       "name": "AI Infrastructure",
       "label": "Category C — General",
       "tagline": "The sovereign layer.",
-      "description": "AI tooling, local models and RAG infrastructure — the offline-capable technical foundation the whole platform is built on."
+      "description": "AI tooling, local models and 100% offline RAG — the sovereign layer under every other module."
     }
   },
   "deploymentsData": {

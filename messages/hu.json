@@ -7,6 +7,10 @@
       "title": "A platform",
       "description": "17 AI-modul három, egymással együttműködő területen — orvosi, adminisztratív és AI-infrastruktúra. Egyetlen asszisztens, öt nyelven, valódi intézményekben élesben."
     },
+    "industries": {
+      "title": "Iparágak",
+      "description": "A ZenAiOS az egészségügyben indult, de tovább nyúlik — oktatás, biztosítás, közigazgatás, gyógyszertár és B2B. Egyetlen AI operációs rendszer, számos terület."
+    },
     "about": {
       "title": "Rólunk",
       "description": "A ZenAiOS-t Oradeában, Romániában fejleszti egy klinikai, műszaki és kereskedelmi szakemberekből álló csapat — olyan AI operációs rendszer, amely valódi kórházi gyakorlatra és adatszuverenitásra épül."
@@ -39,6 +43,7 @@
   "nav": {
     "homeAria": "ZenAiOS főoldal",
     "platform": "Platform",
+    "industries": "Iparágak",
     "deployments": "Használatban",
     "about": "Rólunk",
     "resources": "Anyagok",
@@ -67,6 +72,7 @@
       "administrative": "Adminisztratív",
       "aiInfrastructure": "AI-infrastruktúra",
       "about": "Rólunk",
+      "industries": "Iparágak",
       "deployments": "Használatban",
       "resources": "Anyagok",
       "contact": "Kapcsolat",
@@ -93,6 +99,46 @@
     "active": "Aktív",
     "module": "Modul",
     "dev": "Fejlesztés alatt"
+  },
+  "industries": {
+    "eyebrow": "Iparágak",
+    "titleLead": "Az egészségügyre építve.",
+    "titleAccent": "Készen a többire.",
+    "description": "Az egészségügyben bizonyítottunk. Ugyanaz az AI operációs rendszer kiterjed az oktatásra, a biztosításra, a közigazgatásra és a tágabb üzleti világra is.",
+    "explore": "A platform megtekintése",
+    "seeAll": "Az összes iparág felfedezése",
+    "note": "Az állapot azt mutatja, hol tart ma a ZenAiOS — éles telepítések, fejlesztés alatt álló modulok és területek, amelyek felé éppen terjeszkedünk.",
+    "status": {
+      "live": "Élesben",
+      "building": "Fejlesztés alatt",
+      "exploring": "Terjeszkedés"
+    },
+    "items": {
+      "healthcare": {
+        "name": "Egészségügy",
+        "tagline": "Egyetlen AI operációs rendszer az egész kórháznak — ma már élesben egy megyei sürgősségi kórházban."
+      },
+      "publicAdministration": {
+        "name": "Közigazgatás",
+        "tagline": "Lakossági szolgáltatások, dokumentumok és állampolgári támogatás ugyanazon az AI-rétegen — már működik egy polgármesteri hivatalban."
+      },
+      "education": {
+        "name": "Oktatás",
+        "tagline": "Képzés, értékelés és folyamatos tanulás AI-val — a QUIZ modulunkkal kezdve."
+      },
+      "insurance": {
+        "name": "Biztosítás",
+        "tagline": "Kárigények, kötvények és tagi kérdések — AI által kezelve és rangsorolva."
+      },
+      "business": {
+        "name": "Business & B2B",
+        "tagline": "Ugyanaz a platform, az Ön működésére szabva — ügyféltámogatás, dokumentumok és belső munkafolyamatok."
+      },
+      "pharmacy": {
+        "name": "Gyógyszertár",
+        "tagline": "Készülő, dedikált gyógyszertári modul, amely a pulthoz hozza a ZenAiOS-t."
+      }
+    }
   },
   "languageSwitcher": {
     "label": "Nyelv"
@@ -196,7 +242,7 @@
   "flagship": {
     "eyebrow": "Ma is használatban",
     "title": "Orvosokkal fejlesztve. Valódi kórházban használva.",
-    "description": "A ZenAiOS nap mint nap támogatja a klinikai és adminisztratív munkát — nem laborban, hanem ott, ahol az ellátás történik.",
+    "description": "A ZenAiOS nap mint nap valódi klinikai és adminisztratív munkát támogat — élesben, ott, ahol az ellátás történik.",
     "link": "Bevezetés megtekintése",
     "statProduction": "éles üzemben",
     "statCoding": "beépített kódolás"
@@ -205,7 +251,7 @@
     "eyebrow": "Valódi munkára tervezve",
     "titleLead": "Erős technológia.",
     "titleAccent": "Egyszerű használat.",
-    "description": "Négy dolog, amit a ZenAiOS nap mint nap elvégez: döntéstámogatás, triage, predikció és szuverén AI.",
+    "description": "Amit a ZenAiOS nap mint nap elvégez — döntéstámogatás, triage, predikció és adatszuverenitás.",
     "features": {
       "doctor": {
         "eyebrow": "Orvosi modul",
@@ -269,7 +315,7 @@
     "default": {
       "eyebrow": "Készen állunk, amikor Ön is",
       "title": "Nézze meg a ZenAiOS-t valódi kórházi környezetben",
-      "description": "Foglaljon vezetett bemutatót a platformról — az AI-epikrízistől a vezetői irányítópultokig —, és lássa, hogyan illeszkedne az Ön intézményéhez."
+      "description": "Foglaljon vezetett bemutatót, és nézze meg, hogyan illeszkedik a ZenAiOS az Ön intézményéhez."
     },
     "about": {
       "eyebrow": "Dolgozzunk együtt",
@@ -327,7 +373,7 @@
     "problemEyebrow": "A megoldott probléma",
     "howEyebrow": "Hogyan működik",
     "roadmapEyebrow": "A fejlesztési tervben",
-    "roadmapIntro": "Merre tart innen ez a modul — egyértelműen a jövőbe mutató, még nem kiadott funkciók.",
+    "roadmapIntro": "Merre tart innen ez a modul.",
     "liveDeployment": "Éles telepítés",
     "seeDeployment": "A telepítés megtekintése",
     "moreIn": "Még több a(z) {category} területen",
@@ -340,8 +386,8 @@
     "description": "A kórházak a világ legösszetettebb szervezetei közé tartoznak. Mi azt az AI-operációs rendszert építjük, amely egyetlen egységbe fogja össze széttagolt rendszereiket — a recepciótól az igazgatótanácsig.",
     "missionEyebrow": "Miért dolgozunk",
     "missionTitle": "Egyetlen platform húsz különálló eszköz helyett",
-    "missionP1": "A klinikusok nap mint nap órákat veszítenek a dokumentációval és az egymással nem kommunikáló rendszerekkel. A vezetőség nem lát rá valós időben a történésekre. A betegek nehezen találják meg a megfelelő ellátást.",
-    "missionP2": "A ZenAiOS ezt a széttagoltságot egyetlen, eleve AI-alapú operációs rendszerrel váltja fel: 17 modul a klinikai ellátás, a kórházi menedzsment és a közigazgatás területén, közös adatmodellel és egyetlen asszisztenssel.",
+    "missionP1": "A klinikusok órákat veszítenek a dokumentációval és az egymással nem kommunikáló rendszerekkel. A vezetőség nem lát rá valós időben a történésekre. A betegek nehezen találják meg a megfelelő ellátást.",
+    "missionP2": "A ZenAiOS ezt a széttagoltságot egyetlen, eleve AI-alapú operációs rendszerrel váltja fel — 17 modul a klinikai ellátás, a kórházi menedzsment és a közigazgatás területén, közös adatmodellen.",
     "missionP3": "Már éles üzemben van — egy megyei sürgősségi kórházban és egy polgármesteri hivatalban —, és azok építik, akik maguk telepítik.",
     "principlesEyebrow": "Amiben hiszünk",
     "principlesTitle": "Négy alapelv, amelyből nem engedünk",
@@ -368,10 +414,10 @@
     "eyebrow": "A terepen",
     "titleLead": "Élesben, nem",
     "titleAccent": "diában.",
-    "description": "A legerősebb, amit megmutathatunk, nem egy szám — hanem szoftver, amely valódi intézményekben fut, és amelyet valódi munkatársak használnak nap mint nap.",
+    "description": "Valódi intézményekben futó szoftver, amelyet valódi munkatársak használnak nap mint nap.",
     "exploreModule": "A(z) {module} modul felfedezése",
     "noteEyebrow": "Néhány szó a bizonyítékról",
-    "noteBody": "Inkább az éles telepítésekkel kezdünk, mint hangzatos statisztikákkal. A weboldal más pontjain szereplő hatékonysági adatokat egyértelműen előrejelzésként jelöljük — amit itt lát, az egyszerűen az, ami ma fut."
+    "noteBody": "Inkább a telepítésekkel kezdünk, mint hangzatos statisztikákkal. Amit itt lát, az egyszerűen az, ami ma fut."
   },
   "demoPage": {
     "eyebrow": "Demó kérése",
@@ -404,7 +450,7 @@
     "eyebrow": "Források",
     "titleLead": "Tudjon meg többet,",
     "titleAccent": "mélyrehatóan.",
-    "description": "Esettanulmányokon, dokumentáción és sajtóanyagokon dolgozunk. Íme, ami készülőben van — és ami már ma elérhető.",
+    "description": "Esettanulmányok, dokumentáció és sajtó — egy részük már elérhető, a többi készülőben.",
     "openModule": "Modul megnyitása",
     "lookingFor": "Valami konkrétat keres?",
     "getInTouch": "Lépjen kapcsolatba velünk",
@@ -469,19 +515,19 @@
       "name": "Orvosi",
       "label": "A kategória — Orvosi",
       "tagline": "A zászlóshajó.",
-      "description": "Klinikai megoldások, kórházi modulok és orvosképzés — a kínálat szíve, a valós klinikai munkafolyamatra felfűzve, a recepciótól a tárgyalóteremig."
+      "description": "Klinikai ellátás, kórházi működés és orvosképzés — a teljes munkafolyamaton át, a recepciótól a tárgyalóteremig."
     },
     "administrative": {
       "name": "Adminisztratív",
       "label": "B kategória — Adminisztratív",
       "tagline": "Közigazgatás és háttériroda.",
-      "description": "Önkormányzati ügyvitel, adminisztratív folyamatok és RAG-alapú megfelelőség — egy közintézményben már éles üzemben."
+      "description": "Önkormányzati ügyvitel, adminisztratív folyamatok és RAG-alapú megfelelőség — élesben egy polgármesteri hivatalban."
     },
     "ai-infrastructure": {
       "name": "AI-infrastruktúra",
       "label": "C kategória — Általános",
       "tagline": "A szuverén réteg.",
-      "description": "AI-eszközök, helyi modellek és RAG-infrastruktúra — az offline is működő műszaki alap, amelyre az egész platform épül."
+      "description": "AI-eszközök, helyi modellek és 100%-ban offline RAG — a szuverén réteg minden más modul alatt."
     }
   },
   "deploymentsData": {

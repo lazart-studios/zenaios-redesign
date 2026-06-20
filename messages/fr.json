@@ -7,6 +7,10 @@
       "title": "La plateforme",
       "description": "17 modules IA répartis sur trois domaines interopérables — médical, administratif et infrastructure IA. Un seul assistant, cinq langues, en service dans de véritables établissements."
     },
+    "industries": {
+      "title": "Secteurs",
+      "description": "ZenAiOS est né dans la santé et va plus loin — éducation, assurance, administration publique, pharmacie et B2B. Un seul système d'exploitation IA, de nombreux secteurs."
+    },
     "about": {
       "title": "À propos",
       "description": "ZenAiOS est développé par une équipe clinique, technique et commerciale à Oradea, en Roumanie — un système d'exploitation IA ancré dans la pratique hospitalière réelle et la souveraineté des données."
@@ -39,6 +43,7 @@
   "nav": {
     "homeAria": "Accueil ZenAiOS",
     "platform": "Plateforme",
+    "industries": "Secteurs",
     "deployments": "En service",
     "about": "À propos",
     "resources": "Ressources",
@@ -67,6 +72,7 @@
       "administrative": "Administratif",
       "aiInfrastructure": "Infrastructure IA",
       "about": "À propos",
+      "industries": "Secteurs",
       "deployments": "En service",
       "resources": "Ressources",
       "contact": "Contact",
@@ -93,6 +99,46 @@
     "active": "Actif",
     "module": "Module",
     "dev": "Dev"
+  },
+  "industries": {
+    "eyebrow": "Secteurs",
+    "titleLead": "Conçu pour la santé.",
+    "titleAccent": "Prêt pour le reste.",
+    "description": "C'est dans la santé que nous l'avons prouvé. Le même système d'exploitation IA s'étend à l'éducation, à l'assurance, à l'administration publique et au monde de l'entreprise au sens large.",
+    "explore": "Voir la plateforme",
+    "seeAll": "Explorer tous les secteurs",
+    "note": "Le statut reflète où en est ZenAiOS aujourd'hui — déploiements en production, modules en développement actif et secteurs vers lesquels nous nous étendons.",
+    "status": {
+      "live": "En production",
+      "building": "En développement",
+      "exploring": "En expansion"
+    },
+    "items": {
+      "healthcare": {
+        "name": "Santé",
+        "tagline": "Un seul système d'exploitation IA pour tout l'hôpital — déjà en production dans un hôpital départemental d'urgence."
+      },
+      "publicAdministration": {
+        "name": "Administration publique",
+        "tagline": "Services aux citoyens, documents et accompagnement, sur la même couche IA — déjà en service dans une mairie."
+      },
+      "education": {
+        "name": "Éducation",
+        "tagline": "Formation, évaluation et apprentissage continu, propulsés par l'IA — à commencer par notre module quiz."
+      },
+      "insurance": {
+        "name": "Assurance",
+        "tagline": "Sinistres, contrats et questions des assurés, traités et triés par l'IA."
+      },
+      "business": {
+        "name": "Business & B2B",
+        "tagline": "La même plateforme, façonnée pour vos opérations — support, documents et flux de travail internes."
+      },
+      "pharmacy": {
+        "name": "Pharmacie",
+        "tagline": "Un module pharmacie dédié en préparation, pour amener ZenAiOS jusqu'au comptoir."
+      }
+    }
   },
   "languageSwitcher": {
     "label": "Langue"
@@ -196,7 +242,7 @@
   "flagship": {
     "eyebrow": "Utilisée aujourd'hui",
     "title": "Conçue avec des médecins. Utilisée dans un vrai hôpital.",
-    "description": "ZenAiOS accompagne chaque jour le travail clinique et administratif — non pas en laboratoire, mais là où les soins ont lieu.",
+    "description": "ZenAiOS accompagne chaque jour un vrai travail clinique et administratif — en production, là où les soins ont lieu.",
     "link": "Voir le déploiement",
     "statProduction": "en production",
     "statCoding": "codage médical intégré"
@@ -205,7 +251,7 @@
     "eyebrow": "Conçue pour le travail réel",
     "titleLead": "Une technologie puissante.",
     "titleAccent": "Simple à utiliser.",
-    "description": "Quatre des actions quotidiennes de ZenAiOS — aide à la décision, triage, prédiction et IA souveraine.",
+    "description": "Ce que ZenAiOS fait au quotidien — aide à la décision, triage, prédiction et souveraineté des données.",
     "features": {
       "doctor": {
         "eyebrow": "Module Médecin",
@@ -269,7 +315,7 @@
     "default": {
       "eyebrow": "Prêts dès que vous l'êtes",
       "title": "Voyez ZenAiOS en action dans un vrai hôpital",
-      "description": "Réservez une visite guidée de la plateforme — de l'épicrise IA aux tableaux de bord de direction — et voyez comment elle s'intégrerait à votre établissement."
+      "description": "Réservez une visite guidée et voyez comment ZenAiOS s'intègre à votre établissement."
     },
     "about": {
       "eyebrow": "Travaillez avec nous",
@@ -327,7 +373,7 @@
     "problemEyebrow": "Le problème qu'il résout",
     "howEyebrow": "Son fonctionnement",
     "roadmapEyebrow": "Sur la feuille de route",
-    "roadmapIntro": "Les prochaines orientations de ce module — résolument prospectives, pas encore disponibles.",
+    "roadmapIntro": "Les prochaines orientations de ce module.",
     "liveDeployment": "Déploiement en production",
     "seeDeployment": "Voir le déploiement",
     "moreIn": "Autres modules dans {category}",
@@ -340,8 +386,8 @@
     "description": "Les hôpitaux comptent parmi les organisations les plus complexes au monde. Nous construisons le système d'exploitation IA qui unifie leurs systèmes fragmentés — de l'accueil à la direction générale.",
     "missionEyebrow": "Notre raison d'être",
     "missionTitle": "Une plateforme unifiée plutôt que vingt outils déconnectés",
-    "missionP1": "Les cliniciens perdent des heures chaque jour à documenter leurs actes et à composer avec des systèmes qui ne communiquent pas entre eux. La direction n'a aucune visibilité en temps réel. Et les patients peinent à trouver le bon service.",
-    "missionP2": "ZenAiOS remplace cette fragmentation par un système d'exploitation unique, nativement conçu pour l'IA : 17 modules couvrant les soins cliniques, la gestion hospitalière et l'administration publique, partageant un même modèle de données et un même assistant.",
+    "missionP1": "Les cliniciens perdent des heures en documentation et en systèmes qui ne communiquent pas. La direction n'a aucune visibilité en temps réel. Et les patients peinent à trouver le bon service.",
+    "missionP2": "ZenAiOS remplace cette fragmentation par un système d'exploitation unique, nativement conçu pour l'IA — 17 modules couvrant les soins cliniques, la gestion hospitalière et l'administration publique, sur un modèle de données partagé.",
     "missionP3": "Il est déjà en production — dans un hôpital départemental d'urgence et dans une mairie — et conçu par celles et ceux qui le déploient eux-mêmes.",
     "principlesEyebrow": "Nos convictions",
     "principlesTitle": "Quatre principes sur lesquels nous ne transigeons pas",
@@ -368,10 +414,10 @@
     "eyebrow": "Sur le terrain",
     "titleLead": "En production, pas",
     "titleAccent": "dans un diaporama.",
-    "description": "La meilleure preuve que nous puissions apporter n'est pas un chiffre — c'est un logiciel en fonctionnement dans de vraies institutions, utilisé chaque jour par de vraies équipes.",
+    "description": "Un logiciel en fonctionnement dans de vraies institutions, utilisé chaque jour par de vraies équipes.",
     "exploreModule": "Explorer le module {module}",
     "noteEyebrow": "Une note sur la preuve",
-    "noteBody": "Nous mettons en avant nos déploiements plutôt que des statistiques d'affiche. Les gains d'efficacité cités ailleurs sur ce site sont clairement présentés comme des projections — ce que vous voyez ici, c'est simplement ce qui tourne aujourd'hui."
+    "noteBody": "Nous mettons en avant nos déploiements, pas des statistiques d'affiche. Ce que vous voyez ici, c'est simplement ce qui tourne aujourd'hui."
   },
   "demoPage": {
     "eyebrow": "Demander une démo",
@@ -404,7 +450,7 @@
     "eyebrow": "Ressources",
     "titleLead": "Pour aller plus loin,",
     "titleAccent": "en profondeur.",
-    "description": "Nous développons études de cas, documentation et contenus presse. Voici ce qui arrive — et ce qui est déjà disponible aujourd'hui.",
+    "description": "Études de cas, documentation et presse — certaines déjà disponibles, d'autres à venir.",
     "openModule": "Ouvrir le module",
     "lookingFor": "Vous cherchez quelque chose de précis ?",
     "getInTouch": "Contactez-nous",
@@ -469,19 +515,19 @@
       "name": "Médical",
       "label": "Catégorie A — Médical",
       "tagline": "Le produit phare.",
-      "description": "Solutions cliniques, modules hospitaliers et formation médicale — le cœur de l'offre, structuré selon le parcours clinique réel, du guichet d'accueil à la direction."
+      "description": "Soins cliniques, opérations hospitalières et formation médicale — sur tout le parcours, du guichet d'accueil à la direction."
     },
     "administrative": {
       "name": "Administratif",
       "label": "Catégorie B — Administratif",
       "tagline": "Services aux citoyens et back-office.",
-      "description": "Gestion des services publics, processus administratifs et conformité assistée par RAG — déjà en production dans une institution publique."
+      "description": "Gestion des services publics, processus administratifs et conformité assistée par RAG — en production dans une mairie."
     },
     "ai-infrastructure": {
       "name": "Infrastructure IA",
       "label": "Catégorie C — Général",
       "tagline": "La couche souveraine.",
-      "description": "Outils IA, modèles locaux et infrastructure RAG — la fondation technique capable de fonctionner hors ligne sur laquelle repose toute la plateforme."
+      "description": "Outils IA, modèles locaux et RAG 100 % hors ligne — la couche souveraine sous chacun des autres modules."
     }
   },
   "deploymentsData": {

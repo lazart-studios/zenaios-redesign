@@ -101,3 +101,19 @@ export interface TeamMember extends TeamSkeleton {
   role: string;
   bio: string;
 }
+
+// ── Industries ────────────────────────────────────────────────────────────
+/** Maturity of ZenAiOS in a given industry — drives the card status tag. */
+export type IndustryStatus = "live" | "building" | "exploring";
+
+/** Locale-invariant industry facts. Copy lives in `industries.items.*`. */
+export interface IndustrySkeleton {
+  slug: string;
+  icon: LucideIcon;
+  status: IndustryStatus;
+}
+
+export interface Industry extends IndustrySkeleton {
+  name: string;
+  tagline: string;
+}

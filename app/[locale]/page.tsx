@@ -9,6 +9,7 @@ import { SimpleValue } from "@/components/sections/SimpleValue";
 import { Flagship } from "@/components/sections/Flagship";
 import { Capabilities } from "@/components/sections/Capabilities";
 import { Outcomes } from "@/components/sections/Outcomes";
+import { Industries } from "@/components/sections/Industries";
 import { CTASection } from "@/components/sections/CTASection";
 
 export function generateStaticParams() {
@@ -47,6 +48,7 @@ export default async function Home({
       <Flagship />
       <Capabilities />
       <Outcomes />
+      <Industries />
       <CTASection />
     </>
   );

@@ -7,6 +7,10 @@
       "title": "Platforma",
       "description": "17 module AI în trei domenii interoperabile — medical, administrativ și infrastructură AI. Un singur asistent, cinci limbi, activ în instituții reale."
     },
+    "industries": {
+      "title": "Sectoare",
+      "description": "ZenAiOS a pornit din sănătate și merge mai departe — educație, asigurări, administrație publică, farmacie și B2B. Un singur sistem de operare AI, multe sectoare."
+    },
     "about": {
       "title": "Despre noi",
       "description": "ZenAiOS este creat de o echipă clinică, tehnică și comercială din Oradea, România — un sistem de operare AI întemeiat pe practica spitalicească reală și pe suveranitatea datelor."
@@ -39,6 +43,7 @@
   "nav": {
     "homeAria": "Pagina principală ZenAiOS",
     "platform": "Platformă",
+    "industries": "Sectoare",
     "deployments": "În practică",
     "about": "Despre noi",
     "resources": "Resurse",
@@ -67,6 +72,7 @@
       "administrative": "Administrativ",
       "aiInfrastructure": "Infrastructură AI",
       "about": "Despre noi",
+      "industries": "Sectoare",
       "deployments": "În practică",
       "resources": "Resurse",
       "contact": "Contact",
@@ -93,6 +99,46 @@
     "active": "Activ",
     "module": "Modul",
     "dev": "Dev"
+  },
+  "industries": {
+    "eyebrow": "Sectoare",
+    "titleLead": "Construit pentru sănătate.",
+    "titleAccent": "Pregătit pentru restul.",
+    "description": "În sănătate am dovedit-o. Același sistem de operare AI se extinde în educație, asigurări, administrație publică și în lumea business-ului.",
+    "explore": "Vedeți platforma",
+    "seeAll": "Explorați toate sectoarele",
+    "note": "Statusul arată unde se află ZenAiOS astăzi — implementări active, module în dezvoltare și sectoare în care ne extindem.",
+    "status": {
+      "live": "Activ",
+      "building": "În dezvoltare",
+      "exploring": "În extindere"
+    },
+    "items": {
+      "healthcare": {
+        "name": "Sănătate",
+        "tagline": "Un singur sistem de operare AI pentru întregul spital — activ astăzi într-un spital județean de urgență."
+      },
+      "publicAdministration": {
+        "name": "Administrație publică",
+        "tagline": "Servicii civice, documente și suport pentru cetățeni pe același strat AI — deja în funcțiune într-o primărie."
+      },
+      "education": {
+        "name": "Educație",
+        "tagline": "Formare, evaluare și învățare continuă, susținute de AI — pornind de la modulul nostru de quiz."
+      },
+      "insurance": {
+        "name": "Asigurări",
+        "tagline": "Daune, polițe și întrebări ale membrilor, gestionate și triate de AI."
+      },
+      "business": {
+        "name": "Business & B2B",
+        "tagline": "Aceeași platformă, adaptată operațiunilor dumneavoastră — suport, documente și fluxuri de lucru interne."
+      },
+      "pharmacy": {
+        "name": "Farmacie",
+        "tagline": "Un modul dedicat farmaciei, în lucru, care aduce ZenAiOS până la tejghea."
+      }
+    }
   },
   "languageSwitcher": {
     "label": "Limbă"
@@ -196,7 +242,7 @@
   "flagship": {
     "eyebrow": "Folosit astăzi",
     "title": "Construit cu medici. Folosit într-un spital real.",
-    "description": "ZenAiOS susține zilnic activitatea clinică și administrativă — nu într-un laborator, ci acolo unde are loc îngrijirea.",
+    "description": "ZenAiOS susține zilnic activitatea clinică și administrativă reală — activ acolo unde are loc îngrijirea.",
     "link": "Vedeți implementarea",
     "statProduction": "în producție",
     "statCoding": "codificare inclusă"
@@ -205,7 +251,7 @@
     "eyebrow": "Creat pentru munca reală",
     "titleLead": "Tehnologie puternică.",
     "titleAccent": "Simplu de folosit.",
-    "description": "Patru dintre lucrurile pe care ZenAiOS le face zi de zi — suport decizional, triaj, predicție și AI suveran.",
+    "description": "Ce face ZenAiOS zi de zi — suport decizional, triaj, predicție și suveranitatea datelor.",
     "features": {
       "doctor": {
         "eyebrow": "Modulul Doctor",
@@ -269,7 +315,7 @@
     "default": {
       "eyebrow": "Suntem pregătiți când sunteți și dumneavoastră",
       "title": "Vedeți ZenAiOS funcționând într-un spital real",
-      "description": "Rezervați o prezentare ghidată a platformei — de la epicriza AI până la tablourile de bord executive — și vedeți cum s-ar integra în instituția dumneavoastră."
+      "description": "Rezervați o prezentare ghidată și vedeți cum se potrivește ZenAiOS instituției dumneavoastră."
     },
     "about": {
       "eyebrow": "Colaborați cu noi",
@@ -327,7 +373,7 @@
     "problemEyebrow": "Problema pe care o rezolvă",
     "howEyebrow": "Cum funcționează",
     "roadmapEyebrow": "Pe foaia de parcurs",
-    "roadmapIntro": "Direcția în care evoluează acest modul — clar orientată spre viitor, nu încă disponibilă.",
+    "roadmapIntro": "Direcția în care evoluează acest modul.",
     "liveDeployment": "Implementare activă",
     "seeDeployment": "Vedeți implementarea",
     "moreIn": "Mai multe în {category}",
@@ -340,8 +386,8 @@
     "description": "Spitalele se numără printre cele mai complexe organizații de pe planetă. Construim sistemul de operare AI care le unește sistemele fragmentate într-unul singur — de la recepție până la conducere.",
     "missionEyebrow": "De ce existăm",
     "missionTitle": "O singură platformă în locul a douăzeci de instrumente deconectate",
-    "missionP1": "Personalul medical pierde ore în fiecare zi cu documentația și cu sisteme care nu comunică între ele. Conducerea nu are vizibilitate în timp real. Pacienții găsesc cu greu serviciul potrivit.",
-    "missionP2": "ZenAiOS înlocuiește această fragmentare cu un singur sistem de operare AI nativ: 17 module pentru îngrijire clinică, management spitalicesc și administrație publică, cu un model de date și un asistent comune.",
+    "missionP1": "Clinicienii pierd ore întregi cu documentația și cu sisteme care nu comunică între ele. Conducerea nu are vizibilitate în timp real. Pacienții găsesc cu greu serviciul potrivit.",
+    "missionP2": "ZenAiOS înlocuiește această fragmentare cu un singur sistem de operare AI nativ — 17 module pentru îngrijire clinică, management spitalicesc și administrație publică, pe un model de date comun.",
     "missionP3": "Este deja activ — într-un spital județean de urgență și la o primărie — și este construit de oameni care îl implementează ei înșiși.",
     "principlesEyebrow": "În ce credem",
     "principlesTitle": "Patru principii la care nu facem compromisuri",
@@ -368,10 +414,10 @@
     "eyebrow": "În teren",
     "titleLead": "Activ, nu",
     "titleAccent": "într-o prezentare.",
-    "description": "Cea mai puternică dovadă nu este o cifră — ci software-ul care rulează în instituții reale, folosit zi de zi de oameni reali.",
+    "description": "Software care rulează în instituții reale, folosit de oameni reali, zi de zi.",
     "exploreModule": "Explorați modulul {module}",
     "noteEyebrow": "O notă despre dovezi",
-    "noteBody": "Punem pe primul loc implementările, nu statisticile de impact. Cifrele de eficiență prezentate în alte secțiuni ale acestui site sunt marcate clar drept estimări — ceea ce vedeți aici este pur și simplu ceea ce funcționează astăzi."
+    "noteBody": "Punem pe primul loc implementările, nu statisticile de impact. Ceea ce vedeți aici este pur și simplu ceea ce funcționează astăzi."
   },
   "demoPage": {
     "eyebrow": "Solicitați o demonstrație",
@@ -404,7 +450,7 @@
     "eyebrow": "Resurse",
     "titleLead": "Aflați mai mult,",
     "titleAccent": "în detaliu.",
-    "description": "Pregătim studii de caz, documentație și materiale de presă. Iată ce urmează — și ce este deja disponibil astăzi.",
+    "description": "Studii de caz, documentație și presă — unele disponibile astăzi, altele în curând.",
     "openModule": "Deschideți modulul",
     "lookingFor": "Căutați ceva anume?",
     "getInTouch": "Contactați-ne",
@@ -469,19 +515,19 @@
       "name": "Medical",
       "label": "Categoria A — Medical",
       "tagline": "Modulul central.",
-      "description": "Soluții clinice, module spitalicești și educație medicală — inima ofertei, organizate de-a lungul fluxului clinic real, de la recepție până la conducere."
+      "description": "Îngrijire clinică, operațiuni spitalicești și educație medicală — de-a lungul întregului flux, de la recepție până la conducere."
     },
     "administrative": {
       "name": "Administrativ",
       "label": "Categoria B — Administrativ",
       "tagline": "Civic și back-office.",
-      "description": "Management civic, procese administrative și conformitate bazată pe RAG — deja în funcțiune într-o instituție publică."
+      "description": "Management civic, procese administrative și conformitate bazată pe RAG — activ într-o primărie."
     },
     "ai-infrastructure": {
       "name": "Infrastructură AI",
       "label": "Categoria C — General",
       "tagline": "Stratul suveran.",
-      "description": "Instrumente AI, modele locale și infrastructură RAG — fundația tehnică cu funcționare offline pe care se sprijină întreaga platformă."
+      "description": "Instrumente AI, modele locale și RAG 100% offline — stratul suveran de sub fiecare alt modul."
     }
   },
   "deploymentsData": {

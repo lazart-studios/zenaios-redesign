@@ -43,6 +43,7 @@ export type PrimaryNavItem = { key: string; href: string };
 /** Primary navigation. "platform" opens the mega-menu (handled in Nav). */
 export const primaryNav: PrimaryNavItem[] = [
   { key: "platform", href: "/platform" },
+  { key: "industries", href: "/industries" },
   { key: "deployments", href: "/deployments" },
   { key: "about", href: "/about" },
   { key: "resources", href: "/resources" },
@@ -68,6 +69,7 @@ export const footerNav: FooterColumn[] = [
     titleKey: "company",
     links: [
       { key: "about", href: "/about" },
+      { key: "industries", href: "/industries" },
       { key: "deployments", href: "/deployments" },
       { key: "resources", href: "/resources" },
       { key: "contact", href: "/contact" },

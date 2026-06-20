@@ -7,6 +7,10 @@
       "title": "Die Plattform",
       "description": "17 KI-Module in drei interoperierenden Bereichen — Medizin, Verwaltung und KI-Infrastruktur. Ein Assistent, fünf Sprachen, im realen Einsatz."
     },
+    "industries": {
+      "title": "Branchen",
+      "description": "ZenAiOS hat im Gesundheitswesen begonnen und reicht weiter — Bildung, Versicherung, öffentliche Verwaltung, Apotheke und B2B. Ein KI-Betriebssystem, viele Branchen."
+    },
     "about": {
       "title": "Über uns",
       "description": "ZenAiOS entsteht aus einem klinischen, technischen und kaufmännischen Team in Oradea, Rumänien — ein KI-Betriebssystem, verankert in realer Krankenhauspraxis und Datensouveränität."
@@ -39,6 +43,7 @@
   "nav": {
     "homeAria": "ZenAiOS Startseite",
     "platform": "Plattform",
+    "industries": "Branchen",
     "deployments": "Im Einsatz",
     "about": "Über uns",
     "resources": "Ressourcen",
@@ -67,6 +72,7 @@
       "administrative": "Verwaltung",
       "aiInfrastructure": "KI-Infrastruktur",
       "about": "Über uns",
+      "industries": "Branchen",
       "deployments": "Im Einsatz",
       "resources": "Ressourcen",
       "contact": "Kontakt",
@@ -93,6 +99,46 @@
     "active": "Aktiv",
     "module": "Modul",
     "dev": "In Entwicklung"
+  },
+  "industries": {
+    "eyebrow": "Branchen",
+    "titleLead": "Im Gesundheitswesen entwickelt.",
+    "titleAccent": "Bereit für den Rest.",
+    "description": "Im Gesundheitswesen haben wir es bewiesen. Dasselbe KI-Betriebssystem reicht weiter — bis in Bildung, Versicherung, öffentliche Verwaltung und die gesamte Geschäftswelt.",
+    "explore": "Plattform ansehen",
+    "seeAll": "Alle Branchen entdecken",
+    "note": "Der Status zeigt, wo ZenAiOS heute steht — Live-Implementierungen, Module in aktiver Entwicklung und Branchen, in die wir als Nächstes expandieren.",
+    "status": {
+      "live": "Live",
+      "building": "In Entwicklung",
+      "exploring": "Im Ausbau"
+    },
+    "items": {
+      "healthcare": {
+        "name": "Gesundheitswesen",
+        "tagline": "Ein KI-Betriebssystem für das gesamte Krankenhaus — heute im Echtbetrieb an einem Kreisklinikum der Notfallversorgung."
+      },
+      "publicAdministration": {
+        "name": "Öffentliche Verwaltung",
+        "tagline": "Bürgerdienste, Dokumente und Bürgersupport auf derselben KI-Schicht — bereits im Einsatz in einer Stadtverwaltung."
+      },
+      "education": {
+        "name": "Bildung",
+        "tagline": "Schulung, Prüfung und kontinuierliches Lernen, KI-gestützt — den Anfang macht unser Quiz-Modul."
+      },
+      "insurance": {
+        "name": "Versicherung",
+        "tagline": "Schadensfälle, Policen und Fragen von Versicherten — bearbeitet und vorsortiert durch KI."
+      },
+      "business": {
+        "name": "Business & B2B",
+        "tagline": "Dieselbe Plattform, zugeschnitten auf Ihre Abläufe — Support, Dokumente und interne Workflows."
+      },
+      "pharmacy": {
+        "name": "Apotheke",
+        "tagline": "Ein eigenes Apotheken-Modul ist in Arbeit und bringt ZenAiOS an den Tresen."
+      }
+    }
   },
   "languageSwitcher": {
     "label": "Sprache"
@@ -196,7 +242,7 @@
   "flagship": {
     "eyebrow": "Heute im Einsatz",
     "title": "Mit Ärzten entwickelt. In einem echten Krankenhaus im Einsatz.",
-    "description": "ZenAiOS unterstützt täglich klinische und administrative Arbeit — nicht im Labor, sondern dort, wo Versorgung stattfindet.",
+    "description": "ZenAiOS unterstützt täglich echte klinische und administrative Arbeit — live dort, wo Versorgung stattfindet.",
     "link": "Implementierung ansehen",
     "statProduction": "im produktiven Betrieb",
     "statCoding": "Kodierung integriert"
@@ -205,7 +251,7 @@
     "eyebrow": "Für echte Arbeit entwickelt",
     "titleLead": "Leistungsstarke Technologie.",
     "titleAccent": "Einfach zu bedienen.",
-    "description": "Vier der Aufgaben, die ZenAiOS täglich übernimmt — Entscheidungsunterstützung, Triage, Prognose und souveräne KI.",
+    "description": "Was ZenAiOS täglich leistet — Entscheidungsunterstützung, Triage, Prognose und Datensouveränität.",
     "features": {
       "doctor": {
         "eyebrow": "Arztmodul",
@@ -269,7 +315,7 @@
     "default": {
       "eyebrow": "Bereit, wenn Sie es sind",
       "title": "Erleben Sie ZenAiOS im realen Krankenhausbetrieb",
-      "description": "Vereinbaren Sie einen geführten Rundgang durch die Plattform — von der KI-Epikrise bis zu den Führungs-Dashboards — und sehen Sie, wie sie zu Ihrer Institution passt."
+      "description": "Vereinbaren Sie einen geführten Rundgang und sehen Sie, wie ZenAiOS zu Ihrer Einrichtung passt."
     },
     "about": {
       "eyebrow": "Arbeiten Sie mit uns",
@@ -327,7 +373,7 @@
     "problemEyebrow": "Das Problem, das es löst",
     "howEyebrow": "So funktioniert es",
     "roadmapEyebrow": "Auf der Roadmap",
-    "roadmapIntro": "Wohin sich dieses Modul als Nächstes entwickelt — bewusst vorausschauend, noch nicht ausgeliefert.",
+    "roadmapIntro": "Wohin sich dieses Modul als Nächstes entwickelt.",
     "liveDeployment": "Live-Installation",
     "seeDeployment": "Zur Installation",
     "moreIn": "Mehr in {category}",
@@ -340,8 +386,8 @@
     "description": "Krankenhäuser gehören zu den komplexesten Organisationen der Welt. Wir entwickeln das KI-Betriebssystem, das ihre fragmentierten Systeme zu einem Ganzen verbindet — vom Empfang bis zur Führungsebene.",
     "missionEyebrow": "Warum es uns gibt",
     "missionTitle": "Eine Plattform statt zwanzig isolierter Tools",
-    "missionP1": "Klinikerinnen und Klinikern entgehen täglich Stunden durch Dokumentation und durch Systeme, die nicht miteinander kommunizieren. Die Leitung hat keinen Überblick in Echtzeit. Patientinnen und Patienten finden nur schwer die richtige Stelle.",
-    "missionP2": "ZenAiOS löst diese Fragmentierung mit einem einzigen, KI-nativen Betriebssystem ab: 17 Module über klinische Versorgung, Krankenhausmanagement und öffentliche Verwaltung hinweg — mit einem gemeinsamen Datenmodell und einem gemeinsamen Assistenten.",
+    "missionP1": "Klinikerinnen und Klinikern entgehen Stunden durch Dokumentation und Systeme, die nicht miteinander kommunizieren. Die Leitung hat keinen Überblick in Echtzeit. Patientinnen und Patienten finden nur schwer die richtige Stelle.",
+    "missionP2": "ZenAiOS löst diese Fragmentierung mit einem einzigen, KI-nativen Betriebssystem ab — 17 Module über klinische Versorgung, Krankenhausmanagement und öffentliche Verwaltung hinweg, auf einem gemeinsamen Datenmodell.",
     "missionP3": "Es ist bereits im Echtbetrieb — an einem Kreisklinikum der Notfallversorgung und in einer Stadtverwaltung — und es wird von Menschen entwickelt, die es selbst in Betrieb nehmen.",
     "principlesEyebrow": "Wofür wir stehen",
     "principlesTitle": "Vier Grundsätze, bei denen wir keine Kompromisse machen",
@@ -368,10 +414,10 @@
     "eyebrow": "Im Einsatz",
     "titleLead": "Live, nicht",
     "titleAccent": "in einer Präsentation.",
-    "description": "Das Überzeugendste, was wir zeigen können, ist keine Zahl — es ist Software, die in echten Einrichtungen läuft und von echten Mitarbeitenden Tag für Tag genutzt wird.",
+    "description": "Software, die in echten Einrichtungen läuft und von echtem Personal genutzt wird, Tag für Tag.",
     "exploreModule": "Modul {module} entdecken",
     "noteEyebrow": "Ein Wort zum Nachweis",
-    "noteBody": "Wir stellen Installationen voran, nicht plakative Kennzahlen. Effizienzangaben an anderer Stelle auf dieser Website sind klar als Prognosen gekennzeichnet — was Sie hier sehen, ist schlicht das, was heute im Betrieb ist."
+    "noteBody": "Wir stellen Implementierungen voran, nicht plakative Kennzahlen. Was Sie hier sehen, ist schlicht das, was heute im Betrieb ist."
   },
   "demoPage": {
     "eyebrow": "Demo anfragen",
@@ -404,7 +450,7 @@
     "eyebrow": "Ressourcen",
     "titleLead": "Mehr erfahren,",
     "titleAccent": "in der Tiefe.",
-    "description": "Wir bauen Fallstudien, Dokumentation und Pressematerial auf. Hier sehen Sie, was noch kommt — und was heute bereits verfügbar ist.",
+    "description": "Fallstudien, Dokumentation und Presse — einiges bereits heute verfügbar, mehr kommt.",
     "openModule": "Modul öffnen",
     "lookingFor": "Suchen Sie etwas Bestimmtes?",
     "getInTouch": "Kontakt aufnehmen",
@@ -469,19 +515,19 @@
       "name": "Medizin",
       "label": "Kategorie A — Medizin",
       "tagline": "Das Flaggschiff.",
-      "description": "Klinische Lösungen, Krankenhausmodule und medizinische Weiterbildung — das Herzstück des Angebots, strukturiert entlang des realen klinischen Ablaufs vom Empfang bis in den Vorstand."
+      "description": "Klinische Versorgung, Krankenhausbetrieb und medizinische Weiterbildung — über den gesamten Ablauf hinweg, vom Empfang bis in den Vorstand."
     },
     "administrative": {
       "name": "Verwaltung",
       "label": "Kategorie B — Verwaltung",
       "tagline": "Kommunal & Back-Office.",
-      "description": "Kommunalverwaltung, administrative Prozesse und RAG-gestützte Compliance — bereits im produktiven Einsatz in einer öffentlichen Institution."
+      "description": "Kommunalverwaltung, administrative Prozesse und RAG-gestützte Compliance — im Einsatz in einer Stadtverwaltung."
     },
     "ai-infrastructure": {
       "name": "KI-Infrastruktur",
       "label": "Kategorie C — Allgemein",
       "tagline": "Die souveräne Schicht.",
-      "description": "KI-Werkzeuge, lokale Modelle und RAG-Infrastruktur — das offlinefähige technische Fundament, auf dem die gesamte Plattform aufbaut."
+      "description": "KI-Werkzeuge, lokale Modelle und zu 100 % offline betriebenes RAG — die souveräne Schicht unter jedem weiteren Modul."
     }
   },
   "deploymentsData": {
