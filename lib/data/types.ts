@@ -91,9 +91,10 @@ export interface TeamSkeleton {
   /** Proper noun — stays the same across locales. */
   name: string;
   initials: string;
-  /** Local headshot in /public/team. */
-  photo: string;
-  linkedin: string;
+  /** Local headshot in /public/team. `null` → render the initials avatar. */
+  photo: string | null;
+  /** Profile URL. `null` → hide the LinkedIn link. */
+  linkedin: string | null;
 }
 
 export interface TeamMember extends TeamSkeleton {

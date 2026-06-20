@@ -613,6 +613,10 @@
       "role": "Chief Executive Officer",
       "bio": "Sets the vision and takes ZenAiOS to institutions, partners and investors."
     },
+    "doru": {
+      "role": "General Director",
+      "bio": "Runs day-to-day operations and keeps the company moving as one team."
+    },
     "vlad": {
       "role": "Chief Technology Officer",
       "bio": "Leads the platform and the in-house AI infrastructure — from sovereign RAG to the 17 modules."
@@ -632,6 +636,18 @@
     "loujaina": {
       "role": "Regional Director",
       "bio": "Supports institutions through every step of their ZenAiOS rollout."
+    },
+    "alin": {
+      "role": "Technical Lead",
+      "bio": "Leads engineering and owns the architecture the platform is built on."
+    },
+    "cosmin": {
+      "role": "Software Engineer",
+      "bio": "Builds the modules and features that run inside ZenAiOS."
+    },
+    "iulian": {
+      "role": "Software Engineer",
+      "bio": "Develops and hardens the platform that powers every module."
     },
     "vision": {
       "text": "Healthcare is complex. Our job is to make it run — one AI operating system, from the front desk to the boardroom.",

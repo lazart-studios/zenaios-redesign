@@ -513,6 +513,10 @@
       "role": "Chief Executive Officer",
       "bio": "Definește viziunea și duce ZenAiOS către instituții, parteneri și investitori."
     },
+    "doru": {
+      "role": "Director General",
+      "bio": "Conduce operațiunile de zi cu zi și ține întreaga echipă pe aceeași direcție."
+    },
     "vlad": {
       "role": "Chief Technology Officer",
       "bio": "Coordonează platforma și infrastructura AI dezvoltată intern — de la RAG-ul suveran până la cele 17 module."
@@ -532,6 +536,18 @@
     "loujaina": {
       "role": "Director Regional",
       "bio": "Însoțește instituțiile la fiecare pas al implementării ZenAiOS."
+    },
+    "alin": {
+      "role": "Technical Lead",
+      "bio": "Coordonează echipa de ingineri și răspunde de arhitectura pe care e construită platforma."
+    },
+    "cosmin": {
+      "role": "Software Engineer",
+      "bio": "Construiește modulele și funcționalitățile din interiorul ZenAiOS."
+    },
+    "iulian": {
+      "role": "Software Engineer",
+      "bio": "Dezvoltă și consolidează platforma pe care rulează toate modulele."
     },
     "vision": {
       "text": "Medicina este complexă. Rolul nostru este să o facem să funcționeze — un singur sistem de operare AI, de la recepție până la conducere.",

@@ -14,6 +14,13 @@ export const teamSkeletons: TeamSkeleton[] = [
     linkedin: "https://www.linkedin.com/in/georgehaber/",
   },
   {
+    key: "doru",
+    name: "Doru Torge",
+    initials: "DT",
+    photo: "/team/doru-torge.jpeg",
+    linkedin: null,
+  },
+  {
     key: "vlad",
     name: "Vlad Iliescu",
     initials: "VI",
@@ -47,6 +54,27 @@ export const teamSkeletons: TeamSkeleton[] = [
     initials: "LS",
     photo: "/team/loujaina-shehade.jpg",
     linkedin: "https://www.linkedin.com/in/loujishehade15",
+  },
+  {
+    key: "alin",
+    name: "Alin Blidisel",
+    initials: "AB",
+    photo: null,
+    linkedin: "https://www.linkedin.com/in/alin-blidisel-040a6819",
+  },
+  {
+    key: "cosmin",
+    name: "Cosmin Prata",
+    initials: "CP",
+    photo: null,
+    linkedin: "https://www.linkedin.com/in/prata-cosmin-a1a853b9",
+  },
+  {
+    key: "iulian",
+    name: "Iulian Igaș",
+    initials: "II",
+    photo: null,
+    linkedin: "https://www.linkedin.com/in/iulian-igas-373550148",
   },
 ];
 

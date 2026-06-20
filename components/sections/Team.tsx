@@ -30,15 +30,26 @@ export function Team() {
         {team.map((m) => (
           <StaggerItem key={m.name}>
             <div className="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/[0.05] bg-card">
-              {/* Photo */}
+              {/* Photo — or an initials avatar when no headshot is on file yet */}
               <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-                <Image
-                  src={m.photo}
-                  alt={`${m.name} — ${m.role}`}
-                  fill
-                  sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover object-top"
-                />
+                {m.photo ? (
+                  <Image
+                    src={m.photo}
+                    alt={`${m.name} — ${m.role}`}
+                    fill
+                    sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover object-top"
+                  />
+                ) : (
+                  <div
+                    className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zen/10 to-zen/[0.03]"
+                    aria-label={`${m.name} — ${m.role}`}
+                  >
+                    <span className="select-none text-5xl font-bold tracking-tight text-zen/70">
+                      {m.initials}
+                    </span>
+                  </div>
+                )}
                 {/* Bottom fade so the name plate reads cleanly */}
                 <div
                   className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-card/95 via-card/30 to-transparent"
@@ -55,15 +66,17 @@ export function Team() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
                   {m.bio}
                 </p>
-                <a
-                  href={m.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-zen"
-                >
-                  <Linkedin className="size-3.5" />
-                  LinkedIn
-                </a>
+                {m.linkedin && (
+                  <a
+                    href={m.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-faint transition-colors hover:text-zen"
+                  >
+                    <Linkedin className="size-3.5" />
+                    LinkedIn
+                  </a>
+                )}
               </div>
             </div>
           </StaggerItem>

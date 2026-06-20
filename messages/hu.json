@@ -513,6 +513,10 @@
       "role": "Vezérigazgató",
       "bio": "Kijelöli a víziót, és eljuttatja a ZenAiOS-t az intézményekhez, partnerekhez és befektetőkhöz."
     },
+    "doru": {
+      "role": "Ügyvezető igazgató",
+      "bio": "Irányítja a napi működést, és egységes csapatként tartja mozgásban a céget."
+    },
     "vlad": {
       "role": "Műszaki vezérigazgató",
       "bio": "A platformot és a házon belüli AI-infrastruktúrát irányítja — a szuverén RAG-tól a 17 modulig."
@@ -532,6 +536,18 @@
     "loujaina": {
       "role": "Regionális igazgató",
       "bio": "Végigkíséri az intézményeket a ZenAiOS bevezetésének minden lépésén."
+    },
+    "alin": {
+      "role": "Technical Lead",
+      "bio": "Vezeti a mérnöki csapatot, és felel a platform architektúrájáért."
+    },
+    "cosmin": {
+      "role": "Software Engineer",
+      "bio": "A ZenAiOS moduljait és funkcióit fejleszti."
+    },
+    "iulian": {
+      "role": "Software Engineer",
+      "bio": "Fejleszti és stabilabbá teszi a platformot, amely minden modult működtet."
     },
     "vision": {
       "text": "Az egészségügy összetett. A mi dolgunk, hogy működjön — egyetlen AI operációs rendszerrel, a recepciótól a tárgyalóteremig.",

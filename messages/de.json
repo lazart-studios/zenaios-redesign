@@ -513,6 +513,10 @@
       "role": "Chief Executive Officer",
       "bio": "Gibt die Vision vor und bringt ZenAiOS zu Institutionen, Partnern und Investoren."
     },
+    "doru": {
+      "role": "Geschäftsführer",
+      "bio": "Verantwortet das Tagesgeschäft und hält alle Teams als Einheit auf Kurs."
+    },
     "vlad": {
       "role": "Chief Technology Officer",
       "bio": "Verantwortet die Plattform und die hauseigene KI-Infrastruktur — vom souveränen RAG bis zu den 17 Modulen."
@@ -532,6 +536,18 @@
     "loujaina": {
       "role": "Regionaldirektorin",
       "bio": "Begleitet Einrichtungen durch jeden Schritt ihrer ZenAiOS-Einführung."
+    },
+    "alin": {
+      "role": "Technical Lead",
+      "bio": "Führt das Engineering-Team und verantwortet die Architektur der Plattform."
+    },
+    "cosmin": {
+      "role": "Software Engineer",
+      "bio": "Entwickelt die Module und Funktionen, die in ZenAiOS laufen."
+    },
+    "iulian": {
+      "role": "Software Engineer",
+      "bio": "Entwickelt und stärkt die Plattform, auf der alle Module laufen."
     },
     "vision": {
       "text": "Das Gesundheitswesen ist komplex. Unsere Aufgabe ist es, es zum Laufen zu bringen — ein KI-Betriebssystem, vom Empfang bis in den Vorstand.",
