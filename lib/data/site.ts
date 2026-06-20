@@ -38,11 +38,16 @@ export const siteConfig = {
  * catalog: primary items via `nav.*`, footer columns via `footer.columns.*` and
  * footer links via `footer.links.*`.
  */
-export type PrimaryNavItem = { key: string; href: string };
+export type PrimaryNavItem = {
+  key: string;
+  href: string;
+  /** When true, this item opens the Platform mega-menu (desktop) / accordion (mobile). */
+  hasMenu?: boolean;
+};
 
-/** Primary navigation. "platform" opens the mega-menu (handled in Nav). */
+/** Primary navigation. "platform" opens the mega-menu / accordion (handled in Nav). */
 export const primaryNav: PrimaryNavItem[] = [
-  { key: "platform", href: "/platform" },
+  { key: "platform", href: "/platform", hasMenu: true },
   { key: "industries", href: "/industries" },
   { key: "deployments", href: "/deployments" },
   { key: "about", href: "/about" },
