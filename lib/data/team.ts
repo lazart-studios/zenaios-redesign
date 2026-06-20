@@ -14,13 +14,6 @@ export const teamSkeletons: TeamSkeleton[] = [
     linkedin: "https://www.linkedin.com/in/georgehaber/",
   },
   {
-    key: "doru",
-    name: "Doru Torge",
-    initials: "DT",
-    photo: "/team/doru-torge.jpeg",
-    linkedin: null,
-  },
-  {
     key: "vlad",
     name: "Vlad Iliescu",
     initials: "VI",
@@ -33,6 +26,13 @@ export const teamSkeletons: TeamSkeleton[] = [
     initials: "HT",
     photo: "/team/horea-timis.webp",
     linkedin: "https://www.linkedin.com/in/timis-horea-146372bb/",
+  },
+  {
+    key: "doru",
+    name: "Doru Torge",
+    initials: "DT",
+    photo: "/team/doru-torge.jpeg",
+    linkedin: null,
   },
   {
     key: "florina",
