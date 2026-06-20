@@ -32,7 +32,7 @@ export const teamSkeletons: TeamSkeleton[] = [
     name: "Doru Torge",
     initials: "DT",
     photo: "/team/doru-torge.jpeg",
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/doru-torge-416b0664",
   },
   {
     key: "florina",
@@ -66,7 +66,7 @@ export const teamSkeletons: TeamSkeleton[] = [
     key: "cosmin",
     name: "Cosmin Prata",
     initials: "CP",
-    photo: null,
+    photo: "/team/cosmin-prata.jpg",
     linkedin: "https://www.linkedin.com/in/prata-cosmin-a1a853b9",
   },
   {
